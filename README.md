@@ -1,7 +1,7 @@
 ## mylist
   3-10 [温都金服首页] (https://www.wenjf.com/ "https://www.wenjf.com/") <br/>
-  3-28 旺财谷-万元起投专题pc https://www.wangcaigu.com/zhuanti/show_new/id-40.html <br/>
-  3-29 旺财谷-万元起投专题wap https://m.wangcaigu.com/zhuanti/index?id=1
+  3-28 [旺财谷-万元起投专题pc] (https://www.wangcaigu.com/zhuanti/show_new/id-40.html "https://www.wangcaigu.com/zhuanti/show_new/id-40.html") <br/>
+  3-29 [旺财谷-万元起投专题wap] (https://m.wangcaigu.com/zhuanti/index?id=1 "https://m.wangcaigu.com/zhuanti/index?id=1")
 ###手机端常用插件
   1.swiper.min.js-纯javascript打造的滑动特效插件，面向手机、平板电脑等移动终端。<br/>
       使用场景：https://m.wenjf.com/<br/>
