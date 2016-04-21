@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/password(1).js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+
+    <div class="modifyPassword-box">
+        <div class="modifyPassword-top">修改密码</div>
+        <div class="modifyPassword-content">
+            <div class="old-box">
+                <label>旧密码：</label>
+                <div class="placeholder-txt" data-title="phone">请输入原始登录密码</div>
+                <input id="old-password" type="password" class="inputClick" name="pass">
+                <div class="point-ins">请输入原始密码</div>
+                <div class="error-ins">旧密码不能为空</div>
+            </div>
+            <div class="old-box">
+                <label>新密码：</label>
+                <div class="placeholder-txt" data-title="phone"> 请输入6-20位至少两种字符组合</div>
+                <input id="new-password" type="password" maxlength="20" class="inputClick" name="newpass">
+                <div class="point-ins">建议使用6-20位字母、数字或符号两种及以上组合</div>
+                <div class="point-box"></div>
+                <div class="error-ins">密码不能为空</div>
+            </div>
+            <div class="old-box">
+                <label>确认密码：</label>
+                <div class="placeholder-txt" data-title="phone"> 请输入6-20位至少两种字符组合</div>
+                <input id="new-passwords" type="password" maxlength="20" class="inputClick" name="rpass">
+                <div class="point-ins">建议使用6-20位字母、数字或符号两种及以上组合</div>
+                <div class="point-box" style="color:#ff3333"></div>
+                <div class="error-ins">密码不能为空</div>
+            </div>
+            <div class="password-btn">确认修改</div>
+        </div>
+        <!--修改密码成功-->
+        <div class="password-mask"></div>
+        <div class="password-success">
+            <div class="password-success-ins"><img src="images/iconfont-ico-successful.png" alt="">提交成功!</div>
+        </div>
+    </div>
+</body>
+</html>

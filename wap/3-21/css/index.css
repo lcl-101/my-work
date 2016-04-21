@@ -1,0 +1,70 @@
+body,p,ul,ol,li,dl,dt,dd,form,h1,h2,h3,h4,h5,h6,input{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+img{
+    border:0;
+}
+a{
+    text-decoration:none;
+}
+a:hover {
+    text-decoration:none;
+}
+body,html{
+    font:12px/1.5 "Microsoft YaHei";
+    position: relative;
+    height: 100%;
+}
+i,em {
+    font-style: normal;
+}
+/*.container{*/
+    /*padding: 0;*/
+/*}*/
+/*.row{*/
+    /*margin: 0;*/
+/*}*/
+
+/*.box .col-xs-12 {*/
+    /*padding: 0;*/
+/*}*/
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    font-size: 30px;
+    color: #fff;
+}
+.a {
+    background: #ff6052;
+}
+.b {
+    background: #49ff4b;
+}
+.c {
+    background: #6399ff;
+}
+.d {
+    background: #ff5afb;
+}

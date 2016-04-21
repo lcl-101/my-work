@@ -1,0 +1,143 @@
+<!--#include file="wcg_header.html"-->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="__TPL__Public/css/zhuanti/33/33.css">
+    <script src="__TPL__Public/js/jquery.pagination.js"></script>
+    <script src="__TPL__Public/js/jquery.qrcode.min.js"></script>
+    <script src="__TPL__Public/js/zhuanti/33/33.js"></script>
+    <style type="text/css">
+        div.overlay{position:fixed;top:0;left:0;z-index:100000;background:url(__TPL__Public/images/zhuanti/15/overlaybg.png) repeat;width:100%;height:100%;}
+        #zhuantilogin a{color:#292825; text-decoration: none;}
+        #zhuantilogin a:hover{text-decoration:underline;}
+    </style>
+</head>
+<body>
+<input type="hidden" id="islogin" value="<?php echo($viewModel->isLogin); ?>"  />
+<!--top-box-->
+<div class="top-box1">
+    <img src="__TPL__Public/images/zhuanti/33/touzi-top.png" alt="">
+</div>
+<!--middle-box-->
+<div class="middle-box">
+    <div class="middle-box-top">
+        <div class="middle-top-left"><img src="__TPL__Public/images/zhuanti/33/touzi1.png" alt=""></div>
+        <div class="middle-top-right">
+            <div>Step 1</div>
+            <h4>投资项目</h4>
+            <p>登录旺财谷账号，投资理财项目（不包括债权）</p>
+        </div>
+        <div style="clear: both"></div>
+    </div>
+    <div class="jiatou">
+        <img src="__TPL__Public/images/zhuanti/33/jiantou1.png" alt="">
+    </div>
+    <div class="middle-box-middle">
+        <div class="middle-middle-right"><img src="__TPL__Public/images/zhuanti/33/touzi2.png" alt=""></div>
+        <div class="middle-middle-left">
+            <div>Step 2</div>
+            <h4>微信分享</h4>
+            <p>投资成功后，用微信扫码分享到朋友圈，领取红包</p>
+        </div>
+        <div style="clear: both"></div>
+    </div>
+    <div  class="jiatou2">
+        <img src="__TPL__Public/images/zhuanti/33/jiantou2.png" alt="">
+    </div>
+    <div class="middle-box-bottom">
+        <div class="middle-bottom-left"><img src="__TPL__Public/images/zhuanti/33/touzi3.png" alt=""></div>
+        <div class="middle-bottom-right">
+            <div>Step 3</div>
+            <h4>投资项目</h4>
+            <p>登录旺财谷账号，投资理财项目（不包括债权）</p>
+        </div>
+        <div style="clear: both"></div>
+    </div>
+</div>
+<!--bottom-box-->
+<div id="bottom-box">
+    <div class="bottom-box">
+        <div class="bottom-top">
+            <div class="bottom-top-left">分享红包详情</div>
+            <div class="bottom-top-right">活动规则</div>
+        </div>
+        <div style="clear: both"></div>
+        <div class="bottom-bottom">
+            <!--跳转投资-->
+            <div class="bottom-bottom-content1">
+                <p>你还没有投资过呢，快去投资领取红包吧！</p>
+                <a href="/deal.html" class="bottom-bottom-btn">去投资吧</a>
+            </div>
+            <!--登陆-->
+            <div class="bottom-bottom-login">
+                <p>需要登录后才可以查看哦~</p>
+                <div class="bottom-login-btn">登  录</div>
+            </div>
+            <!--红包详情-->
+            <div class="bottom-hongbao">
+                <div class="bottom-hongbao-box">
+                    <div class="bottom-hongbao-title">
+                        <div class="bottom-xiangmu"><span>项目名称</span></div>
+                        <div class="bottom-time"><span>投资时间</span></div>
+                        <div class="bottom-qing">红包情况</div>
+                    </div>
+                    <div class="bottom-hongbao-content" id="projectListInfo">
+                        <!--<div class="bottom-hongbao-content1">-->
+                        <!--<div class="bottom-hongbao-xiangmu">-->
+                        <!--<img src="images/lingquqian.png" alt="">-->
+                        <!--&lt;!&ndash;<img src="images/lingquhou.png" alt="">&ndash;&gt;-->
+                        <!--<span>【金账通】205 号：中信保承保的应收账款项目</span>-->
+                        <!--</div>-->
+                        <!--<div class="bottom-hongbao-time">2015/12/21  10:23</div>-->
+                        <!--<div class="bottom-hongbao-qing">已领取</div>-->
+                        <!--</div>-->
+                        <!--<div class="bottom-hongbao-content1 hui">-->
+                        <!--<div class="bottom-hongbao-xiangmu">-->
+                        <!--&lt;!&ndash;<img src="images/lingquqian.png" alt="">&ndash;&gt;-->
+                        <!--<img src="images/lingquhou.png" alt="">-->
+                        <!--<span>【金账通】205 号：中信保承保的应收账款项目</span>-->
+                        <!--</div>-->
+                        <!--<div class="bottom-hongbao-time">2015/12/21  10:23</div>-->
+                        <!--<div class="bottom-hongbao-qing lan">点击领取</div>-->
+                        <!--</div>-->
+                    </div>
+                    <div class="btn clearfx" id="prjlistPage">
+                        <div id="projectListPagination" class="pagination">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--活动规则-->
+            <div class="rule-box" style="line-height: 38px;">
+                <p>1.红包新老用户同享;</p>
+                <p>2.投资1万元可分享出红包；</p>
+                <p>3.红包每人每天限发1次，限抢3次。</p>
+                <p style="color:red;">4.活动时间：2016年4月1日~2016年4月15日；</p>
+                <p style="color:red;">5.新用户领取红包30天内注册投资正式标，分享者将额外获得58元红包一个！</p>
+                <p style="">6.投标时可勾选红包，使用红包时，账户绑定的手机号码必须为抢红包时手机号码;</p>
+                <p style="">7.新用户领取红包后5天内未注册，红包自动消失;</p>
+                <p>8.本活动最终解释权归旺财谷所有。</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--code-->
+<div class="mask"></div>
+<div class="code-box">
+    <div class="code-ma"></div>
+    <div class="shao">微信扫一扫 分享</div>
+    <div class="fengxiang">分享得红包</div>
+    <img class="code-close" src="__TPL__Public/images/zhuanti/33/close.png" alt="">
+</div>
+<!--   登录框    -->
+<!--if:{$_SESSION['user_id']==''}-->
+    <!--#include file="login.html"-->
+<!--{/if}-->
+
+
+<!--#include file="wcg_footer.html"-->
+</body>
+</html>

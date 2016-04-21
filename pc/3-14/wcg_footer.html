@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+        <script src="js/jquery-1.8.3.min.js"></script>
+        <script src="js/ZeroClipboard.min.js"></script>
+</head>
+<body>
+        <div id="aa" data-clipboard-text="Copy Me!" title="Click to copy me.">sdfsdf</div>
+        <script>
+                $(function(){
+                        var client = new ZeroClipboard( document.getElementById("aa") );
+                        $('#aa').on('click',function(){
+                                client.setData("text/plain", "这个是复制的内容");
+                                alert(client);
+                        })
+
+                        client.on( "ready", function( readyEvent ) {
+                                 alert( "ZeroClipboard SWF is ready!" );
+
+                                client.on( "aftercopy", function( event ) {
+                                        // `this` === `client`
+                                        // `event.target` === the element that was clicked
+                                        event.target.style.display = "none";
+                                        alert("Copied text to clipboard: " + event.data["text/plain"] );
+                                });
+                        } );
+                })
+        </script>
+</body>
+</html>

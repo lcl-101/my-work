@@ -1,0 +1,462 @@
+<!--#include file="wcg_header.html"-->
+<link href="__TPL__Public/css/index.css?v=1.1" type="text/css" rel="stylesheet"/>
+<script src="__TPL__Public/js/index.js?v=1.1"></script>
+<!--banner start-->
+<!--登陆-->
+
+<!--体验经-->
+
+<div id="banner-box">
+    <!--banner 图-->
+    <div class="banner-box">
+        <?php  if(!empty($indexPicList) && is_array($indexPicList)): ?>
+        <?php  foreach($indexPicList as $key=>$val): ?>
+        <?php $key++; ?>
+        <div class="banner{$key}"
+             style="background: url('<?php  echo $val['content']; ?>') no-repeat center center;<?php  if($key==1){echo 'display:block';}else{echo 'display:none';} ?>">
+            <a href="<?php  echo $val['url']  ;?>" target="_blank"></a></div>
+        <?php  endforeach;?>
+        <?php  endif;?>
+    </div>
+    <!--选项卡-->
+    <div class="banner-bottom">
+        <ul class="banner-btn">
+            <?php  if(!empty($indexPicList) && is_array($indexPicList)): ?>
+            <?php  foreach($indexPicList as $key=>$val): ?>
+            <li>
+                <div></div>
+            </li>
+            <?php  endforeach;?>
+            <?php  endif;?>
+        </ul>
+        <ul class="banner-btn1">
+            <?php  if(!empty($indexPicList) && is_array($indexPicList)): ?>
+            <?php  foreach($indexPicList as $key=>$val): ?>
+            <li>
+                <div>{$val.title}</div>
+            </li>
+            <?php  endforeach;?>
+            <?php  endif;?>
+        </ul>
+        <!--登陆前-->
+        <div class="banner-content-right"></div>
+        <div class="banner-content-right1">
+            <div class="banner-r-inner">
+                <div class="banner-r-t">旺财谷预期年化收益率</div>
+                <div class="percentage">8<span>%</span>~10<span>%</span></div>
+                <div class="inner">1 万元起投，30倍银行活期存款收益</div>
+                <div class="banner-btn2"><a href="__APP__/user/registershow" >注册领红包</a></div>
+                <div class="tishi"><p><a href="__APP__/user/loginshow" >立即登录</a></p><span>已有账号？</span>
+                </div>
+            </div>
+        </div>
+        <!--登录后-->
+        <div class="banner-content-right2">
+            <div class="banner-r-inner">
+                <div class="banner-r-t">欢迎来到旺财谷！</div>
+                <div class="banner-r-logn">
+                    <div>您当前登录的账号是：</div>
+                    <div id="index-login-name"></div>
+                </div>
+                <div class="banner-btn2"><a href="__APP__/user/content" >进入我的账户</a></div>
+                <div class="back"><a style="width: 60px;float: right;" href="__APP__/user/logout.html">退出登录</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--banner end-->
+<!--理财公告-->
+<div id="licai-box">
+    <div class="licai-box">
+        <img src="__TPL__Public/images/sound.png" alt="">
+        <span>理财公告</span>
+
+        <div class="licai-lunbo">
+            <?php if(!empty($notice) && is_array($notice)): ?>
+            <?php foreach($notice as $key=>$val) : ?>
+            <div><a href="{$val.gonggao_url}" >{$val.gonggao_title}</a></div>
+            <?php endforeach; ?>
+            <?php endif; ?>
+        </div>
+    </div>
+</div>
+<!--理财公告-->
+<!--chengji start-->
+<div class="chengji-box">
+    <div class="chengji-left">
+        <div class="chengji-left-top">
+            <div>
+                <img src="__TPL__Public/images/cup.png" alt="">
+
+                <p>上市公司投资背景</p>
+            </div>
+            <div>
+                <img src="__TPL__Public/images/zhang.png" alt="">
+
+                <p>精选项目0笔坏账</p>
+            </div>
+            <div>
+                <img src="__TPL__Public/images/tuo.png" alt="">
+
+                <p>资金托管支付安全</p>
+            </div>
+        </div>
+        <div class="chengji-left-bottom">
+            <div class="frist">
+                <img src="__TPL__Public/images/nianhua.png" alt="">
+
+                <p class="shouyi"><span>30</span>倍银行活期存款收益</p>
+            </div>
+            <div>
+                <img src="__TPL__Public/images/licai.png" alt="">
+
+                <p class="shouyi"><span>{$lixi.lixi}万</span>元理财收益</p>
+            </div>
+            <div>
+                <img src="__TPL__Public/images/jiayi.png" alt="">
+
+                <p class="shouyi"><span>{$tradingVolume.order_money}亿</span>元累计交易额</p>
+            </div>
+        </div>
+    </div>
+    <div class="chengji-right">
+        <div class="chengji-right-top">
+            <span>媒体报道</span>
+            <a href="http://news.wangcaigu.com/" >更多></a>
+        </div>
+        <div class="videos"><a href="http://news.wangcaigu.com" ><img
+                src="__TPL__Public/images/video-bg2.jpg" alt=""></a></div>
+        <ul class="chengji-right-bottom">
+            <li><a href="https://www.wangcaigu.com/news/show/cid-1-id-108.html">CEO曾克庆亮相央视《领军人物》</a>
+            </li>
+            <li><a href="https://www.wangcaigu.com/news/show/cid-2-id-94.html">北京卫视采访旺财谷COO孙凯</a></li>
+        </ul>
+    </div>
+</div>
+<!--chengji end-->
+<!--新手标 start-->
+    <div class="new-heade"><span>新手标</span><span class="pot"></span><span class="pro-time">流程体验，短期高收益；100元起投；项目满标后更新</span></div>
+<div class="new-box" id="new-box">
+    <?php  if(!empty($newUserDeal) && is_array($newUserDeal)) : ?>
+    <?php if(time()>strtotime('2016-02-05 00:00:00') && time()<strtotime('2016-02-20 23:59:59')): ?>
+        <?php  if( $newUserDeal['start_date']>strtotime('2016-02-05 00:00:00') && $newUserDeal['start_date']<strtotime('2016-02-14 23:59:59') ){ ?>
+            <img class="jiaxi" src="/template/default/Public/images/xi.png" alt="">
+        <?php }else if($newUserDeal['full_time']>strtotime('2016-02-05 00:00:00') && $newUserDeal['full_time']<strtotime('2016-02-14 23:59:59')){ ?>
+            <img class="jiaxi" src="/template/default/Public/images/xi.png" alt="">
+        <?php }else if($newUserDeal['start_date']<strtotime('2016-02-05 00:00:00') && $newUserDeal['deal_status']==2 ){ ?>
+            <img class="jiaxi" src="/template/default/Public/images/xi.png" alt="">
+        <?php } ?>
+
+    <?php endif; ?>
+    <div class="new-left">
+        <div class="new-left-box">
+            <div class="new-left-top">
+                <a class="new-left-top-a" href="__APP__/dealNew/detail?id={$newUserDeal.deal_id}">{$newUserDeal.title}</a>
+            </div>
+            <div class="new-left-bottom">
+                <div class="new-left-nian">
+                    {$newUserDeal.syl}<span>%</span>
+
+                    <p>年化收益率</p>
+                </div>
+                <div class="new-left-nian">
+                    {$newUserDeal.xmqx}<span>天</span>
+
+                    <p>项目期限</p>
+                </div>
+                <div class="new-left-rong">
+                    {$newUserDeal.money}<span>万元</span>
+
+                    <p>融资金额</p>
+                </div>
+                <div class="new-left-tou">
+                    <div class="new-left-jindu">
+                        <div class="new-jindutiao">
+                            <div class="new-jindutiao1" progressbar="{$newUserDeal.xmjd}"></div>
+                        </div>
+                        <span>{$newUserDeal.xmjd}%</span>
+                    </div>
+                    <div class="new-ketou-height"></div>
+                    <div class="new-liji" id="new-liji">
+                        <?php if($newUserDeal['deal_status']==1){ ?>
+                        <a href="__APP__/dealNew/detail?id={$newUserDeal.deal_id}">{$newUserDeal.period}</a>
+                        <?php }else if($newUserDeal['deal_status']==2){?>
+                        <a href="__APP__/dealNew/detail?id={$newUserDeal.deal_id}" >立即投资</a>
+                        <?php }else if($newUserDeal['deal_status']==3) {?>
+                        <a href="__APP__/dealNew/detail?id={$newUserDeal.deal_id}" class="manbiao">已满标</a>
+                        <?php }else if($newUserDeal['deal_status']==5){ ?>
+                        <a href="__APP__/dealNew/detail?id={$newUserDeal.deal_id}" class="manbiao">收益中</a>
+                        <?php }else if($newUserDeal['deal_status']==6){ ?>
+                        <a href="__APP__/dealNew/detail?id={$newUserDeal.deal_id}" class="manbiao">已还清</a>
+                        <?php } ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <?php  endif; ?>
+    <!--<div class="new-right">-->
+    <!--<div class="new-right-top">新手标规则</div>-->
+    <!--<div class="new-right-bottom">-->
+    <!--<p>上标当天9:00-21:00为新手保护时间。</p>-->
+    <!--<p>本标的只允许从未投过的用户购买。</p>-->
+    <!--<p>超过保护时间后，所有的用户均可购买本标的。</p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <a href="__APP__/help/xszy.html" class="jing-right" ><img src="__TPL__Public/images/freshman.jpg" alt=""></a>
+</div>
+<!--新手标 end-->
+<!--金交标 start-->
+    <div class="new-heade"><span>推荐项目</span></div>
+<div class="new-box" id="tuijian">
+    <?php  if(!empty($recommendDeal) && is_array($recommendDeal)) : ?>
+    <?php if(time()>strtotime('2016-02-05 00:00:00') && time()<strtotime('2016-02-20 23:59:59')): ?>
+        <?php  if( $recommendDeal['start_date']>strtotime('2016-02-05 00:00:00') && $recommendDeal['start_date']<strtotime('2016-02-14 23:59:59') ){ ?>
+              <img class="jiaxi" src="/template/default/Public/images/xi.png" alt="">
+        <?php }else if($recommendDeal['full_time']>strtotime('2016-02-05 00:00:00') && $recommendDeal['full_time']<strtotime('2016-02-14 23:59:59')){ ?>
+              <img class="jiaxi" src="/template/default/Public/images/xi.png" alt="">
+        <?php }else if($recommendDeal['start_date']<strtotime('2016-02-05 00:00:00') && $recommendDeal['deal_status']==2 ){ ?>
+            <img class="jiaxi" src="/template/default/Public/images/xi.png" alt="">
+        <?php } ?>
+    <?php endif; ?>
+    <div class="new-left">
+        <div class="new-left-box jing-left">
+            <div class="new-left-top">
+                <a class="new-left-top-a" href="__APP__/dealNew/detail?id={$recommendDeal.deal_id}" >{$recommendDeal.title}</a>
+            </div>
+            <div class="new-left-bottom">
+                <div class="new-left-nian">
+                    {$recommendDeal.syl}<span>%</span>
+
+                    <p>年化收益率</p>
+                </div>
+                <div class="new-left-nian">
+                    {$recommendDeal.xmqx}<span>天</span>
+
+                    <p>项目期限</p>
+                </div>
+                <div class="new-left-rong">
+                    {$recommendDeal.money}<span>万元</span>
+
+                    <p>融资金额</p>
+                </div>
+                <div class="new-left-tou">
+                    <div class="new-left-jindu">
+                        <div class="new-jindutiao">
+                            <div class="new-jindutiao1" progressbar="{$recommendDeal.xmjd}"></div>
+                        </div>
+                        <span>{$recommendDeal.xmjd}%</span>
+                    </div>
+                    <div class="new-ketou"><i>可投余额：</i><span>{$recommendDeal.balance}元</span></div>
+                    <div class="new-liji">
+                        <?php if($recommendDeal['deal_status']==1){ ?>
+                        <a href="__APP__/dealNew/detail?id={$recommendDeal.deal_id}" >{$recommendDeal.period}</a>
+                        <?php }else if($recommendDeal['deal_status']==2){?>
+                        <a href="__APP__/dealNew/detail?id={$recommendDeal.deal_id}" >立即投资</a>
+                        <?php }else if($recommendDeal['deal_status']==3) {?>
+                        <a href="__APP__/dealNew/detail?id={$recommendDeal.deal_id}" class="manbiao">已满标</a>
+                        <?php }else if($recommendDeal['deal_status']==5){ ?>
+                        <a href="__APP__/dealNew/detail?id={$recommendDeal.deal_id}" class="manbiao">收益中</a>
+                        <?php }else if($recommendDeal['deal_status']==6){ ?>
+                        <a href="__APP__/dealNew/detail?id={$recommendDeal.deal_id}" class="manbiao">已还清</a>
+                        <?php } ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <?php endif; ?>
+    <!--<div class="new-right">-->
+    <!--<div class="new-right-top">新手标规则</div>-->
+    <!--<div class="new-right-bottom">-->
+    <!--<p>上标当天9:00-21:00为新手保护时间。</p>-->
+    <!--<p>本标的只允许从未投过的用户购买。</p>-->
+    <!--<p>超过保护时间后，所有的用户均可购买本标的。</p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <a href="__APP__<?php  echo  $recommendDeal['map']['url']  ?>"  class="jing-right">
+        <img src="__TPL__Public<?php  echo  $recommendDeal['map']['image']  ?>" alt="">
+    </a>
+</div>
+
+<!--金交标 end-->
+<!--应收标 start-->
+<div class="new-heade"><span>应收标</span><span class="pot"></span><span class="pro-time">定期理财，收益远超银行；1万元起投；每天</span><span class="touzi-time" >10:30、15:30、19:30</span><span class="pro-time">更新，其他时间另作通知</span><a href="__APP__/deal.html" >更多></a></div>
+<div class="yingshou-box">
+    <a href="javascript:;" class="y-lefts"></a>
+    <a href="javascript:;" class="y-rights"></a>
+
+    <div class="yingshou-content1" style="width:1015px;height: 417px;">
+        <ul class="yingshou-inner1">
+            <?php  if(!empty($financeDeal) && is_array($financeDeal)):?>
+            <?php  foreach($financeDeal as $key=>$val):?>
+            <li>
+                <div class="yingshou-left yingshou  <?php  if($val['deal_status']==5 || $val['deal_status']==3):?> huibian <?php endif; ?><?php  if($val['deal_status']==1): ?>fenbian<?php endif; ?>">
+                    <?php if(time()>strtotime('2016-02-05 00:00:00') && time()<strtotime('2016-02-20 23:59:59')): ?>
+                        <?php  if( $val['start_date']>strtotime('2016-02-05 00:00:00') && $val['start_date']<strtotime('2016-02-14 23:59:59') ){ ?>
+                        <img class="jiaxi" src="/template/default/Public/images/xi.png" alt="">
+                        <?php }else if($val['full_time']>strtotime('2016-02-05 00:00:00') && $val['full_time']<strtotime('2016-02-14 23:59:59')){ ?>
+                        <img class="jiaxi" src="/template/default/Public/images/xi.png" alt="">
+                        <?php }else if($val['start_date']<strtotime('2016-02-05 00:00:00') && $val['deal_status']==2){ ?>
+                        <img class="jiaxi" src="/template/default/Public/images/xi.png" alt="">
+                        <?php } ?>
+                    <?php endif; ?>
+                    <div class="yingshou-top"><a href="__APP__/dealNew/detail?id={$val.deal_id}" >{$val.catname}</a>
+                        <p>{$val.jx_method}</p></div>
+                    <?php if($val['deal_status']==2) :?>
+                    <div style="clear: both"></div>
+                    <?php  endif; ?>
+                    <div class="yingshou-content<?php if($val['deal_status']==5): ?>2<?php endif; ?>">
+                        <?php if($val['deal_status']==5) :?>
+                        <p class="yingshou-content2-left">年化利率 <span>{$val.syl}%</span></p>
+                        <p class="yingshou-content2-right">项目期限 <span>{$val.xmqx}天</span></p>
+                        <?php endif; ?>
+                        <?php if($val['deal_status']==1 || $val['deal_status']==2 || $val['deal_status']==3) :?>
+                        <p>融资金额：{$val.money}元</p>
+                        <p>可投金额：{$val.balance}元</p>
+                        <?php endif; ?>
+                    </div>
+                    <div class="yingshou-jindu">
+                        <div class="yingshou-jindutiao">
+                            <div class="yingshou-jindutiao1" progressbar="{$val.xmjd}"></div>
+                        </div>
+                        <span>{$val.xmjd}%</span>
+                    </div>
+                    <div style="clear: both"></div>
+                    <?php if($val['deal_status']==5) : ?>
+                    <div class="yingshou-shouyi">收益中</div>
+                    <img src="__TPL__Public/images/yingshou-shouyi.png" class="yingshou-shouyi-img"
+                         alt="">
+                    <?php endif; ?>
+                    <?php if($val['deal_status']==1 || $val['deal_status']==2 || $val['deal_status']==3) :?>
+                    <div class="yingshou-number">
+                        <div class="yingshou-nian">
+                            {$val.syl}<span>%</span>
+                            <p>年化收益率</p>
+                        </div>
+                        <div class="yingshou-nian yingshou-xian">
+                            {$val.xmqx}<span>天</span>
+                            <p>项目期限</p>
+                        </div>
+                    </div>
+                    <?php if($val['deal_status']==1 || $val['deal_status']==2) : ?>
+                    <div class="yingshou-liji">
+                        <?php if($val['deal_status']==1) : ?>
+                        <a href="__APP__/dealNew/detail?id={$val.deal_id}" class="yingshou-liji" >{$val.period}</a>
+                        <?php endif; ?>
+                        <?php if($val['deal_status']==2) : ?>
+                        <a href="__APP__/dealNew/detail?id={$val.deal_id}" class="yingshou-liji"
+                           >立即投资</a>
+                        <?php endif; ?>
+                    </div>
+                    <?php endif; ?>
+                    <?php if($val['deal_status']==3) : ?>
+                    <a href="__APP__/dealNew/detail?id={$val.deal_id}" class="yingshou-manbiao" >已满标</a>
+                    <?php endif; ?>
+                    <?php endif; ?>
+                </div>
+            </li>
+            <?php endforeach; ?>
+            <?php endif; ?>
+        </ul>
+    </div>
+    <ul class="yingshou-btn-box"></ul>
+    <div style="clear: both"></div>
+</div>
+<!--应收标 end-->
+<!--债券 start-->
+<div id="zhaiquan">
+    <div class="zhaiquan">
+        <a href="__APP__/credit.html" class="span-a">债权转让项目</a>
+
+        <a class="zhaiquan-number">{$credits}</a>
+        <a href="__APP__/credit.html" >更多></a>
+    </div>
+</div>
+<!--债券 end-->
+<!--card start-->
+<div class="card">
+    <?php if(!empty($banner['content'])): ?>
+    <a href="{$banner.url}" target="_blank"><img src="{$banner.content}" alt=""></a>
+    <?php endif; ?>
+</div>
+<div style="clear: both"></div>
+<!--card end-->
+<!--news start-->
+<div class="new-heade"><span>新闻中心</span><a href="__APP__/news/index/cid-1.html" >更多></a></div>
+<div class="news-box">
+    <?php if(!empty($mainNews) && is_array($mainNews)): ?>
+
+    <div class="news-left">
+        <div class="news-left-img">
+            <a href="{$mainNews.news_url}"><img src="{$mainNews.news_img}" alt=""></a>
+        </div>
+        <div class="news-left-title"><a href="{$mainNews.news_url}">{$mainNews.news_title}</a></div>
+        <p>
+            <a href="{$mainNews.news_url}">{$mainNews.news_description}</a><span><?php echo date('Y-m-d',$mainNews['create_time']) ?></span>
+        </p>
+    </div>
+
+    <?php  endif;?>
+    <?php if(!empty($LessNews) && is_array($LessNews)): ?>
+    <?php foreach($LessNews as $key=>$val): ?>
+    <div class="news-right">
+        <div class="new-right-img">
+            <a href="{$val.news_url}"><img src="{$val.news_img}" alt=""></a>
+        </div>
+        <div class="news-right-content">
+            <div class="news-right-title"><a href="{$val.news_url}" >{$val.news_title}</a></div>
+            <br/>
+
+            <p><a href="{$val.news_url}">{$val.news_description}</a><span
+                    class="news-right-span"><?php echo date('Y-m-d',$val['create_time']) ?></span></p>
+        </div>
+    </div>
+    <?php endforeach; ?>
+    <?php  endif;?>
+</div>
+<!--news end-->
+<!--more start-->
+<div style="clear: both"></div>
+<div class="new-heade">更多精彩</div>
+<div class="more-box">
+    <a href="__APP__/news/index/cid-3.html" class="more-box-left" >
+        <img src="__TPL__Public/images/11.png" alt="">
+    </a>
+    <a href="<?=rtrim($config['BBS']['HostURL'],'/')?>"  class="more-box-middle">
+        <img src="__TPL__Public/images/22.png" alt="">
+    </a>
+    <a href="http://news.wangcaigu.com/" class="more-box-right" >
+        <img src="__TPL__Public/images/33.png" alt="">
+    </a>
+</div>
+
+<!--体验金-->
+<div class="experienceGrants-mask"></div>
+<div class="experienceGrants-box">
+    <a href="/experiencedeal" class="experience-btn" target="_blank">
+        <img  src="__TPL__Public/images/experience-btn.gif" alt="">
+    </a>
+    <div class="round-small">
+        <img src="__TPL__Public/images/round-small.png" alt="">
+    </div>
+    <div class="round-big">
+        <img src="__TPL__Public/images/round-big.png" alt="">
+    </div>
+    <div class="experience-close">
+        <img src="__TPL__Public/images/experience-close.png" alt="">
+    </div>
+    <div class="experience-fly">
+        <img src="__TPL__Public/images/experience-fly.png" alt="">
+    </div>
+</div>
+<!--左侧广告-->
+<div class="login-not">
+    <img src="" alt="">
+</div>
+<!--more end-->
+<!--#include file="wcg_footer.html"-->
+
+</body>
+</html>

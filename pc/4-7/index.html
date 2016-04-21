@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/password.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <!--resign-box-->
+    <div id="resign-title">注册</div>
+    <div class="resign-box">
+        <div class="resignTab-boc">
+            <p>1 填写注册信息</p>
+            <span>2 领取新人专享红包</span>
+        </div>
+        <div class="resign-content">
+            <div class="resign-left">
+                <form action="" method="" id="register">
+                    <div class="phone-box">
+                        <label>手  机 号</label>
+                        <div class="placeholder-txt" data-title="phone">请填写手机号</div>
+                        <input type="tel" id="phone" class="inputClick" name="phone" maxlength="11" placeholder="">
+                        <div class="ins-box" style="clear: both">
+                            <p>请输入常用的11位手机号码</p>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="varifyImg-box">
+                        <label>验  证 码</label>
+                        <div class="placeholder-txt" data-title="varify">请填写图形验证码</div>
+                        <input type="text" id="varify" class="inputClick" name="varify" maxlength="6" placeholder="">
+                        <img class="varifyImg" title="验证码" src="" alt="">
+                        <div class="ins-box" style="clear: both">
+                            <p>请输入验证码</p>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="varify-box">
+                            <label>验  证 码</label>
+                            <div class="placeholder-txt" data-title="varifyPhone">请填写手机验证码</div>
+                            <input type="text" id="varifyPhone" class="inputClick" name="varifyPhone" maxlength="6" placeholder="">
+                            <input id="varify-phone" name="varify-phone" type="button" value="获取验证码" class="varify-phone">
+                            <div class="ins-box" style="clear: both">
+                                <p>请输入验证码</p>
+                                <div></div>
+                                <i class="voice-box">如果未收到短信验证码，请在倒计时结束后点击<span>语音验证</span></i>
+                            </div>
+                            <div style="clear: both"></div>
+                    </div>
+                    <div class="password-box">
+                        <label>登录密码</label>
+                        <div class="placeholder-txt" data-title="password">6位以上字母，数字和符号</div>
+                        <input type="password" id="password" maxlength="20" class="inputClick" name="password" placeholder="">
+                        <div class="ins-box" style="clear: both">
+                            <p>请输入6-20位字母，数字和符号两种及以上组合</p>
+                            <div class="ins-inner"></div>
+                        </div>
+                    </div>
+                    <div class="invite-box">
+                        <div class="invite-title">
+                            <input type="hidden" name="yaoqingma" class="yaoqingma" value="yes">
+                            <img src="images/jian-right.png" alt="">
+                            <span>推荐邀请码（选填）</span>
+                        </div>
+                    </div>
+                    <div class="invite-inner">
+                        <div class="placeholder-txt" data-title="password" style="top: 8px;">请填写推荐人邀请码</div>
+                        <input type="text" id="invite" class="inputClick" name="invite" placeholder="">
+                        <div class="ins-box" style="clear: both;padding-top:10px">
+                            <p>请输入6-20位字母，数字和符号两种及以上组合</p>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="agree-box">
+                        <input type="hidden" name="agree" class="agree" value="yes">
+                        <img src="images/agree-true.png" alt="">
+                        <span class="agree-content">我已阅读并同意<i>《旺财谷网站服务协议》</i></span>
+                        <div class="error-agreement">您未同意协议</div>
+                    </div>
+                    <input id="resign" class="register_input" name="resign" type="button" value="注册"/>
+                </form>
+            </div>
+            <div class="resign-right">
+                <div class="advertisement"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,318 @@
+body, p, ul, ol, li, dl, dt, dd, form, h1, h2, h3, h4, h5, h6, input {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img {
+    border: 0;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+body {
+    font:14px/1.5 "Microsoft YaHei";
+    background: #f4f4f7;
+}
+i,em{
+    font-style: normal;
+}
+/*resign-box*/
+#resign-title {
+    width:970px;
+    margin: 0 auto;
+    height: 30px;
+    line-height: 30px;
+    font-size: 24px;
+    color: #464648;
+    padding-left: 13px;
+    border-left: 3px solid #ff9800;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.resign-box {
+    width:1000px;
+    height: 600px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #e4e4e8;
+    overflow: hidden;
+}
+.resignTab-boc {
+    width: 860px;
+    height: 44px;
+    margin: 0 auto;
+    background: url("../images/resignTab.png") no-repeat 0 0;
+    margin-top: 50px;
+}
+.resignTab-boc p{
+    float: left;
+    width: 50%;
+    height: 50px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+.resignTab-boc span{
+    float: left;
+    width: 50%;
+    height: 50px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 14px;
+    color: #6e6e72;
+}
+.resign-content {
+    height: 364px;
+    margin-left: 70px;
+    margin-top: 38px;
+}
+.resign-left {
+    float: left;
+    width: 404px;
+    height: 100%;
+    border-right: 1px solid #eeeeee;
+}
+.resign-right {
+    float: left;
+    width: 455px;
+    height: 100%;
+}
+/*phone-box*/
+.phone-box{
+    position: relative;
+    width: 100%;
+    height: 64px;
+}
+.varify-box {
+    position: relative;
+    width: 100%;
+    /*height: 64px;*/
+}
+.password-box {
+    position: relative;
+    width: 100%;
+    height: 64px;
+}
+.varifyImg-box {
+    position: relative;
+    width: 100%;
+    height: 64px;
+}
+.placeholder-txt {
+    position: absolute;
+    left: 102px;
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+    font-size: 12px;
+    color: #d5d5d8;
+    z-index: 1;
+}
+.varifyImg-box {
+    /*display: none;*/
+}
+.phone-box label,.varify-box label,.password-box label,.varifyImg-box label{
+    float: left;
+    width: 83px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #6e6e72;
+    padding-left: 3px;
+}
+
+#phone {
+    position: relative;
+    float: left;
+    width: 224px;
+    height: 38px;
+    line-height: 38px;
+    outline: none;
+    border: 1px solid #d5d5d8;
+    border-radius: 4px;
+    padding-left: 14px;
+    font-size: 14px;
+    z-index: 10;
+    background: transparent;
+}
+#varify {
+    position: relative;
+    float: left;
+    width: 114px;
+    height: 38px;
+    line-height: 38px;
+    outline: none;
+    border: 1px solid #d5d5d8;
+    border-radius: 4px;
+    padding-left: 14px;
+    font-size: 14px;
+    z-index: 10;
+    background: transparent;
+}
+#varifyPhone {
+    position: relative;
+    float: left;
+    width: 114px;
+    height: 38px;
+    line-height: 38px;
+    outline: none;
+    border: 1px solid #d5d5d8;
+    border-radius: 4px;
+    padding-left: 14px;
+    font-size: 14px;
+    z-index: 10;
+    background: transparent;
+}
+.varify-phone {
+    float: left;
+    width: 100px;
+    height: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    background: #ff9800;
+    font-size: 12px;
+    color: #fff;
+}
+.varifyImg {
+    float: left;
+    width: 100px;
+    height: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+#password {
+    position: relative;
+    float: left;
+    width: 224px;
+    height: 38px;
+    line-height: 38px;
+    outline: none;
+    border: 1px solid #d5d5d8;
+    border-radius: 4px;
+    padding-left: 14px;
+    font-size: 14px;
+    z-index: 10;
+    background: transparent;
+}
+.invite-inner {
+    display: none;
+    position: relative;
+    width: 100%;
+}
+#invite {
+    position: relative;
+    left: 86px;
+    float: left;
+    top:8px;
+    width: 224px;
+    height: 38px;
+    line-height: 38px;
+    outline: none;
+    border: 1px solid #d5d5d8;
+    border-radius: 4px;
+    padding-left: 14px;
+    font-size: 14px;
+    z-index: 10;
+    background: transparent;
+}
+.ins-box {
+    /*height: 20px;*/
+    position: relative;
+    overflow: hidden;
+    line-height: 24px;
+    padding-left: 96px;
+    font-size: 12px;
+}
+.ins-box  p{
+    display: none;
+    color: #6e6e72;
+}
+.ins-box  div{
+    display: none;
+    color: #f44336;
+}
+.voice-box {
+    position: relative;
+    top:4px;
+    float: left;
+    height: 40px;
+    width: 230px;
+    color: #6e6e72;
+    line-height: 16px;
+    cursor: pointer;
+}
+.voice-box span {
+    color: #f44336;
+    margin-left: 10px;
+}
+/*.password-box {*/
+    /*margin-top: 20px;*/
+/*}*/
+.invite-box {
+    width: 226px;
+    margin-left: 86px;
+}
+.invite-title {
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #46669f;
+    cursor: pointer;
+}
+.invite-title span {
+    padding-left: 6px;
+}
+.invite-title img {
+    float: left;
+    margin-top: 4px;
+    margin-left: 10px;
+}
+.agree-box {
+    margin-left: 86px;
+    margin-top: 24px;
+}
+.agree-box img {
+    float: left;
+    margin-top: 5px;
+    margin-right: 4px;
+}
+.agree-content {
+    font-size: 14px;
+    color: #99999d;
+    cursor: pointer;
+}
+.agree-content i {
+    color: #46669f;
+}
+.register_input {
+    width: 240px;
+    height: 40px;
+    outline: none;
+    border: 0;
+    text-align: center;
+    line-height: 40px;
+    background: #ff9800;
+    color: #fff;
+    font-size: 16px;
+    margin-left: 86px;
+    margin-top: 28px;
+    cursor: pointer;
+}
+.advertisement {
+    width: 400px;
+    height: 360px;
+    background: #eeeeee;
+    margin-left: 56px;
+}
+.error-agreement {
+    display: none;
+    color: #f44336;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+}
