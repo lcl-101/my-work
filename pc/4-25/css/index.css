@@ -1,0 +1,31 @@
+body, p, ul, ol, li, dl, dt, dd, form, h1, h2, h3, h4, h5, h6, input {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img {
+    border: 0;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+body {
+    font:14px/1.5 "Microsoft YaHei";
+}
+i,em{
+    font-style: normal;
+}
+/*coupons-mask*/
+.coupons-mask {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top:0;
+    background: #000;
+    opacity: 0.5;
+    filter: ;
+}

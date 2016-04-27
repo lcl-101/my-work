@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/iscroll.js"></script>
+    <style>
+        body,p,ul,ol,li,dl,dt,dd,form,h1,h2,h3,h4,h5,h6,input{
+            margin:0;
+            padding:0;
+            list-style:none;
+        }
+        img{
+            border:0;
+        }
+        a{
+            text-decoration:none;
+        }
+        a:hover {
+            text-decoration:none;
+        }
+        body{
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        }
+        i,em {
+            font-style: normal;
+        }
+        .coupon-box {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background: #f8f8f8;
+            /*transform:translateX(2000px);*/
+            /*-ms-transform:translateX(2000px); 	!* IE 9 *!*/
+            /*-moz-transform:translateX(2000px); 	!* Firefox *!*/
+            /*-webkit-transform:translateX(2000px); !* Safari 和 Chrome *!*/
+            /*-o-transform:translateX(2000px);*/
+            transition: all 0.5s ease;
+        }
+        .coupon-show {
+            transform:translateX(0);
+            -ms-transform:translateX(0); 	/* IE 9 */
+            -moz-transform:translateX(0); 	/* Firefox */
+            -webkit-transform:translateX(0); /* Safari 和 Chrome */
+            -o-transform:translateX(0);
+            transition: all 0.5s ease;
+        }
+        .coupon-nav {
+            width: 100%;
+            height: 50px;
+            background: #fff;
+            border-bottom: 1px solid #d5d6d6;
+        }
+        .goback {
+            position: absolute;  float: left;  left: 0;  top: 0;line-height: 50px;font-size: 18px;color: #2d99c8;padding-left: 30px;background: url(../images/goback-bg.png) 10px 17px no-repeat;background-size: 15%;
+        }
+        .coupon-nav-title {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            line-height: 50px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .coupon-nav-dis {
+            position: absolute;
+            float: left;
+            right: 0;
+            top: 0;
+            line-height: 50px;
+            font-size: 18px;
+            padding-right: 30px;
+            color: #898989;
+            cursor: pointer;
+        }
+
+        .jiaxiquans{
+            /*display: none;*/
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+        .jaxiquans-box {
+            width: 100%;
+            height: 102px;
+            border-top:1px solid #d9d9d9;
+            border-bottom:1px solid #d9d9d9;
+            background: #fff;
+            margin-top: 10px;
+        }
+        .jiaxiquans-left {
+            float: left;
+            width: 28%;
+            height: 100px;
+            background: url(images/jiaxiquan.png) 0 0 no-repeat;
+            background-size: 100% 100%;
+            color: #FFFFFF;
+            text-align: center;
+            overflow: hidden;
+        }
+        .jiaxiquans-left-content {
+            font-size: 28px;
+            margin-top: 18px;
+        }
+        .jiaxiquans-left-content span {
+            font-size: 16px;
+        }
+        .jiaxiquans-left i {
+            font-size: 16px;
+        }
+        .jiaxiquans-right {
+            float: left;
+        }
+        .jiaxiquans-right div {
+            font-size: 14px;
+            color: #4b4b4b;
+            padding-left: 10px;
+            margin-top: 20px;
+        }
+        .jiaxiquans-right i {
+            display: block;
+            font-size: 14px;
+            color: #ff9204;
+            padding-left: 10px;
+            margin-top: 2px;
+        }
+        .jiaxiquans-right span {
+            display: block;
+            font-size: 14px;
+            color: #9b9b9b;
+            padding-left: 10px;
+            margin-top: 2px;
+        }
+        .jiaxiquans-list {
+            float: right;
+            width: 44px;
+            font-size: 16px;
+            text-align: center;
+            border-left: 3px dotted #ebebeb;
+            color: #ff9121;
+            line-height: 34px;
+        }
+        .scroller {
+            position: absolute;
+            width: 100%;
+            /* Prevent elements to be highlighted on tap */
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+            /* Put the scroller into the HW Compositing layer right from the start */
+            -webkit-transform: translateZ(0);
+            -moz-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            -o-transform: translateZ(0);
+            transform: translateZ(0);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="coupon-box">
+        <div class="scroller">
+            <div class="coupon-nav">
+                <div class="goback">返回</div>
+                <div class="coupon-nav-title">优惠券</div>
+                <div class="coupon-nav-dis">不使用</div>
+            </div>
+            <div class="jiaxiquans">
+                <div class="jaxiquans-box">
+                    <div class="jiaxiquans-left">
+                        <div class="jiaxiquans-left-content">0.80<span>%</span></div>
+                        <i>享10日加息</i>
+                    </div>
+                    <div class="jiaxiquans-right">
+                        <div>来源</div>
+                        <i>有效期至：2015-03-10</i>
+                        <span>投资满10000元可用</span>
+                    </div>
+                    <div class="jiaxiquans-list">加<br/>息<br/>券</div>
+                </div>
+            </div>
+            <div class="jiaxiquans">
+                <div class="jaxiquans-box">
+                    <div class="jiaxiquans-left">
+                        <div class="jiaxiquans-left-content">0.80<span>%</span></div>
+                        <i>享10日加息</i>
+                    </div>
+                    <div class="jiaxiquans-right">
+                        <div>来源</div>
+                        <i>有效期至：2015-03-10</i>
+                        <span>投资满10000元可用</span>
+                    </div>
+                    <div class="jiaxiquans-list">加<br/>息<br/>券</div>
+                </div>
+            </div>
+            <div class="jiaxiquans">
+                <div class="jaxiquans-box">
+                    <div class="jiaxiquans-left">
+                        <div class="jiaxiquans-left-content">0.80<span>%</span></div>
+                        <i>享10日加息</i>
+                    </div>
+                    <div class="jiaxiquans-right">
+                        <div>来源</div>
+                        <i>有效期至：2015-03-10</i>
+                        <span>投资满10000元可用</span>
+                    </div>
+                    <div class="jiaxiquans-list">加<br/>息<br/>券</div>
+                </div>
+            </div>
+            <div class="jiaxiquans">
+                <div class="jaxiquans-box">
+                    <div class="jiaxiquans-left">
+                        <div class="jiaxiquans-left-content">0.80<span>%</span></div>
+                        <i>享10日加息</i>
+                    </div>
+                    <div class="jiaxiquans-right">
+                        <div>来源</div>
+                        <i>有效期至：2015-03-10</i>
+                        <span>投资满10000元可用</span>
+                    </div>
+                    <div class="jiaxiquans-list">加<br/>息<br/>券</div>
+                </div>
+            </div>
+            <div class="jiaxiquans">
+                <div class="jaxiquans-box">
+                    <div class="jiaxiquans-left">
+                        <div class="jiaxiquans-left-content">0.80<span>%</span></div>
+                        <i>享10日加息</i>
+                    </div>
+                    <div class="jiaxiquans-right">
+                        <div>来源</div>
+                        <i>有效期至：2015-03-10</i>
+                        <span>投资满10000元可用</span>
+                    </div>
+                    <div class="jiaxiquans-list">加<br/>息<br/>券</div>
+                </div>
+            </div>
+            <div class="jiaxiquans">
+                <div class="jaxiquans-box">
+                    <div class="jiaxiquans-left">
+                        <div class="jiaxiquans-left-content">0.80<span>%</span></div>
+                        <i>享10日加息</i>
+                    </div>
+                    <div class="jiaxiquans-right">
+                        <div>来源</div>
+                        <i>有效期至：2015-03-10</i>
+                        <span>投资满10000元可用</span>
+                    </div>
+                    <div class="jiaxiquans-list">加<br/>息<br/>券</div>
+                </div>
+            </div>
+            <div class="jiaxiquans">
+                <div class="jaxiquans-box">
+                    <div class="jiaxiquans-left">
+                        <div class="jiaxiquans-left-content">0.80<span>%</span></div>
+                        <i>享10日加息</i>
+                    </div>
+                    <div class="jiaxiquans-right">
+                        <div>来源</div>
+                        <i>有效期至：2015-03-10</i>
+                        <span>投资满10000元可用</span>
+                    </div>
+                    <div class="jiaxiquans-list">加<br/>息<br/>券</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.goback ').on('click',function(){
+            $('.coupon-box ').removeClass('coupon-show');
+        });
+        var couponBox='.coupon-box';
+        myScroll = new IScroll(couponBox,{ mouseWheel: true, tap: true,click:true });
+    </script>
+</body>
+</html>
