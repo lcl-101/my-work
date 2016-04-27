@@ -3,7 +3,7 @@
 <div>
     <nav class="navbar navbar-default no-shadow" style="text-align: center;">
         <a class="goback" href="javascript:window.history.go(-1)">返回</a>
-        <span class="navbar-title" style="">我的代金券</span>
+        <span class="navbar-title" style="">我的奖励</span>
     </nav>
 </div>
 <!--    <div class="daijinquan-huan">-->
@@ -41,9 +41,9 @@
 <div class="title">
     <div class="menu">
         <ul>
-            <li class="selected" data-name = "daijinquan" style="width:33%">我的代金券</li>
+            <li class="selected" data-name = "daijinquan" style="width:33%">代金券</li>
             <li data-name = "jiaxiquan" sstyle="width:33%">加息券</li>
-            <li data-name="hongbao" style="width:33%">我的红包</li>
+            <li data-name="hongbao" style="width:33%">红包</li>
         </ul>
     </div>
 </div>
@@ -64,8 +64,9 @@
 
 <div class="list jiaxiquan">
     <div class="jiaxiquan-rule">
-        <a href="javascript:void(0)">使用规则</a>
+        <a href="javascript:void(0)" class="jiaxi-rule">使用规则</a>
     </div>
+    <div id="jiaxis"></div>
     <div class="nodatas">
         <input id="jpage" value="0" type="hidden">
         <a href="javascript:void(0)" class="jiaxi-more" onclick="getMorejiaxiquan()" >查看更多</a>
@@ -138,6 +139,17 @@
 <!--错误信息-->
 <div class="error-mark"></div>
 <div class="error-ins"></div>
+<div class="jiaxi-jiangli">
+    <ul>
+        <li>每次只能使用一张加息券，不与其他活动(代金券)同享；</li>
+        <li>投资时若有可用加息券，在可使用加息券的项目中选择使用，使用后该项目在加息券加息时间内获得额外年化收益；</li>
+        <li>通过加息券获得的额外收益，将以现金的形式与投资项目的回款同时返还到您的账户中；</li>
+        <li>加息券有效期自领取日当月有效果，用户需手动领取；</li>
+        <li>加息券不可以合并，只适用于到期本息的项目（不适用新手标、债权转让、等额本息项目、付息还本项目）；</li>
+        <li>使用时请参考相关规则和约定，本活动解释权归旺财谷所有。</li>
+    </ul>
+    <div class="jiaxi-btn">确定</div>
+</div>
 <script type="text/javascript">
     $(function(){
         $(".mycoupons .menu li").on("click",function(){
@@ -147,15 +159,15 @@
             $(".mycoupons .list").hide();
             $("."+dataname).show();
             if(dataname=='hongbao'){
-                $('.navbar-title').text('我的红包');
+                $('.navbar-title').text('我的奖励');
                 $('.use-rule').html('<a href="javascript:void(0)" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>');
                 $('.jiaxiquan-huan').hide();
             }else if(dataname=='daijinquan'){
-                $('.navbar-title').text('我的代金券');
+                $('.navbar-title').text('我的奖励');
                 $('.use-rule').html('<a href="javascript:void(0)" onclick="showRule()">使用规则</a>');
                 $('.jiaxiquan-huan').hide();
             }else if(dataname=='jiaxiquan'){
-                $('.navbar-title').text('我的加息券');
+                $('.navbar-title').text('我的奖励');
                 $('.jiaxiquan-huan').show();
                 getjiaxivertfycode();
             }
@@ -251,9 +263,9 @@
                             '<i>享'+add_rate_days+'日加息</i></div>'+
                             '<div class="jiaxiquan-right"><div>'+group_name+'</div>'+
                             '<i>有效期至：'+date_end+'</i>'+
-                            '<span>投资满'+qitou+'元可用</span></div></div>'
-                    })
-                    $('.jiaxiquan-rule').append(html);
+                            '<span>投资满'+qitou+'元可用</span></div></div>';
+                    });
+                    $('#jiaxis').html($('#jiaxis').html()+html);
                 }
             }
         })
@@ -402,10 +414,17 @@
         },1000);
     }
 //    加息-兑换码
+    var isFirst = false;
+    var needShow = false;
     $('#jiaxi-btn').on('click',function(){
         var isOks= true;
         isOks= getjiaxivertfycode();//是否显示验证码
         if(isOks==false){ //显示
+            if(isFirst){
+                needShow = true;
+                isFirst = false;
+                return;
+            }
             var isOkma=checkjiaxiverify();
             if(isOkma==true){
                 var jiaok=jiaxiyanzheng();
@@ -442,6 +461,9 @@
                     if(response.need==1){
                         $('.jiaqiquan-varify').show();
                         maOks=false;
+                        if(!isFirst && !needShow) {
+                            isFirst = true;
+                        }
                     }else  if(response.need==0){
                         $('.jiaqiquan-varify').hide();
                         maOks=true;
@@ -491,12 +513,25 @@
             success:function(data){
                 if(data.error==0){
                     jiaxiduihuantishi(data.msg);
+                    setTimeout(function(){
+                        location.reload();
+                    },1200);
                 }else if(data.error==1){
                     jiaxiduihuantishi(data.msg);
                 }
             }
         })
     }
+    var jH=$('.jiaxi-jiangli').height()/2;
+    $('.jiaxi-jiangli').css({marginTop:-jH});
+    $('.jiaxi-rule').on('click',function(){
+        $('.jiaxi-jiangli').fadeIn();
+        $('.error-mark').fadeIn();
+    });
+    $('.jiaxi-btn').on('click',function(){
+        $('.jiaxi-jiangli').fadeOut();
+        $('.error-mark').fadeOut();
+    })
 </script>
 
 

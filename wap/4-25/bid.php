@@ -292,7 +292,6 @@ $this->registerJsFile('/static/jquery/idangerous.swiper-2.0.min.js', [ 'position
             $('.item5-inner li').eq(1).html($('.jiaxiquans-left i').eq(index).html());
             $('.item5-inner i').hide();
             $('.coupon-box ').removeClass('coupon-show');
-            jixiclose();
         }else if(dataType=='normal'){
             $('.item5-content').hide();
             $('.item5-inner').show();
@@ -303,6 +302,7 @@ $this->registerJsFile('/static/jquery/idangerous.swiper-2.0.min.js', [ 'position
             $('.coupon-box ').removeClass('coupon-show');
         }
     });
+    jixiclose();
     function jixiclose(){
         $('.coupon-nav-dis').on('click',function(){
             $('.item5-content').show();
