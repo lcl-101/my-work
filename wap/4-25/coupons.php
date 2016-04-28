@@ -478,7 +478,7 @@
         var maOk=false;
         var checkverifycode = $.trim($("#jiaxi-varify").val());
         if (checkverifycode == undefined || checkverifycode == "") {
-            jiaxiduihuantishi('验证码不能为空');
+            jiaxiduihuantishi('请输入验证码');
             return maOk;
         }else {
             maOk=true;
@@ -490,7 +490,7 @@
         var maOk=false;
         var jiaxi = $.trim($("#jiaxi").val());
         if (jiaxi == undefined || jiaxi == "") {
-            jiaxiduihuantishi('兑换码不能为空');
+            jiaxiduihuantishi('请输入兑换码');
             return maOk;
         }else {
             maOk=true;

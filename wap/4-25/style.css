@@ -283,7 +283,7 @@ div.myfinance .list .item .content{overflow: hidden;border-top:1px solid #DCDDDD
 div.myfinance .list .item .content .content-left{float: left;width:49%;border-right:1px solid #dcdddd}
 div.myfinance .list .item .content .content-right{float:right;width:50%;border-right:1px solid #dcdddd}
 div.myfinance .list .item .content .content-title{height:28px;line-height:28px;margin:0 10px}
-div.myfinance .list .item .content .content-value{text-align: right;color: #2fa3d6;font-size:16px;padding-right: 5px;}
+div.myfinance .list .item .content .content-value{text-align: right;color: #2fa3d6;font-size:14px;padding-right: 5px;}
 
 
 /*
