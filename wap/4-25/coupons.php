@@ -24,17 +24,17 @@
 
 
     <div class="jiaxiquan-huan">
-        <div class="jiaqiquan-varify">
-            <div class="jiaqiquan-varify-content">
-                <input type="text" id="jiaxi-varify"  name="jiaxi-varify" maxlength="6">
-            </div>
-            <img src="" alt="">
-        </div>
         <div style="height: 42px">
             <div class="jiaxiquan-duihuan">
                 <input type="text" id="jiaxi"  name="jiaxi">
             </div>
             <i id="jiaxi-btn">兑 换</i>
+        </div>
+        <div class="jiaqiquan-varify">
+            <div class="jiaqiquan-varify-content">
+                <input type="text" id="jiaxi-varify"  name="jiaxi-varify" maxlength="6">
+            </div>
+            <img src="" alt="">
         </div>
     </div>
 <div class="mycoupons">

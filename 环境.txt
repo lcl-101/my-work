@@ -1,0 +1,9 @@
+Python简易HTTP服务器：
+如果你的机器上已经安装了Python，通常UNIX/Linux/Mac OS发行版上都有，直接运行下面的命令即可。
+python –m SimpleHTTPServer 8888
+如果你拥有更新版本的Python，那么你也可以运行如下命令。
+python –m http.server
+安装http-server模块。
+> npm install http-server –g
+http-server .
+该命令可以启动一个Node.js驱动的HTTP服务器，默认端口号是8080，也可以用 -p 参数指定一个端口号。

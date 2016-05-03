@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/angular.min.js"></script>
+</head>
+<body ng-app>
+    <nav class="{{active}}" ng-click="$event.preventDefault()">
+        <a href="#" class="home" ng-click="active='home'">home</a>
+        <a href="#" class="projects" ng-click="active='projects'">project</a>
+        <a href="#" class="services" ng-click="active='services'">services</a>
+        <a href="#" class="contact" ng-click="active='contact'">contact</a>
+    </nav>
+    <p ng-hide="active">请点击菜单</p>
+    <p ng-show="active">你选择<b>{{active}}</b></p>
+</body>
+</html>

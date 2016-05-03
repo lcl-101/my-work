@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa0445f9-5682-490c-b8c9-807263d4b5ab" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AngularJS/example1/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wap/4-25/movies-app.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wap/4-25/coupons.php" afterPath="$PROJECT_DIR$/wap/4-25/coupons.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wap/4-25/style.css" afterPath="$PROJECT_DIR$/wap/4-25/style.css" />
@@ -33,32 +35,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="coupons.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wap/4-25/coupons.php">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AngularJS/inline-editor/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7395264">
-              <caret line="491" column="48" selection-start-line="491" selection-start-column="48" selection-end-line="491" selection-end-column="48" />
-              <folding>
-                <marker date="1461814398427" expanded="true" signature="8289:8334" placeholder="..." />
-                <marker date="1461814398427" expanded="true" signature="8348:8367" placeholder="..." />
-                <marker date="1461814398427" expanded="true" signature="9379:9424" placeholder="..." />
-                <marker date="1461814398427" expanded="true" signature="9438:9457" placeholder="..." />
-                <marker date="1461814398427" expanded="true" signature="11098:11115" placeholder="..." />
-                <marker date="1461814398427" expanded="true" signature="11142:11173" placeholder="..." />
-                <marker date="1461814398427" expanded="true" signature="11274:12311" placeholder="..." />
-                <marker date="1461814398427" expanded="true" signature="11469:11485" placeholder="..." />
-                <marker date="1461814398427" expanded="true" signature="11602:12310" placeholder="..." />
-                <marker date="1461814398427" expanded="true" signature="11637:11654" placeholder="..." />
-                <marker date="1461814398427" expanded="true" signature="11707:11783" placeholder="..." />
-                <marker date="1461814398427" expanded="true" signature="11882:11899" placeholder="..." />
-                <marker date="1461814398427" expanded="true" signature="11948:11974" placeholder="..." />
-                <marker date="1461814398427" expanded="false" signature="12102:12119" placeholder="..." />
-                <marker date="1461814398427" expanded="false" signature="12170:12196" placeholder="..." />
-                <marker date="1461814398427" expanded="true" signature="13048:13093" placeholder="..." />
-                <marker date="1461814398427" expanded="true" signature="13107:13126" placeholder="..." />
-                <marker date="1461814398427" expanded="true" signature="13682:13698" placeholder="..." />
-                <marker date="1461814398427" expanded="true" signature="13901:13915" placeholder="..." />
-              </folding>
+            <state vertical-scroll-proportion="0.4174397">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AngularJS/inline-editor/css/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.5">
+              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -78,9 +70,13 @@
         <option value="$PROJECT_DIR$/wap/4-25/jiaquan.html" />
         <option value="$PROJECT_DIR$/wap/4-25/movies-app.js" />
         <option value="$PROJECT_DIR$/wap/4-25/bid.php" />
-        <option value="$PROJECT_DIR$/wap/4-25/style.css" />
         <option value="$PROJECT_DIR$/wap/4-25/index.php" />
         <option value="$PROJECT_DIR$/wap/4-25/coupons.php" />
+        <option value="$PROJECT_DIR$/wap/4-25/style.css" />
+        <option value="$PROJECT_DIR$/AngularJS/nav-menu/css/index.css" />
+        <option value="$PROJECT_DIR$/AngularJS/nav-menu/index.html" />
+        <option value="$PROJECT_DIR$/AngularJS/inline-editor/css/index.css" />
+        <option value="$PROJECT_DIR$/AngularJS/inline-editor/index.html" />
       </list>
     </option>
   </component>
@@ -95,9 +91,8 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="y" value="-8" />
     <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -124,6 +119,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -152,11 +149,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="4-25" />
+              <option name="myItemId" value="AngularJS" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -170,14 +163,60 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wap" />
+              <option name="myItemId" value="AngularJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inline-editor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my-work" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my-work" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AngularJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inline-editor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my-work" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my-work" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AngularJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inline-editor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -187,16 +226,21 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\uif1504\html\gihub\my-work\AngularJS\inline-editor\js" />
+      <recent name="E:\uif1504\html\gihub\my-work\AngularJS\nav-menu\js" />
       <recent name="E:\uif1504\html\gihub\my-work\wap\4-25" />
       <recent name="E:\uif1504\html\gihub\my-work\wap\4-25\js" />
       <recent name="E:\uif1504\html\gihub\my-work\pc\4-25\js" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.jiaquan.html">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration default="false" name="jiaxiquan.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/my-work/wap/4-25/jiaxiquan.html">
       <method />
     </configuration>
     <configuration default="false" name="jiaquan.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/my-work/wap/4-25/jiaquan.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/my-work/AngularJS/nav-menu/index.html">
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -227,14 +271,16 @@
       <envs />
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.jiaxiquan.html" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.jiaquan.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.jiaquan.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.jiaxiquan.html" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.jiaquan.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.jiaxiquan.html" />
       </list>
     </recent_temporary>
   </component>
@@ -252,26 +298,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="0" width="1382" height="735" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2912254" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30030257" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -287,83 +333,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/wap/4-25/bid.php</url>
-          <line>80</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wap/4-25/coupons.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1461814398427" expanded="true" signature="8289:8334" placeholder="..." />
-            <marker date="1461814398427" expanded="true" signature="8348:8367" placeholder="..." />
-            <marker date="1461814398427" expanded="true" signature="9379:9424" placeholder="..." />
-            <marker date="1461814398427" expanded="true" signature="9438:9457" placeholder="..." />
-            <marker date="1461814398427" expanded="true" signature="11098:11115" placeholder="..." />
-            <marker date="1461814398427" expanded="true" signature="11142:11173" placeholder="..." />
-            <marker date="1461814398427" expanded="true" signature="11274:12311" placeholder="..." />
-            <marker date="1461814398427" expanded="true" signature="11469:11485" placeholder="..." />
-            <marker date="1461814398427" expanded="true" signature="11602:12310" placeholder="..." />
-            <marker date="1461814398427" expanded="true" signature="11637:11654" placeholder="..." />
-            <marker date="1461814398427" expanded="true" signature="11707:11783" placeholder="..." />
-            <marker date="1461814398427" expanded="true" signature="11882:11899" placeholder="..." />
-            <marker date="1461814398427" expanded="true" signature="11948:11974" placeholder="..." />
-            <marker date="1461814398427" expanded="false" signature="12102:12119" placeholder="..." />
-            <marker date="1461814398427" expanded="false" signature="12170:12196" placeholder="..." />
-            <marker date="1461814398427" expanded="true" signature="13048:13093" placeholder="..." />
-            <marker date="1461814398427" expanded="true" signature="13107:13126" placeholder="..." />
-            <marker date="1461814398427" expanded="true" signature="13682:13698" placeholder="..." />
-            <marker date="1461814398427" expanded="true" signature="13901:13915" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wap/4-25/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="743" column="11" selection-start-line="743" selection-start-column="11" selection-end-line="743" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wap/4-25/bid.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wap/4-25/bid.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="106" column="41" selection-start-line="106" selection-start-column="28" selection-end-line="106" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wap/4-25/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wap/4-25/coupons.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="48" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wap/3-29/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -511,97 +485,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wap/4-25/movies-app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.928572">
-          <caret line="31" column="52" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wap/4-25/bid.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82481754">
-          <caret line="304" column="16" selection-start-line="304" selection-start-column="16" selection-end-line="304" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wap/4-25/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.50091076">
           <caret line="71" column="171" selection-start-line="71" selection-start-column="171" selection-end-line="71" selection-end-column="171" />
-          <folding>
-            <marker date="1461813010010" expanded="true" signature="1618:3131" placeholder="..." />
-            <marker date="1461813010010" expanded="true" signature="1637:3127" placeholder="..." />
-            <marker date="1461813010010" expanded="true" signature="1696:1855" placeholder="..." />
-            <marker date="1461813010010" expanded="false" signature="1754:1774" placeholder="..." />
-            <marker date="1461813010010" expanded="true" signature="1916:3085" placeholder="..." />
-            <marker date="1461813010010" expanded="true" signature="1986:2495" placeholder="..." />
-            <marker date="1461813010010" expanded="false" signature="2184:2200" placeholder="..." />
-            <marker date="1461813010010" expanded="false" signature="2414:2430" placeholder="..." />
-            <marker date="1461813010010" expanded="true" signature="2566:3039" placeholder="..." />
-            <marker date="1461813010010" expanded="false" signature="2765:2781" placeholder="..." />
-            <marker date="1461813010010" expanded="true" signature="3319:4937" placeholder="..." />
-            <marker date="1461813010010" expanded="true" signature="3338:4933" placeholder="..." />
-            <marker date="1461813010010" expanded="true" signature="3397:3627" placeholder="..." />
-            <marker date="1461813010010" expanded="false" signature="3495:3517" placeholder="..." />
-            <marker date="1461813010010" expanded="false" signature="3534:3554" placeholder="..." />
-            <marker date="1461813010010" expanded="true" signature="3688:4891" placeholder="..." />
-            <marker date="1461813010010" expanded="true" signature="3758:4246" placeholder="..." />
-            <marker date="1461813010010" expanded="false" signature="3957:3973" placeholder="..." />
-            <marker date="1461813010010" expanded="true" signature="4317:4845" placeholder="..." />
-            <marker date="1461813010010" expanded="false" signature="4515:4531" placeholder="..." />
-            <marker date="1461813010010" expanded="true" signature="4551:4580" placeholder="..." />
-            <marker date="1461813010010" expanded="true" signature="5124:6650" placeholder="..." />
-            <marker date="1461813010010" expanded="true" signature="5143:6646" placeholder="..." />
-            <marker date="1461813010010" expanded="true" signature="5202:5353" placeholder="..." />
-            <marker date="1461813010010" expanded="false" signature="5260:5280" placeholder="..." />
-            <marker date="1461813010010" expanded="true" signature="5414:6604" placeholder="..." />
-            <marker date="1461813010010" expanded="true" signature="5484:6015" placeholder="..." />
-            <marker date="1461813010010" expanded="false" signature="5683:5699" placeholder="..." />
-            <marker date="1461813010010" expanded="false" signature="5897:5911" placeholder="..." />
-            <marker date="1461813010010" expanded="false" signature="5934:5950" placeholder="..." />
-            <marker date="1461813010010" expanded="true" signature="6086:6558" placeholder="..." />
-            <marker date="1461813010010" expanded="false" signature="6284:6300" placeholder="..." />
-            <marker date="1461813010010" expanded="true" signature="8319:8364" placeholder="..." />
-            <marker date="1461813010010" expanded="true" signature="8378:8397" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wap/4-25/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.477842">
-          <caret line="288" column="2" selection-start-line="288" selection-start-column="2" selection-end-line="288" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wap/4-25/coupons.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7395264">
-          <caret line="491" column="48" selection-start-line="491" selection-start-column="48" selection-end-line="491" selection-end-column="48" />
-          <folding>
-            <marker date="1461814398427" expanded="true" signature="8289:8334" placeholder="..." />
-            <marker date="1461814398427" expanded="true" signature="8348:8367" placeholder="..." />
-            <marker date="1461814398427" expanded="true" signature="9379:9424" placeholder="..." />
-            <marker date="1461814398427" expanded="true" signature="9438:9457" placeholder="..." />
-            <marker date="1461814398427" expanded="true" signature="11098:11115" placeholder="..." />
-            <marker date="1461814398427" expanded="true" signature="11142:11173" placeholder="..." />
-            <marker date="1461814398427" expanded="true" signature="11274:12311" placeholder="..." />
-            <marker date="1461814398427" expanded="true" signature="11469:11485" placeholder="..." />
-            <marker date="1461814398427" expanded="true" signature="11602:12310" placeholder="..." />
-            <marker date="1461814398427" expanded="true" signature="11637:11654" placeholder="..." />
-            <marker date="1461814398427" expanded="true" signature="11707:11783" placeholder="..." />
-            <marker date="1461814398427" expanded="true" signature="11882:11899" placeholder="..." />
-            <marker date="1461814398427" expanded="true" signature="11948:11974" placeholder="..." />
-            <marker date="1461814398427" expanded="false" signature="12102:12119" placeholder="..." />
-            <marker date="1461814398427" expanded="false" signature="12170:12196" placeholder="..." />
-            <marker date="1461814398427" expanded="true" signature="13048:13093" placeholder="..." />
-            <marker date="1461814398427" expanded="true" signature="13107:13126" placeholder="..." />
-            <marker date="1461814398427" expanded="true" signature="13682:13698" placeholder="..." />
-            <marker date="1461814398427" expanded="true" signature="13901:13915" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="-5.882353">
+          <caret line="32" column="36" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wap/4-25/bid.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1388889">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wap/4-25/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46296296">
+          <caret line="643" column="17" selection-start-line="643" selection-start-column="17" selection-end-line="643" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/nav-menu/js/angular.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/nav-menu/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4638219">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/nav-menu/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.554731">
+          <caret line="18" column="1" selection-start-line="1" selection-start-column="0" selection-end-line="18" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/inline-editor/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.5">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/inline-editor/js/angular.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/inline-editor/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4174397">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

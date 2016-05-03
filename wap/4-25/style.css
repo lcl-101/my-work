@@ -642,7 +642,7 @@ i,em {
 .jiaqiquan-varify {
     display: none;
     height: 42px;
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
 .jiaqiquan-varify-content {
     width: 78%;
@@ -816,11 +816,11 @@ div.toubiao .toubiao-span .item5{
     left: 0;
     top: 0;
     background: #f8f8f8;
-    transform:translateX(650px);
-    -ms-transform:translateX(650px); 	/* IE 9 */
-    -moz-transform:translateX(650px); 	/* Firefox */
-    -webkit-transform:translateX(650px); /* Safari 和 Chrome */
-    -o-transform:translateX(650px);
+    transform:translateX(1950px);
+    -ms-transform:translateX(1950px); 	/* IE 9 */
+    -moz-transform:translateX(1950px); 	/* Firefox */
+    -webkit-transform:translateX(1950px); /* Safari 和 Chrome */
+    -o-transform:translateX(1950px);
     opacity: 0;
     transition: all 0.5s ease;
     z-index: -1;
