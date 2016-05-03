@@ -5,8 +5,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
     <script src="js/angular.min.js"></script>
+    <script src="js/index.js"></script>
 </head>
-<body ng-app>
-
+<body ng-app ng-controller="InlineEditorController">
+    <div id="main" ng-click="hideTooltip()">
+        <div class="tooltip" ng-click="$event.stopPropagation()"  ng-show="showtooltip">
+            <input type="text" ng-model="value">
+        </div>
+        <p ng-click="toggleTooltip($event)">{{value}}</p>
+    </div>
 </body>
 </html>

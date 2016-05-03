@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/highcharts.js"></script>
+</head>
+<style>
+    path {
+        stroke-width: 0px;
+    }
+</style>
+<body>
+    <div id="container" style="width:400px;height:400px;"></div>
+</body>
+<script>
+    $(function(){
+        $(function () {
+
+            var colors = Highcharts.getOptions().colors,
+                    categories = ['', '', '', '', ''],
+                    data = [{
+                        color: colors[0],
+                        drilldown: {
+                            y:50,
+                            name: 'MSIE versions',
+                            categories: [''],
+                            data: [10.85],
+                            colors: ['#7cb5ec']
+                        }
+                    }],
+                    browserData = [],
+                    versionsData = [], i, j,
+                    dataLen = data.length,
+                    drillDataLen,
+                    brightness;
+            // Build the data arrays
+            for (i = 0; i < dataLen; i += 1) {
+                // add browser data
+                browserData.push({
+                    name: categories[i],
+                    y: data[i].y,
+                    color: data[i].color
+                });
+                // add version data
+                drillDataLen = data[i].drilldown.data.length;
+                for (j = 0; j < drillDataLen; j += 1) {
+                    brightness = 0.2 - (j / drillDataLen) / 5;
+                    versionsData.push({
+                        name: data[i].drilldown.categories[j],
+                        y: data[i].drilldown.data[j],
+                        color: Highcharts.Color(data[i].color).brighten(brightness).get()
+                    });
+                }
+            }
+            // Create the chart
+            $('#container').highcharts({
+                chart: {
+                    type: 'pie'
+                },
+                title: {
+                    text: ''
+                },
+                yAxis: {
+                    title: {
+                        text: 'Total percent market share'
+                    }
+                },
+                plotOptions: {
+                    pie: {
+                        shadow: false,
+                        center: ['50%', '50%']
+                    }
+                },
+                tooltip: {
+                    valueSuffix: '%'
+                },
+                series: [{
+                    name: 'Versions',
+                    data: versionsData,
+                    size: '80%',
+                    innerSize: '80%'
+                }]
+            });
+        });
+    })
+</script>
+</html>
