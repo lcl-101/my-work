@@ -10,80 +10,144 @@
     path {
         stroke-width: 0px;
     }
+    .highcharts-data-labels g text {
+        display: none;
+    }
 </style>
 <body>
     <div id="container" style="width:400px;height:400px;"></div>
 </body>
 <script>
-    $(function(){
-        $(function () {
+//    $(function(){
+//        $(function () {
+//
+//            var colors = Highcharts.getOptions().colors,
+//                    categories = ['', '', '', '', ''],
+//                    data = [{
+//                        color: colors[0],
+//                        drilldown: {
+//                            y:50,
+//                            name: 'MSIE versions',
+//                            categories: [''],
+//                            data: [10.85],
+//                            colors: ['#7cb5ec']
+//                        }
+//                    }],
+//                    browserData = [],
+//                    versionsData = [], i, j,
+//                    dataLen = data.length,
+//                    drillDataLen,
+//                    brightness;
+//            // Build the data arrays
+//            for (i = 0; i < dataLen; i += 1) {
+//                // add browser data
+//                browserData.push({
+//                    name: categories[i],
+//                    y: data[i].y,
+//                    color: data[i].color
+//                });
+//                // add version data
+//                drillDataLen = data[i].drilldown.data.length;
+//                for (j = 0; j < drillDataLen; j += 1) {
+//                    brightness = 0.2 - (j / drillDataLen) / 5;
+//                    versionsData.push({
+//                        name: data[i].drilldown.categories[j],
+//                        y: data[i].drilldown.data[j],
+//                        color: Highcharts.Color(data[i].color).brighten(brightness).get()
+//                    });
+//                }
+//            }
+//            // Create the chart
+//            $('#container').highcharts({
+//                chart: {
+//                    type: 'pie'
+//                },
+//                title: {
+//                    text: ''
+//                },
+//                yAxis: {
+//                    title: {
+//                        text: 'Total percent market share'
+//                    }
+//                },
+//                plotOptions: {
+//                    pie: {
+//                        shadow: false,
+//                        center: ['50%', '50%']
+//                    }
+//                },
+//                tooltip: {
+//                    valueSuffix: '%'
+//                },
+//                series: [{
+//                    name: 'Versions',
+//                    data: versionsData,
+//                    size: '80%',
+//                    innerSize: '80%'
+//                }]
+//            });
+//        });
+//    })
 
-            var colors = Highcharts.getOptions().colors,
-                    categories = ['', '', '', '', ''],
-                    data = [{
-                        color: colors[0],
-                        drilldown: {
-                            y:50,
-                            name: 'MSIE versions',
-                            categories: [''],
-                            data: [10.85],
-                            colors: ['#7cb5ec']
-                        }
-                    }],
-                    browserData = [],
-                    versionsData = [], i, j,
-                    dataLen = data.length,
-                    drillDataLen,
-                    brightness;
-            // Build the data arrays
-            for (i = 0; i < dataLen; i += 1) {
-                // add browser data
-                browserData.push({
-                    name: categories[i],
-                    y: data[i].y,
-                    color: data[i].color
-                });
-                // add version data
-                drillDataLen = data[i].drilldown.data.length;
-                for (j = 0; j < drillDataLen; j += 1) {
-                    brightness = 0.2 - (j / drillDataLen) / 5;
-                    versionsData.push({
-                        name: data[i].drilldown.categories[j],
-                        y: data[i].drilldown.data[j],
-                        color: Highcharts.Color(data[i].color).brighten(brightness).get()
-                    });
+$(function () {
+    var datas=1;
+    var data1=datas>=0?"100":"50";
+    var data2=datas>=0?"0":"20"
+    var data3=datas>=0?"0":"20";
+    var data4=datas>=0?"0":"10";
+
+    function dataquan(data1,data2,data3,data4){
+        $('#container').highcharts({
+            chart: {
+                type: 'pie'
+            },
+            title: {
+                text: '哈哈<br/>70',
+                floating:true
+            },
+            subtitle: {
+                text: ''
+            },
+            plotOptions: {
+                pie: {
+                    innerSize: 100,
+                    depth: 45
                 }
+            },
+            series: [{
+                name: [''],
+                data: [['1',parseInt(data1) ],['2',parseInt(data2)],['3',parseInt(data3)],['4',parseInt(data4)]],
+                size: '80%',
+                innerSize: '80%'
+            }],
+            colors:['red','blue','yellow','green'],
+            tooltip: {
+//            backgroundColor: '#FCFFC5',   // 背景颜色
+//            borderColor: 'black',         // 边框颜色
+//            borderRadius: 10,             // 边框圆角
+//            borderWidth: 3,               // 边框宽度
+////            shadow: ture,                 // 是否显示阴影
+//            animation: true,               // 是否启用动画效果
+//            style: {                      // 文字内容相关样式
+//                color: "#ff0000",
+//                fontSize: "12px",
+//                fontWeight: "blod",
+//                fontFamily: "Courir new"
+//            }
             }
-            // Create the chart
-            $('#container').highcharts({
-                chart: {
-                    type: 'pie'
-                },
-                title: {
-                    text: ''
-                },
-                yAxis: {
-                    title: {
-                        text: 'Total percent market share'
-                    }
-                },
-                plotOptions: {
-                    pie: {
-                        shadow: false,
-                        center: ['50%', '50%']
-                    }
-                },
-                tooltip: {
-                    valueSuffix: '%'
-                },
-                series: [{
-                    name: 'Versions',
-                    data: versionsData,
-                    size: '80%',
-                    innerSize: '80%'
-                }]
+        },function(c){
+            var centerX = c.series[0].center[0];
+            var centerY = c.series[0].center[1];
+            // 标题字体大小，返回类似 16px ，所以需要 parseInt 处理
+            var titleHeight = parseInt(c.title.styles.fontSize);
+            // 设置图表偏移
+            c.setTitle({
+                y: centerY + titleHeight/4
             });
         });
-    })
+    }
+    dataquan(data1,data2,data3,data4);
+
+});
 </script>
 </html>

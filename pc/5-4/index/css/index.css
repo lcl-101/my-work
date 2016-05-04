@@ -1,0 +1,57 @@
+body, p, ul, ol, li, dl, dt, dd, form, h1, h2, h3, h4, h5, h6, input {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img {
+    border: 0;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+body {
+    font:14px/1.5 "Microsoft YaHei";
+}
+i,em{
+    font-style: normal;
+}
+.clearfix:before,.clearfix:after {
+    content:'';
+    display:table;
+}
+.clearfix:after{
+    clear: both;
+}
+.clearfix {
+    *zoom:1;
+}
+/*wcg-body*/
+.wcg-body {
+    padding-top: 50px;
+}
+.wcg-ucenter {
+    width: 1000px;
+    margin:0 auto;
+}
+.leftmenu {
+    float: left;
+    width: 188px;
+}
+.rightcontent {
+    float: right;
+    width: 800px;
+}
+.photo-box {
+    width: 798px;
+    height: 203px;
+    border: 1px solid #e3e3e3;
+}
+.photo-content {
+    width: 760px;
+    height: 152px;
+    border-bottom: 1px solid #e3e3e3;
+    margin: 0 auto;
+}
