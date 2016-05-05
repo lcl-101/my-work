@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="css/usercenter.css">
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/highcharts.js"></script>
     <script src="js/index.js"></script>
 </head>
 <body>
@@ -13,9 +16,68 @@
 
             </div>
             <div class="rightcontent">
+                <!--photo-box-->
                 <div class="photo-box">
                     <div class="photo-content">
-                        <div class=""></div>
+                        <!--头像-->
+                        <div class="headphoto">
+                            <a href=""></a>
+                        </div>
+                        <div class="headImg">
+                            <a href="">
+                                <img src="" alt="">
+                            </a>
+                        </div>
+                        <!--信息-->
+                        <div class="headInfo">
+                            <ul class="clearfix">
+                                <li class="name blackFont">欢迎您，135******00</li>
+                                <li class="wealth grayFont">财富值：<span class="redFont">115</span></li>
+                            </ul>
+                            <ul class="clearfix headInfo-bottom">
+                                <li><a href=""><img src="images/pass0.png" alt=""></a></li>
+                                <li><a href=""><img src="images/phone0.png" alt=""></a></li>
+                                <li><a href=""><img src="images/email0.png" alt=""></a></li>
+                                <li><a href=""><img src="images/card0.png" alt=""></a></li>
+                                <li class="saveLevel grayFont">安全等级：<span class="redFont">低</span></li>
+                                <li class="saveUp"><a href="" class="blueFont">【立即提升】</a></li>
+                            </ul>
+                        </div>
+                        <div class="privilege blueFont">您的专属客服</div>
+                    </div>
+                    <div class="photo-bottom">
+                        <ul>
+                            <li class="grayFont">累计投资：<span class="redFont">0.00</span> <i class="blackFont">元</i><img id="tip" src="images/tip.png" alt=""><div class="blackFont dialog">投资金额累计相加</div></li>
+                            <li class="grayFont">累计充值：<span class="redFont">0.00</span> <i class="blackFont">元</i></li>
+                            <li class="grayFont">累计提现：<span class="redFont">0.00</span> <i class="blackFont">元</i></li>
+                        </ul>
+                        <a href="" class="recharge-btn redBtnBg">充值</a>
+                    </div>
+                </div>
+                <!--profit-box-->
+                <div class="profit-box">
+                    <div class="profit-box-top">
+                        <div class="profit-top-logo"></div>
+                        <div class="profit-top-content blackFont">我的收益</div>
+                    </div>
+                    <ul class="profit-bottom clearfix">
+                        <li class="blackFont" style="margin-left: 120px">已赚利息：<span class="grayFont">0.00</span> 元</li>
+                        <li class="blackFont" style="margin-left: 202px">待收利息：<span class="grayFont">0.00</span> 元</li>
+                    </ul>
+                </div>
+                <!--property-box-->
+                <div class="property-box">
+                    <div class="property-top">
+                        <div class="property-top-logo"></div>
+                        <div class="property-top-content blackFont">我的投资</div>
+                    </div>
+                    <div class="property-bottom">
+                        <div class="property-bottom-left" id="container"></div>
+                        <div class="property-bottom-right">
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
