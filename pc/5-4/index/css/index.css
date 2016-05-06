@@ -255,3 +255,129 @@ path {
 .highcharts-data-labels {
     display: none;
 }
+.property-bottom-right ul {
+    padding-top: 80px;
+}
+.property-bottom-right li {
+    margin-bottom: 24px;
+}
+.property-point {
+    float: left;
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    margin-top: 6px;
+    font-size: 16px;
+    margin-right: 6px;
+}
+.tips {
+    position: relative;
+    left: 4px;
+    top:1px;
+    margin-right: 30px;
+}
+/*investment-box*/
+.investment-box {
+    width: 798px;
+    height: 522px;
+    border: 1px solid #e3e3e3;
+    margin-top: 20px;
+    background: #fff;
+}
+.investment-box-top {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #e3e3e3;
+    background: #fcfcfc;
+    overflow: hidden;
+}
+.investment-box-logo {
+    float: left;
+    width: 20px;
+    height: 15px;
+    background: url("../images/icons.png") no-repeat -23px -87px;
+    margin-top: 18px;
+    margin-left: 21px;
+}
+.investment-box-content {
+    float: left;
+    font-size: 20px;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 10px;
+}
+.investment-link {
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.investment-box-bottom {
+    width: 760px;
+    height: 471px;
+    margin: 0 auto;
+}
+.investment-bottom-title {
+    width: 100%;
+    height: 50px;
+    background: #ff715f;
+    border-bottom: 1px solid #ff5641;
+}
+.investment-bottom-title li {
+    float: left;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+.investment-bottom-title li div {
+    height: 14px;
+    line-height: 14px;
+    margin-top: 20px;
+    border-right: 1px solid #fff;
+}
+.investment-name {
+    width: 163px;
+}
+.investment-money {
+    width: 146px;
+}
+.investment-profit {
+    width: 124px;
+}
+.investment-time {
+    width: 145px;
+}
+.investment-state {
+    width: 97px;
+}
+.investment-contract {
+    width: 82px;
+}
+.investment-bottom-content {
+    height: 60px;
+}
+.investment-inner{
+    float: left;
+    display: table;
+    height: 60px;
+    _position:relative;
+    *position:relative;
+    overflow:hidden;
+}
+.investment-box-vertical{
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 12px;
+    text-align: center;
+    _position:absolute;
+    _top:50%;
+    _left: 0;
+    *position:relative;
+    *top:50%;
+    *left: 0;
+}
+.investment-inner div i {
+    _position:relative;
+    _top:-50%;
+    *position:relative;
+    *top:-50%;
+}

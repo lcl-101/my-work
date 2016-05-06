@@ -50,8 +50,14 @@ i,em{
 .orangeBg {
     background: #f46902;
 }
+.orangeBgdeep {
+    background: #ff9800;
+}
 .greenBg{
     background:#66bc25;
+}
+.blueBg {
+    background: #64bbf6;
 }
 /*background-btn-color*/
 .redBtnBg{
