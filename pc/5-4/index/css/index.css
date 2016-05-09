@@ -381,3 +381,147 @@ path {
     *position:relative;
     *top:-50%;
 }
+/*设置头像*/
+/*mask*/
+.mask {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0.5;
+    filter:alpha(opacity=50);
+    z-index: 10000;
+}
+.set-box {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top:50%;
+    width: 598px;
+    height: 448px;
+    margin-left: -300px;
+    margin-top: -225px;
+    border: 1px solid #e3e3e3;
+    z-index: 10001;
+    background: #fff;
+}
+.set-top {
+    width: 100%;
+    overflow: hidden;
+}
+.set-top-left{
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #999999;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+.set-close {
+    float: right;
+    margin-right: 10px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+.set-middle {
+    width: 100%;
+    height: 265px;
+}
+.set-middle-left {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.set-img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background: #eeeeee;
+    margin-top: 22px;
+}
+#setImg{
+    display: none;
+    width: 100%;
+}
+.setImg-btn {
+    width: 136px;
+    height: 32px;
+    background: #ff9800;
+    text-align: center;
+    line-height: 32px;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#inputImage {
+    display: none;
+}
+.set-middle-right {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.set-right-img{
+    position: relative;
+    width: 109px;
+    height: 109px;
+    margin: 0 auto;
+    margin-top: 60px;
+    overflow: hidden;
+    background: #eeeeee;
+    margin-bottom: 18px;
+}
+.head-photo-top {
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: 100;
+    width: 101%;
+    margin-left: -1px;
+}
+#headImg {
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: 90;
+    width: 110px;
+    height: 110px;
+}
+.set-show {
+    width: 150px;
+    font-size: 12px;
+    color: #999999;
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.set-bottom {
+    width: 242px;
+    margin: 0 auto;
+    margin-top: 88px;
+}
+.set-bottom-left {
+    float: left;
+    width: 100px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    color: #fff;
+    background: #ff5736;
+    cursor: pointer;
+}
+.set-bottom-right {
+    float: right;
+    width: 100px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    color: #999999;
+    background: #eeeeee;
+    cursor: pointer;
+}

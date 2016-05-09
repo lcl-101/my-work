@@ -66,4 +66,46 @@ $(function(){
         });
     }
     dataquan(data1,data2,data3,data4);
+
+    //上传头像
+    $('.setImg-btn').on("click",function(){
+        $('#inputImage').trigger('click');
+        $('#inputImage').change(function(){
+            $('#setImg').show();
+            var imgPath=$('#inputImage').val();
+            //$('.set-img img')[0].src=imgPath;
+        });
+
+    });
+    var headImg=$('#headImg');
+    $('#setImg').cropper({
+        aspectRatio: 1,
+        viewMode: 1,
+        dragCrop:false,
+        zoomable:false,
+        touchDragZoom:false,
+        mouseWheelZoom:false,
+        preview:headImg,
+        built: function () {
+            croppable = true;
+        },
+        crop: function(data) {
+            //alert(data);
+            console.log(data);
+            // 出来裁切后的图片数据.
+        }
+    });
+
+    $('.headphoto a').on('click',function(){
+        $('.mask').fadeIn();
+        $('.set-box').fadeIn();
+    });
+    $('.set-close').on('click',function(){
+        $('.mask').fadeOut();
+        $('.set-box').fadeOut();
+    });
+    $('.set-bottom-right').on('click',function(){
+        $('.mask').fadeOut();
+        $('.set-box').fadeOut();
+    });
 });

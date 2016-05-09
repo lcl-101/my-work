@@ -1,0 +1,113 @@
+.clearfix:before,.clearfix:after {
+    content:'';
+    display:table;
+}
+.clearfix:after{
+    clear: both;
+}
+.clearfix {
+    *zoom:1;
+}
+/*wcg-body*/
+.wcg-body {
+    padding-top: 50px;
+}
+.wcg-ucenter {
+    width: 1000px;
+    margin:0 auto;
+}
+/*leftmenu*/
+.leftmenu {
+    float: left;
+    width: 188px;
+    background: #fff;
+}
+/*rightcontent*/
+.rightcontent {
+    float: right;
+    width: 800px;
+}
+/*information-box*/
+.information-box {
+    width: 798px;
+    height: 394px;
+    border: 1px solid #e3e3e3;
+    background: #fff;
+}
+.information-box-top {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #e3e3e3;
+    background: #fcfcfc;
+    overflow: hidden;
+}
+.information-box-logo {
+    float: left;
+    width: 20px;
+    height: 15px;
+    background: url("../images/icons.png") no-repeat -23px -87px;
+    margin-top: 18px;
+    margin-left: 21px;
+}
+.information-box-content {
+    float: left;
+    font-size: 20px;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 10px;
+}
+.information-box-bottom {
+    width: 760px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.information-box-bottom table {
+    width: 100%;
+    border-collapse:collapse;
+    border-spacing:0;
+}
+.information-box-bottom table tr th {
+    height: 50px;
+    font-size: 14px;
+    color: #fff;
+}
+.information-box-bottom table tr th span {
+    float: left;
+    width: 100%;
+    border-right: 1px solid #fff;
+    text-align: center;
+}
+.information-box-bottom table tr td {
+    height: 60px;
+    font-size: 12px;
+    color: #666666;
+    text-align: center;
+}
+.information-box-btn {
+    width: 100%;
+    height: 82px;
+}
+.information-btn-left {
+    width: 103px;
+    text-align: center;
+    float: left;
+    height: 82px;
+    line-height: 82px;
+    font-size: 12px;
+    color: #666666;
+}
+.information-btn-left span {
+    cursor: pointer;
+}
+.information-btn-right {
+    float: left;
+    width: 65px;
+    height:28px;
+    text-align: center;
+    line-height: 28px;
+    background: #ff5736;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 27px;
+}

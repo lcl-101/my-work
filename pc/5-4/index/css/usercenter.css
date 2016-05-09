@@ -1,7 +1,9 @@
-body, p, ul, ol, li, dl, dt, dd, form, h1, h2, h3, h4, h5, h6, input {
+body, p, ul, ol, li, dl, dt, dd, form, h1, h2, h3, h4, h5, h6, input,table, caption, tbody, tfoot, thead, tr, th, td {
     margin: 0;
     padding: 0;
     list-style: none;
+    outline: 0;
+    border: 0;
 }
 img {
     border: 0;
