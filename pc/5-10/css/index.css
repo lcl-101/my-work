@@ -61,6 +61,7 @@ i,em{
     margin-top: 30px;
 }
 .say {
+    display: none;
     position: relative;
     width: 1000px;
     margin: 0 auto;
@@ -69,7 +70,7 @@ i,em{
     width: 1000px;
     margin: 0 auto;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
 }
 .swiper-slide {
     background-position: center;
@@ -123,7 +124,6 @@ i,em{
     width: 100%;
     height: 100%;
     z-index: 101;
-    /*background: url("../images/what.png") no-repeat center center;*/
 }
 .swiper-what {
     position: absolute;
@@ -159,7 +159,181 @@ i,em{
     font-size: 18px;
 }
 .say-content {
+    position: relative;
     width: 998px;
-    height: 234px;
+    margin: 0 auto;
+    border:1px solid #efefef;
+    background: #fefdfc;
+    padding-bottom: 20px;
+}
+.say-show  {
+    width: 100%;
+    height: 270px;
+    overflow: hidden;
+}
+.say-down {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom:0;
+    text-align: center;
+    background: #fff;
+    color: #ff9228;
+    cursor: pointer;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+.say-down img {
+    position: relative;
+    right: 4px;
+    top:2px;
+}
+#say-top {
+    position: absolute;
+    left: 50%;
+    top:-7px;
+    margin-left: -6px;
+}
+.say-inner {
+    display: none;
+    float: left;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.say-first {
+    display: block;
+}
+.say-titles {
+    width: 100%;
+    font-size: 20px;
+    color: #444444;
+    text-align: center;
+    margin-top: 26px;
+}
+.say-inners {
+    text-align: justify;
+    font-size: 16px;
+    color: #888888;
+    line-height: 40px;
+    margin-top: 10px;
+}
+.say-inners i{
+    color: #a65811;
+}
+.say-ad {
+    width: 100%;
+    margin-top: 87px;
+}
+.say-ad img {
+    float: left;
+    width: 100%;
+}
+
+/*ie*/
+.say-center {
+    /*display: none;*/
+    width: 1000px;
     margin: 0 auto;
 }
+.slick-slider{margin:30px auto 50px;}
+.slick-prev {
+    width: 42px;
+    height: 128px;
+    cursor: pointer;
+    border-radius: 6px;
+    background:#b2b2b2 url("../images/pre.png") no-repeat center center;
+    margin-top: -64px;
+    margin-left: -40px;
+}
+.slick-prev:before {
+    content: '';
+}
+.slick-next {
+    width: 42px;
+    height: 128px;
+    cursor: pointer;
+    border-radius: 6px;
+    background:#b2b2b2 url("../images/next.png") no-repeat center center;
+    margin-top: -64px;
+    margin-right: -40px;
+}
+.slick-next:before {
+    content: '';
+}
+.center-slide {
+    width: 300px;
+}
+.center-slide ul {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    margin: 0 auto;
+    border: 1px solid #ededed;
+    overflow: hidden;
+}
+.center-slide ul li {
+    position: relative;
+}
+.gudong {
+    width: 100%;
+}
+
+.center-mask {
+    /*display: none;*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+    z-index: 100;
+}
+.center-inner {
+    /*display: none;*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 101;
+}
+.center-what {
+    position: absolute;
+    left: 50%;
+    top:50%;
+    margin-left: -26px;
+    margin-top: -200px;
+}
+.center-bottom {
+    position: absolute;
+    left: 0;
+    bottom: -100px;
+    width: 100%;
+    height: 86px;
+    background: #000000;
+    opacity: 0.2;
+    filter: alpha(opacity=20);
+}
+.center-bottoms {
+    position: absolute;
+    left: 0;
+    bottom: -100px;
+    width: 100%;
+    height: 70px;
+    padding-top: 16px;
+}
+.center-bottom-title {
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+.center-bottom-title span {
+    font-size: 18px;
+}
+.center .slick-center ul{-moz-transform:scale(1);-ms-transform:scale(1);-o-transform:scale(1);-webkit-transform:scale(1);color:#e67e22;opacity:1;transform:scale(1);}
+.center ul{-moz-transform:scale(0.95);-ms-transform:scale(0.95);-o-transform:scale(0.95);-webkit-transform:scale(0.95);opacity:0.8;transform:scale(0.95);transition:all 300ms ease;}

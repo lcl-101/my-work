@@ -17,6 +17,7 @@ $(function(){
             var aa=$('.swiper-slide');
             for ( var i = 0; i < aa.length; i++){
                 if($(aa).eq(i).is('.swiper-slide-active')){
+                    //轮播图
                     $('.swiper-mask').hide();
                     $('.swiper-mask').eq(i).fadeIn();
                     $('.swiper-inner').hide();
@@ -42,6 +43,23 @@ $(function(){
                         complete:function(){
                         }
                     });
+                    //内容
+                    $('.say-inner').hide();
+                    var w=i-17;
+                    if(i>=34){
+                        w=0;
+                    }
+                    if(w==8||w==9||w==10||w==14){
+                        $('.say-down').hide();
+                        $('.say-show').css({height:'134px'});
+                    }else if(w==11||w==13){
+                        $('.say-down').hide();
+                        $('.say-show').css({height:'176px'});
+                    }else {
+                        $('.say-down').show();
+                        $('.say-show').css({height:'270px'});
+                    }
+                    $('.say-inner').eq(w).fadeIn();
                 }
             }
         },
@@ -60,4 +78,8 @@ $(function(){
     $('.say-next').click(function(){
         swiper.slideNext();
     });
+    $('.say-down').on('click',function(){
+        $('.say-show').animate({height:'100%'},500);
+        $('.say-down').hide();
+    })
 });
