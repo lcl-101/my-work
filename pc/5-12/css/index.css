@@ -1,0 +1,118 @@
+body, p, ul, ol, li, dl, dt, dd, form, h1, h2, h3, h4, h5, h6, input,table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: 0;
+    border: 0;
+}
+img {
+    border: 0;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+body {
+    font:14px/1.5 "Microsoft YaHei";
+    background: #fff;
+}
+i,em{
+    font-style: normal;
+}
+.clearfix:before,.clearfix:after {
+    content:'';
+    display:table;
+}
+.clearfix:after{
+    clear: both;
+}
+.clearfix {
+    *zoom:1;
+}
+.say-box {
+    width: 100%;
+    height: 500px;
+    background: url("../images/saybg.png") no-repeat 0 0;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.say-inner {
+    width: 1119px;
+    height: 100%;
+    margin: 0 auto;
+}
+.say-title {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 28px;
+    color: #fff;
+    margin-top: 32px;
+    background: url("../images/say-title.png") no-repeat center 34px;
+    margin-bottom: 30px;
+}
+.say-content {
+    width: 100%;
+}
+.say-content ul {
+    height: 344px;
+}
+.say-content li {
+    float: left;
+    width: 373px;
+    height: 344px;
+}
+.say-content-dead {
+    width: 100%;
+    text-align: center;
+}
+.say-content-inner {
+    position: relative;
+    width: 348px;
+    height: 195px;
+    margin: 0 auto;
+    border: 1px solid #ff9800;
+    margin-top: 24px;
+}
+.say-top {
+    position: absolute;
+    left: 50%;
+    top:0;
+    margin-left: -4px;
+    margin-top: -5px;
+}
+.say-content-box {
+    width: 306px;
+    margin: 0 auto;
+}
+.say-content-top {
+    width: 100%;
+    height: 110px;
+    border-bottom: 1px solid #a87522;
+    overflow: hidden;
+}
+.say-top-title {
+    font-size: 18px;
+    color: #fff;
+    margin-top: 14px;
+}
+.say-content-top ul{
+    width: 100%;
+}
+.say-content-top ul li {
+    width: 48%;
+}
+.say-content-bottom {
+    color: #fff;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.say-content-bottom a {
+    color: #ff9800;
+}
+.say-content-bottom a:hover {
+    color: #ff9800;
+}
