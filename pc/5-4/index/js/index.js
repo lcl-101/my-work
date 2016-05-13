@@ -21,7 +21,7 @@ $(function(){
                 backgroundColor: 'rgba(0,0,0,0)'//背景透明
             },
             title: {
-                text: '<span style="font-size: 18px;color: #999999;">账户总资产</span><br/><span style="font-size: 18px;color: #333333;">0.00</span>',
+                text: '<span style="font-size: 18px;color: #999999;">账户总资产 </span><br/><span style="font-size: 18px;color: #333333;">0.00</span>',
                 floating:true
             },
             subtitle: {
@@ -108,4 +108,17 @@ $(function(){
         $('.mask').fadeOut();
         $('.set-box').fadeOut();
     });
+
+    $('.tips').hover(function(){
+        var index=$('.tips').index(this);
+        $('.property-tishi').stop(false,true).eq(index).fadeIn();
+    },function(){
+        var i=$('.tips').index(this);
+        $('.property-tishi').stop(false,true).eq(i).fadeOut();
+    });
+    $('.property-tip').hover(function(){
+        $('.property-tip-show').stop(false,true).fadeIn();
+    },function(){
+        $('.property-tip-show').stop(false,true).fadeOut();
+    })
 });

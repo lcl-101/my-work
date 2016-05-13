@@ -30,7 +30,7 @@
 /*information-box*/
 .information-box {
     width: 798px;
-    height: 394px;
+    min-height: 394px;
     border: 1px solid #e3e3e3;
     background: #fff;
 }
@@ -110,4 +110,25 @@
     border-radius: 4px;
     cursor: pointer;
     margin-top: 27px;
+}
+.information-check {
+    position: relative;
+    float: left;
+    left: 43px;
+    top:4px;
+    width: 14px;
+    height: 14px;
+    overflow: hidden;
+    background: url("../images/icons.png") no-repeat -590px -149px;
+    cursor: pointer;
+}
+.information-all {
+    position: relative;
+    float: left;
+    left: 26px;
+    top:36px;
+    width: 14px;
+    height: 14px;
+    overflow: hidden;
+    background: url("../images/icons.png") no-repeat -590px -149px;
 }

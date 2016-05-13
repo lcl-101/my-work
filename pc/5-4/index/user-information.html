@@ -5,6 +5,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/usercenter.css">
     <link rel="stylesheet" href="css/user-information.css">
+    <script src="js/jquery.js"></script>
 </head>
 <body>
 <div class="wcg-body">
@@ -27,18 +28,25 @@
                             <th><span style="border-right: 0">时间</span></th>
                         </tr>
                         <tr>
-                            <td>交易消息</td>
+                            <td>
+                                <input  type="hidden" style="">
+                                <div class="information-check" data-w="false"></div>
+                                交易消息</td>
                             <td style="text-align: left;">尊敬的赵鑫您好，您于2016-04-04 11:07:07 申请提现1002.08元，已经审核通过\会在T+1个工作日到账，具体到账时间以银行为准，详情请咨询400-888-6268</td>
                             <td>2016-04-05 <br/>09：53：06</td>
                         </tr>
                         <tr style="background:#fff5f5">
-                            <td>交易消息</td>
+                            <td><input  type="hidden" style="">
+                                <div class="information-check"></div>
+                                交易消息</td>
                             <td style="text-align: left;">尊敬的赵鑫您好，您于2016-04-04 11:07:07 申请提现1002.08元，已经审核通过\会在T+1个工作日到账，具体到账时间以银行为准，详情请咨询400-888-6268</td>
                             <td>2016-04-05 <br/>09：53：06</td>
                         </tr>
                     </table>
                     <div class="information-box-btn">
-                        <div class="information-btn-left"><span>全选</span></div>
+                        <div class="information-btn-left"><span><input type="hidden">
+                            <div data-n="false" class="information-all"></div>
+                            全选</span></div>
                         <div class="information-btn-right">删除</div>
                     </div>
                 </div>
@@ -46,5 +54,34 @@
         </div>
     </div>
 </div>
+<script>
+    $(function(){
+        $('.information-btn-left').on('click',function(){
+            var n=$('.information-all').attr('data-n');
+            if(n=='false'){
+                $('.information-check').css({background:'url("images/icons.png") no-repeat -590px -180px'});
+                $('.information-all').css({background:'url("images/icons.png") no-repeat -590px -180px'});
+                $('.information-all').attr('data-n','true');
+                $('.information-check').attr('data-w','true');
+            }else {
+                $('.information-check').css({background:'url("images/icons.png") no-repeat -590px -149px'});
+                $('.information-all').css({background:'url("images/icons.png") no-repeat -590px -149px'});
+                $('.information-all').attr('data-n','false');
+                $('.information-check').attr('data-w','false');
+            }
+        });
+        $('.information-check').on('click',function(){
+            var index=$('.information-check').index(this);
+            var w=$('.information-check').eq(index).attr('data-w');
+            if(w=='false'){
+                $('.information-check').eq(index).css({background:'url("images/icons.png") no-repeat -590px -180px'});
+                $('.information-check').eq(index).attr('data-w','true');
+            }else {
+                $('.information-check').eq(index).css({background:'url("images/icons.png") no-repeat -590px -149px'});
+                $('.information-check').eq(index).attr('data-w','false');
+            }
+        })
+    })
+</script>
 </body>
 </html>
