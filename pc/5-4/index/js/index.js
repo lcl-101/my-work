@@ -68,12 +68,18 @@ $(function(){
     dataquan(data1,data2,data3,data4);
 
     //上传头像
+    $('#inputImage').fileupload({
+        /* ... */
+        dataType: 'json',
+        done: function (e, data) {
+
+        }
+    })
+
     $('.setImg-btn').on("click",function(){
         $('#inputImage').trigger('click');
         $('#inputImage').change(function(){
-            $('#setImg').show();
-            var imgPath=$('#inputImage').val();
-            //$('.set-img img')[0].src=imgPath;
+            $('#loading').show();
         });
 
     });

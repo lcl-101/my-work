@@ -567,3 +567,8 @@ path {
     background: #eeeeee;
     cursor: pointer;
 }
+#loading {
+    margin-left: 85px;
+    margin-top: 85px;
+    display: none;
+}

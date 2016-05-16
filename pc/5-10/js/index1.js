@@ -50,7 +50,7 @@ $(function(){
             $('.say-show').css({height:'270px'});
         }
         $('.say-inner').eq(num).fadeIn();
-        move();
+        move2();
     });
     $(".rights").click(function(){
         if(!flag){
@@ -73,7 +73,7 @@ $(function(){
             $('.say-show').css({height:'270px'});
         }
         $('.say-inner').eq(num).fadeIn();
-        move2();
+        move();
     });
 
     $('.center-mask').eq(2).fadeIn();

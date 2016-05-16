@@ -9,6 +9,10 @@
     <script src="js/jquery.js"></script>
     <script src="js/highcharts.js"></script>
     <script src="js/cropper.min.js"></script>
+
+    <script src="js/jquery.ui.widget.js"></script>
+    <script src="js/jquery.iframe-transport.js"></script>
+    <script src="js/jquery.fileupload.js"></script>
     <script src="js/index.js"></script>
 </head>
 <body>
@@ -161,9 +165,10 @@
                 <div class="set-middle">
                     <div class="set-middle-left">
                         <div class="set-img">
+                            <img id="loading" src="images/loading.gif" alt="">
                             <img src="" id="setImg" alt="">
                         </div>
-                        <input type="file" id="inputImage" name="file" data-attr="false">
+                        <input type="file" id="inputImage" data-attr="false" name="files[]" data-url="server/php/" multiple>
                         <div class="setImg-btn">选择上传头像</div>
                     </div>
                     <div class="set-middle-right">
