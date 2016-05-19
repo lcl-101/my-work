@@ -13,9 +13,9 @@ a:hover {
     text-decoration:none;
 }
 body,html{
-    font:12px/1.5 "Microsoft YaHei";
-    position: relative;
-    height: 100%;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 62.5%;
+    box-sizing: border-box;
 }
 i,em {
     font-style: normal;
@@ -29,12 +29,34 @@ i,em {
 /*top-box*/
 .top-box .col-xs-12{
     padding: 0;
+    overflow: hidden;
+    background: #f54a2c;
+    padding-bottom: 40px;
 }
-.swiper-container {
-    width: 100%;
+.top-title {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 4%;
+    padding-bottom: 2%;
+    overflow: hidden;
+}
+.top-left {
+    float: left;
+    font-size: 1.4rem;
+    color: #fff;
+}
+.top-right {
+    float: right;
+    font-size: 1.2rem;
+    color: #fff;
+}
+.swiper-container1 {
+    width: 75%;
     margin: 20px auto;
+    overflow: visible;
 }
-.swiper-slide {
+.swiper-container1 .swiper-slide {
+    position: relative;
     text-align: center;
     font-size: 18px;
     width: 60%;
@@ -52,9 +74,127 @@ i,em {
     -webkit-align-items: center;
     align-items: center;
 }
-.swiper-slide:nth-child(2n) {
+.swiper-container1 .swiper-slide:nth-child(2n) {
     width: 40%;
 }
-.swiper-slide:nth-child(3n) {
+.swiper-container1 .swiper-slide:nth-child(3n) {
     width: 20%;
+}
+.swiper-container1 .apps {
+    width: 36px;
+}
+.app-right {
+    display: none;
+    position: absolute;
+    top:24%;
+    left: 100%;
+    width: 25px;
+}
+.swiper-container1 .swiper-slide div {
+    position: absolute;
+    left: -75%;
+    top: 66px;
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+    width: 250%;
+    transform:scale(0.9);
+    -ms-transform:scale(0.9); 	/* IE 9 */
+    -moz-transform:scale(0.9); 	/* Firefox */
+    -webkit-transform:scale(0.9); /* Safari 和 Chrome */
+    -o-transform:scale(0.9);
+    opacity: 0.6;
+    transition:all 0.5s ease;
+    -webkit-transition:all 0.5s ease;
+    -o-transition:all 0.5s ease;
+}
+.top-scale {
+    transform:scale(1)!important;
+    -ms-transform:scale(1)!important; 	/* IE 9 */
+    -moz-transform:scale(1)!important; 	/* Firefox */
+    -webkit-transform:scale(1)!important; /* Safari 和 Chrome */
+    -o-transform:scale(1)!important;
+    opacity: 1!important;
+    transition:all 0.5s ease;
+    -webkit-transition:all 0.5s ease;
+    -o-transition:all 0.5s ease;
+}
+.top-jiao {
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -61px;
+    margin-left: -8px;
+    width: 0;
+    height: 0;
+    border-left:8px solid transparent;
+    border-right:8px solid transparent;
+    border-bottom:8px solid #fff;
+    transition:all 0.5s ease;
+    -webkit-transition:all 0.5s ease;
+    -o-transition:all 0.5s ease;
+}
+/*middle-box*/
+.middle-box .col-xs-12 {
+    padding: 0;
+    overflow: hidden;
+}
+.swiper-container2 {
+    width: 76%;
+    margin: 20px auto;
+    overflow: visible;
+}
+.swiper-container2 .swiper-slide {
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    width: 60%;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.gift-img{
+    width: 88px;
+}
+.middle-title{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 4%;
+    padding-bottom: 2%;
+    font-size: 1.2rem;
+    color: #929292;
+}
+@media (min-width: 375px){
+    .swiper-container2 img{
+        width: 100px;
+    }
+}
+@media (min-width: 400px){
+    .swiper-container2 .swiper-slide img{
+        width: 106px;
+    }
+}
+@media (min-width: 500px){
+    .swiper-container2 .swiper-slide img{
+        width: 126px;
+    }
+}
+.swiper-container2 .swiper-slide p {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #b2b2b2;
 }
