@@ -2,7 +2,7 @@ $(function(){
     FastClick.attach(document.body);
     var slider='';
     var swiper = new Swiper('.swiper-container1', {
-        initialSlide:0,
+        initialSlide:4,
         slidesPerView: 4,
         spaceBetween: 30
     });
@@ -64,4 +64,28 @@ $(function(){
             animation:'ease-out-back'
         })
     }
+
+    var swiper3 = new Swiper('.swiper-container3', {
+        pagination: '.bottom-btn',
+        paginationClickable: true,
+        paginationBulletRender: function (index, className) {
+            if(index==0){
+                index='加息券';
+            }else if(index==1){
+                index='会员升级红包'
+            }else if(index==2){
+                index='生日红包'
+            }
+            return '<li class="bottom-menu ' + className + '">' + index + '</li>';
+        }
+    });
+    var bL=$('.bottom-btn li').length;
+    if(bL==1){
+        $('.bottom-btn li').css({width:'100%'});
+    }else if(bL==2){
+        $('.bottom-btn li').css({width:'50%'});
+    }else if(bL==3){
+        $('.bottom-btn li').css({width:'33.3333%'});
+    }
+    console.log(bL);
 });

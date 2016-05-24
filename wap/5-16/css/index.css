@@ -147,7 +147,7 @@ i,em {
     margin: 0 auto;
     margin-top: 4%;
     padding-bottom: 2%;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: #929292;
 }
 
@@ -188,4 +188,389 @@ i,em {
     text-align: center;
     font-size: 1.2rem;
     color: #b2b2b2;
+}
+/*bottom-box*/
+.bottom-box .col-xs-12 {
+    padding: 0;
+}
+.swiper-container3 {
+    width: 90%;
+    margin: 0 auto;
+    /*max-width: 500px;*/
+    /*margin: 0 auto;*/
+    padding: 0;
+    padding-top: 20px;
+}
+.swiper-container3 .swiper-slide {
+    padding: 0;
+    /*text-align: center;*/
+}
+.bottom-btn {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.bottom-btn  li {
+    float: left;
+    cursor: pointer;
+}
+.bottom-menu{
+    width: 33.3333%;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #bababa;
+}
+.swiper-pagination-bullet {
+    width: 33.3333%;
+     height: auto;
+     display: inline-block;
+     border-radius: 0;
+     background: transparent;
+     opacity: 1;
+}
+.swiper-pagination-bullet-active {
+    color: #6e6e72;
+    transform:scale(1.2);
+    -ms-transform:scale(1.2); 	/* IE 9 */
+    -moz-transform:scale(1.2); 	/* Firefox */
+    -webkit-transform:scale(1.2); /* Safari 和 Chrome */
+    -o-transform:scale(1.2);
+    transition:all 0.5s ease;
+    -webkit-transition:all 0.5s ease;
+    -o-transition:all 0.5s ease;
+}
+.middle-titles{
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 2%;
+    font-size: 1.4rem;
+    color: #929292;
+    line-height: 40px;
+}
+/*jiaxi-box*/
+.jiaxi-box {
+    /*width: 90%;*/
+    /*margin: 0 auto;*/
+}
+.jiaxi-box li {
+    padding: 0;
+    margin-bottom: 10px;
+}
+.jiaxi-box li img {
+    width: 100%;
+    height: 110%;
+}
+.jiaxi-inner {
+    position: relative;
+    width: 90%;
+    max-width: 170px;
+    margin: 0 auto;
+}
+.jiaxi-content {
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+}
+.jiaxi-content-left {
+    float: left;
+    width: 60%;
+    height: 100%;
+}
+.jiaxi-content-right {
+    float: right;
+    width: 40%;
+    height: 100%;
+}
+.jiaxi-left-bottom {
+    width: 100%;
+    height: 50%;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    /*-webkit-box-pack: center;*/
+    /*-ms-flex-pack: center;*/
+    /*-webkit-justify-content: center;*/
+    /*justify-content: center;*/
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.jiaxi-left-bottom p{
+    float: left;
+    font-size: 2.8rem;
+    color: #fff;
+    margin: 0 0 0 8%;
+    font-weight: bold;
+}
+.jiaxi-left-bottom p span {
+    font-size: 1.4rem!important;
+    font-weight: normal!important;
+}
+.jiaxi-left-top {
+    width: 104%;
+    height: 40%;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    /*-webkit-box-pack: center;*/
+    /*-ms-flex-pack: center;*/
+    /*-webkit-justify-content: center;*/
+    /*justify-content: center;*/
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding-left: 8%;
+}
+.jia-btn {
+    width: 100%;
+    height: 100%;
+    font-size: 1.6rem;
+    color: #ff8a00;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding-left: 8%;
+    cursor: pointer;
+}
+/*huiyuan-box*/
+.huiyuan-box {
+    /*width: 90%;*/
+    /*margin: 0 auto;*/
+}
+.huiyuan-box li {
+    padding: 0;
+    margin-bottom: 10px;
+}
+.huiyuan-box li img {
+    width: 100%;
+}
+.huiyuan-inner {
+    position: relative;
+    width: 90%;
+    max-width: 170px;
+    margin: 0 auto;
+}
+.huiyuan-content {
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+}
+.huiyuan-content-left {
+    float: left;
+    width: 68%;
+    height: 100%;
+}
+.huiyuan-content-right {
+    float: left;
+    width: 32%;
+    height: 100%;
+}
+.huiyuan-left-top {
+    width: 100%;
+    margin-top: 1%;
+}
+.huiyuan-left-top p{
+    float: left;
+    font-size: 1.8rem;
+    color: #fff;
+    margin: 0 0 0 4%;
+    font-weight: bold;
+}
+.huiyuan-left-top div {
+    float: left;
+    font-size: 1.2rem;
+    color: #fff;
+    margin-left: 2%;
+    margin-top: 4%;
+}
+.huiyuan-left-top p span {
+    font-size: 1.2rem!important;
+    font-weight: normal!important;
+}
+.huiyuan-left-bottom {
+    width: 104%;
+    height: 40%;
+    font-size: 1.2rem;
+    color: #fff;
+    /*Center slide text vertically*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    /*-webkit-box-pack: center;*/
+    /*-ms-flex-pack: center;*/
+    /*-webkit-justify-content: center;*/
+    /*justify-content: center;*/
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding-left: 4%;
+}
+.huiyuan-btn {
+    width: 100%;
+    height: 100%;
+    font-size: 2.2rem;
+    color: #fd4f53;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding-left: 8%;
+    cursor: pointer;
+    font-weight: bold;
+}
+.huiyuan-btn span {
+    font-size: 1.2rem!important;
+    font-weight: normal!important;
+}
+@media screen and (min-width: 374px){
+    .huiyuan-left-top p{
+        font-size: 2.0rem;
+    }
+    .huiyuan-left-top div {
+        float: left;
+        font-size: 1.2rem;
+        margin-left: 6%;
+    }
+}
+/*birthday-box*/
+.birthday-box {
+    /*width: 90%;*/
+    /*margin: 0 auto;*/
+}
+.birthday-box li {
+    padding: 0;
+    margin-bottom: 10px;
+}
+.birthday-box li img {
+    width: 100%;
+}
+.birthday-inner {
+    position: relative;
+    width: 90%;
+    max-width: 170px;
+    margin: 0 auto;
+}
+.birthday-content {
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+}
+.birthday-content-left {
+    float: left;
+    width: 71%;
+    height: 100%;
+}
+.birthday-content-right {
+    float: right;
+    width: 29%;
+    height: 100%;
+}
+.birthday-left-top {
+    width: 100%;
+    margin-top: 4%;
+}
+.birthday-left-top p{
+    float: left;
+    font-size: 1.8rem;
+    color: #fff;
+    margin: 0 0 0 4%;
+    font-weight: bold;
+}
+.birthday-left-top div {
+    float: left;
+    font-size: 1.2rem;
+    color: #fff;
+    margin-left: 2%;
+    margin-top: 4%;
+}
+.birthday-left-top p span {
+    font-size: 1.2rem!important;
+    font-weight: normal!important;
+}
+.birthday-left-bottom {
+    width: 104%;
+    height: 40%;
+    font-size: 1.2rem;
+    color: #fff;
+     /*Center slide text vertically*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    /*-webkit-box-pack: center;*/
+    /*-ms-flex-pack: center;*/
+    /*-webkit-justify-content: center;*/
+    /*justify-content: center;*/
+    /*-webkit-box-align: center;*/
+    /*-ms-flex-align: center;*/
+    /*-webkit-align-items: center;*/
+    /*align-items: center;*/
+    padding-left: 4%;
+}
+.birthday-btn {
+    width: 100%;
+    height: 100%;
+    font-size: 1.4rem;
+    color: #fd4f53;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding-left: 8%;
+    cursor: pointer;
+}
+@media screen and (min-width: 374px){
+    .birthday-left-top p{
+        font-size: 2.0rem;
+    }
+    .birthday-left-top div {
+        float: left;
+        font-size: 1.2rem;
+        margin-left: 6%;
+    }
 }

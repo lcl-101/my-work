@@ -2,35 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa0445f9-5682-490c-b8c9-807263d4b5ab" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wap/5-16/images/dingzhi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wap/5-16/images/dingzhis.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wap/5-16/images/hongbao.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wap/5-16/images/hongbaos.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wap/5-16/images/jiaxiquan.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wap/5-16/images/jiaxiquans.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wap/5-16/images/kacha.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wap/5-16/images/kaochas.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wap/5-16/images/kefu.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wap/5-16/images/kefus.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wap/5-16/images/liwu.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wap/5-16/images/liwus.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wap/5-16/images/rili.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wap/5-16/images/rilis.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wap/5-16/images/shengri.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wap/5-16/images/shengris.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wap/5-16/images/tongzhi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wap/5-16/images/tongzhis.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wap/5-16/images/xiangmu.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wap/5-16/images/xiangmus.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wap/5-16/images/yunying.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wap/5-16/images/yunyings.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wap/5-16/images/zaiquan.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wap/5-16/images/zaiquans.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wap/5-16/css/index.css" afterPath="$PROJECT_DIR$/wap/5-16/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wap/5-16/index.html" afterPath="$PROJECT_DIR$/wap/5-16/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wap/5-16/js/index.js" afterPath="$PROJECT_DIR$/wap/5-16/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wap/5-16/js/swiper.min.js" afterPath="$PROJECT_DIR$/wap/5-16/js/swiper.min.js" />
     </list>
     <ignored path="my-work.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,26 +34,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wap/5-16/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6289425">
-              <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+            <state vertical-scroll-proportion="-46.264706">
+              <caret line="292" column="89" selection-start-line="292" selection-start-column="89" selection-end-line="292" selection-end-column="89" />
               <folding>
+                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#img#1;n#div#4;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wap/5-16/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.4411764">
-              <caret line="121" column="9" selection-start-line="121" selection-start-column="1" selection-end-line="121" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.47683397">
+              <caret line="424" column="40" selection-start-line="424" selection-start-column="40" selection-end-line="424" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -88,7 +64,7 @@
         <entry file="file://$PROJECT_DIR$/wap/5-16/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="66" column="3" selection-start-line="66" selection-start-column="3" selection-end-line="66" selection-end-column="3" />
+              <caret line="87" column="47" selection-start-line="87" selection-start-column="47" selection-end-line="87" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -136,9 +112,9 @@
         <option value="$PROJECT_DIR$/pc/5-10/js/index.js" />
         <option value="$PROJECT_DIR$/pc/5-4/index/index.html" />
         <option value="$PROJECT_DIR$/pc/5-10/index.html" />
-        <option value="$PROJECT_DIR$/wap/5-16/css/index.css" />
-        <option value="$PROJECT_DIR$/wap/5-16/index.html" />
         <option value="$PROJECT_DIR$/wap/5-16/js/index.js" />
+        <option value="$PROJECT_DIR$/wap/5-16/index.html" />
+        <option value="$PROJECT_DIR$/wap/5-16/css/index.css" />
       </list>
     </option>
   </component>
@@ -152,9 +128,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
-    <option name="width" value="1380" />
-    <option name="height" value="735" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -181,8 +158,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -299,38 +274,26 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-work" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-work" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/work/wcg888" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="D:\Program Files\nodejs\node.exe" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\uif1504\html\gihub\my-work\wap\5-16\images" />
+      <recent name="E:\uif1504\html\gihub\my-work\wap\5-16\js" />
+      <recent name="E:\uif1504\html\gihub\my-work\pc\5-10\js" />
       <recent name="E:\uif1504\html\gihub\my-work\wap\5-16\css" />
       <recent name="E:\uif1504\html\gihub\my-work\pc\5-4\index\images" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\uif1504\html\gihub\my-work\wap\5-16\js" />
-      <recent name="E:\uif1504\html\gihub\my-work\wap\5-16\images" />
-      <recent name="E:\uif1504\html\gihub\my-work\pc\5-10\js" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\uif1504\html\gihub\my-work\wap\5-16\css" />
       <recent name="E:\uif1504\html\gihub\my-work\pc\5-4\index\images" />
     </key>
@@ -410,10 +373,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1380" height="735" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24924242" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2526475" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -469,20 +432,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pc/5-4/index/js/need/laydate.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pc/5-4/index/js/skins/default/laydate.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pc/5-4/index/css/cropper.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -781,7 +730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -789,36 +737,41 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wap/5-16/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4411764">
-          <caret line="121" column="9" selection-start-line="121" selection-start-column="1" selection-end-line="121" selection-end-column="9" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/wap/5-16/images/liwus4.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wap/5-16/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="66" column="3" selection-start-line="66" selection-start-column="3" selection-end-line="66" selection-end-column="3" />
+          <caret line="87" column="47" selection-start-line="87" selection-start-column="47" selection-end-line="87" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wap/5-16/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6289425">
-          <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+        <state vertical-scroll-proportion="-46.264706">
+          <caret line="292" column="89" selection-start-line="292" selection-start-column="89" selection-end-line="292" selection-end-column="89" />
           <folding>
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#img#1;n#div#4;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wap/5-16/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47683397">
+          <caret line="424" column="40" selection-start-line="424" selection-start-column="40" selection-end-line="424" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
