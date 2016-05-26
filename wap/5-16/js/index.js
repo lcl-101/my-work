@@ -119,5 +119,8 @@ $(function(){
     $('.gift-btn').on('click',function(){
         $('.vip-mark').hide();
         $('.gift-box').hide().addClass('vip-show');
+    });
+    $('.jiaxi-box li').on('click',function(){
+        alert(1);
     })
 });
