@@ -2,7 +2,7 @@ $(function(){
     FastClick.attach(document.body);
     var slider='';
     var swiper = new Swiper('.swiper-container1', {
-        initialSlide:0,
+        initialSlide:3,
         slidesPerView: 4,
         spaceBetween: 30
     });
