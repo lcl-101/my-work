@@ -1,18 +1,34 @@
 $(function(){
+    var myLevel = parseInt($('#myLevel').val());
+    if(myLevel==0){
+        myLevel=1;
+    }
+    var myIndex=myLevel-1;
+    $('.app-right').eq(myIndex).show();
+    $('.apps').eq(myIndex).attr('src','/static/default/level/images/app'+myLevel+'s.png');
+    $('.swiper-container1 .swiper-slide div').eq(myIndex).addClass('top-scale');
+    showVip(myIndex,'light');
     FastClick.attach(document.body);
     var slider='';
     var swiper = new Swiper('.swiper-container1', {
-        initialSlide:3,
+        initialSlide: myIndex,
         slidesPerView: 4,
         spaceBetween: 30
     });
     var sw=$('.swiper-container1 .swiper-slide').eq(0).width()+30;
+    $('.top-jiao').css({transform:'translateX('+sw*myIndex+'px)'});
     $('.swiper-container1 .swiper-slide').on('click',function(){
         var index=$('.swiper-container1 .swiper-slide').index(this);
         $('.top-jiao').css({transform:'translateX('+sw*index+'px)'});
-        setTimeout(function(){
-            showVip(index,'light');
-        },500);
+        if(index==myIndex){
+            setTimeout(function(){
+                showVip(index,'light');
+            },500);
+        }else {
+            setTimeout(function(){
+                showVip(index,'gray');
+            },500);
+        }
     });
     function showVip(a,b){
         var html='';
@@ -45,12 +61,12 @@ $(function(){
                 //$('#slider1 li').eq(i).show();
                 var s=i+1;
                 html+='<li>'+
-                    '<img class="gift-img" src="images/liwu'+s+'.png" alt="">'+
+                    '<img class="gift-img" src="/static/default/level/images/liwu'+s+'.png" alt="">'+
                     '<p>'+j[i]+'</p></li>';
             }else if(b=='gray'){
                 var s=i+1;
                 html+='<li>'+
-                    '<img class="gift-img" src="images/liwus'+s+'.png" alt="">'+
+                    '<img class="gift-img" src="/static/default/level/images/liwus'+s+'.png" alt="">'+
                     '<p>'+j[i]+'</p></li>';
             }
         }
@@ -59,8 +75,8 @@ $(function(){
         $('#slider1 li').on('click',function(){
             var index=$('#slider1 li').index(this);
             $('.vip-mark').fadeIn('fast');
-            $('.giift-ttle').html(j[index]);
-            $('.gift-content').html(k[index]);
+            $('.gift-box .giift-ttle').html(j[index]);
+            $('.gift-box .gift-content').html(k[index]);
             $('.gift-box').fadeIn('fast').removeClass('vip-show');
             $('body').attr('ontouchmove','event.preventDefault()');
         });
@@ -74,33 +90,79 @@ $(function(){
         })
     }
 
-    var swiper3 = new Swiper('.swiper-container3', {
-        pagination: '.bottom-btn',
-        paginationClickable: true,
-        autoHeight:true,
-        paginationBulletRender: function (index, className) {
-            if(index==0){
-                index='加息券';
-            }else if(index==1){
-                index='会员升级红包'
-            }else if(index==2){
-                index='生日红包'
+    $(window).load(function(){
+        var a1=$('.swiper-container3 .swiper-slide').eq(0).attr('data-name');
+        var a2=$('.swiper-container3 .swiper-slide').eq(1).attr('data-name');
+        var a3=$('.swiper-container3 .swiper-slide').eq(2).attr('data-name');
+        var swiper3 = new Swiper('.swiper-container3', {
+            pagination: '.bottom-btn',
+            paginationClickable: true,
+            autoHeight:true,
+            paginationBulletRender: function (index, className) {
+                if(index==0){
+                    index=a1;
+                }else if(index==1){
+                    index=a2;
+                }else if(index==2){
+                    index=a3;
+                }
+                return '<li class="bottom-menu ' + className + '">' + index + '</li>';
             }
-            return '<li class="bottom-menu ' + className + '">' + index + '</li>';
+        });
+        var bL=$('.bottom-btn li').length;
+        if(bL==1){
+            $('.bottom-btn li').css({width:'100%'});
+        }else if(bL==2){
+            $('.bottom-btn li').css({width:'50%'});
+        }else if(bL==3){
+            $('.bottom-btn li').css({width:'33.3333%'});
         }
+
+        //加息券
+        $('.jia-btn').on('click',function(){
+            var index=$('.jia-btn').index(this);
+            var exchangeCode=$('.jia-btn').eq(index).attr('data-excode');
+            $.ajax({
+                type: "post",
+                dataType: "json",
+                data:{exchangeCode:exchangeCode},
+                url:'/user/level/exchange-rate-coupon',
+                success:function(data){
+                    if(data.code==0){
+                        location.reload();
+                        return;
+                    }else if(data.code==1){
+                        alert(data.msg);
+                    }
+                }
+            })
+        });
+        //生日红包
+        $('.birthday-btn').on('click',function(){
+            var index=$('.birthday-btn').index(this);
+            var exchangeCode=$('.birthday-btn').eq(index).attr('data-excode');
+            $.ajax({
+                type: "post",
+                dataType: "json",
+                data:{exchangeCode:exchangeCode},
+                url:'/user/level/exchange-birth-coupon',
+                success:function(data){
+                    if(data.code==0){
+                        location.reload();
+                        return;
+                    }else if(data.code==1){
+                        alert(data.msg);
+                    }
+                }
+            })
+        });
     });
-    var bL=$('.bottom-btn li').length;
-    if(bL==1){
-        $('.bottom-btn li').css({width:'100%'});
-    }else if(bL==2){
-        $('.bottom-btn li').css({width:'50%'});
-    }else if(bL==3){
-        $('.bottom-btn li').css({width:'33.3333%'});
-    }
     var vH=$('.vip-tishi').height()/2;
     $('.vip-tishi').css({marginTop:-vH});
+    $('.vip-tishis').css({marginTop:-vH});
     var gH=$('.gift-box').height()/2;
     $('.gift-box').css({marginTop:-gH});
+    $('.gift-boxs').css({marginTop:-gH});
     $('.top-right').on('click',function(){
         $('.vip-mark').fadeIn('fast');
         $('.vip-tishi').fadeIn('fast').removeClass('vip-show');
@@ -109,6 +171,8 @@ $(function(){
     $('.vip-btn').on('click',function(){
         $('.vip-mark').hide();
         $('.vip-tishi').hide().addClass('vip-show');
+        $('.vip-tishis').hide();
+        $('body').removeAttr('ontouchmove');
     });
     $('#slider1 li').on('click',function(){
         var index=$('#slider1 li').index(this);
@@ -119,8 +183,6 @@ $(function(){
     $('.gift-btn').on('click',function(){
         $('.vip-mark').hide();
         $('.gift-box').hide().addClass('vip-show');
+        $('body').removeAttr('ontouchmove');
     });
-    $('.jiaxi-box li').on('click',function(){
-        alert(1);
-    })
 });
