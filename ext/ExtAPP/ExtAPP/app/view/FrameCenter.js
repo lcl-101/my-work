@@ -1,0 +1,25 @@
+Ext.define('app.view.FrameCenter',{
+	extend:'Ext.tab.Panel',
+	alias:'widget.FrameCenter',
+	defaults:{
+		closable:true
+	},
+	activeTab:1,
+	items:[
+		{
+			xtype:'panel',
+			title:'首页',
+			closable:false,
+			iconCls:'House',
+			padding:30,
+			items:[
+				{
+					xtype:'HomeMain'
+				}
+			]
+		}
+	],
+	initComponent:function(){
+		this.callParent(arguments);
+	}
+});

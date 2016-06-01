@@ -1,0 +1,68 @@
+Ext.define('app.view.NodeMain',{
+	extend:'Ext.panel.Panel',
+	alias:'widget.NodeMain',
+	title:'节点管理',
+	closable:true,
+	iconCls:'Table',
+	layout:'border',
+	items:[
+		{
+			xtype:'treepanel',
+			region:'west',
+			title:'节点树形',
+			collapsible:true,
+			split:true,
+			width:250,
+			rootVisible:false
+		},
+		{
+			xtype:'gridpanel',
+			region:'center',
+			title:'节点数据表',
+			iconCls:'Table',
+			forceFit:true,
+			store:'app.store.NodeStore',
+		    columns: [
+		        { text: 'Name',  dataIndex: 'name' },
+		        { text: 'Email', dataIndex: 'email'},
+		        { text: 'Phone', dataIndex: 'phone' }
+		    ],
+		    selType:'checkboxmodel',
+		    tbar:[
+		    	{
+		    		xtype:'button',
+		    		text:'添加节点'
+		    	},
+		    	{
+		    		xtype:'button',
+		    		text:'编辑节点'
+		    	},
+		    	{
+		    		xtype:'button',
+		    		text:'删除节点'
+		    	},
+		    	{
+		    		xtype:'button',
+		    		text:'导出节点'
+		    	},
+		    	{
+					xtype:'tbseparator',
+					margin:'0 10'
+				},
+				{
+					xtype:'textfield',
+					fieldLabel:'搜索',
+					labelWidth:30
+				},
+				{
+					xtype:'button',
+					iconCls:'Magnifier',
+					tooltip:'搜索'
+				}
+		    ]
+		}
+	],
+	initComponent:function(){
+		this.callParent(arguments);
+	}
+});
