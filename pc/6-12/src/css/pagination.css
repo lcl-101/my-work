@@ -1,0 +1,81 @@
+/*分页开始*/
+.pagination-content{
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.pagination {
+    display: inline-block;
+    height: 20px;
+    margin: 0 auto;
+    padding: 30px 0;
+    text-align: center;
+}
+.pagination li{float: left;margin-right: 10px;}
+.pagination .prev, .pagination .next {
+    height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    border: 0;
+    color: #666666;
+}
+.pagination .next{
+    margin-right:0;
+}
+.pagination .prev a, .pagination .next a{
+    color: #666;
+    border:0;
+}
+.pagination .prev:hover a, .pagination .next:hover a {
+    color: #666;
+    border:0;
+}
+.pagination li a {
+    display: inline-block;
+    height: 18px;
+    padding: 0 6px;
+    border: 1px solid #FE715F;
+    color: #FE715F;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+}
+.pagination span {
+    color: #666;
+}
+.pagination .active a {
+    display: inline-block;
+    height: 18px;
+    padding: 0 6px;
+    border: 1px solid #FE715F;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    background-color: #FE715F;
+    color: #fff;
+}
+.pagination .yetLink:hover a {
+    display: inline-block;
+    height: 18px;
+    padding: 0 6px;
+    border: 1px solid #FE715F;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    background-color: #FE715F;
+    color: #fff;
+}
+.pagination .first, .pagination .last {
+    border: 1px solid #bababa;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    width: 64px;
+    height: 25px
+}
+/*分页结束*/

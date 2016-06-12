@@ -1,0 +1,61 @@
+/*font-color*/
+.blackFont {
+    color:#333333;
+}
+.grayFont {
+    color:#999999;
+}
+.redFont {
+    color: #ff2b01!important;
+}
+.blueFont {
+    color: #0098e0;
+}
+.orangeFont {
+    color: #ff9800;
+}
+.greenFont {
+    color: #66bc25!important;
+}
+/*font-click-color*/
+.blueFontClick {
+    color: #0c4a7f;
+    text-decoration: underline;
+}
+/*background-color*/
+.redBg{
+    background: #ff2c01;
+}
+.orangeBg {
+    background: #f46902;
+}
+.orangeBgdeep {
+    background: #ff9800;
+}
+.greenBg{
+    background:#66bc25;
+}
+.blueBg {
+    background: #64bbf6;
+}
+/*background-btn-color*/
+.redBtnBg{
+    background: #ff5736;
+}
+/*wcg-body*/
+.wdjf-body {
+    padding-top: 50px;
+}
+.wdjf-ucenter {
+    width: 1000px;
+    margin: 0 auto;
+}
+/*leftmenu*/
+.leftmenu {
+    float: left;
+}
+/*rightcontent*/
+.rightcontent {
+    float: right;
+    width: 800px;
+}

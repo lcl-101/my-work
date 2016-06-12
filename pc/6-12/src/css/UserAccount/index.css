@@ -1,0 +1,359 @@
+.clearfix:before, .clearfix:after {
+    content: '';
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+/*top-box*/
+.top-box {
+    width: 798px;
+    height: 179px;
+    border: 1px solid #e3e3e3;
+    background: #fff;
+}
+.top-box-top {
+    position: relative;
+    width: 739px;
+    height: 89px;
+    margin:0 auto;
+    border-bottom:1px solid #efeff3;
+    overflow: hidden;
+}
+.top-inner li {
+    float: left;
+    line-height: 100px;
+    margin-right: 11px;
+}
+.name {
+    height: 89px;
+    font-size: 20px;
+}
+.recharge-btn {
+    display: block;
+    position: absolute;
+    top: 42px;
+    right: 90px;
+    width: 65px;
+    height: 28px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    color: #fff;
+}
+.recharge-btn:hover {
+    background: #d43125;
+}
+.tixian-btn {
+    position: absolute;
+    top: 42px;
+    right: 15px;
+    display: block;
+    float: right;
+    width: 65px;
+    height: 28px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    color: #fff;
+}
+.tixian-btn:hover {
+    background: #d43125;
+}
+.top-box-bottom {
+    position: relative;
+    width: 739px;
+    height: 89px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.top-box-bottom ul li{
+    position: relative;
+    line-height: 89px;
+    float: left;
+    font-size: 14px;
+    margin-right: 80px;
+}
+.top-box-bottom ul li span {
+    font-size: 18px;
+}
+#tip {
+    position: relative;
+    left: 3px;
+    top: 0;
+    cursor: pointer;
+}
+.dialog {
+    display: none;
+    position: absolute;
+    right: -28px;
+    top: 8px;
+    width: 100px;
+    height: 26px;
+    line-height: 26px;
+    background: url("../../images/UserAccount/diglog.png") no-repeat 0 0;
+    font-size: 12px;
+    text-align: center;
+}
+/*property-box*/
+.property-box {
+    width: 798px;
+    height: 363px;
+    border: 1px solid #e3e3e3;
+    margin-top: 20px;
+    background: #fff;
+}
+.property-top {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #e3e3e3;
+    background: #fcfcfc;
+    overflow: hidden;
+}
+.property-top-logo {
+    float: left;
+    width: 20px;
+    height: 15px;
+    background: url("../../images/UserAccount/icons.png") no-repeat -57px -87px;
+    margin-top: 18px;
+    margin-left: 21px;
+}
+.property-top-content {
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    margin-left: 10px;
+    font-family: "宋体";
+}
+.property-bottom {
+    position: relative;
+    width: 100%;
+    height: 321px;
+}
+.property-bottom-left {
+    float: left;
+    width: 286px;
+    height: 286px;
+    margin-top: 17px;
+    margin-left: 123px;
+}
+.property-tip {
+    position: absolute;
+    top: 47%;
+    left: 39%;
+    z-index: 1000000;
+    cursor: pointer;
+}
+.property-tip-show {
+    display: none;
+    position: absolute;
+    top: 37%;
+    left: 24%;
+    padding: 0 4px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #fff0da;
+    border-radius: 4px;
+    border: 1px solid #ffd18d;
+    z-index: 1000000;
+    font-size: 12px;
+}
+.property-bottom-right {
+    float: right;
+    width: 352px;
+    height: 100%;
+}
+path {
+    stroke-width: 0px;
+}
+.highcharts-data-labels g text {
+    display: none;
+}
+.highcharts-data-labels {
+    display: none;
+}
+.property-bottom-right ul {
+    padding-top: 108px;
+}
+.property-bottom-right li {
+    position: relative;
+    margin-bottom: 24px;
+}
+.property-bottom-right ul li .redFont{
+    font-size: 16px;
+}
+.property-tishi {
+    display: none;
+    position: absolute;
+    left: -25px;
+    top: -30px;
+    padding: 0 4px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #fff0da;
+    border-radius: 4px;
+    border: 1px solid #ffd18d;
+    background-size: 100% 100%;
+    font-size: 12px;
+}
+.dialog-jiao {
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+}
+.property-point {
+    float: left;
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    margin-top: 6px;
+    font-size: 16px;
+    margin-right: 6px;
+}
+.tips {
+    position: relative;
+    left: 4px;
+    top: 0;
+    margin-right: 30px;
+    cursor: pointer;
+}
+/*investment-box*/
+.investment-box {
+    width: 798px;
+    height: 522px;
+    border: 1px solid #e3e3e3;
+    margin-top: 20px;
+    background: #fff;
+}
+.investment-box-top {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #e3e3e3;
+    background: #fcfcfc;
+    overflow: hidden;
+}
+.investment-box-logo {
+    float: left;
+    width: 20px;
+    height: 15px;
+    background: url("../../images/UserAccount/icons.png") no-repeat -23px -87px;
+    margin-top: 18px;
+    margin-left: 21px;
+}
+.investment-box-content {
+    float: left;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    margin-left: 10px;
+    font-family: "宋体";
+}
+.investment-link {
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.investment-box-bottom {
+    width: 760px;
+    height: 471px;
+    margin: 0 auto;
+}
+.investment-bottom-title {
+    width: 778px;
+    height: 50px;
+    background: #e4e4e8;
+    border-bottom: 1px solid #e4e4e8;
+    padding-left: 20px;
+}
+.investment-bottom-title li {
+    float: left;
+    text-align: left;
+    color: #464648;
+    font-size: 14px;
+}
+.investment-bottom-title li div {
+    height: 14px;
+    line-height: 14px;
+    margin-top: 20px;
+}
+.investment-name {
+    width: 245px;
+}
+.investment-money {
+    width: 146px;
+}
+.investment-profit {
+    width: 124px;
+}
+.investment-time {
+    width: 145px;
+}
+.investment-state {
+    width: 97px;
+}
+.investment-contract {
+    width: 82px;
+}
+.investment-bottom-content {
+    height: 60px;
+}
+.investment-name1 {
+    width: 200px;
+    padding-left: 10px;
+}
+.investment-inner {
+    float: left;
+    display: table;
+    height: 60px;
+    _position: relative;
+    *position: relative;
+    overflow: hidden;
+}
+.investment-box-vertical {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 12px;
+    text-align: left;
+    _position: absolute;
+    _top: 50%;
+    _left: 0;
+    *position: relative;
+    *top: 50%;
+    *left: 0;
+}
+.investment-inner div i {
+    _position: relative;
+    _top: -50%;
+    *position: relative;
+    *top: -50%;
+}
+.investment-contract a:hover {
+    color: #0c4a7f;
+    text-decoration: underline;
+}
+.investment-name1 a{
+    color: #999999;
+}
+.investment-name1 a:hover{
+    color: #ff2b01;
+}
+.not_yet {
+    display: none;
+    text-align: center;
+    color: #a6a6a6;
+    margin-top: 134px;
+}
+.not_yet a {
+    color: #fff;
+    background-color: #ff5736;
+    padding: 5px 18px;
+    margin-left: 15px;
+    border-radius: 4px;
+    box-shadow: 2px 1px 6px 0 #ff5736;
+}
