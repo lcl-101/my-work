@@ -25,4 +25,23 @@ $(function(){
     },function(){
         $('.contrast-legal img')[0].src='images/legal.png';
     });
+    $('.advantage-bottom-left').on('click',function(){
+       $('.advantage-bottom-inner').fadeIn();
+    });
+    $('.advantage-close').on('click',function(){
+        $('.advantage-bottom-inner').fadeOut();
+    });
+    $('.provide-left-title img').hover(function(){
+        $('.provide-left-tishi').stop(true,false).fadeIn();
+    },function(){
+        $('.provide-left-tishi').stop(true,false).fadeOut();
+    });
+    $('.determine-left div').on('click',function(){
+        var index=$('.determine-left div').index(this);
+        $('.determine-left div').removeClass('determine-blue');
+        $('.determine-left div').addClass('determine-gray');
+        $('.determine-left div').eq(index).addClass('determine-blue');
+        $('.determine-right ul').hide();
+        $('.determine-right ul').eq(index).show();
+    })
 })

@@ -333,3 +333,231 @@ i,em{
     color: #666666;
     margin-top: 20px;
 }
+.advantage-bottom {
+    position: relative;
+    width: 497px;
+    margin: 0 auto;
+    height: 50px;
+    margin-top: 20px;
+}
+.advantage-bottom-left {
+    float: left;
+    width: 180px;
+    height: 50px;
+    background: #ffc851;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.advantage-bottom-right {
+    float: right;
+    background: #6ec6ee;
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.advantage-bottom-right a{
+    color: #fff;
+}
+.advantage-bottom-right a:hover{
+    color: #fff;
+}
+.advantage-bottom-inner {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top:0;
+    width: 763px;
+    height: 439px;
+    border: 4px solid #2eb3ef;
+    background: #fff;
+    margin-top: -505px;
+    margin-left: -362px;
+}
+.advantage-bottom-content {
+    width: 728px;
+    height: 389px;
+    overflow-y: scroll;
+    margin-left: 26px;
+    margin-top: 32px;
+}
+.advantage-bottom-title {
+    font-size: 18px;
+    color: #444444;
+    height: 44px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+.advantage-bottom-title span {
+    float: left;
+    font-size: 24px;
+    color: #2eb3ef;
+}
+.advantage-bottom-title i{
+    width: 630px;
+    float: left;
+    line-height: 44px;
+    margin-left: 10px;
+}
+.advantage-bottom-text {
+    margin-bottom: 14px;
+}
+.advantage-bottom-text span{
+    float: left;
+    font-size: 24px;
+    color: #f34747;
+}
+.advantage-bottom-text i{
+    width: 630px;
+    float: left;
+    font-size: 14px;
+    color: #666666;
+    line-height: 22px;
+    text-align: justify;
+    margin-top: 6px;
+    margin-left: 10px;
+}
+.advantage-close {
+    position: absolute;
+    top: -4px;
+    right: -38px;
+    width: 34px;
+    height: 34px;
+    background: #2eb3ef;
+    cursor: pointer;
+}
+.advantage-close img {
+    width: 100%;
+}
+/*provide-box*/
+.provide-box {
+    width: 100%;
+    height: 484px;
+    background: #ebf2f8;
+}
+.provide-title {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: url("../images/provide-title.png")no-repeat center 0;
+    text-align: center;
+    color: #222222;
+    font-size: 24px;
+}
+.provide-inner {
+    width: 820px;
+    margin: 0 auto;
+}
+.provide-box-left {
+    position: relative;
+    float: left;
+    padding-top: 20px;
+}
+.provide-left-title {
+    text-align: center;
+    font-size: 14px;
+    color: #444444;
+}
+.provide-left-title img {
+    position: relative;
+    top: 4px;
+    left: 4px;
+    cursor: pointer;
+}
+.provide-box-right {
+    float: right;
+}
+.provide-box-right {
+    padding-top: 50px;
+}
+.provide-right-title {
+    width: 369px;
+    text-align: center;
+    font-size: 14px;
+    color: #444444;
+    margin-top: 20px;
+}
+.provide-left-tishi {
+    display: none;
+    position: absolute;
+    left: 15px;
+    top: 140px;
+    width: 298px;
+    height: 178px;
+    border: 1px solid #999999;
+    background: #fff;
+    border-radius: 10px;
+}
+.provide-left-tishi p {
+    padding: 15px 15px 0 15px;
+    text-align: justify;
+    font-size: 12px;
+    color: #666666;
+    line-height: 21px;
+}
+.provide-jiao {
+    position: absolute;
+    left: 50%;
+    bottom:-7px;
+    margin-left: -9px;
+}
+/*determine-box*/
+.determine-box {
+    width: 100%;
+    min-width: 1057px;
+    height: 424px;
+}
+.determine-title {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: url("../images/determine-title.png") no-repeat center 0;
+    font-size: 24px;
+    color: #222222;
+    text-align: center;
+}
+.determine-inner {
+    width: 950px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.determine-left {
+    float: left;
+}
+.determine-right {
+    float: left;
+    padding-left: 20px;
+}
+.determine-left div{
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.determine-gray {
+    background: #afb3b7;
+}
+.determine-blue {
+    background: #6ec6ee;
+}
+.determine-right ul li {
+    float: left;
+    margin-left: 80px;
+}
+.zhengshu2 {
+    display: none;
+}
