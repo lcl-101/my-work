@@ -120,6 +120,216 @@ i,em{
 /*contrast-box*/
 .contrast-box {
     width: 100%;
+    min-width: 1057px;
     height: 465px;
     background: #fff;
+}
+.contrast-title {
+    width: 100%;
+    text-align: center;
+    height: 106px;
+    line-height: 106px;
+    color: #000000;
+    font-size: 24px;
+    background: url("../images/contrast-title.png") no-repeat center center;
+}
+.contrast-inner {
+    width: 995px;
+    margin: 0 auto;
+}
+.contrast-left {
+    float: left;
+    width: 400px;
+}
+.contrast-left-top {
+    width: 337px;
+    font-size: 14px;
+    color: #666666;
+    text-align: center;
+    margin-left: 1px;
+    margin-bottom: 4px;
+}
+.contrast-left-bottom {
+    font-size: 14px;
+    color: #666666;
+}
+.contrast-left-bottom i {
+    margin-left: 81px;
+}
+.contrast-left-bottom em {
+    margin-left: 78px;
+}
+.contrast-vs {
+    float: left;
+    width: 137px;
+    padding-top: 40px;
+    margin-left: 40px;
+}
+.contrast-right {
+    position: relative;
+    float: right;
+    width: 328px;
+    height: 282px;
+}
+.contrast-dash {
+    float: right;
+}
+.contrast-save {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 56px;
+    top:10px;
+}
+.contrast-secret {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 266px;
+    top:10px;
+}
+.contrast-authority {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 56px;
+    bottom:10px;
+}
+.contrast-legal {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 266px;
+    bottom:10px;
+}
+.contrast-right-inner {
+    position: absolute;
+    left: 104px;
+    top:92px;
+    width: 170px;
+}
+.contrast-right-inner p{
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    color: #666666;
+}
+.contrast-right-inner div{
+    width: 100%;
+    font-size: 14px;
+    text-align: left;
+    color: #666666;
+    padding-left: 10px;
+    padding-top: 14px;
+}
+/*process-box*/
+.process-box {
+    width: 100%;
+    min-width: 1057px;
+    height: 395px;
+    background: #ebf2f8;
+}
+.process-title {
+    width: 100%;
+    text-align: center;
+    height: 101px;
+    line-height: 101px;
+    background: url("../images/process-title.png") no-repeat center center;
+    font-size: 24px;
+    color: #222222;
+}
+.process-inner {
+    width: 994px;
+    margin: 0 auto;
+}
+.process-inner ul {
+    width: 100%;
+}
+.process-inner ul li {
+    float: left;
+    width: 330px;
+}
+.process-inner ul li p {
+    width: 228px;
+    text-align: justify;
+    font-size: 14px;
+    color: #444444;
+    margin-left: 20px;
+}
+.process-inner ul li div {
+    width: 228px;
+    text-align: justify;
+    font-size: 14px;
+    color: #444444;
+    margin: 0 auto;
+}
+.process-inner ul li i {
+    display: block;
+    width: 228px;
+    text-align: justify;
+    font-size: 14px;
+    color: #444444;
+    margin-left: 68px;
+}
+/*advantage-box*/
+.advantage-box {
+    width: 100%;
+    min-width: 1057px;
+    height: 680px;
+}
+.advantage-title {
+    width: 100%;
+    height: 98px;
+    line-height: 98px;
+    text-align: center;
+    background: url("../images/advantage-title.png") no-repeat center center;
+    color: #222222;
+    font-size: 24px;
+}
+.advantage-inner {
+    position: relative;
+    width: 900px;
+    height: 442px;
+    margin: 0 auto;
+    background: url("../images/advantage-inner.png") no-repeat center 0;
+}
+.advantage-inner1 span{
+    float: left;
+    font-size: 24px;
+    height: 38px;
+    line-height: 37px;
+    color: #ffc851;
+    padding-right: 6px;
+}
+.advantage-inner1 img{
+    float: left;
+}
+.advantage-inner1 div{
+    float: left;
+    height: 38px;
+    color: #444444;
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 6px;
+}
+.advantage1 {
+    position: absolute;
+    left: 48px;
+    top:280px;
+}
+.advantage2 {
+    position: absolute;
+    right: 122px;
+    top:163px;
+}
+.advantage3 {
+    position: absolute;
+    right: 38px;
+    bottom:60px;
+}
+.advantage-content {
+    text-align: center;
+    font-size: 12px;
+    color: #666666;
+    margin-top: 20px;
 }
