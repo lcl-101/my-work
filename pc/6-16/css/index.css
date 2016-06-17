@@ -551,13 +551,45 @@ i,em{
 .determine-gray {
     background: #afb3b7;
 }
-.determine-blue {
-    background: #6ec6ee;
-}
 .determine-right ul li {
     float: left;
     margin-left: 80px;
 }
 .zhengshu2 {
     display: none;
+    height: 246px;
+    overflow: hidden;
+}
+.zhengshu2 li {
+    position: relative;
+}
+.zhengshu2 div {
+    position: absolute;
+    left: -10px;
+    bottom: -20px;
+    width: 190px;
+    text-align: center;
+    font-size: 14px;
+    color: #444444;
+}
+.zs2 {
+    display: none;
+}
+.determine-btn {
+    display: none;
+    width: 50px;
+    margin-left: 402px;
+    margin-top: 20px;
+}
+.determine-btn div {
+    float: left;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #afb3b7;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.determine-blue {
+    background: #6ec6ee!important;
 }
