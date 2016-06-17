@@ -593,3 +593,18 @@ i,em{
 .determine-blue {
     background: #6ec6ee!important;
 }
+.contrast-left-hetong {
+    font-size: 18px;
+    color: #444444;
+    width: 337px;
+    text-align: center;
+    margin-top: 20px;
+}
+.contrast-right-hetong {
+    float: right;
+    font-size: 18px;
+    color: #444444;
+    width: 280px;
+    text-align: center;
+    margin-top: 13px;
+}
