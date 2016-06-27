@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="js/angular.min.js">
 </head>
 <!-- 这里使用 ng-controller -->
 <body ng-controller="mainControler">
@@ -29,6 +28,7 @@
         </tbody>
     </table>
 </body>
+<link rel="stylesheet" href="js/angular.min.js">
 <script>
     // 把我们的应用作用单独的一个模块 和系统中的其他模块解耦
     var reminder = angular.module('reminder',[]);
@@ -38,8 +38,8 @@
         $socpe.students = [
             {id:1001,name:'A',sex:'nan'},
             {id:1002,name:'B',sex:'nv'},
-            {id:1003,name:'C',sex:'nan'},
-        ]
+            {id:1003,name:'C',sex:'nan'}
+        ];
         $scope.addStudent = function(){
             this.stuents.push({id:Math.random(),name:'new man', sex:'nan'});
         }
