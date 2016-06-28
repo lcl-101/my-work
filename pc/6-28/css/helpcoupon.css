@@ -1,0 +1,115 @@
+.clearfix:before,.clearfix:after {
+    content:'';
+    display:table;
+}
+.clearfix:after{
+    clear: both;
+}
+.clearfix {
+    *zoom:1;
+}
+/*wcg-body*/
+.wcg-body {
+    padding-top: 50px;
+}
+.wcg-help {
+    width: 1000px;
+    margin:0 auto;
+}
+/*leftmenu*/
+.leftmenu {
+    float: left;
+    width: 188px;
+    background: #fff;
+}
+/*rightcontent*/
+.rightcontent {
+    float: right;
+    width: 800px;
+}
+/*chongzhi-box*/
+.chongzhi-box {
+    width: 798px;
+    border: 1px solid #e3e3e3;
+    background: #fff;
+    padding-bottom: 30px;
+}
+.chongzhi-box-title {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #e3e3e3;
+    background: #fcfcfc;
+    overflow: hidden;
+}
+.chongzhi-box-logo {
+    float: left;
+    width: 20px;
+    height: 18px;
+    background: url("../images/icon-back.png") no-repeat -32px -1px;
+    margin-top: 17px;
+    margin-left: 21px;
+}
+.chongzhi-top-content {
+    float: left;
+    font-size: 20px;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 10px;
+}
+.chongzhi-box-content {
+    width: 700px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.chongzhi-box-content ul {
+    width: 100%;
+}
+.chongzhi-box-content ul li {
+    width: 100%;
+}
+.chongzhi-title {
+    position: relative;
+    width: 698px;
+    height: 50px;
+    background: #fff;
+    box-shadow: 0 0 12px #d2d2d2;
+    border: 1px solid #eeeeee;
+    line-height: 50px;
+    cursor: pointer;
+}
+.chongzhi-title span {
+    font-size: 16px;
+    color: #1a1f25;
+    margin-left: 35px;
+}
+.chongzhi-logo {
+    position: absolute;
+    left: -30px;
+    top: -8px;
+    width: 58px;
+    height: 66px;
+    background: url("../images/icon-back.png") no-repeat -320px -27px;
+}
+.chongzhi-click {
+    float: right;
+    margin-right: 22px;
+    margin-top: 20px;
+}
+.chongzhi-box-inner {
+    min-height: 52px;
+}
+.chongzhi-inner {
+    font-size: 14px;
+    color: #1a1f25;
+    padding:20px 35px 20px 35px;
+    background: #fff8f7;
+    margin-bottom: 10px;
+}
+.chongzhi-inner i{
+    display: block;
+    text-align: justify;
+    line-height: 24px;
+}
+.chongzhi-inner span {
+    color: #ff2b01;
+}
