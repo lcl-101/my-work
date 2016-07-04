@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/fastclick.js"></script>
+    <script src="js/iscroll.js"></script>
+    <script src="js/index.js"></script>
 </head>
 <body>
     <div class="container">
@@ -41,7 +45,171 @@
                         </div>
                     </div>
                     <img class="quan-ten" src="images/tenquan.png" alt="">
+                    <img class="thank" src="images/thank.png" alt="">
+                    <img class="quan-ten1" src="images/tenquan.png" alt="">
+                    <img class="twoquan" src="images/twoquan.png" alt="">
+                    <img class="quan-twenty" src="images/twentyquan.png" alt="">
+                    <img class="jiasiqi" src="images/jiasiqi.png" alt="">
+                    <img class="quan-five" src="images/fivequan.png" alt="">
+                    <img class="quan-twentys" src="images/twentyquan.png" alt="">
                 </div>
+                <div class="prize-num">抽奖次数：<span>3</span>次</div>
+                <div class="prize-btns clearfix">
+                    <span>我的中奖纪录>></span>
+                </div>
+                <div class="prize-bottom">
+                    <img src="images/prizeBottom.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row list-box">
+            <div class="col-xs-12">
+                <div class="list-inner">
+                    <h5>获奖名单<div></div></h5>
+                    <div class="list-prize">
+                        <ul>
+                            <li>恭喜  182***6  获得  加湿器  <span>2016/5/25</span></li>
+                            <li>恭喜  182***6  获得  加湿器  <span>2016/5/25</span></li>
+                            <li>恭喜  182***6  获得  加湿器  <span>2016/5/25</span></li>
+                            <li>恭喜  182***6  获得  加湿器  <span>2016/5/25</span></li>
+                            <li>恭喜  182***6  获得  加湿器  <span>2016/5/25</span></li>
+                            <li>恭喜  182***6  获得  加湿器  <span>2016/5/25</span></li>
+                        </ul>
+                    </div>
+                    <h5>活动规则<div></div></h5>
+                    <ul class="list-rule">
+                        <li>用户每日签到即可获得一次免费抽奖机会；</li>
+                        <li>每日抽奖机会需当日使用，每日00:00清零；</li>
+                        <li>用户所抽代金券奖励会在一个小时内发放到用户账户中心，实物奖品将在10个工作日内寄出。</li>
+                    </ul>
+                    <div style="border-bottom: 1px dotted #815568;margin-top: 2%;"></div>
+                    <div class="list-tishi">温馨提示：</div>
+                    <ul class="list-rule">
+                        <li>请抽到实物奖品的用户准确填写收货地址和个人信息，因地址和个人信息有误而造成的问题，旺财谷概不负责；</li>
+                        <li>获奖用户在抽到奖品三天内未提供收件详细信息即视为自动放弃；</li>
+                        <li>在法律许可范围内，本活动最终解释权归旺财谷所有；</li>
+                        <li>法定节假日期间的奖品，会顺延发放。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--mark-box-->
+        <div class="mark-box"></div>
+        <div class="frame-box">
+            <img class="frame-bg" src="images/bg.png" alt="">
+            <div class="frame-top">
+                <img src="images/chouguo.png" alt="">
+            </div>
+            <div class="frame-bottom">
+                <img src="images/tuzi.png" alt="">
+                <span>明天再来吧~</span>
+            </div>
+            <div class="frame-btn">
+                <span>确 定</span>
+            </div>
+        </div>
+        <!--norecord-box-->
+        <div class="norecord-box">
+            <div class="norecord-title">
+                <img src="images/star.png" alt="">
+                <span>中奖纪录</span>
+                <img src="images/star.png" alt="">
+            </div>
+            <p>近7天中奖纪录</p>
+            <div class="norecord-inner">
+                <img src="images/huli.png" alt="">
+                <div> 还没有中奖纪录哦~</div>
+            </div>
+            <img class="norecord-close" src="images/close.png" alt="">
+        </div>
+        <!--record-box-->
+        <div class="record-box">
+            <img class="record-close" src="images/close.png" alt="">
+            <div class="record-title">
+                <img src="images/star.png" alt="">
+                <span>中奖纪录</span>
+                <img src="images/star.png" alt="">
+            </div>
+            <p>近7天中奖纪录</p>
+            <div class="record-content">
+                <div id="wrapper">
+                    <div class="scroller">
+                        <div class="record-inner clearfix">
+                            <div class="record-inner-left clearfix">
+                                <img src="images/2.png" alt="">
+                            </div>
+                            <div class="record-inner-right clearfix">
+                                <p></p>
+                                <div class="record-right-top">10元代金券</div>
+                                <div class="record-right-bottom">2016-10-23 15:30</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--calendar-box-->
+        <div class="calendar-box">
+            <img class="calendar-close" src="images/close.png" alt="">
+            <div class="calendar-inners">
+                <div class="calendar-title clearfix">
+                    <div class="calendar-title-left">欢迎您：<span>XXXXXX</span></div>
+                    <div class="calendar-title-right">本月签到天数：<span>0</span> 天</div>
+                </div>
+                <div class="calendar-top">1月（JANUARY)</div>
+                <ul class="calendar-content clearfix">
+                    <li class="calendar-blue">周一</li>
+                    <li class="calendar-blue">周一</li>
+                    <li class="calendar-blue">周一</li>
+                    <li class="calendar-blue">周一</li>
+                    <li class="calendar-blue">周一</li>
+                    <li class="calendar-red">周一</li>
+                    <li class="calendar-red">周一</li>
+                </ul>
+                <ul class="calendar-contents">
+                    <li><div></div></li>
+                    <li><div></div></li>
+                    <li><div></div></li>
+                    <li><div></div></li>
+                    <li><div></div></li>
+                    <li><div>1<img class="circles" src="images/circle.png" alt=""></div></li>
+                    <li><div>2</div></li>
+                    <li><div>3</div></li>
+                    <li><div>4</div></li>
+                    <li><div>5</div></li>
+                    <li><div>6</div></li>
+                    <li><div>7</div></li>
+                    <li><div>8</div></li>
+                    <li><div>9</div></li>
+                    <li><div>9</div></li>
+                    <li><div>9</div></li>
+                    <li><div>9</div></li>
+                    <li><div>9</div></li>
+                    <li><div>9</div></li>
+                    <li><div>9</div></li>
+                    <li><div>9</div></li>
+                    <li><div>9</div></li>
+                    <li><div>9</div></li>
+                    <li><div>9</div></li>
+                    <li><div>9</div></li>
+                    <li><div>9</div></li>
+                    <li><div>9</div></li>
+                    <li><div>9</div></li>
+                    <li><div>9</div></li>
+                    <li><div>9</div></li>
+                    <li><div>9</div></li>
+                    <li><div>9</div></li>
+                    <li><div>9</div></li>
+                    <li><div>9</div></li>
+                    <li><div>9</div></li>
+                    <li><div>9</div></li>
+                    <li><div>9</div></li>
+                    <li><div>9</div></li>
+                    <li><div>9</div></li>
+                    <li><div>9</div></li>
+                    <li><div>9</div></li>
+                    <li><div>9</div></li>
+                </ul>
             </div>
         </div>
     </div>

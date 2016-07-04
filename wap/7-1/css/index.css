@@ -119,6 +119,7 @@ i,em {
     animation: point 3s ease;
     animation-fill-mode:forwards;
     text-align: center;
+    z-index: 100;
 }
 .prize-point img {
     width: 64%;
@@ -131,6 +132,7 @@ i,em {
     margin-left: -25%;
     margin-top: -11%;
     text-align: center;
+    z-index: 101;
 }
 .prize-btn img {
     width: 65%;
@@ -140,4 +142,589 @@ i,em {
     left: 17%;
     top: 53%;
     width: 14%;
+}
+.thank {
+    position: absolute;
+    left: 18%;
+    top: 35%;
+    width: 12%;
+}
+.quan-ten1 {
+    position: absolute;
+    left: 31%;
+    top: 16%;
+    width: 14%;
+    transform: rotate(86deg);
+}
+.twoquan {
+    position: absolute;
+    left: 54%;
+    top: 17%;
+    width: 16%;
+}
+.quan-twenty {
+    position: absolute;
+    left: 70%;
+    top: 31%;
+    width: 15%;
+}
+.jiasiqi {
+    position: absolute;
+    left: 65%;
+    top: 53%;
+    width: 20%;
+}
+.quan-five {
+    position: absolute;
+    left: 52%;
+    top: 69%;
+    width: 18%;
+}
+.quan-twentys {
+    position: absolute;
+    left: 32%;
+    top: 68%;
+    width: 15%;
+    transform: rotate(140deg);
+}
+.prize-num {
+    width: 100%;
+    text-align: center;
+    color: #ff6857;
+    font-size: 1.6rem;
+    margin-top: 2%;
+}
+.prize-num span {
+    color: #fff;
+}
+.prize-btns {
+    margin-top: 4%;
+    text-align: center;
+    margin-bottom: 4%;
+}
+.prize-btns span{
+    text-align: center;
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 2% 4%;
+    border-radius: 14px;
+    margin: 0 auto;
+    overflow: hidden;
+    background:#de394c url(../images/pbg.png) no-repeat 0 bottom;
+    background-size: 100%;
+}
+.prize-bottom {
+    width: 100%;
+}
+.prize-bottom img {
+    width: 100%;
+}
+/*list-box*/
+.list-box .col-xs-12 {
+    padding: 0;
+    background: #4b0c27;
+}
+.list-inner {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 4%;
+    padding-bottom: 5%;
+}
+.list-inner h5 {
+    display: block;
+    position: relative;
+    font-size: 1.8rem;
+    color: #fff;
+}
+.list-inner h5 div {
+    position: absolute;
+    left: 26%;
+    top: 46%;
+    width: 40%;
+    height: 2px;
+    background: -webkit-linear-gradient(to right, white -30%, transparent 90%); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(to right, white -30%, transparent 90%); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(to right, white -30%, transparent 90%); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, white -30%, transparent 90%);
+}
+.list-prize {
+    width: 100%;
+    border: 8px solid #400a21;
+    border-radius: 20px;
+    background: -webkit-linear-gradient(#cdcdcd,#fff,#cdcdcd); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#cdcdcd,#fff,#cdcdcd); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#cdcdcd,#fff,#cdcdcd); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#cdcdcd,#fff,#cdcdcd);
+    box-sizing: border-box;
+    margin-top: 2%;
+    box-shadow: -1px 2px 9px #705962 inset;
+    margin-bottom: 4%;
+}
+.list-prize ul {
+    width: 90%;
+    margin: 0 auto;
+    height: 90px;
+    padding: 5px 0;
+    overflow: hidden;
+}
+.list-prize li{
+    font-size: 1.2rem;
+    color: #4c4948;
+    height: 28px;
+    line-height: 28px;
+}
+.list-prize li span {
+    float: right;
+}
+.list-rule {
+    text-align: justify;
+    margin-top: 4%;
+}
+.list-rule li{
+    list-style: decimal;
+    color: #ffffff;
+    margin-left: 5%;
+    font-size: 1.2rem;
+    padding: 2% 0;
+}
+.list-tishi {
+    font-size: 1.6rem;
+    color: #fff;
+    margin-top: 4%;
+}
+/*mark-box*/
+.mark-box {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.6;
+    z-index: 10001;
+}
+/*frame-box*/
+.frame-box {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 30%;
+    width: 70%;
+    margin-left: -34%;
+    z-index: 10002;
+}
+.frame-bg {
+    width: 100%;
+}
+.frame-top {
+    position: absolute;
+    left: 8%;
+    top: -4%;
+    width: 90%;
+}
+.frame-top img {
+    width:100%;
+}
+.frame-bottom {
+    position: absolute;
+    left: 0;
+    top: 56%;
+    width: 100%;
+    text-align: center;
+    color: #201917;
+    font-size: 1.4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.frame-bottom img {
+    width:20%;
+}
+.frame-bottom span {
+    padding-top: 2%;
+    padding-left: 2%;
+}
+.frame-btn {
+    position: absolute;
+    left: 0;
+    top: 114%;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+}
+.frame-btn span {
+    padding: 4% 14%;
+    color: #fe3f3f;
+    font-size: 1.4rem;
+    background: #fff8a7;
+    border-radius: 100px;
+    box-shadow: 0 -3px 0 #fead3f inset;
+}
+/*norecord-box*/
+.norecord-box {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 30%;
+    width: 70%;
+    margin-left: -34%;
+    background: #ffbd63;
+    z-index: 10002;
+    border-radius: 10px;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+.norecord-title {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #952e00;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.norecord-title span {
+    padding: 0 2%;
+}
+.norecord-title img {
+    width: 8%;
+}
+.norecord-box p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #952e00;
+}
+.norecord-inner {
+    width: 90%;
+    margin: 0 auto;
+    background: #fffde2;
+    border-radius: 10px;
+    text-align: center;
+    padding: 6% 0;
+    margin-top: 4%;
+}
+.norecord-inner img{
+    width: 60%;
+}
+.norecord-inner div {
+    font-size: 1.4rem;
+    color: #952e00;
+}
+.norecord-close {
+    position: absolute;
+    right: 0;
+    top: -38px;
+    width: 30px !important;
+    z-index: 10;
+}
+/*record-box*/
+.record-box {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 16%;
+    width: 80%;
+    height: 70%;
+    margin-left: -40%;
+    background: #ffbd63;
+    z-index: 10002;
+    border-radius: 10px;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+.record-close {
+    position: absolute;
+    right: 0;
+    top: -38px;
+    width: 30px !important;
+    z-index: 10;
+}
+.record-title {
+    position: relative;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #952e00;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.record-title span {
+    padding: 0 2%;
+}
+.record-title img {
+    width: 8%;
+}
+.record-box p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #952e00;
+    margin-bottom: 4%;
+}
+.record-content {
+    height: 90%;
+    overflow: hidden;
+}
+#wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.scroller {
+    position: absolute;
+    width: 100%;
+    /* Prevent elements to be highlighted on tap */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+    /* Put the scroller into the HW Compositing layer right from the start */
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
+.record-inner {
+    width: 90%;
+    margin: 0 auto;
+    background: #fffde2;
+    border-radius: 10px;
+    padding: 2% 0;
+    margin-bottom: 4%;
+}
+.record-inner-left {
+    width: 44px;
+    float: left;
+    margin-left: 6%;
+}
+.record-inner-left img {
+    width: 100%;
+}
+.record-inner-right {
+    float: left;
+    height: 50px;
+    margin-left: 6%;
+    display:-moz-box;
+    display:-webkit-box;
+    display:box;
+    -moz-box-orient:vertical;
+    -webkit-box-orient:vertical;
+    box-orient:vertical;
+
+    display: -webkit-flex;
+    display: flex;
+
+
+    flex-direction: column;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+}
+.record-inner-right p{
+    -webkit-flex: 10;
+    -moz-flex: 10;
+    -ms-flex: 10;
+    -o-flex: 10;
+    flex: 10;
+
+    -webkit-box-flex:10;
+    -moz-box-flex:10;
+    box-flex:10;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    /*-webkit-box-pack: center;*/
+    /*-ms-flex-pack: center;*/
+    /*-webkit-justify-content: center;*/
+    /*justify-content: center;*/
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    text-align: left;
+}
+.record-right-top {
+    font-size: 1.4rem;
+    color: #952e00;
+    -webkit-flex: 30;
+    -moz-flex: 30;
+    -ms-flex: 30;
+    -o-flex: 30;
+    flex: 30;
+
+    -webkit-box-flex:30;
+    -moz-box-flex:30;
+    box-flex:30;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    /*-webkit-box-pack: center;*/
+    /*-ms-flex-pack: center;*/
+    /*-webkit-justify-content: center;*/
+    /*justify-content: center;*/
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    text-align: left;
+}
+.record-right-bottom {
+    font-size: 1.2rem;
+    color: #952e00;
+    -webkit-flex: 30;
+    -moz-flex: 30;
+    -ms-flex: 30;
+    -o-flex: 30;
+    flex: 30;
+
+    -webkit-box-flex:30;
+    -moz-box-flex:30;
+    box-flex:30;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    /*-webkit-box-pack: center;*/
+    /*-ms-flex-pack: center;*/
+    /*-webkit-justify-content: center;*/
+    /*justify-content: center;*/
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    text-align: center;
+}
+/*calendar-box*/
+.calendar-box {
+    position: fixed;
+    left: 50%;
+    top: 30%;
+    width: 80%;
+    margin-left: -40%;
+    background: #ffbd63;
+    z-index: 10002;
+    border-radius: 10px;
+    padding-top: 1%;
+    padding-bottom: 4%;
+}
+.calendar-inners {
+    width: 90%;
+    margin: 0 auto;
+}
+.calendar-title-left {
+    float: left;
+    color: #ad5a08;
+    font-size: 1.2rem;
+    margin-left: 1%;
+}
+.calendar-title-left span,.calendar-title-right span {
+    color: #fff;
+}
+.calendar-title-right {
+    float: right;
+    color: #ad5a08;
+    font-size: 1.2rem;
+    margin-right: 1%;
+}
+.calendar-top {
+    width: 98%;
+    margin: 0 auto;
+    text-align: center;
+    color: #FFF;
+    font-size: 1.2rem;
+    background: #fead3f;
+    border-radius: 6px 6px 0 0;
+}
+.calendar-content {
+    width: 100%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+}
+.calendar-content li {
+    float: left;
+    width: 14%;
+    text-align: center;
+    font-size: 12px;
+    background: #ffea74;
+}
+.calendar-blue {
+    color: #8cadef;
+}
+.calendar-red {
+    color: #ad5a08;
+}
+.calendar-contents {
+    width: 100%;
+    margin-left: 1%;
+}
+.calendar-contents li {
+    float: left;
+    width: 14%;
+    text-align: center;
+    margin-top: 1%;
+}
+.calendar-contents li div {
+    position: relative;
+    width: 96%;
+    margin: 0 auto;
+    background: #fffff2;
+    border-radius: 6px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    color: #b8721f;
+    font-size: 1.6rem;
+}
+.calendar-close {
+    position: absolute;
+    right: 0;
+    top: -38px;
+    width: 30px !important;
+    z-index: 10;
+}
+.circles {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 90%;
 }
