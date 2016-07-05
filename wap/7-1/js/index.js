@@ -36,4 +36,12 @@ $(function(){
     myScroll = new IScroll('#wrapper',{ mouseWheel: true, tap: true });
     var cW=$('.calendar-contents li div').width();
     $('.calendar-contents li div').css({height:cW});
+    $('.prize-btn img').on('touchstart',function(){
+        $('.prize-btn img').attr('src','images/btnd.png');
+        $('.prize-point').addClass('jiasiqip');
+
+    });
+    $('.prize-btn img').on('touchend',function(){
+        $('.prize-btn img').attr('src','images/btnc.png');
+    })
 })

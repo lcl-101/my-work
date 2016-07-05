@@ -100,12 +100,268 @@ i,em {
 .prize-light {
     width: 100%;
 }
-@keyframes point {
+/*jiasiqi*/
+@keyframes jiasiqi {
     0% {
         transform: rotate(0deg);
     }
     100% {
-        transform: rotate(3000deg);
+        transform: rotate(2990deg);
+    }
+}
+@-webkit-keyframes jiasiqi {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(2990deg);
+    }
+}
+@-moz-keyframes jiasiqi {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(2990deg);
+    }
+}
+@-o-keyframes jiasiqi {
+    0% {
+        -o-transform: rotate(0deg);
+    }
+    100% {
+        -o-transform: rotate(2990deg);
+    }
+}
+/*thank*/
+@keyframes thank {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(2810deg);
+    }
+}
+@-webkit-keyframes thank {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(2810deg);
+    }
+}
+@-moz-keyframes thank {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(2810deg);
+    }
+}
+@-o-keyframes thank {
+    0% {
+        -o-transform: rotate(0deg);
+    }
+    100% {
+        -o-transform: rotate(2810deg);
+    }
+}
+/*tenquan*/
+@keyframes tenquan {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(2855deg);
+    }
+}
+@-webkit-keyframes tenquan {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(2855deg);
+    }
+}
+@-moz-keyframes tenquan {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(2855deg);
+    }
+}
+@-o-keyframes tenquan {
+    0% {
+        -o-transform: rotate(0deg);
+    }
+    100% {
+        -o-transform: rotate(2855deg);
+    }
+}
+/*twoquan1*/
+@keyframes twoquan1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(2900deg);
+    }
+}
+@-webkit-keyframes twoquan1 {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(2900deg);
+    }
+}
+@-moz-keyframes twoquan1 {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(2900deg);
+    }
+}
+@-o-keyframes twoquan1 {
+    0% {
+        -o-transform: rotate(0deg);
+    }
+    100% {
+        -o-transform: rotate(2900deg);
+    }
+}
+/*twthquan1*/
+@keyframes twthquan1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(2945deg);
+    }
+}
+@-webkit-keyframes twthquan1 {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(2945deg);
+    }
+}
+@-moz-keyframes twthquan1 {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(2945deg);
+    }
+}
+@-o-keyframes twthquan1 {
+    0% {
+        -o-transform: rotate(0deg);
+    }
+    100% {
+        -o-transform: rotate(2945deg);
+    }
+}
+/*fivequan*/
+@keyframes fivequan {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(3035deg);
+    }
+}
+@-webkit-keyframes fivequan {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(3035deg);
+    }
+}
+@-moz-keyframes fivequan {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(3035deg);
+    }
+}
+@-o-keyframes fivequan {
+    0% {
+        -o-transform: rotate(0deg);
+    }
+    100% {
+        -o-transform: rotate(3035deg);
+    }
+}
+/*twthquan2*/
+@keyframes twthquan2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(3080deg);
+    }
+}
+@-webkit-keyframes twthquan2 {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(3080deg);
+    }
+}
+@-moz-keyframes twthquan2 {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(3080deg);
+    }
+}
+@-o-keyframes twthquan2 {
+    0% {
+        -o-transform: rotate(0deg);
+    }
+    100% {
+        -o-transform: rotate(3080deg);
+    }
+}
+/*tenquan2*/
+@keyframes tenquan2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(3125deg);
+    }
+}
+@-webkit-keyframes tenquan2 {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(3125deg);
+    }
+}
+@-moz-keyframes tenquan2 {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(3125deg);
+    }
+}
+@-o-keyframes tenquan2 {
+    0% {
+        -o-transform: rotate(0deg);
+    }
+    100% {
+        -o-transform: rotate(3125deg);
     }
 }
 .prize-point {
@@ -116,15 +372,72 @@ i,em {
     margin-left: -25%;
     margin-top: -25%;
     transform-origin:50% 52%;
-    animation: point 3s ease;
-    animation-fill-mode:forwards;
     text-align: center;
     z-index: 100;
+    animation: tenquan2 3s ease;
+    animation-fill-mode:forwards;
+}
+.jiasiqip {
+    animation: jiasiqi 3s ease;
+    -webkit-animation: jiasiqi 3s ease;
+    -moz-animation: jiasiqi 3s ease;
+    -o-animation: jiasiqi 3s ease;
+    animation-fill-mode:forwards;
+}
+.thankp {
+    animation: thank 3s ease;
+    -webkit-animation: thank 3s ease;
+    -moz-animation: thank 3s ease;
+    -o-animation: thank 3s ease;
+    animation-fill-mode:forwards;
+}
+.tenquanp {
+    animation: tenquan 3s ease;
+    -webkit-animation: tenquan 3s ease;
+    -moz-animation: tenquan 3s ease;
+    -o-animation: tenquan 3s ease;
+    animation-fill-mode:forwards;
+}
+.twoquanp {
+    animation: twoquan1 3s ease;
+    -webkit-animation: twoquan1 3s ease;
+    -moz-animation: twoquan1 3s ease;
+    -o-animation: twoquan1 3s ease;
+    animation-fill-mode:forwards;
+}
+.twthquanp {
+    animation: twthquan1 3s ease;
+    -webkit-animation: twthquan1 3s ease;
+    -moz-animation: twthquan1 3s ease;
+    -o-animation: twthquan1 3s ease;
+    animation-fill-mode:forwards;
+}
+.fivequanp {
+    animation: fivequan 3s ease;
+    -webkit-animation: fivequan 3s ease;
+    -moz-animation: fivequan 3s ease;
+    -o-animation: fivequan 3s ease;
+    animation-fill-mode:forwards;
+}
+.twthquan2p {
+    animation: twthquan2 3s ease;
+    -webkit-animation: twthquan2 3s ease;
+    -moz-animation: twthquan2 3s ease;
+    -o-animation: twthquan2 3s ease;
+    animation-fill-mode:forwards;
+}
+.tenquan2p {
+    animation: tenquan2 3s ease;
+    -webkit-animation: tenquan2 3s ease;
+    -moz-animation: tenquan2 3s ease;
+    -o-animation: tenquan2 3s ease;
+    animation-fill-mode:forwards;
 }
 .prize-point img {
     width: 64%;
 }
 .prize-btn {
+    display: block;
     position: absolute;
     left: 50%;
     top:50%;
@@ -294,6 +607,7 @@ i,em {
 }
 /*mark-box*/
 .mark-box {
+    display: none;
     position: fixed;
     left: 0;
     top: 0;
@@ -627,6 +941,7 @@ i,em {
 }
 /*calendar-box*/
 .calendar-box {
+    display: none;
     position: fixed;
     left: 50%;
     top: 30%;
