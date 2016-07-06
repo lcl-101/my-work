@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+       .twoyear-box {
+           position: fixed;
+           left: 50%;
+           top: 50%;
+           margin-top: -206px;
+           margin-left: -309px;
+           width: 618px;
+           height: 412px;
+           z-index: 10001;
+       }
+       .twoyear-box .twoyear-img {
+           width: 100%;
+       }
+       .twoyear-box .two-close {
+           position: absolute;
+           right: 180px;
+           top: 58px;
+       }
+        .mark-box {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            opacity: 0.6;
+            filter:alpha(opacity=60);
+            z-index: 10000;
+        }
+    </style>
+</head>
+<body>
+    <!--mark-box-->
+    <div class="mark-box">
+
+    </div>
+    <!--twoyear-box-->
+    <div class="twoyear-box">
+        <img class="twoyear-img" src="twoyear.png" alt="">
+        <img class="two-close" src="twoclose.png" alt="">
+    </div>
+</body>
+</html>
