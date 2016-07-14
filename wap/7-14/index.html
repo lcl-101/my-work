@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!--loading-box-->
+    <div class="loading-box">
+        <div class="loading-title">
+            <i>旺财谷</i>
+            <span>6月运营月报</span>
+            <div>www.wangcaigu.com</div>
+        </div>
+        <div class="loading-icon">
+            <div class="spinner">
+                <div class="rect1"></div>
+                <div class="rect2"></div>
+                <div class="rect3"></div>
+                <div class="rect4"></div>
+                <div class="rect5"></div>
+            </div>
+        </div>
+        <div class="loading-logo">
+            <img src="images/logo.png" alt="">
+        </div>
+    </div>
+    <!--page-wrap-->
+    <div class="page-wrap">
+        <div class="page">
+            <div class="title">01<span>旺财谷成长</span></div>
+            <div class="page-inner">
+                <ul>
+                    <li class="clearfix">
+                        <div><img src="images/date.png" alt=""></div>
+                        <p><span>722</span><i>上线时间（天）</i></p>
+                    </li>
+                    <li class="clearfix">
+                        <div><img src="images/porple.png" alt=""></div>
+                        <p><span>722</span><i>累计注册用户数（人）</i></p>
+                    </li>
+                    <li class="clearfix">
+                        <div><img src="images/money.png" alt=""></div>
+                        <p><span>722</span><i>累计撮合交易额（亿）</i></p>
+                    </li>
+                    <li class="clearfix">
+                        <div><img src="images/shouyi.png" alt=""></div>
+                        <p><span>722</span><i>累计为谷东赚取收益（万）</i></p>
+                    </li>
+                </ul>
+            </div>
+            <div class="arrow"></div>
+        </div>
+        <div class="page">
+            <div class="title">02<span>当月数据</span></div>
+            <div class="page-content border-yellow">
+                <div class="page-content-top"><span><img src="images/qianbao.png" alt="">月累计撮合交易额</span></div>
+                <div class="page-content-middle color-yellow">9527.13<span>万元</span></div>
+                <div class="page-content-bottom">
+                    <p>本月广大谷东为旺财谷创造出</p>
+                    <p>9527.13万元的交易规模</p>
+                </div>
+            </div>
+            <div class="arrow"></div>
+        </div>
+        <div class="page">
+            <div class="page-content border-blue">
+                <div class="page-content-top"><span><img src="images/renjun.png" alt="">人均投资额</span></div>
+                <div class="page-content-middle color-blue">8.55<span>万元</span></div>
+                <div class="page-content-bottom">
+                    <p>截至本月底，活跃谷东</p>
+                    <p>人均投资额为8.55万元</p>
+                </div>
+            </div>
+            <div class="arrow"></div>
+        </div>
+        <div class="page">
+            <div class="page-content border-green">
+                <div class="page-content-top"><span><img src="images/gudong.png" alt="">谷东追加投资</span></div>
+                <div class="page-content-middle color-green">1627.26<span>万元</span></div>
+                <div class="page-content-bottom">
+                    <p>上月首次投资的谷东于本月</p>
+                    <p>再次追加投资1627.26万元</p>
+                </div>
+            </div>
+            <div class="arrow"></div>
+        </div>
+        <div class="page">
+            <div class="title">03<span>股东榜</span></div>
+            <ul class="gudong-inner">
+                <li>
+                    <div>投资手速最快</div>
+
+                </li>
+            </ul>
+            <div class="arrow"></div>
+        </div>
+    </div>
+    <script src="js/zepro.min.js"></script>
+    <script src="js/PageSlider.js"></script>
+    <script>
+        new PageSlider({
+            pages: $('.page-wrap .page')
+        });
+    </script>
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

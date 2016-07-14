@@ -2,6 +2,220 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa0445f9-5682-490c-b8c9-807263d4b5ab" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wap/7-14/images/date.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/css/.svn/entries" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/css/.svn/prop-base/iconfont.eot.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/css/.svn/prop-base/iconfont.ttf.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/css/.svn/prop-base/iconfont.woff.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/css/.svn/text-base/font.css.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/css/.svn/text-base/iconfont.css.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/css/.svn/text-base/iconfont.eot.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/css/.svn/text-base/iconfont.svg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/css/.svn/text-base/iconfont.ttf.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/css/.svn/text-base/iconfont.woff.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/css/.svn/text-base/index.css.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/css/.svn/text-base/public.css.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/css/.svn/text-base/second.css.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/css/.svn/text-base/var.css.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/css/font.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/css/iconfont.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/css/iconfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/css/iconfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/css/iconfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/css/iconfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/css/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/css/public.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/css/second.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/css/var.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/entries" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/ajax.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/arrows.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/b1 (1).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/b1 (10).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/b1 (11).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/b1 (12).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/b1 (13).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/b1 (14).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/b1 (15).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/b1 (16).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/b1 (17).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/b1 (18).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/b1 (19).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/b1 (2).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/b1 (20).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/b1 (21).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/b1 (22).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/b1 (23).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/b1 (24).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/b1 (3).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/b1 (4).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/b1 (5).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/b1 (6).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/b1 (7).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/b1 (8).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/b1 (9).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/banner (2).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/banner.jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/computer.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/css3.jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/css3.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/diannao.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/huaban.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/huli.jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/icons.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/icons2.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/img-sp.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/js.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/m2.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/ma.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/move-top.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/nan1.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/nans.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/port-back.jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/s1.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/s2-bg.jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/s2.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/s3.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/s4.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/s5.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/suning.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/tianmao.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/w1 (1).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/w1 (2).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/xiaomi.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/prop-base/xiaomin.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/ajax.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/arrows.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/b1 (1).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/b1 (10).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/b1 (11).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/b1 (12).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/b1 (13).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/b1 (14).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/b1 (15).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/b1 (16).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/b1 (17).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/b1 (18).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/b1 (19).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/b1 (2).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/b1 (20).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/b1 (21).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/b1 (22).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/b1 (23).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/b1 (24).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/b1 (3).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/b1 (4).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/b1 (5).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/b1 (6).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/b1 (7).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/b1 (8).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/b1 (9).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/banner (2).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/banner.jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/computer.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/css3.jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/css3.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/diannao.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/huaban.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/huli.jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/icons.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/icons2.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/img-sp.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/js.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/m2.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/ma.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/move-top.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/nan1.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/nans.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/port-back.jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/s1.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/s2-bg.jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/s2.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/s3.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/s4.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/s5.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/suning.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/tianmao.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/w1 (1).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/w1 (2).jpg.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/xiaomi.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/.svn/text-base/xiaomin.png.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/ajax.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/arrows.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/b1 (1).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/b1 (10).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/b1 (11).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/b1 (12).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/b1 (13).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/b1 (14).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/b1 (15).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/b1 (16).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/b1 (17).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/b1 (18).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/b1 (19).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/b1 (2).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/b1 (20).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/b1 (21).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/b1 (22).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/b1 (23).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/b1 (24).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/b1 (3).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/b1 (4).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/b1 (5).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/b1 (6).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/b1 (7).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/b1 (8).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/b1 (9).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/banner (2).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/banner.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/computer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/css3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/css3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/diannao.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/huaban.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/huli.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/icons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/icons2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/img-sp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/js.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/m2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/ma.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/move-top.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/nan1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/nans.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/port-back.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/s1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/s2-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/s2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/s3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/s4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/s5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/suning.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/tianmao.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/w1 (1).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/w1 (2).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/xiaomi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/images/xiaomin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/index/.svn/entries" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/index/.svn/text-base/font_change.js.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/index/.svn/text-base/index.html.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/index/font_change.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/index/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/js/.svn/entries" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/js/.svn/text-base/index.js.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/js/.svn/text-base/jquery.js.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/js/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/js/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/less/.svn/entries" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/less/.svn/text-base/font.less.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/less/.svn/text-base/index.less.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/less/.svn/text-base/public.less.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/less/.svn/text-base/var.less.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/less/font.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/less/index.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/less/public.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pesonweb/lcl/less/var.less" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="my-work.iws" />
@@ -32,10 +246,32 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pc/7-6/index.html">
+        <entry file="file://$PROJECT_DIR$/wap/7-14/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.82474226">
-              <caret line="46" column="10" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.693299">
+              <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+              <folding>
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wap/7-14/css/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-28.538462">
+              <caret line="320" column="23" selection-start-line="320" selection-start-column="23" selection-end-line="320" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wap/7-14/js/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -49,13 +285,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pc/5-12/css/index.css" />
-        <option value="$PROJECT_DIR$/pc/5-4/index/css/user-funds.css" />
-        <option value="$PROJECT_DIR$/pc/5-4/index/user-funds.html" />
-        <option value="$PROJECT_DIR$/pc/5-4/index/css/user-information.css" />
-        <option value="$PROJECT_DIR$/pc/5-4/index/user-information.html" />
-        <option value="$PROJECT_DIR$/pc/5-4/index/css/index.css" />
-        <option value="$PROJECT_DIR$/pc/5-4/index/js/index.js" />
         <option value="$PROJECT_DIR$/pc/5-12/index.html" />
         <option value="$PROJECT_DIR$/pc/5-10/js/index1.js" />
         <option value="$PROJECT_DIR$/pc/5-10/css/index.css" />
@@ -100,6 +329,13 @@
         <option value="$PROJECT_DIR$/wap/7-1/js/index.js" />
         <option value="$PROJECT_DIR$/wap/7-1/css/index.css" />
         <option value="$PROJECT_DIR$/pc/7-6/index.html" />
+        <option value="$PROJECT_DIR$/pc/7-11/index.html" />
+        <option value="$PROJECT_DIR$/wap/7-14/js/fastclick.js" />
+        <option value="$PROJECT_DIR$/wap/7-14/js/zepro.min.js" />
+        <option value="$PROJECT_DIR$/wap/7-14/js/index.js" />
+        <option value="$PROJECT_DIR$/wap/7-14/css/style.css" />
+        <option value="$PROJECT_DIR$/wap/7-14/css/index.css" />
+        <option value="$PROJECT_DIR$/wap/7-14/index.html" />
       </list>
     </option>
   </component>
@@ -141,7 +377,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -170,7 +406,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pc" />
+              <option name="myItemId" value="wap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="7-14" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -184,45 +424,105 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pc" />
+              <option name="myItemId" value="wap" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="7-6" />
+              <option name="myItemId" value="7-14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my-work" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my-work" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="7-14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my-work" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my-work" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="7-14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my-work" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my-work" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wap" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/workspace/888/7-6" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="D:\Program Files\nodejs\node.exe" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="FullScreen" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/lichenglong/github/my-work/wap/7-14/js/fastclick.js" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wap/7-14/images" />
+      <recent name="$PROJECT_DIR$/wap/7-14/css" />
+      <recent name="$PROJECT_DIR$/wap/7-14/js" />
+      <recent name="$PROJECT_DIR$/pc/7-11/css" />
       <recent name="$PROJECT_DIR$/wap/7-1/images" />
-      <recent name="$PROJECT_DIR$/wap/7-1/css" />
-      <recent name="$PROJECT_DIR$/wap/7-1/js" />
-      <recent name="$PROJECT_DIR$/pc/6-28/images" />
-      <recent name="$PROJECT_DIR$/pc/6-28/js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\uif1504\html\gihub\my-work\wap\5-16\css" />
       <recent name="E:\uif1504\html\gihub\my-work\pc\5-4\index\images" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.jiaquan.html">
+  <component name="RunManager" selected="JavaScript Debug.index.html (1)">
     <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/my-work/wap/6-20/index.html">
-      <method />
-    </configuration>
-    <configuration default="false" name="index.html (4)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/my-work/AngularJS/example/index.html">
       <method />
     </configuration>
     <configuration default="false" name="index.html (3)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/my-work/pc/5-4/index/index.html">
@@ -232,6 +532,9 @@
       <method />
     </configuration>
     <configuration default="false" name="jiaquan.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/my-work/wap/4-25/jiaquan.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="index.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/my-work/pc/7-11/index.html">
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -264,18 +567,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html (4)" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html (3)" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.helpcoupon.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.jiaquan.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html (3)" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.helpcoupon.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.jiaquan.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.jiaquan.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.helpcoupon.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html (3)" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html (4)" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.jiaquan.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.helpcoupon.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html (3)" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
   </component>
@@ -303,13 +606,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41201717" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23247497" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24892704" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2253012" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -342,117 +645,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wap/6-20/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4151671">
-          <caret line="53" column="46" selection-start-line="53" selection-start-column="46" selection-end-line="53" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wap/6-20/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15295629">
-          <caret line="281" column="14" selection-start-line="281" selection-start-column="13" selection-end-line="281" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pc/6-28/js/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pc/6-28/images/icons.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pc/6-12/src/html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50386596">
-          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pc/6-12/src/css/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3724227">
-          <caret line="17" column="85" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pc/5-4/index/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.653847">
-          <caret line="179" column="0" selection-start-line="179" selection-start-column="0" selection-end-line="186" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pc/5-4/index/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.038462">
-          <caret line="65" column="64" selection-start-line="65" selection-start-column="55" selection-end-line="65" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pc/6-28/images/icon-back.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pc/6-28/css/help.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3724227">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pc/6-28/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-27.461538">
-          <caret line="57" column="1" selection-start-line="36" selection-start-column="0" selection-end-line="57" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pc/6-28/images/images/up.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pc/6-28/images/images/down.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pc/6-28/css/helpcoupon.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5618557">
-          <caret line="101" column="17" selection-start-line="0" selection-start-column="0" selection-end-line="115" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pc/6-28/css/helprate.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-28.538462">
-          <caret line="115" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="115" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pc/6-28/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44513714">
-          <caret line="21" column="45" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pc/6-28/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.9278351">
-          <caret line="88" column="62" selection-start-line="88" selection-start-column="62" selection-end-line="88" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pc/6-28/js/helprate.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -534,7 +726,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -624,15 +815,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="40" column="44" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wap/7-1/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10180412">
-          <caret line="360" column="35" selection-start-line="360" selection-start-column="35" selection-end-line="360" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -640,11 +822,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.021907216">
           <caret line="151" column="32" selection-start-line="151" selection-start-column="20" selection-end-line="151" selection-end-column="32" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -652,13 +829,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.329897">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1465981819000" expanded="true" signature="616:1205" placeholder="..." />
-            <marker date="1465981819000" expanded="true" signature="636:761" placeholder="{...}" />
-            <marker date="1465981819000" expanded="true" signature="780:905" placeholder="{...}" />
-            <marker date="1465981819000" expanded="true" signature="924:1049" placeholder="{...}" />
-            <marker date="1465981819000" expanded="true" signature="1068:1193" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -666,7 +836,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -674,7 +843,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -685,9 +853,147 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pc/7-6/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82474226">
+        <state vertical-scroll-proportion="0.8753213">
           <caret line="46" column="10" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pc/7-11/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pc/7-11/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5025707">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#th#9;n#tr#0;n#thead#0;n#table#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wap/7-14/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wap/7-14/js/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wap/7-14/js/fastclick.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.78967744">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wap/7-14/js/zepro.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.021197008">
+          <caret line="1" column="26318" selection-start-line="1" selection-start-column="26318" selection-end-line="1" selection-end-column="26318" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wap/7-14/js/PageSlider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wap/7-14/js/zepto_modify.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9690323">
+          <caret line="1" column="5793" selection-start-line="1" selection-start-column="5789" selection-end-line="1" selection-end-column="5793" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wap/7-1/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35051546">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pc/6-28/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wap/7-14/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wap/7-14/images/porple.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wap/7-14/images/money.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wap/7-14/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-189.61539">
+          <caret line="290" column="1" selection-start-line="290" selection-start-column="1" selection-end-line="290" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wap/7-14/images/qianbao.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wap/7-14/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-28.538462">
+          <caret line="320" column="23" selection-start-line="320" selection-start-column="23" selection-end-line="320" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wap/7-14/images/date.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wap/7-14/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.693299">
+          <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,0 +1,162 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+    <meta name="csrf-param" content="_csrf">
+    <meta name="csrf-token" content="d3hhN2lSWnZBFChxKDUVAQ81M00oJhJBPkwoYF1iIBwYCjREBT4MRw==">
+    <title>客户调查</title>
+    <link href="css/base.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <style type="text/css">
+        <!--
+        body {
+            font-family: "微软雅黑"; margin-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px;
+        }
+        a, a:hover { text-decoration: none; color: #f7f8fa;  }
+        #head {
+            text-align: center; background-color: #f8f8f8; color: #5e5e5e; font-size: 12px; height: 50px; line-height: 50px;border-bottom:1px solid #e7e7e7;
+        }
+        #head #logo { float: left; height: 50px; }
+
+        #head #menu { float: left; height: 50px; }
+        #head #menu ul { list-style: none; float: left; padding:0px; margin: 0px;}
+        #head #menu ul li {list-style: none; float: left;  font-size: 14px; }
+        #head #menu ul li a { display: block; padding-left: 10px; padding-right: 10px; color: #5e5e5e; }
+        #head #menu ul li a:hover { display: block; padding-left: 10px; padding-right: 10px; color: #e8ebf0; }
+
+        #head #tool {float: right; margin-right: 5px;}
+        #head #tool ul { list-style: none; float: left; padding:0px; margin: 0px;}
+        #head #tool ul li {list-style: none; float: left;  font-size: 14px; }
+        #head #tool ul li a { display: block; padding-right: 5px; color: #5e5e5e; }
+        #head #tool ul li a:hover { display: block; padding-right: 5px; color: #e8ebf0; }
+        -->
+    </style>
+<body>
+
+<!-- 页面导航栏 -->
+<div class="page_nav">
+    <ul>
+        <li class="nav_bg" >客户管理</li>
+        <li  >客户风控调查</li>
+    </ul>
+</div>
+<!-- 页面导航栏 -->
+
+<!-- 页面工具栏 -->
+<div class="page_tool">
+    <div class="title">
+    </div>
+    <div class="bar">
+        <a href="/customer/survey/add">新增客户调查</a>
+    </div>
+</div>
+
+<!-- 页面工具栏 -->
+
+<!-- 页面主体部分 -->
+<div class="page_main">
+    <link rel="stylesheet" href="css/index.css">
+    <div class="page_menu" style="margin-top: 15px;">
+        <form id="surveyForm" action="/customer/survey/sp-index" method="get">           <div class="form-group field-surveysearch-name">
+            姓名：<input type="text" id="surveysearch-name" class="form-control" name="SurveySearch[name]">
+        </div>           <div class="form-group field-surveysearch-idno">
+            证件号码：<input type="text" id="surveysearch-idno" class="form-control" name="SurveySearch[idNo]"><div class="help-block"></div>
+        </div>    <div class="form-group field-surveysearch-mobile">
+            手机号码：<input type="text" id="surveysearch-mobile" class="form-control" name="SurveySearch[mobile]"><div class="help-block"></div>
+        </div>    <div class="form-group field-surveysearch-applydate_start">
+            申请日期：<input type="text" id="surveysearch-applydate_start" name="SurveySearch[applydate_start]" readonly="readonly" onclick="WdatePicker({
+                           readOnly: true,
+                           isShowClear: true,
+                           firstDayOfWeek: 1,
+                           dateFmt: &#039;yyyy-MM-dd&#039;,
+                           minDate: &#039;&#039;,
+                           })">
+        </div>    <div class="form-group field-surveysearch-applydate_end">
+            -<input type="text" id="surveysearch-applydate_end" name="SurveySearch[applydate_end]" readonly="readonly" onclick="WdatePicker({
+                           readOnly: true,
+                           isShowClear: true,
+                           firstDayOfWeek: 1,
+                           dateFmt: &#039;yyyy-MM-dd&#039;,
+                           minDate: &#039;&#039;,
+                           })">
+        </div>            <button type="submit" class="button_small">搜索</button>
+        </form></div>
+
+    <div class="page_tool" style="margin: 10px 0px;float: left;">
+        <div class="function">
+            <input type="button" onclick="javascript:execl();" class="button_small" value="导出EXECl" />
+        </div>
+    </div>
+    <table class="table_list">
+        <thead>
+        <tr>
+            <th style="">客户名称</th>
+            <th style="">证件号码</th>
+            <th style="">手机号码</th>
+            <th style="">调查有效期（天）</th>
+            <th style="">业务员</th>
+            <th style="">主任</th>
+            <th style="">所属门店</th>
+            <th style="">申请日期</th>
+            <th style="">调查状态</th>
+            <th style="text-align: center;">操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="text-center">张三</td>
+            <td class="text-center">******19900117****</td>
+            <td class="text-center">158******47</td>
+            <td class="text-center">90</td>
+            <td class="text-center">系统管理员</td>
+            <td class="text-center"></td>
+            <td class="text-center">国瑞车贷总部</td>
+            <td class="text-center">2016-07-07</td>
+            <td class="text-center">待审核</td>
+            <td class="text-center action_button">
+                <a href="javascript:showlayer('1');">
+                    查看
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td class="text-center">张宏雨</td>
+            <td class="text-center">******19900117****</td>
+            <td class="text-center">158******47</td>
+            <td class="text-center">90</td>
+            <td class="text-center">系统管理员</td>
+            <td class="text-center"></td>
+            <td class="text-center">国瑞车贷总部</td>
+            <td class="text-center">2016-07-07</td>
+            <td class="text-center">通过</td>
+            <td class="text-center action_button">
+                <a href="javascript:showlayer('2');">
+                    查看
+                </a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="pagination">
+    </div>
+
+    <script type="text/javascript">
+        function showlayer(id){
+            openwin('查看', '/customer/survey/sp-info?id='+id,500,400)
+        }
+        jQuery(document).ready(function () {
+
+        });
+    </script>
+    <script src="/assets/e6f67dec/yii.validation.js"></script>
+    <script src="/assets/e6f67dec/yii.activeForm.js"></script>
+    <script type="text/javascript">jQuery(document).ready(function () {
+        jQuery('#surveyForm').yiiActiveForm([{"id":"surveysearch-name","name":"name","container":".field-surveysearch-name","input":"#surveysearch-name","validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Name必须是一条字符串。","skipOnEmpty":1});}}], []);
+    });</script>        </div>
+<!-- 页面主体部分 -->
+</body>
+</html>
