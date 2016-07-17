@@ -313,33 +313,314 @@
 .gudong-inner {
     width: 90%;
     margin: 0 auto;
+    padding-top: 4%;
 }
 .gudong-inner li {
     border: 1px solid #5d636a;
-    padding: 2% 0;
+    padding: 8px 0;
     background: #3b3f44;
     border-radius: 6px;
+    margin-bottom: 4%;
     opacity: 0;
 }
-.current .gudong-inner li {
+.current .gudong-inner li:nth-child(1) {
     -webkit-animation: rollIn .8s 0.3s ease both;
     -moz-animation: rollIn .8s 0.3s ease both;
     -o-animation: rollIn .8s 0.3s ease both;
     animation: rollIn .8s 0.3s ease both;
 }
+@-webkit-keyframes rollInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+        transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+@keyframes rollInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+        -ms-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+        transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none
+    }
+}
+.current .gudong-inner li:nth-child(2) {
+    -webkit-animation: rollInRight .8s 0.6s ease both;
+    -moz-animation: rollInRight .8s 0.6s ease both;
+    -o-animation: rollInRight .8s 0.6s ease both;
+    animation: rollInRight .8s 0.6s ease both;
+}
+.current .gudong-inner li:nth-child(3) {
+    -webkit-animation: rollIn .8s 0.9s ease both;
+    -moz-animation: rollIn .8s 0.9s ease both;
+    -o-animation: rollIn .8s 0.9s ease both;
+    animation: rollIn .8s 0.9s ease both;
+}
+.current .gudong-inner li:nth-child(4) {
+    -webkit-animation: rollInRight .8s 1.2s ease both;
+    -moz-animation: rollInRight .8s 1.2s ease both;
+    -o-animation: rollInRight .8s 1.2s ease both;
+    animation: rollInRight .8s 1.2s ease both;
+}
 .gudong-inner-left {
     float: left;
-    width: 60%;
+    width: 64%;
     padding-left: 4%;
 }
 .gudong-inner-left div {
     font-size: 1rem;
     color: #fff;
+    padding-bottom: 8px;
 }
 .gudong-inner-left p {
+    word-break: keep-all;
+    white-space: nowrap;
     font-size: 0.6rem;
     color: #fff;
 }
+.gudong-inner-left p span {
+    color: #d43125!important;
+}
 .gudong-inner-right {
+    position: relative;
     float: left;
+    height: 60px;
+    margin-left: 4%;
+}
+.gudong-inner-right div {
+    position: absolute;
+    left: 0;
+    bottom: -19px;
+    width: 68px;
+}
+.gudong-inner-right div img {
+    width: 100%;
+}
+/*safe-box*/
+.safe-box {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 4%;
+    background: #3b3f44;
+    border-radius: 6px;
+    padding: 4% 0;
+    opacity: 0;
+}
+.current .safe-box{
+    -webkit-animation: slideToTop .8s 0.3s ease both;
+    -moz-animation: slideToTop .8s 0.3s ease both;
+    -o-animation: slideToTop .8s 0.3s ease both;
+    animation: slideToTop .8s 0.3s ease both;
+}
+.safe-box ul li {
+    margin: 7% 0;
+    opacity: 0;
+}
+.current .safe-box ul li:nth-child(1) {
+    -webkit-animation: bounceInLeft .8s 0.6s ease both;
+    -moz-animation: bounceInLeft .8s 0.6s ease both;
+    -o-animation: bounceInLeft .8s 0.6s ease both;
+    animation: bounceInLeft .8s 0.6s ease both;
+}
+.current .safe-box ul li:nth-child(2) {
+    -webkit-animation: bounceInRight .8s 0.9s ease both;
+    -moz-animation: bounceInRight .8s 0.9s ease both;
+    -o-animation: bounceInRight .8s 0.9s ease both;
+    animation: bounceInRight .8s 0.9s ease both;
+}
+.current .safe-box ul li:nth-child(3) {
+    -webkit-animation: bounceInLeft .8s 1.2s ease both;
+    -moz-animation: bounceInLeft .8s 1.2s ease both;
+    -o-animation: bounceInLeft .8s 1.2s ease both;
+    animation: bounceInLeft .8s 1.2s ease both;
+}
+.current .safe-box ul li:nth-child(4) {
+    -webkit-animation: bounceInRight .8s 1.5s ease both;
+    -moz-animation: bounceInRight .8s 1.5s ease both;
+    -o-animation: bounceInRight .8s 1.5s ease both;
+    animation: bounceInRight .8s 1.5s ease both;
+}
+.current .safe-box ul li:nth-child(5) {
+    -webkit-animation: bounceInLeft .8s 1.8s ease both;
+    -moz-animation: bounceInLeft .8s 1.8s ease both;
+    -o-animation: bounceInLeft .8s 1.8s ease both;
+    animation: bounceInLeft .8s 1.8s ease both;
+}
+.current .safe-box ul li:nth-child(6) {
+    -webkit-animation: bounceInRight .8s 2.1s ease both;
+    -moz-animation: bounceInRight .8s 2.1s ease both;
+    -o-animation: bounceInRight .8s 2.1s ease both;
+    animation: bounceInRight .8s 2.1s ease both;
+}
+.safe-box-left {
+    float: left;
+    width: 40px;
+    margin-left: 10%;
+}
+.safe-box-left img {
+    width: 100%;
+}
+.safe-box-right {
+    float: left;
+    margin-left: 4%;
+}
+.safe-box-right span {
+    display: block;
+    font-size: 1rem;
+    margin-top: 4px;
+    margin-bottom: 2px;
+    color: #fff;
+}
+.safe-box-right i {
+    display: block;
+    font-size: 0.6rem;
+    color: #fff;
+}
+/*news-box*/
+.news-box {
+    position: absolute;
+    left: 5%;
+    top:24%;
+    width: 90%;
+    opacity: 0;
+}
+.current .news-box {
+    -webkit-animation: lightSpeedIn .8s .3s ease both;
+    -moz-animation: lightSpeedIn .8s .3s ease both;
+    -o-animation: lightSpeedIn .8s .3s ease both;
+    animation: lightSpeedIn .8s .3s ease both;
+}
+.news-img {
+    width: 100%;
+    border-bottom: 1px solid #44484d;
+    padding-bottom: 8px;
+}
+.news-img img {
+    width: 90px;
+}
+.news-title {
+    width: 100%;
+    text-align: justify;
+    font-size: 1rem;
+    color: #d43125;
+    margin-top: 10px;
+}
+.news-content {
+    width: 100%;
+    text-align: justify;
+    font-size: 0.8rem;
+    color: #fff;
+    margin-top: 4%;
+    margin-bottom: 6%;
+}
+.news-data {
+    width: 100%;
+    text-align: right;
+    color: #fff;
+    font-size: 0.8rem;
+}
+.news-line {
+    width: 100%;
+    border-bottom: 1px solid #44484d;
+    margin-top: 4%;
+}
+.news-link {
+    width: 100%;
+    text-align: left;
+    margin-top: 4%;
+}
+.news-link a {
+    color: #0068b7;
+}
+.news-link a:hover {
+    color: #0068b7;
+}
+.show {
+    display: block!important;
+}
+.hide {
+    display: none!important;
+}
+/*page-final*/
+.page-final {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 240px;
+    margin-left: -120px;
+    margin-top: -95px;
+}
+.page-final-code {
+    width: 120px;
+    margin: 0 auto;
+}
+.page-final-code {
+    margin: 0 auto;
+    opacity: 0;
+}
+.current .page-final-code {
+    -webkit-animation: flipInY .8s 0s ease both;
+    -moz-animation: flipInY .8s 0s ease both;
+    -o-animation: flipInY .8s 0s ease both;
+    animation: flipInY .8s 0s ease both;
+}
+.page-final-code img {
+    width: 100%;
+}
+.page-final-title {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #fff;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    opacity: 0;
+}
+.current .page-final-title {
+    -webkit-animation: flipInX .8s 0.3s ease both;
+    -moz-animation: flipInX .8s 0.3s ease both;
+    -o-animation: flipInX .8s 0.3s ease both;
+    animation: flipInX .8s 0.3s ease both;
+}
+.page-final p {
+    width: 240px;
+    text-align: left;
+    font-size: 0.8rem;
+    color: #fff;
+    margin: 0 auto;
+    padding-left: 5px;
+    opacity: 0;
+}
+.current .page-final p:nth-of-type(1){
+    -webkit-animation: flipInX .8s 0.6s ease both;
+    -moz-animation: flipInX .8s 0.6s ease both;
+    -o-animation: flipInX .8s 0.6s ease both;
+    animation: flipInX .8s 0.6s ease both;
+}
+.current .page-final p:nth-of-type(2){
+    -webkit-animation: flipInX .8s 0.9s ease both;
+    -moz-animation: flipInX .8s 0.9s ease both;
+    -o-animation: flipInX .8s 0.9s ease both;
+    animation: flipInX .8s 0.9s ease both;
+}
+.current .page-final p:nth-of-type(3){
+    -webkit-animation: flipInX .8s 1.2s ease both;
+    -moz-animation: flipInX .8s 1.2s ease both;
+    -o-animation: flipInX .8s 1.2s ease both;
+    animation: flipInX .8s 1.2s ease both;
+}
+.page-final p span {
+    padding-left: 64px;
 }
