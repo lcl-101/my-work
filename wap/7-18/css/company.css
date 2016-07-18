@@ -1,0 +1,145 @@
+body,p,ul,ol,li,dl,dt,dd,form,h1,h2,h3,h4,h5,h6,input{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+img{
+    border:0;
+}
+a{
+    text-decoration:none;
+}
+a:hover {
+    text-decoration:none;
+}
+body{
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 62.5%;
+    background: #2985c0;
+}
+i,em {
+    font-style: normal;
+}
+.container{
+    padding: 0;
+    width: 100%;
+}
+.row{
+    margin: 0;
+}
+.clearfix:before,.clearfix:after {
+    content:'';
+    display:table;
+}
+.clearfix:after{
+    clear: both;
+}
+.clearfix {
+    *zoom:1;
+}
+/*top-box*/
+.top-box .col-xs-12{
+    padding: 0;
+    background: url("../images/topbg.png") no-repeat 0 0;
+    background-size: 100% 100%;
+}
+.top-title {
+    width: 70px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2.2rem;
+    color: #fff;
+    padding-top: 6%;
+    padding-bottom: 3%;
+}
+.top-title img{
+    width: 100%;
+}
+.top-titles {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #fff;
+    background: url("../images/line.png") no-repeat center center;
+    background-size: 125%;
+    overflow: hidden;
+}
+.top-content {
+    width: 80%;
+    margin: 0 auto;
+    color: #fff;
+    text-align: justify;
+    font-size: 1.2rem;
+    padding: 4% 0 4% 0;
+}
+/*bottom-box*/
+.bottom-box .col-xs-12{
+    padding: 0;
+    background:url("../images/btpbg.png") no-repeat 0 0;
+    background-size: 100% 100%;
+    padding-bottom: 6%;
+}
+.bottom-title {
+    width:70%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2.2rem;
+    color: #fff;
+    padding-bottom: 4%;
+}
+.bottom-title  img{
+    width: 100%;
+}
+.bottom-box {
+    width: 100%;
+}
+.bottom-content {
+    width: 90%;
+    margin: 0 auto;
+}
+.bottom-content li {
+    width: 33%;
+    float: left;
+}
+.bottom-content li div {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 80px;
+    padding-bottom: 10px;
+}
+.bottom-content li div img {
+    width: 100%;
+}
+.bottom-content li p {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.bottom-inner {
+    width: 60%;
+    margin: 0 auto;
+    color: #fff;
+    text-align: justify;
+    font-size: 1.2rem;
+    padding: 4% 0 4% 0;
+}
+.bottom-inner li {
+    width: 50%;
+    float: left;
+}
+.bottom-inner li div {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 80px;
+    padding-bottom: 10px;
+}
+.bottom-inner li div img {
+    width: 100%;
+}
+.bottom-inner li p {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #fff;
+}
