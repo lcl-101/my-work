@@ -306,3 +306,16 @@ i,em {
     font-size: 1.4rem;
     margin-top: 20%;
 }
+/*share-box*/
+.share-box {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-align: right;
+    z-index: 1001;
+}
+.share-box img {
+    width: 50%;
+}
