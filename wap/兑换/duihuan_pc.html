@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>兑换</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+    <style>
+        body {
+            font: 14px/1.5 "Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif,"宋体";
+        }
+        body p {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            outline: 0;
+            border: 0;
+        }
+        .code-mark {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: #000000;
+            opacity: 0.6;
+            z-index: 10000000000000;
+        }
+
+        .couponcode-box {
+            position: fixed;
+            left: 10%;
+            top: 15%;
+            width: 80%;
+            z-index: 10000000000001;
+            background: #fff;
+            border: 1px solid #efeff3;
+        }
+
+        .couponcode-box .code-top {
+            width: 96%;
+            font-size: 16px;
+            color: #464648;
+            padding: 2% 0 2% 4%;
+            border-bottom: 1px solid #efeff3;
+            margin-top: 2%;
+            margin-bottom: 20px;
+        }
+
+        .couponcode-box .close {
+            float: right;
+            width: 26px;
+            margin-right: 2%;
+            margin-top: -1%;
+            cursor: pointer;
+        }
+
+        .couponcode-box .code-content {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .couponcode-box .code-content .code-box {
+            position: relative;
+            width: 100%;
+            height: 70px;
+        }
+
+        .code-box .code_err {
+            padding-left: 84px;
+            padding-top: 10px;
+            color: rgb(244, 67, 54);
+        }
+
+        .code-box label {
+            float: left;
+            width: 20%;
+            text-align: right;
+            font-size: 14px;
+            line-height: 40px;
+            color: #464648;
+            padding-right: 2%;
+        }
+
+        .code-box .coupon-code {
+            float: left;
+            width: 60%;
+            height: 38px;
+            line-height: 38px;
+            padding: 0 15px;
+            outline: none;
+            border: 1px solid #e4e4e8;
+        }
+
+        .couponcode-box .code-bottom {
+            width:100%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+
+        .couponcode-box .code-bottom a {
+            width: 150px;
+            height: 30px;
+            line-height: 30px;
+            display: inline-block;
+            color: #fff;
+            background: rgb(244, 67, 54);
+            cursor: pointer;
+        }
+
+        .code-content .refer {
+            padding-left:6%;
+            color: #464648;
+        }
+
+        .couponcode-box .code-success {
+            /*display: none;*/
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            color: #464648;
+            font-size: 30px;
+        }
+
+        .couponcode-box .code-success .code-box i {
+            width: 36px;
+            height: 38px;
+            background: url('success_icon.png') 0 10px no-repeat;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .couponcode-box .code-success .code-txt {
+            width: 100%;
+            font-size: 14px;
+            color: #464648;
+            height: 42px;
+            line-height: 42px;
+        }
+
+        .couponcode-box .code-success .code-info {
+            height: 70px;
+        }
+    </style>
+</head>
+<body>
+<div class="code-mark"></div>
+<div class="couponcode-box" id="couponcode-box">
+    <form action="/user/couponcode/duihuan" method="post" id="code-forms">
+        <h3 class="code-top">领取兑换码<img class="close" src="close.png" alt=""></h3>
+        <div class="code-content">
+            <input type="hidden" name="_csrf" value="<?= Yii::$app->request->csrfToken; ?>">
+            <div class="code-box">
+                <label for="code">兑换码</label>
+                <input id="code" class="coupon-code" type="text" maxlength="16" placeholder="请输入代金券兑换码" name="code" autocomplete="off" tabindex="1">
+                <div style="clear: both"></div>
+                <div class="popUp code_err"></div>
+            </div>
+            <div style="width: 100%">
+                <p class="refer">*兑换码一般从温都金服宣传页、合作网站等获得</p>
+                <p class="refer">*必须在有效期内兑换代金券，过期无法兑换</p>
+            </div>
+        </div>
+        <div class="code-success">
+            <div class="code-box code-info"><i></i><span>兑换成功!</span></div>
+            <div class="code-txt"><p>恭喜您获得了<span id="success-refer"></span></p></div>
+        </div>
+        <div class="code-bottom">
+            <a id="code_submit_button" tabindex="2" style="background: rgb(244, 67, 54);">立即兑换</a>
+        </div>
+        <input type="text" style="display:none" />
+    </form>
+</div>
+</body>
+</html>
