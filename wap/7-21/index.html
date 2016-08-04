@@ -10,6 +10,11 @@
     <script src="js/index.js"></script>
 </head>
 <body>
+    <!--领取的奖品类型-->
+    <input type="hidden" name="type" id="type" value="0">
+    <!--用户类型-->
+    <input type="hidden" name="status" id="status" value="3">
+    <input type="hidden" name="uid" id="uid" value="10287">
     <div class="container">
         <!--banner-box-->
         <div class="row banner-box">
@@ -23,25 +28,25 @@
         <div class="row help-box">
             <div class="col-xs-12">
                 <ul class="clearfix">
-                    <li>
+                    <li class="help-btn">
                         <div>
                             <img src="images/pingpang.png" alt="">
                             <p>助力</p>
                         </div>
                     </li>
-                    <li>
+                    <li class="help-btn">
                         <div>
                             <img src="images/swim.png" alt="">
                             <p>助力</p>
                         </div>
                     </li>
-                    <li>
+                    <li class="help-btn">
                         <div>
                             <img src="images/quanji.png" alt="">
                             <p>助力</p>
                         </div>
                     </li>
-                    <li>
+                    <li class="help-btn">
                         <div>
                             <img src="images/paiqiu.png" alt="">
                             <p>助力</p>
@@ -52,25 +57,25 @@
                             <img src="images/aoyun.png" alt="">
                         </div>
                     </li>
-                    <li>
+                    <li class="help-btn">
                         <div>
                             <img src="images/lanqiu.png" alt="">
                             <p>助力</p>
                         </div>
                     </li>
-                    <li>
+                    <li class="help-btn">
                         <div>
                             <img src="images/run.png" alt="">
                             <p>助力</p>
                         </div>
                     </li>
-                    <li>
+                    <li class="help-btn">
                         <div>
                             <img src="images/fooerbal.png" alt="">
                             <p>助力</p>
                         </div>
                     </li>
-                    <li>
+                    <li class="help-btn">
                         <div>
                             <img src="images/wangqiu.png" alt="">
                             <p>助力</p>
@@ -113,6 +118,7 @@
         </div>
         <!--mark-box-->
         <div class="mark-box"></div>
+        <!--奖品弹窗-->
         <div class="award-box">
             <div class="award-top">
                 <img src="images/top.jpg" alt="">
@@ -124,6 +130,7 @@
             </div>
         </div>
         <!--address-box-->
+        <!--地址弹窗-->
         <div class="address-box">
             <div class="address-top">
                 <img src="images/top.jpg" alt="">
@@ -136,6 +143,7 @@
             </div>
         </div>
         <!--invite-box-->
+        <!--领取成功弹窗-->
         <div class="invite-box">
             <div class="invite-top">
                 <img src="images/top.jpg" alt="">
@@ -149,6 +157,7 @@
             </div>
         </div>
         <!--login-box-->
+        <!--登录弹窗-->
         <div class="login-box">
             <div class="login-top">
                 <img src="images/top.jpg" alt="">
@@ -160,6 +169,7 @@
             </div>
         </div>
         <!--share-box-->
+        <!--分享弹窗-->
         <div class="share-box">
             <img src="images/share.png" alt="">
         </div>

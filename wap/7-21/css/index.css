@@ -248,7 +248,7 @@ i,em {
     width: 10%;
 }
 .invite-inner {
-    width: 64%;
+    width: 70%;
     margin: 0 auto;
     text-align: center;
     color: #666cfa;
@@ -298,6 +298,7 @@ i,em {
     padding: 6% 0;
 }
 .login-btn {
+    display: block;
     width: 100%;
     text-align: center;
     padding: 6px 0;
@@ -305,6 +306,55 @@ i,em {
     color: #fff;
     font-size: 1.4rem;
     margin-top: 20%;
+}
+.login-btn:hover {
+    color: #fff;
+}
+/*touzi-box*/
+.touzi-box {
+    display: none;
+    position: fixed;
+    left: 18%;
+    top: 50%;
+    width: 64%;
+    z-index: 1001;
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    padding-bottom: 8%;
+}
+.touzi-top {
+    width: 100%;
+}
+.touzi-top img:nth-child(1) {
+    width: 100%;
+}
+.touzi-top img:nth-child(2) {
+    position: absolute;
+    right: 4%;
+    top:4%;
+    width: 10%;
+}
+.touzi-inner {
+    width: 64%;
+    margin: 0 auto;
+    text-align: center;
+    color: #666cfa;
+    font-size: 1.4rem;
+    padding: 6% 0;
+}
+.touzi-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 6px 0;
+    background: #6f9efc;
+    color: #fff;
+    font-size: 1.4rem;
+    margin-top: 20%;
+}
+.touzi-btn:hover {
+    color: #fff;
 }
 /*share-box*/
 .share-box {
@@ -314,8 +364,14 @@ i,em {
     top: 0;
     width: 100%;
     text-align: right;
-    z-index: 1001;
+    z-index: 10001;
 }
 .share-box img {
     width: 50%;
+}
+/*以领取的状态*/
+.blue-back {
+    background: #51648c!important;
+    border-bottom: 2px solid #667eb2;
+    box-sizing: border-box;
 }
