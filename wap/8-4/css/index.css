@@ -51,7 +51,7 @@ i,em {
 }
 .key-inner {
     position: relative;
-    width: 54%;
+    width: 64%;
     margin: -27% auto 0;
 }
 .key-inner img {
@@ -59,9 +59,9 @@ i,em {
 }
 .key-content {
     position: absolute;
-    left: 15%;
-    top: 68%;
-    width: 72%;
+    left: 20%;
+    top: 60%;
+    width: 62%;
 }
 .key-content li {
     float: left;
@@ -70,9 +70,9 @@ i,em {
 }
 .key-content li span {
     display: block;
-    width: 70%;
-    line-height: 1.2rem;
-    font-size: 1rem;
+    width: 60%;
+    line-height: 1.6rem;
+    font-size: 1.4rem;
     font-weight: bold;
     -webkit-border-radius:200px;
     -moz-border-radius:200px;
@@ -438,6 +438,7 @@ i,em {
 .rule-tishi {
     margin-top: 20px;
     padding-left: 8px;
+    font-size: 1.2rem;
 }
 .rule-tishi span {
     margin-left: -7px;
@@ -785,7 +786,11 @@ i,em {
     width: 70%;
     max-width: 290px;
     z-index: 101;
+    background: #ffc686;
+    border-radius: 8px;
     padding: 18px 0;
+    box-shadow: 0 0 13px #ead909;
+    border: 2px solid #fff;
 }
 .address-title {
     width: 70%;
@@ -803,11 +808,11 @@ i,em {
     width: 100%;
     text-align: center;
     font-size: 1.2rem;
-    color: #fff;
+    color: #f15d35;
     margin-top: 8px;
 }
-.address-inner textarea {
-    width: 70%;
+.address-inner p textarea {
+    width: 90%;
     height: 30px;
     font-size: 1.4rem;
     border: 0;
@@ -818,15 +823,25 @@ i,em {
     background: transparent;
     border-bottom: 1px solid #f3f3f3;
     margin: 0 auto;
-    color: #f3f3f3;
+}
+.address-inner p i {
+    display: block;
+    text-align: left;
+    width: 90%;
+    color: #f15d35;
+    margin: 0 auto;
 }
 .address-inner p {
     width: 70%;
     margin: 0 auto;
     margin-top: 8px;
-    color: #fff;
-    font-size: 1.2rem;
-    text-align: left;
+    background: #fff5e8;
+    padding: 8px 0;
+    border: 1px solid #ffc686;
+    transition: all 0.5s ease;
+    /*color: #fff;*/
+    /*font-size: 1.2rem;*/
+    /*text-align: left;*/
 }
 .award-inner p img {
     width: 80%;
@@ -862,4 +877,10 @@ i,em {
     margin: 0 auto;
     border:1px solid #fed360;
     box-shadow: 0 2px 0px #fed360;
+}
+.address-tishi {
+    text-align: center;
+    font-size: 1rem;
+    color:#595757;
+    padding: 10px 0 0 0;
 }

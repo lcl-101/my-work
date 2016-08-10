@@ -120,5 +120,13 @@ $(function(){
     $('.award-btn span').on('click',function(){
         $('.award-box').fadeOut();
         $('.address-box').fadeIn();
+    });
+    //address-inner
+    $('.address-inner p').on('click',function(){
+        $('.address-inner textarea').focus();
+        $('.address-inner p').css({border:'1px solid #f15d35'})
+    });
+    $('.address-inner textarea').blur(function(){
+        $('.address-inner p').css({border:'1px solid #ffc686'})
     })
 })

@@ -1,0 +1,271 @@
+body, p, ul, ol, li, dl, dt, dd, form, h1, h2, h3, h4, h5, h6, input,table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: 0;
+    border: 0;
+}
+img {
+    border: 0;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+body {
+    font:14px/1.5 "Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif,"宋体";
+}
+i,em{
+    font-style: normal;
+}
+.clearfix:before,.clearfix:after {
+    content:'';
+    display:table;
+}
+.clearfix:after{
+    clear: both;
+}
+.clearfix {
+    *zoom:1;
+}
+/*pyramid-box*/
+.pyramid-box {
+    width: 1040px;
+    margin: 0 auto;
+}
+.pyramid-inner {
+    padding:20px;
+}
+.pyramid-title {
+    height: 21px;
+    position: relative;
+    font-size: 14px;
+    text-align: left;
+    color: #474747;
+    padding-left: 4px;
+    margin-bottom: 75px;
+}
+.pyramid-title span {
+    position: absolute;
+    display: block;
+    width: 2px;
+    height: 8px;
+    background: #ff5736;
+    left:0;
+    top: 6px;
+}
+/*pyramid-content1*/
+.pyramid-content1 {
+    display: none;
+    position: relative;
+    width: 444px;
+    height: 304px;
+    margin: 0 auto;
+}
+.pyramid-t1 {
+    position: absolute;
+    top: 19px;
+    left: 119px;
+    width: auto;
+    background: #efefef;
+    font-size: 24px;
+    color: #999999;
+    padding: 4px 18px;
+    border-radius: 100px;
+    z-index: 1;
+}
+/*pyramid-content2*/
+.pyramid-content2 {
+    display: none;
+    position: relative;
+    width: 444px;
+    height: 304px;
+    margin: 0 auto;
+}
+.pyramid-t2 {
+    position: absolute;
+    top: 212px;
+    left: 341px;
+    width: 300px;
+    z-index: 1;
+}
+.pyramid-t span {
+    width: auto;
+    font-size: 24px;
+    color: #999999;
+    padding: 4px 18px;
+    border-radius: 100px;
+}
+.border-gray {
+    border: 1px solid #efefef;
+    background: #fff;
+}
+.background-gray {
+    background: #efefef;
+}
+.pyramid-t3 {
+    position: absolute;
+    top: 103px;
+    left: -75px;
+    width: 300px;
+    z-index: 1;
+}
+/*pyramid-content3*/
+.pyramid-content3 {
+    display: none;
+    position: relative;
+    width: 444px;
+    height: 304px;
+    margin: 0 auto;
+}
+.pyramid-t4 {
+    position: absolute;
+    top: 212px;
+    left: 341px;
+    width: 300px;
+    z-index: 1;
+}
+.pyramid-t5 {
+    position: absolute;
+    top: 133px;
+    left: -102px;
+    width: 300px;
+    z-index: 1;
+}
+.pyramid-t6 {
+    position: absolute;
+    top: 37px;
+    left: -52px;
+    width: 300px;
+    z-index: 1;
+}
+/*pyramid-content4*/
+.pyramid-content4 {
+    display: none;
+    position: relative;
+    width: 444px;
+    height: 304px;
+    margin: 0 auto;
+}
+.pyramid-t7 {
+    position: absolute;
+    top: 232px;
+    left: 370px;
+    width: 300px;
+    z-index: 1;
+}
+.pyramid-t8 {
+    position: absolute;
+    top: 164px;
+    left: -102px;
+    width: 300px;
+    z-index: 1;
+}
+.pyramid-t9 {
+    position: absolute;
+    top: 37px;
+    left: -52px;
+    width: 300px;
+    z-index: 1;
+}
+.pyramid-t10 {
+    position: absolute;
+    top: 114px;
+    left: 295px;
+    width: 300px;
+    z-index: 1;
+}
+/*pyramid-content5*/
+.pyramid-content5 {
+    display: none;
+    position: relative;
+    width: 444px;
+    height: 304px;
+    margin: 0 auto;
+}
+.pyramid-t11 {
+    position: absolute;
+    top: 233px;
+    left: 355px;
+    width: 300px;
+    z-index: 1;
+}
+.pyramid-t12 {
+    position: absolute;
+    top: 185px;
+    left: -115px;
+    width: 300px;
+    z-index: 1;
+}
+.pyramid-t13 {
+    position: absolute;
+    top: 77px;
+    left: -85px;
+    width: 300px;
+    z-index: 1;
+}
+.pyramid-t14 {
+    position: absolute;
+    top: 138px;
+    left: 279px;
+    width: 300px;
+    z-index: 1;
+}
+.pyramid-t15 {
+    position: absolute;
+    top: 18px;
+    left: 165px;
+    width: 300px;
+    z-index: 1;
+}
+/*pyramid-content6*/
+.pyramid-content6 {
+    position: relative;
+    width: 444px;
+    height: 304px;
+    margin: 0 auto;
+}
+.pyramid-t16 {
+    position: absolute;
+    top: 232px;
+    left: 355px;
+    width: 300px;
+    z-index: 1;
+}
+.pyramid-t17 {
+    position: absolute;
+    top: 184px;
+    left: -115px;
+    width: 300px;
+    z-index: 1;
+}
+.pyramid-t18 {
+    position: absolute;
+    top: 102px;
+    left: -88px;
+    width: 300px;
+    z-index: 1;
+}
+.pyramid-t19 {
+    position: absolute;
+    top: 147px;
+    left: 282px;
+    width: 300px;
+    z-index: 1;
+}
+.pyramid-t20 {
+    position: absolute;
+    top: 65px;
+    left: 260px;
+    width: 300px;
+    z-index: 1;
+}
+.pyramid-t21 {
+    position: absolute;
+    top: 22px;
+    left: -32px;
+    width: 300px;
+    z-index: 1;
+}
