@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+    <script src="jquery.js"></script>
+</head>
+<style>
+    body{
+        background: #dfdfdf;
+    }
+    .qing-transform {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        width: 12%;
+    }
+
+    .qing-transform img {
+        width: 100%;
+    }
+    @keyframes bounce1 {
+        0%   {transform: rotate(-90deg);}
+        100% {transform: rotate(0deg);;}
+    }
+    @keyframes bounce2 {
+        0%   {transform: rotate(0deg);}
+        100% {transform: rotate(-40deg);;}
+    }
+    @keyframes bounce3 {
+        0%   {transform: rotate(-40deg);}
+        100% {transform: rotate(0deg);;}
+    }
+    @keyframes bounce4 {
+        0%   {transform: rotate(0deg);}
+        100% {transform: rotate(-30deg);;}
+    }
+    @keyframes bounce5 {
+        0%   {transform: rotate(-30deg);}
+        100% {transform: rotate(0deg);;}
+    }
+    @keyframes bounce6 {
+        0%   {transform: rotate(0deg);}
+        100% {transform: rotate(-20deg);}
+    }
+    @keyframes bounce7 {
+        0%   {transform: rotate(-20deg);}
+        100% {transform: rotate(0deg);}
+    }
+    @keyframes bounce8 {
+        0%   {transform: rotate(0deg);}
+        100% {transform: rotate(-10deg);}
+    }
+    @keyframes bounce9 {
+        0%   {transform: rotate(-10deg);}
+        100% {transform: rotate(0deg);}
+    }
+    .aa {
+        animation: bounce1 1.2s cubic-bezier(.98,.01,.98,.69);
+        transform-origin: left top;
+    }
+    .bb {
+        animation: bounce2 1.2s cubic-bezier(0.215, .61, .355, 1);
+        transform-origin: left top;
+    }
+    .cc {
+        animation: bounce3 1s cubic-bezier(.98,.01,.98,.69);
+        transform-origin: left top;
+    }
+    .dd {
+        animation: bounce4 1s cubic-bezier(0.215, .61, .355, 1);
+        transform-origin: left top;
+    }
+    .ee {
+        animation: bounce5 0.6s cubic-bezier(.98,.01,.98,.69);
+        transform-origin: left top;
+    }
+    .ff {
+        animation: bounce6 0.6s cubic-bezier(0.215, .61, .355, 1);
+        transform-origin: left top;
+    }
+    .gg {
+        animation: bounce7 0.4s cubic-bezier(.98,.01,.98,.69);
+        transform-origin: left top;
+    }
+    .hh {
+        animation: bounce8 0.4s cubic-bezier(0.215, .61, .355, 1);
+        transform-origin: left top;
+    }
+    .ii {
+        animation: bounce9 0.3s cubic-bezier(.98,.01,.98,.69);
+        transform-origin: left top;
+    }
+</style>
+<body>
+<div class="qing-transform change-memory aa"><img src="qing-icon.png"></div>
+<script>
+    var a=setTimeout(function(){
+        $('.change-memory').removeClass('aa');
+        $('.change-memory').addClass('bb');
+        clearTimeout(a);
+        var b=setTimeout(function(){
+            $('.change-memory').removeClass('bb');
+            $('.change-memory').addClass('cc');
+            clearTimeout(b);
+            var c=setTimeout(function(){
+                $('.change-memory').removeClass('cc');
+                $('.change-memory').addClass('dd');
+                clearTimeout(c);
+                var d=setTimeout(function(){
+                    $('.change-memory').removeClass('dd');
+                    $('.change-memory').addClass('ee');
+                    clearTimeout(d);
+                    var e=setTimeout(function(){
+                        $('.change-memory').removeClass('ee');
+                        $('.change-memory').addClass('ff');
+                        clearTimeout(e);
+                        var f=setTimeout(function(){
+                            $('.change-memory').removeClass('ff');
+                            $('.change-memory').addClass('gg');
+                            clearTimeout(f);
+                            var g=setTimeout(function(){
+                                $('.change-memory').removeClass('gg');
+                                $('.change-memory').addClass('hh');
+                                clearTimeout(g);
+                                var h=setTimeout(function(){
+                                    $('.change-memory').removeClass('hh');
+                                    $('.change-memory').addClass('ii');
+                                    clearTimeout(h);
+                                },400)
+                            },400)
+                        },600)
+                    },600)
+                },1000)
+            },1000)
+        },1200)
+    },1200)
+</script>
+</body>
+</html>
