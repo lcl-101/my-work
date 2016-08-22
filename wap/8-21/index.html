@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 50%;
+            height: 100px;
+            margin:  0 auto;
+            /*background: #fffd25;*/
+        }
+    </style>
+    <script>
+        window.onload=function(){
+            var canvas=document.getElementById('canvas');
+            var cans=canvas.getContext('2d');
+            canvas.width=canvas.parentNode.offsetWidth;
+            canvas.hight=canvas.parentNode.offsetHeight;
+            cans.fillStyle='rgba(0,225,225,0.2)'
+        }
+    </script>
+</head>
+<body>
+    <div class="box">
+        <canvas id="canvas"></canvas>
+    </div>
+    
+</body>
+</html>

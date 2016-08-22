@@ -16,6 +16,7 @@
         left: 0;
         z-index: 10;
         width: 12%;
+        transform-origin: left top;
     }
 
     .qing-transform img {
@@ -95,48 +96,77 @@
     }
 </style>
 <body>
-<div class="qing-transform change-memory aa"><img src="qing-icon.png"></div>
+<div class="qing-transform change-memory"><img src="qing-icon.png"></div>
 <script>
-    var a=setTimeout(function(){
-        $('.change-memory').removeClass('aa');
-        $('.change-memory').addClass('bb');
-        clearTimeout(a);
-        var b=setTimeout(function(){
-            $('.change-memory').removeClass('bb');
-            $('.change-memory').addClass('cc');
-            clearTimeout(b);
-            var c=setTimeout(function(){
-                $('.change-memory').removeClass('cc');
-                $('.change-memory').addClass('dd');
-                clearTimeout(c);
-                var d=setTimeout(function(){
-                    $('.change-memory').removeClass('dd');
-                    $('.change-memory').addClass('ee');
-                    clearTimeout(d);
-                    var e=setTimeout(function(){
-                        $('.change-memory').removeClass('ee');
-                        $('.change-memory').addClass('ff');
-                        clearTimeout(e);
-                        var f=setTimeout(function(){
-                            $('.change-memory').removeClass('ff');
-                            $('.change-memory').addClass('gg');
-                            clearTimeout(f);
-                            var g=setTimeout(function(){
-                                $('.change-memory').removeClass('gg');
-                                $('.change-memory').addClass('hh');
-                                clearTimeout(g);
-                                var h=setTimeout(function(){
-                                    $('.change-memory').removeClass('hh');
-                                    $('.change-memory').addClass('ii');
-                                    clearTimeout(h);
-                                },400)
-                            },400)
-                        },600)
-                    },600)
-                },1000)
-            },1000)
-        },1200)
-    },1200)
+//    var a=setTimeout(function(){
+//        $('.change-memory').removeClass('aa');
+//        $('.change-memory').addClass('bb');
+//        clearTimeout(a);
+//        var b=setTimeout(function(){
+//            $('.change-memory').removeClass('bb');
+//            $('.change-memory').addClass('cc');
+//            clearTimeout(b);
+//            var c=setTimeout(function(){
+//                $('.change-memory').removeClass('cc');
+//                $('.change-memory').addClass('dd');
+//                clearTimeout(c);
+//                var d=setTimeout(function(){
+//                    $('.change-memory').removeClass('dd');
+//                    $('.change-memory').addClass('ee');
+//                    clearTimeout(d);
+//                    var e=setTimeout(function(){
+//                        $('.change-memory').removeClass('ee');
+//                        $('.change-memory').addClass('ff');
+//                        clearTimeout(e);
+//                        var f=setTimeout(function(){
+//                            $('.change-memory').removeClass('ff');
+//                            $('.change-memory').addClass('gg');
+//                            clearTimeout(f);
+//                            var g=setTimeout(function(){
+//                                $('.change-memory').removeClass('gg');
+//                                $('.change-memory').addClass('hh');
+//                                clearTimeout(g);
+//                                var h=setTimeout(function(){
+//                                    $('.change-memory').removeClass('hh');
+//                                    $('.change-memory').addClass('ii');
+//                                    clearTimeout(h);
+//                                },400)
+//                            },400)
+//                        },600)
+//                    },600)
+//                },1000)
+//            },1000)
+//        },1200)
+//    },1200)
+</script>
+<script>
+    $(function(){
+        function bounce(t){
+            var ts=t * t * 8.0;
+            return ts;
+        }
+        function getInterpolation(t){
+            var t = t*1.1226;
+            if(t<0.3535){
+                return bounce(t);
+            }else if(t < 0.7408){
+                return bounce(t - 0.54719) + 0.7;
+            }else if(t < 0.9644){
+                return bounce(t - 0.8526) + 0.9;
+            }else {
+                return bounce(t - 1.0435) + 0.95;
+            }
+        }
+        var tt=0;
+        setInterval(function(){
+            tt++;
+            if(tt>=2000){
+                return;
+            }
+            var s=-90*getInterpolation(tt / 2000)+90;
+            $('.qing-transform').css({transform: 'rotate('+-s+'deg)','-webkit-transform': 'rotate('+-s+'deg)','-moz-transform': 'rotate('+-s+'deg)','-o-transform': 'rotate('+-s+'deg)'})
+        },1)
+    })
 </script>
 </body>
 </html>
