@@ -4,28 +4,161 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
     <title>Document</title>
+    <script src="jquery.js"></script>
     <style>
         .box {
-            width: 50%;
-            height: 100px;
+            position: relative;
+            width: 80%;
+            height: 0;
             margin:  0 auto;
-            /*background: #fffd25;*/
+            border-radius: 50%;
+            overflow: hidden;
+            border: 1px solid red;
+            padding-bottom: 80%;
+        }
+        #myCanvas {
+            overflow: hidden;
         }
     </style>
-    <script>
-        window.onload=function(){
-            var canvas=document.getElementById('canvas');
-            var cans=canvas.getContext('2d');
-            canvas.width=canvas.parentNode.offsetWidth;
-            canvas.hight=canvas.parentNode.offsetHeight;
-            cans.fillStyle='rgba(0,225,225,0.2)'
-        }
-    </script>
 </head>
 <body>
     <div class="box">
-        <canvas id="canvas"></canvas>
+        <canvas id="myCanvas"></canvas>
     </div>
-    
+    <script>
+        window.onload=function(){
+            var canvas=document.getElementById('myCanvas');
+            var cans=canvas.getContext('2d');
+            canvas.width=canvas.parentNode.offsetWidth;
+            canvas.height=canvas.parentNode.offsetHeight*2+40;
+
+//            cans.fillStyle='orange';
+//            cans.beginPath();
+//            cans.arc(50,50,40,0,Math.PI*2);
+//            cans.stroke();
+//            cans.closePath();
+
+            var step = 0;
+
+//            加速球
+            function init(){
+
+                //清空canvas
+                cans.clearRect(0,0,200,200);
+
+                step+=3;
+
+                //转化为弧度
+                var stepAngle = step*Math.PI/180;
+                var deltaHeight = Math.sin(stepAngle)*20;
+                var deltaHeightRight = Math.cos(stepAngle)*20;
+                var y = 100 + deltaHeight;
+
+                //计算在左半圆上随着y值上下移动，对应的x值
+                var expression = 8100 - Math.pow((100-y),2);
+                var x = 100 - Math.sqrt(expression) ;
+
+                var rightY = 100 + deltaHeightRight;
+                var expressionRight = 8100 - Math.pow((100-rightY),2);
+                //取右侧的X坐标（同一个y值会有两个x坐标）
+                var rightX = 200 - (100 - Math.sqrt(expressionRight));
+//                alert("rightX:"+rightX+" rightY:"+rightY+" x:"+x+" y:"+y);
+
+                cans.beginPath();
+                cans.lineWidth = 1;
+                cans.strokeStyle = "orange";
+                cans.arc(100,100,90,0,2*Math.PI,false);
+                cans.stroke();
+
+                cans.fillStyle = "rgba(0,222,255, 0.2)";
+                cans.beginPath();
+                cans.moveTo(x,y);
+                cans.bezierCurveTo(100, y-30, 100, rightY-30, rightX,rightY);
+
+                //计算圆起始点（与X轴平行的直径的右侧端点）与圆左侧给定Y坐标的点
+                var distance = Math.sqrt(Math.pow((190-x),2)+Math.pow((100-y),2));
+                //sina=d/2r   a为夹角的一半  2a为两点的圆心角   Math.asin最终结果为弧度 如asin(1)=1/2*PI
+                var angle = Math.asin(distance/180)*2;
+
+
+                var distanceRight = Math.sqrt(Math.pow((190-rightX),2)+Math.pow((100-rightY),2));
+                var angleRight = Math.asin(distanceRight/180)*2;
+
+
+                //如果在左侧上半圆则用2PI-弧度
+                if(y<100){
+                    angle = 2*Math.PI - angle;
+                }
+
+                if(rightY < 100){
+                    angleRight = -angleRight;
+                }
+
+                cans.arc(100,100,90,angleRight,angle,false);
+                cans.fill();
+                cans.closePath();
+                window.requestAnimationFrame(init);
+            }
+
+
+
+            window.requestAnimFrame = (function(){
+                return window.requestAnimationFrame ||
+                        window.webkitRequestAnimationFrame ||
+                        window.mozRequestAnimationFrame ||
+                        function( callback ){
+                            window.setTimeout(callback, 1000 / 60);
+                        };
+            })();
+//            init();
+
+            //初始角度为0
+            var step = 0;
+            function loop(){
+                //清空canvas
+                cans.clearRect(0,0,canvas.width,canvas.height);
+                //绘制矩形
+                cans.fillStyle='rgba(0,222,255, 0.2)';
+
+                //角度增加一度
+                step-=3;
+                //角度转换成弧度
+                var angle = step*Math.PI/180;
+                //矩形高度的变化量
+                var deltaHeight = Math.sin(angle) * 5;
+                //矩形高度的变化量(右上顶点)
+                var deltaHeightRight = Math.cos(angle) * 5;
+                cans.beginPath();
+                //在矩形的左上与右上两个顶点加上高度变化量
+                cans.moveTo(0, canvas.height/2+deltaHeight);
+                //画曲线
+                cans.bezierCurveTo(canvas.width /2, canvas.height/2+deltaHeight-2, canvas.width / 2,    canvas.height/2+deltaHeightRight-10, canvas.width, canvas.height/2+deltaHeightRight);
+                cans.lineTo(canvas.width, canvas.height/2+deltaHeight+deltaHeightRight);
+                cans.lineTo(canvas.width, canvas.height);
+                cans.lineTo(0, canvas.height);
+                cans.lineTo(0, canvas.height/2+deltaHeight);
+                cans.closePath();
+                cans.fill();
+                cans.closePath();
+
+                requestAnimFrame(loop);
+            }
+            loop();
+
+            var t=-0;
+            setInterval(function(){
+                t++;
+                if(t>=canvas.height/2+20){
+                    return;
+                }
+                var s=t/(canvas.height/2+20);
+                if(s>=0.5){
+                    return;
+                }
+                console.log(t/(canvas.height/2+20));
+                $('#myCanvas').css({marginTop:-t});
+            },30)
+        }
+    </script>
 </body>
 </html>
