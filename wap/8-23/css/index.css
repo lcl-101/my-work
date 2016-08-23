@@ -1,0 +1,53 @@
+body,p,ul,ol,li,dl,dt,dd,form,h1,h2,h3,h4,h5,h6,input{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+img{
+    border:0;
+    font-size: 16px;
+}
+a{
+    text-decoration:none;
+}
+a:hover {
+    text-decoration:none;
+}
+body{
+    font:14px/1.5 "Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif,"宋体";
+    box-sizing: border-box;
+}
+i,em {
+    font-style: normal;
+}
+.container{
+    padding: 0;
+}
+.row{
+    margin: 0;
+}
+.clearfix:before,.clearfix:after {
+    content:'';
+    display:table;
+}
+.clearfix:after{
+    clear: both;
+}
+.clearfix {
+    *zoom:1;
+}
+
+.col-xs-12 {
+    font-size: 0.5rem;
+}
+/*banner-box*/
+.banner-box .col-xs-12 {
+    padding: 0;
+}
+.banner-box .col-xs-12 img {
+    width: 100%;
+}
+/*prize-box*/
+.prize-box .col-xs-12 {
+    padding:0;
+}

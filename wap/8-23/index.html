@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/Underscore.js"></script>
+    <script src="js/fastclick.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        $(function(){
+            (function() {
+                // deicePixelRatio ：设备像素
+                var scale = 1 / devicePixelRatio;
+                //设置meta 压缩界面 模拟设备的高分辨率
+                document.querySelector('meta[name="viewport"]').setAttribute('content', 'initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+                //debounce 为节流函数，自己实现。或者引入underscoure即可。
+                var reSize = _.debounce(function() {
+                    var deviceWidth = document.documentElement.clientWidth > 1300 ? 1300 : document.documentElement.clientWidth;
+                    //按照640像素下字体为100px的标准来，得到一个字体缩放比例值 6.4
+                    document.documentElement.style.fontSize = (deviceWidth / 6.4) + 'px';
+                }, 50);
+                window.onresize = reSize;
+            })();
+        })
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <!--banner-box-->
+        <div class="row banner-box">
+            <div class="col-xs-12">
+                <img src="images/banner1.png" alt="">
+                <img src="images/banner2.png" alt="">
+                <img src="images/banner3.png" alt="">
+            </div>
+        </div>
+        <!--prize-box-->
+        <div class="row prize-box">
+            <div class="col-xs-12">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
