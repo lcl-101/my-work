@@ -100,7 +100,7 @@
                 window.requestAnimationFrame(init);
             }
 
-
+//            init();
 
             window.requestAnimFrame = (function(){
                 return window.requestAnimationFrame ||
@@ -110,7 +110,7 @@
                             window.setTimeout(callback, 1000 / 60);
                         };
             })();
-//            init();
+
 
             //初始角度为0
             var step = 0;
@@ -118,7 +118,7 @@
                 //清空canvas
                 cans.clearRect(0,0,canvas.width,canvas.height);
                 //绘制矩形
-                cans.fillStyle='rgba(0,222,255, 0.2)';
+                cans.fillStyle='#a6c6ff';
 
                 //角度增加一度
                 step-=3;
@@ -132,7 +132,7 @@
                 //在矩形的左上与右上两个顶点加上高度变化量
                 cans.moveTo(0, canvas.height/2+deltaHeight);
                 //画曲线
-                cans.bezierCurveTo(canvas.width /2, canvas.height/2+deltaHeight-2, canvas.width / 2,    canvas.height/2+deltaHeightRight-10, canvas.width, canvas.height/2+deltaHeightRight);
+                cans.bezierCurveTo(canvas.width /2, canvas.height/2+deltaHeight-10, canvas.width / 2,    canvas.height/2+deltaHeightRight-10, canvas.width, canvas.height/2+deltaHeightRight);
                 cans.lineTo(canvas.width, canvas.height/2+deltaHeight+deltaHeightRight);
                 cans.lineTo(canvas.width, canvas.height);
                 cans.lineTo(0, canvas.height);
