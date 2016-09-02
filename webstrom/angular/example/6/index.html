@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../../src/bower_components/angular/angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+    <div ng-controller="MyController">
+        <input type="text" ng-model="expr" placeholder="Enter an expression">
+        <h2>{{parsedValue}}</h2>
+    </div>
+    <script>
+        var app=angular.module('myApp',[]);
+        app.controller('MyController',function($scope,$parse){
+            $scope.$watch('expr',function (newVal,oldVal,scope) {
+                console.log(newVal);
+                console.log(oldVal);
+                console.log(scope);
+                if(newVal!==oldVal){
+                    var parseFun=$parse('expr');
+                    $scope.parsedValue=parseFun(scope);
+                }
+            })
+        })
+    </script>
+</body>
+</html>

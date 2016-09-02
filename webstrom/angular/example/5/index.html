@@ -8,16 +8,24 @@
     <title>Document</title>
     <script src="../../src/bower_components/angular/angular.min.js"></script>
 </head>
-<body>
-    <div ng-app="myApp">
-        <div ng-controller="MyController">
-            hello {{name}}
+<body ng-app="myApp">
+    <div ng-controller="ParentController">
+        <div ng-controller="ChildController">
+            <a ng-click="sayHello()">say hello</a>
         </div>
+        {{person}}
     </div>
     <script>
         var app=angular.module('myApp',[]);
-        app.controller('MyController',function($scope){
-            $scope.name='world'
+        app.controller('ParentController',function($scope){
+            $scope.person={
+                greeted:true
+            }
+        });
+        app.controller('ChildController',function($scope){
+            $scope.sayHello=function(){
+                $scope.person.name='Ari Lerner'
+            }
         })
     </script>
 </body>
