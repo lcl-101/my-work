@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../../src/bower_components/angular/angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+    <div ng-controller="ParentController">
+        <p>We can access:{{rootProperty}} and {{parentProperty}}</p>
+        <div ng-controller="ChildController">
+            <p>We are access:{{rootProperty}} and {{parentProperty}} and {{childProperty}}</p>
+            <p>{{fullSentenceFromChild}}</p>
+        </div>
+    </div>
+    <script>
+        var app=angular.module('myApp',[]);
+        app.run(function($rootScope){
+            $rootScope.rootProperty='root scope';
+        });
+        app.controller('ParentController',function($scope){
+            $scope.parentProperty='parent scope';
+        });
+        app.controller('ChildController',function($scope){
+            $scope.childProperty='child scope';
+            $scope.fullSentenceFromChild='Same $scope:we can access:'+$scope.rootProperty + ' and ' + $scope.parentProperty + ' and ' + $scope.childProperty
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../../src/bower_components/angular/angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+    <div my-directive></div>
+    <script>
+        var app=angular.module('myApp',[]);
+        app.directive('myDirective',function(){
+            return {
+                restrict:'A',
+                replace:true,
+                template:'<a href="http://google.com">Click me</a>'
+            }
+        })
+    </script>
+</body>
+</html>
