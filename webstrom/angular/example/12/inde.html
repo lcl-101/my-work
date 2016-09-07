@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../../src/bower_components/angular/angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+    <input type="text" ng-model="someProperty" placeholder="TypetoEnable">
+    <button ng-model="button" ng-disabled="!someProperty">abutton</button><br/>
+
+    <input type="text" ng-model="aa">
+    <input type="text" ng-readonly="aa" value="some text here"><br/>
+
+    <textarea ng-disabled="isDisabled"></textarea>
+    <script>
+        var app=angular.module('myApp',[]);
+        app.run(function($rootScope,$timeout){
+            $rootScope.isDisabled=true;
+            $timeout(function(){
+                $rootScope.isDisabled=false;
+            },5000)
+        })
+    </script>
+</body>
+</html>

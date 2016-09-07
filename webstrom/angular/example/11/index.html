@@ -11,7 +11,7 @@
 <body ng-app="myApp">
     <label>Their URL field</label>
     <input type="text" ng-model="theirUrl">
-    <div my-directive some-attr="theirUrl" my-link-text="Click  me"></div>
+    <div my-directive some-attr="theirUrl" my-link-text="Click me"></div>
     <script>
         var app=angular.module('myApp',[]);
         app.directive('myDirective',function(){
@@ -20,7 +20,7 @@
                 replace:true,
                 scope:{
                     myUrl:'=someAttr',
-                    nyLinkText:'@'
+                    myLinkText:'@'
                 },
                 template:'\
                 <div>\
@@ -28,7 +28,7 @@
                     <input type="text"\
                         ng-model="myUrl"/> \
                     <a href="{{myUrl}}">{{myLinkText}}</a>\
-                '
+                </div>'
             }
         })
     </script>
