@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ImageMap</title>
+    <!-- <link href="styles/css/it-mlaf.min.css" rel="stylesheet"> -->
+    <style type="text/css">
+        #imgParent{
+            display: none;
+        }
+        #buttons{
+            position: relative;
+            text-align: center;
+            display: block;
+
+        }
+        #chart{
+            position: relative;
+            top: 20px;
+            text-align: center;
+        }
+
+        #msg{
+            display: block;
+            margin: 10px;
+            font-family: sans-serif;
+            font-size: 15px;
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div>
+    <div id="imgParent">
+        <img id="myimage">
+    </div>
+
+    <div id="chart"></div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="sliding_bar.js"></script>
+<script type="text/javascript" src="imageMap.js"></script>
+
+<script>
+    var imgtag = document.getElementById("myimage");
+    //Setting Default Image, you can load any image using input box.
+    imgtag.src = "thumb_IMG_1931_1024.jpg";
+    imgtag.onload = render;
+
+    var imageMap = d3.imageMap()
+            .setMode('play')
+            .setImageSize([500,1000]);
+
+    function setMode(_){
+        d3.select(_==='play'?'#slider':'#play').style('background-color','rgb(255, 255, 255)')
+        d3.select('#'+_).style('background-color','rgb(150, 236, 241)')
+        if(_ == 'play')
+            d3.select('#msg').style('display','block');
+        else
+            d3.select('#msg').style('display','none');
+
+        imageMap.setMode(_);
+        render();
+    }
+
+    function onFileSelected(event) {
+        var selectedFile = event.target.files[0];
+        var reader = new FileReader();
+        imgtag.title = selectedFile.name;
+
+        reader.onload = function(event) {
+            imgtag.src = event.target.result;
+        };
+        reader.readAsDataURL(selectedFile);
+    }
+
+    function render(){
+        imageMap.buildCanvas();
+        d3.select('#chart').selectAll('svg').remove();
+        var svg = d3.select('#chart')
+                .append('svg')
+                .call(imageMap);
+    }
+
+</script>
+</body>
+</html>

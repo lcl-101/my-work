@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa0445f9-5682-490c-b8c9-807263d4b5ab" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wap/d3-liquidFillGauge/img/thumb_IMG_1931_1024.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wap/d3-liquidFillGauge/index.html" afterPath="$PROJECT_DIR$/wap/d3-liquidFillGauge/jiasuqiu.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wap/d3-liquidFillGauge/index.html" afterPath="$PROJECT_DIR$/wap/d3-liquidFillGauge/index.html" />
     </list>
     <ignored path="my-work.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,20 +32,7 @@
     <favorites_list name="my-work" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wap/d3-liquidFillGauge/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.61340207">
-              <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -52,11 +40,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pc/6-28/css/helprate.css" />
-        <option value="$PROJECT_DIR$/pc/6-28/helprate.html" />
-        <option value="$PROJECT_DIR$/pc/6-28/css/helpinvite.css" />
-        <option value="$PROJECT_DIR$/pc/6-28/helpinvite.html" />
-        <option value="$PROJECT_DIR$/pc/6-28/js/index.js" />
         <option value="$PROJECT_DIR$/pc/6-28/index.html" />
         <option value="$PROJECT_DIR$/pc/6-28/js/helpcoupon.js" />
         <option value="$PROJECT_DIR$/pc/6-28/js/helprate.js" />
@@ -103,6 +86,11 @@
         <option value="$PROJECT_DIR$/wap/d3-liquidFillGauge/d3.v3.min.js" />
         <option value="$PROJECT_DIR$/wap/d3-liquidFillGauge/liquidFillGauge.js" />
         <option value="$PROJECT_DIR$/wap/d3-liquidFillGauge/index.html" />
+        <option value="$PROJECT_DIR$/wap/d3-liquidFillGauge/jiasuqiu.html" />
+        <option value="$PROJECT_DIR$/wap/d3-liquidFillGauge/img/sliding_bar.js" />
+        <option value="$PROJECT_DIR$/wap/d3-liquidFillGauge/img/imageMap.js" />
+        <option value="$PROJECT_DIR$/wap/d3-liquidFillGauge/img/index.html" />
+        <option value="$PROJECT_DIR$/wap/d3-liquidFillGauge/img/99.html" />
       </list>
     </option>
   </component>
@@ -210,16 +198,17 @@
     <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wap/d3-liquidFillGauge/img" />
+      <recent name="E:\uif1504\html\gihub\my-work\wap\5-16\css" />
+      <recent name="E:\uif1504\html\gihub\my-work\pc\5-4\index\images" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wap/d3-liquidFillGauge" />
       <recent name="$PROJECT_DIR$/wap/9-9/images" />
       <recent name="$PROJECT_DIR$/wap/9-9" />
       <recent name="$PROJECT_DIR$/wap/9-9/js" />
       <recent name="$PROJECT_DIR$/wap/9-9/css" />
-      <recent name="$PROJECT_DIR$/AngularJS/1" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\uif1504\html\gihub\my-work\wap\5-16\css" />
-      <recent name="E:\uif1504\html\gihub\my-work\pc\5-4\index\images" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.invite.html">
@@ -307,7 +296,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3969957" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -346,34 +335,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wap/8-26/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15295629">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularJS/example/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0655527">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularJS/1/angular.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularJS/1/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/socket.io-master/examples/chat/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -718,13 +679,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wap/d3-liquidFillGauge/index.html">
+    <entry file="file://$PROJECT_DIR$/wap/d3-liquidFillGauge/jiasuqiu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61340207">
-          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.087628864">
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wap/d3-liquidFillGauge/img/sliding_bar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.95760596">
+          <caret line="109" column="4" selection-start-line="109" selection-start-column="4" selection-end-line="109" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wap/d3-liquidFillGauge/img/imageMap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.95760596">
+          <caret line="275" column="4" selection-start-line="275" selection-start-column="4" selection-end-line="275" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wap/d3-liquidFillGauge/img/thumb_IMG_1931_1024.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wap/d3-liquidFillGauge/img/99.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43041238">
+          <caret line="55" column="33" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
