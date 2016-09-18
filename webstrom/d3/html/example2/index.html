@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="myid">Apple</p>
+    <p>Pear</p>
+    <p>Banana</p>
+    <script src="/js/d3.v3.min.js" charset="utf-8"></script>
+    <script>
+        var body=d3.select("body");
+        //var p1=body.select('p'); //选择第一元素
+        var p1=body.selectAll('p'); //选择所有元素
+        p1.style('color','red');
+        body.append("p").text("append p element");
+        body.insert("p","#myid").text("insert p element");
+//        p1.remove();
+    </script>
+</body>
+</html>

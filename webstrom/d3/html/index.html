@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HelloWorld</title>
+</head>
+<body>
+    <p>hello word1</p>
+    <p>hello word2</p>
+    <script>
+//        var paragraphs=document.getElementsByTagName('p');
+//        for (var i=0;i<paragraphs.length;i++){
+//            var paragraph=paragraphs.item(i);
+//            paragraph.innerHTML='this is a dog';
+//        }
+    </script>
+    <script src="/js/d3.v3.min.js" charset="utf-8"></script>
+    <script>
+        var p=d3.select("body").selectAll("p").text("aaaa");
+        p.style({color:'red','font-size':'72px'});
+    </script>
+</body>
+</html>

@@ -17,7 +17,7 @@
         config1.textColor = "#ff9800";
         config1.waveTextColor = "#fff"; //当波浪重叠时的值文本的颜色
         config1.waveColor = "#ffc107";
-        config1.circleThickness = 0.03; //外圆的厚度作为它的半径的百分比
+        config1.circleThickness = 0.05; //外圆的厚度作为它的半径的百分比
         config1.circleFillGap = 0; //外圆与圆波之间的间隙大小作为外圆半径的百分比
         config1.textVertPosition = 0.5; //进度提示的高度 0.5垂直居中
         config1.waveHeight=0.05;
@@ -28,9 +28,9 @@
 
         function NewValue(){
             if(Math.random() > .5){
-                return Math.round(Math.random()*100);
+                return parseInt(Math.round(Math.random()*100));
             } else {
-                return (Math.random()*100).toFixed(1);
+                return parseInt((Math.random()*100).toFixed(1));
             }
         }
     </script>

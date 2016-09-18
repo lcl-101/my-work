@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hello word</title>
+</head>
+<body>
+    <p>Apple</p>
+    <p>Pear</p>
+    <p>Banana</p>
+    <div></div>
+    <div></div>
+    <div></div>
+    <script src="/js/d3.v3.min.js" charset="utf-8"></script>
+    <script>
+        var str='china';
+        var body=d3.select('body');
+        var p=body.selectAll('p');
+        p.datum(str);
+        p.text(function(d,i){
+            return '第'+i+'个元素b绑定的是'+d;
+        });
+        var dataset=["I like dogs","I like cats","I like snakes"];
+        var d=body.selectAll('div');
+        d.data(dataset).text(function(d,i){
+            return d;
+        })
+    </script>
+</body>
+</html>

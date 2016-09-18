@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script src="/js/d3.v3.min.js" charset="utf-8"></script>
+    <script>
+        var width=300;
+        var height=300;
+        var svg=d3.select('body').append('svg').attr({widht:width,height:height});
+        var dataset=[290,250 , 210 , 170 , 130 , 90,40];
+        var rectHeight=25;
+        svg.selectAll('rect')
+            .data(dataset)
+            .enter()
+            .append('rect')
+            .attr("x",20)
+            .attr("y",function(d,i){
+                return i*rectHeight;
+            })
+            .attr("width",function(d){
+                return d;
+            })
+            .attr("height",rectHeight-2)
+            .attr("fill","steelblue");
+    </script>
+</body>
+</html>

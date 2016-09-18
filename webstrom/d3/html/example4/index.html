@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script src="/js/d3.v3.min.js" charset="utf-8"></script>
+    <script>
+        //线性比例尺
+        var dataset = [1.2, 2.3, 0.9, 1.5, 3.3];
+        var min=d3.min(dataset);
+        var max=d3.max(dataset);
+        var linear=d3.scale.linear()
+                .domain([min,max])  //定义域
+                .range([0,300]);    //值域
+        console.log(linear(0.9));
+        console.log(linear(2.3));
+        console.log(linear(3.3));
+
+        //序数比例尺
+        var index = [0, 1, 2, 3, 4];
+        var color = ["red", "blue", "green", "yellow", "black"];
+        var ordinal=d3.scale.ordinal()
+                    .domain(index)
+                    .range(color);
+        console.log(ordinal(0));
+        console.log(ordinal(1));
+        console.log(ordinal(2));
+
+        //给柱形图添加比例尺
+        var svg=d3.select('body').append('svg').attr({widht:300,height:300});
+        var dataset = [ 2.5 , 2.1 , 1.7 , 1.3 , 0.9 ];
+        var rect=d3.scale.linear()
+                .domain([0,d3.max(dataset)])
+                .range([0,250]);
+        var rectHeight=25;
+        svg.selectAll("rect")
+                .data(dataset)
+                .enter()
+                .append('rect')
+                .attr('x',20)
+                .attr('y',function(d,i){
+                    return i*rectHeight;
+                })
+                .attr('width',function(d){
+                    return rect(d);
+                })
+                .attr('height',rectHeight-2)
+                .attr('fill','steelblue');
+    </script>
+</body>
+</html>
