@@ -22,6 +22,9 @@
             fill: white;
             text-anchor: middle;
         }
+        .myRect {
+            fill: steelblue;
+        }
     </style>
 </head>
 <body>
@@ -64,13 +67,25 @@
                     return xScale(i)+rectPadding/2;
                 })
                 .attr('y',function(d){
+                    var min=yScale.domain()[0];
+                    return yScale(min);
+                })
+                .attr("height", function(d){
+                    return 0;
+                })
+                .transition()
+                .delay(function(d,i){
+                    return i*200;
+                })
+                .duration(2000)
+                .ease("bounce")
+                .attr('y',function(d){
                     return yScale(d);
                 })
                 .attr('width',xScale.rangeBand()-rectPadding)  //rangeBand获取离散区间的宽度
                 .attr('height',function(d){
                     return height-padding.top-padding.bottom-yScale(d);
-                })
-                .attr('fill','steelblue');
+                });
         //添加文字
         var text=svg.selectAll('.myText')
                 .data(dataset)
@@ -82,6 +97,16 @@
                     return xScale(i) + rectPadding/2;
                 })
                 .attr('y',function(d){
+                    var min=yScale.domain()[0];
+                    return yScale(min);
+                })
+                .transition()
+                .delay(function(d,i){
+                    return i*200;
+                })
+                .duration(2000)
+                .ease("bounce")
+                .attr('y',function(d){
                     return yScale(d);
                 })
                 .attr('dx',function(){
@@ -92,7 +117,7 @@
                 })
                 .text(function(d){
                     return d;
-                })
+                });
 
         //添加x轴
         svg.append("g")
