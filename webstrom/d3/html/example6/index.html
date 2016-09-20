@@ -84,7 +84,7 @@
                 .attr('width',xScale.rangeBand()-rectPadding)  //rangeBand获取离散区间的宽度
                 .attr('height',function(d){
                     return height-padding.top-padding.bottom-yScale(d);
-                });
+                })
         //添加文字
         var text=svg.selectAll('.myText')
                 .data(dataset)

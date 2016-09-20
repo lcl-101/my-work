@@ -52,7 +52,17 @@
                     return rect(d);
                 })
                 .attr('height',rectHeight-2)
-                .attr('fill','steelblue');
+                .attr('fill','steelblue')
+                .on("mouseover",function(d,i){
+                    d3.select(this)
+                            .attr("fill","yellow");
+                })
+                .on("mouseout",function(d,i){
+                    d3.select(this)
+                            .transition()
+                            .duration(500)
+                            .attr("fill","steelblue");
+                });
     </script>
 </body>
 </html>
