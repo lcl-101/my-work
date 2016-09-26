@@ -9,6 +9,27 @@
     <title>Document</title>
 </head>
 <body>
+<script>
+    var reg=/\d+/; //多个连续的数字
+    var str="abdfg";
+//    alert(reg.test(str))
+    //  \d 元字符 +量词元字符
+    // \w 常用字符 a-z 0-9 A-Z
+    // \b
+    //. 出了回车之外的所有字符
+    //? 前面的字符出现0-1次
+    //* 0-n量词
+    //^出现在开始 $出现在结尾
 
+    //验证一个完整的整数字符串
+    var regs=/^\d+$/;
+    var strs='1234523';
+    //alert(regs.test(strs));
+
+    //匹配正负数  []或
+    var reg1=/^[- +]?\d+$/;
+    var str1='-1234523';
+    alert(reg1.test(str1));
+</script>
 </body>
 </html>
