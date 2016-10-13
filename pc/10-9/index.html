@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <button type="button" onclick="displaydata()">显示日期</button>
+
+    <div id="a" onclick="change()">aa</div>
+    <script>
+        function displaydata(){
+            document.getElementById('demo').innerHTML=Date();
+        }
+
+        function change(){
+            var elemet=document.getElementById("a");
+            if(elemet.innerHTML.match('aa')){
+                elemet.innerHTML='bb';
+            }else {
+                elemet.innerHTML='aa';
+            }
+        }
+    </script>
+</body>
+</html>

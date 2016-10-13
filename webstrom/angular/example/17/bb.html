@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="myApp" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS carousel</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <script src="angular.min.js"></script>
+    <script src="angular-animate.min.js"></script>
+    <script src="ui-bootstrap.min.js"></script>
+    <script src="ui-bootstrap-tpls.min.js"></script>
+</head>
+<body>
+<div ng-controller="CarouselDemoCtrl">
+    <div style="height: 305px">
+        <carousel interval="myInterval" no-wrap="noWrapSlides">
+            <slide ng-repeat="slide in slides" active="slide.active">
+                <img ng-src="{{slide.image}}" style="margin:auto;">
+                <div class="carousel-caption">
+                    <h4>Nsfocus {{$index}}</h4>
+                    <p>{{slide.text}}</p>
+                </div>
+            </slide>
+        </carousel>
+    </div>
+</div>
+<script>
+    angular.module('myApp', ['ui.bootstrap', 'ngAnimate']).controller('CarouselDemoCtrl', function ($scope) {
+        $scope.myInterval = 2000;
+        $scope.noWrapSlides = false;
+        var slides = $scope.slides = [];
+        $scope.addSlide = function () {
+            var newWidth = 600 + slides.length + 1;
+            slides.push({
+                image: 'http://steamcommunity-a.akamaihd.net/economy/image/U8721VM9p9C2v1o6cKJ4qEnGqnE7IoTQgZI-VTdwyTBeimAcIoxXpgK8bPeslY9pPJIvB5IWW2-452kaM8heLSRgleGArrBBwe94OfEh0bOlAlopvOVPAWe3GEKAgj6ULuupkVhtYZ0pIxzzk5gY59xSWJ95SOIxsbCuJg/1280x800',
+                text: 'nsfocus',
+            });
+            slides.push({
+                image: 'http://steamcommunity-a.akamaihd.net/economy/image/U8721VM9p9C2v1o6cKJ4qEnGqnE7IoTQgZI-VTdwyTBeimAcIoxXpgK8bPeslY9pPJIvB5IWW2-452kaM8heLSRgleGArrBBwe94PqYvguSpXFVwv-URAD3mGBHRgzaceuqqk1BlN5IrcUvxlp8d5t8BX595SOKdq0CMpw/1280x800',
+                text: 'nsfocus',
+            });
+            slides.push({
+                image: 'http://cdn.steamcommunity.com/economy/image/U8721VM9p9C2v1o6cKJ4qEnGqnE7IoTQgZI-VTdwyTBeimAcIoxXpgK8bPeslY9pPJIvB5IWW2-452kaM8heLSRgleGArrBBwe94PqUrgrStA1tw6OZBXGTgH0fQ1j-WeOeskQUxYcYuI02hkpgYuNZRW595SOLioa6j6w/1280x800',
+                text: 'nsfocus',
+            });
+            slides.push({
+                image: 'http://steamcommunity-a.akamaihd.net/economy/image/U8721VM9p9C2v1o6cKJ4qEnGqnE7IoTQgZI-VTdwyTBeimAcIoxXpgK8bPeslY9pPJIvB5IWW2-452kaM8heLSRgleGArrBBwe94aqAq0-T4CVtyvLEUV2C1F0jU3mOTfrqqwlM0McZ9cBv0yckdvNxTUJ95SOId8xoS5w/1280x800',
+                text: 'nsfocus',
+            });
+        };
+        $scope.addSlide();
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;" />
+    <title>Document</title>
+    <script src="hammer.min.js"></script>
+    <script src="../../src/bower_components/angular/angular.min.js"></script>
+</head>
+<style>
+    body,img{
+        margin: 0;
+        padding: 0;
+    }
+    ul{
+        width:100%;
+        margin:0;
+        padding: 0;
+    }
+    ul li {
+        float: left;
+        list-style: none;
+        width: 100px;
+        height: 100px;
+        line-height: 93px;
+        text-align: center;
+        position: relative;
+        margin-right: 15px;
+        margin-top: 15px;
+        border: 1px solid #eee;
+        box-sizing: content-box;
+    }
+    ul li img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    #mark-box {
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: none;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    #mark {
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.8);
+        z-index: 10;
+    }
+    #contentImg {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        z-index: 10;
+    }
+    #contentImg img {
+        display: none;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .active{
+        display: block;
+    }
+</style>
+<body ng-app="myApp">
+    <ul ng-controller="myCtrl" id="aa">
+        <li ng-click="tan($event.target)" src="a.jpg"><img src="a.jpg" alt=""></li>
+        <li ng-click="tan($event.target)" src="b.jpg"><img src="b.jpg" alt=""></li>
+        <li ng-click="tan($event.target)" src="c.jpg"><img src="c.jpg" alt=""></li>
+    </ul>
+    <div id="mark-box">
+        <div id="mark"></div>
+        <div id="contentImg">
+        </div>
+    </div>
+    <script>
+        var app = angular.module("myApp", []);
+        app.controller("myCtrl", function($scope,$element) {
+            var arr=[];
+            $scope.tan=function(target){
+                var imgs= target.getAttribute('src');
+                var marks=document.getElementById('mark-box').style.display='flex';
+//                document.getElementById('contentImg').getElementsByTagName('img')[0].src=imgs;
+                var element = angular.element(document.getElementById("aa"));
+                var contentImg = angular.element(document.getElementById("contentImg"));
+                console.log(element.find('img'));
+                contentImg.html('');
+                for(var i=0;i<element.find('img').length;i++){
+                    arr[i]=element.find('img')[i].src;
+                    contentImg.append('<img src='+element.find("img")[i].src+'>');
+                }
+                console.log(arr);
+                element.find('img').eq(0).addClass('active');
+                var mc=new Hammer(document.getElementById('contentImg'));
+                mc.on('swipeleft',function(){
+                    alert(1);
+                })
+            }
+        });
+        document.getElementById('mark').onclick=function(){
+            document.getElementById('mark-box').style.display='none';
+        };
+        window.onload=function(){
+
+        }
+    </script>
+</body>
+</html>
