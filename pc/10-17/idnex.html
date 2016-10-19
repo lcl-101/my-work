@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+<script>
+//    function Animate(){
+//        this.species="动物";
+//    }
+//    function Cat(name,color){
+////        Animate.apply(this,arguments);
+//        this.name=name;
+//        this.color=color;
+//    }
+//    Cat.prototype=new Animate();
+//    Cat.prototype.constructor=Cat;
+//    var cat1=new Cat('大黄','黄色');
+//    console.log(cat1);
+//    console.log(cat1.species);
+//    alert(Animate.prototype.constructor);
+//    alert(Cat.prototype.constructor);
+
+
+    function Animate(){}
+    Animate.prototype.species='动物';
+
+    function Cat(name,color){
+        this.name=name;
+        this.color=color;
+    }
+//    Cat.prototype=Animate.prototype;
+//    Cat.prototype.constructor=Cat;
+//    var cat1=new Cat();
+//    var cat1=new Cat('大黄','黄色');
+//    console.log(cat1);
+//    console.log(Animate.prototype.constructor);
+//    console.log(Cat.prototype.constructor);
+
+//    var F=function(){};
+//    F.prototype=Animate.prototype;
+//    Cat.prototype= new F();
+//    Cat.prototype.constructor=Cat;
+//    console.log(Animate.prototype.constructor);
+//    console.log(Cat.prototype.constructor);
+
+    function extend(child,parent){
+        var F=function(){};
+        F.prototype=parent.prototype;
+        child.prototype= new F();
+        child.prototype.constructor=child;
+        child.uber=parent.prototype;
+    }
+    extend(Cat,Animate);
+    var cat1=new Cat('大黄','黄色');
+    console.log(cat1);
+    console.log(cat1.species);
+    console.log(Animate.prototype.constructor);
+    console.log(Cat.prototype.constructor);
+
+    var Chinese={
+        nation:'chinese'
+    }
+    var doctor={
+        career:'doctor'
+    }
+
+</script>
+</body>
+</html>
