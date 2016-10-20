@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+</head>
+<style>
+    body,html div{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    div{
+        width:100%;
+        height: 200px;
+        background: #00B83F;
+    }
+    p{
+        width:100%;
+        color: #1f283d;
+        font-size: 14px;
+    }
+</style>
+<body>
+    <div id="aa"></div>
+    <p id="bb"></p>
+    <script>
+        var div=document.getElementById('aa');
+        var p=document.getElementById('bb');
+        div.ontouchstart=function(e){
+            console.log(e);
+            event.preventDefault();
+            var touuch= e.touches[0];
+            var x=touuch.clientX;
+            var y=touuch.clientY;
+            p.innerHTML+=x+"+"+y+"<br/>";
+            for(var i=0;i<= e.touches.length;i++){
+                p.innerHTML+=e.touches[i]+'<br/>';
+            }
+
+        }
+    </script>
+</body>
+</html>
