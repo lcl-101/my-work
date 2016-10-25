@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+    <script src="jquery.js"></script>
 </head>
 <style>
     body,html div{
@@ -15,30 +16,74 @@
         width:100%;
         height: 200px;
         background: #00B83F;
+        overflow-y: scroll;
+        font-size: 20px;
     }
     p{
         width:100%;
         color: #1f283d;
         font-size: 14px;
+        word-wrap: break-word;
     }
 </style>
 <body>
-    <div id="aa"></div>
+    <div id="aa">
+        <a href="www.baidu.com">sdfsfd</a>
+        <div>
+            a<br/>
+            a<br/>
+            a<br/>
+            a<br/>
+            a<br/>
+            a<br/>
+            a<br/>
+            a<br/>
+            a<br/>
+            a<br/>
+            a<br/>
+            a<br/>
+            a<br/>
+            a<br/>
+            a<br/>
+            a<br/>
+            a<br/>
+            a<br/>
+            a<br/>
+            a<br/>
+            a<br/>
+            a<br/>
+            a<br/>
+            a<br/>
+            a<br/>
+            b<br/>
+            b<br/>
+        </div>
+    </div>
     <p id="bb"></p>
     <script>
         var div=document.getElementById('aa');
         var p=document.getElementById('bb');
         div.ontouchstart=function(e){
             console.log(e);
-            event.preventDefault();
+//            event.preventDefault();
+            $('html').attr('ontouchmove','event.preventDefault()');
             var touuch= e.touches[0];
             var x=touuch.clientX;
             var y=touuch.clientY;
             p.innerHTML+=x+"+"+y+"<br/>";
-            for(var i=0;i<= e.touches.length;i++){
-                p.innerHTML+=e.touches[i]+'<br/>';
+//            for(var i=0;i<= e.touches.length;i++){
+//                p.innerHTML+=e.touches[i]+'<br/>';
+//            }
+            if(e.touches.length>2){
+                alert(1);
             }
 
+        }
+        div.ontouchmove=function(e){
+            p.innerHTML+=1;
+        }
+        div.ontouchend=function(e){
+            p.innerHTML+=2;
         }
     </script>
 </body>
