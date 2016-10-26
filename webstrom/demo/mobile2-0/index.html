@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!--meta 配置-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-touch-fullscreen" content="no">
+
+    <!-- title -->
+    <title>KFZ工程构建Demo</title>
+
+    <!-- css -->
+    <link type="text/css" href="http://neibures2.kongfz.com/mobile/css/base/m-base.css" rel="stylesheet" />
+    <link type="text/css" href="http://neibures2.kongfz.com/mobile/css/base/m-layout.css" rel="stylesheet" />
+    <script type="text/javascript" src="common/js/m-reactive.js"></script>
+
+    <!--<link rel="stylesheet" href="/kfz-res2/mobile/widgets/kfz-ui-mobile/overlay/overlay.css" />-->
+    <link rel="stylesheet" href="/kfz-angular-demo/mobile2-0/common/css/overlay.css" />
+    <link rel="stylesheet" href="/kfz-angular-demo/mobile2-0/common/css/overlay-need.css" />
+    <link rel="stylesheet" href="http://neibures2.kongfz.com/mobile/widgets/kfz-ui-mobile/overlay/overlay.css" />
+    <style type="text/css">
+        html,body{
+            margin: 0px;
+            padding: 0px;
+            font-size: 20px;
+        }
+    </style>
+    <!-- script -->
+    <!--<script data-main="/kfz-angular-demo/mobile2-0/common/js/main.js" src="common/libs/require/require.js"></script>-->
+    <script data-main="/kfz-angular-demo/mobile2-0/common/js/main.js" src="http://neibures2.kongfz.com/libs/require/require.js"></script>
+</head>
+<body>
+    <!--头部引用 格式未定  [待石万周开发]-->
+    <div  ng-include="'/kfz-angular-demo/mobile2-0/common/header/header.html'"></div>
+
+    <div class="kfz-layout">
+        <!-- 路由显示区域 -->
+        <div ui-view></div>
+    </div>
+
+    <!--尾部引用 格式未定  [待石万周开发]-->
+    <!--<div  ng-include="'/kfz-angular-demo/mobile2-0/module/demo/views/footer.html'"></div>-->
+</body>
+</html>
