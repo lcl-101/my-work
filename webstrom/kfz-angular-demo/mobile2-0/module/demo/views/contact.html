@@ -1,0 +1,505 @@
+<div>
+	<div>{ {title} }</div>
+	<h2 style="background: greenyellow;">{{title}}</h2>
+	<a href="javascript:;" ng-click="autoErrorTip()">表单错误提示弹窗</a><hr/>
+	<a href="javascript:;" ng-click="autoTip()">提示弹窗</a><hr/>
+	<a href="javascript:;" ng-click="confirmTip()">确认取消按钮弹窗</a><hr/>
+	<a href="javascript:;" ng-click="tip()">关闭按钮弹窗</a><hr/>
+	<a href="javascript:;" ng-click="modal()">复杂功能性弹窗</a><hr/>
+	<a href="javascript:;" id="sd" ng-click="selectWin()">滚动选择窗口</a><hr/>
+	
+	
+	
+	
+	
+	
+	
+	<script  type="text/ng-template" id="overlay-tip-tpl.html">
+		<p class="content">{{content}}</p>
+	</script>
+	
+	<script  type="text/ng-template" id="overlay-demo.html">
+		<div class="overlay_box">
+			<div class="modal-header">
+			    <p class="modal-title" ng-bind="title"></p>
+			</div>
+			<div class="modal-body">
+				<p class="content" ng-bind="content"></p>
+			</div>
+			<div class="modal-footer">
+			    <canclebtn ng-click="cancel()">取消</canclebtn>
+			    <confirmbtn ng-click="confirm()">确认</confirmbtn>
+			</div>
+		</div>
+	</script>
+	
+	<script  type="text/ng-template" id="overlay-select.html">
+		<overlaycontent scroll-mask saved="selected" data="items" linkage="on" change="asc">
+			<div>
+				<contentmask class="top-mask" top-mask></contentmask>
+				<contentmask class="bottom-mask" bottom-mask></contentmask>
+				<span class="icon_overlay select_icon"></span>
+				<ul>
+		            <li ng-repeat="item in items" select-item active="{{item.active}}">
+		            	<span>{{item.kd}}</span>
+		            </li>
+		       </ul>
+	       </div>
+		</overlaycontent>
+	</script>
+	
+	
+	<!--非公共模板-->
+	<a href="javascript:;" ng-click="biaoji()">标记模板</a><hr/>
+	<script  type="text/ng-template" id="overlay-biao-ji-demo.html">
+		<div class="overlay_box">
+			<div class="modal-header">
+			    <p class="modal-title" ng-bind="title"></p>
+			</div>
+			<div class="modal-body">
+				<div class="add_tag">
+					<p class="add_tag_title">标记:</p>
+					<div class="add_tag_btn clearfix">
+						<div ng-class="{true: 'active', false: ''}[tab == 1]" ng-click="tab = 1"><span class="icon_overlay biaoji_1"></span></div>
+						<div ng-class="{true: 'active', false: ''}[tab == 2]" ng-click="tab = 2"><span class="icon_overlay biaoji_2"></span></div>
+						<div ng-class="{true: 'active', false: ''}[tab == 3]" ng-click="tab = 3"><span class="icon_overlay biaoji_3"></span></div>
+						<div ng-class="{true: 'active', false: ''}[tab == 4]" ng-click="tab = 4"><span class="icon_overlay biaoji_4"></span></div>
+						<div ng-class="{true: 'active', false: ''}[tab == 5]" ng-click="tab = 5"><span class="icon_overlay biaoji_5"></span></div>
+					</div>
+					<p class="add_tag_title">标记信息:</p>
+					<div class="add_tag_edit">
+						<textarea name="" rows="5" placeholder="请输入需要标记的内容，限120个字" ng-model="editNode"></textarea>
+					</div>
+				</div>
+				<div class="errbox" err-tip="status" ng-class="{true:'slide-in-up',false:''}[status]"><span class="errcode" ng-bind="errcode"></span></div>
+			</div>
+			<div class="modal-footer">
+			    <a class="canclebtn" href="javascript:;" ng-click="cancel()">取消</a>
+			    <a class="canclebtn" href="javascript:;" ng-click="confirm()">保存</a>
+			</div>
+		</div>
+	</script>
+	<!--查看标记-->
+	<a href="javascript:;" ng-click="chakanbiaoji()">查看标记</a><hr/>
+	<script  type="text/ng-template" id="overlay-read-biao-ji-demo.html">
+		<div class="overlay_box">
+			<div class="modal-body">
+				<div class="read_tag">
+					<div class="read_tag_title">
+						<span class="icon_overlay biaoji_1"></span>
+						<div class="tag_btn_group">
+							<span class="tag_btn">删除</span>
+							<span class="tag_btn">修改</span>
+						</div>
+					</div>
+					<div class="read_tag_content">
+						<p>测试内容</p>
+					</div>
+				</div>
+				<closebtn ng-click="cancel()">关闭</closebtn>
+			</div>
+		</div>
+	</script>
+	<!--发货-->
+	<a href="javascript:;" ng-click="fahuo()">发货模板</a><hr/>
+	<script  type="text/ng-template" id="overlay-fa-huo-demo.html">
+		<div class="overlay_box">
+			<div class="modal-header">
+			    <p class="modal-title" ng-bind="title"></p>
+			</div>
+			<div class="modal-body">
+				<div class="overlay_ship">
+					<p class="ship_info">收货人信息：<span ng-bind="shipInfo"></span></p>
+					<div class="ship_content">
+						<ul class="overlay_form">
+							<li class="overlay_form_item" ng-click="kuaidi()">
+								<span class="item_led_tip">配送方式</span>
+								<span class="item_op"><span ng-bind="shipType"></span><span class="icon_overlay jt_dowm"></span></span>
+							</li>
+							<li class="overlay_form_item" ng-click="wuliu()">
+								<span class="item_led_tip">物流公司</span>
+								<span class="item_op"><span ng-bind="ships"></span><span class="icon_overlay jt_dowm"></span></span>
+							</li>
+							<li class="overlay_form_item">
+								<span class="item_led_tip">发货单号</span>
+								<input class="text_right" type="text" ng-model="shipNum" placeholder="请填写发货单号" required />
+								<span class="icon_overlay clear_icon" clear-input="shipNum"></span>
+								
+							</li>
+							<li class="overlay_form_item">
+								<span class="item_led_tip" ng-show="addLed" ng-click="addLed=false">+ 添加更多发货单号</span>
+								<div class="text_put" ng-show="!addLed">
+									<p>请在下面输入剩余发货单号，用逗号隔开</p>
+									<textarea name="" rows="3" cols=""  ng-model="shipNums" placeholder="请输入发货单号"></textarea>
+								</div>
+							</li>
+						</ul>
+						<div class="overlay_form_tip">
+							<p class="title">发货后系统会发以下消息通知买家收货：</p>
+							<div class="detail_text">
+								【提醒：发货】autotest02：您好，您在我店下的订单（订单编号：33880461）已经发货。配送方式：快递，物流公司：顺丰速运，发货单号：00000000。请在收到商品且确认无误后，及时确认收货并给予评价。欢迎下次光临！
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+			    <canclebtn ng-click="cancel()">取消</canclebtn>
+			    <confirmbtn class="c_red" ng-click="confirm()">确认已发货</confirmbtn>
+			</div>
+		</div>
+	</script>
+	<!--设置物流与运费-->
+	<a href="javascript:;" ng-click="wuliuyunfei()">设置物流与运费</a><hr/>
+	<script  type="text/ng-template" id="overlay-wu-liu-yun-fei-demo.html">
+		<div class="overlay_box">
+			<div class="modal-header">
+			    <p class="modal-title" ng-bind="title"></p>
+			</div>
+			<div class="modal-body">
+				<div class="overlay_ship">
+					<div class="ship_content">
+						<ul class="overlay_form">
+							<li class="overlay_form_item" ng-click="kuaidi()">
+								<span class="item_led_tip">配送方式</span>
+								<span class="item_op"><span ng-bind="shipType"></span><span class="icon_overlay jt_dowm"></span></span>
+							</li>
+							<li class="overlay_form_item" ng-click="wuliu()">
+								<span class="item_led_tip">物流公司</span>
+								<span class="item_op"><span ng-bind="ships"></span><span class="icon_overlay jt_dowm"></span></span>
+							</li>
+							<li class="overlay_form_item">
+								<span class="item_led_tip">运费</span>
+								<input class="text_right" type="number" ng-model="shipNum" placeholder="请输入运费" required />
+								<span class="icon_overlay clear_icon" clear-input="shipNum"></span>
+								<span>元</span>
+							</li>
+						</ul>
+						<div class="blank_area"></div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+			    <canclebtn ng-click="cancel()">取消</canclebtn>
+			    <confirmbtn class="c_red" ng-click="confirm()">确定</confirmbtn>
+			</div>
+		</div>
+	</script>
+	
+	<!--操作提醒-等待卖家确认-->
+	<a href="javascript:;" ng-click="opTip()">操作提醒-等待卖家确认</a><hr/>
+	<script  type="text/ng-template" id="overlay-op-tip-tpl.html">
+		<ul class="overlay_text_list">
+			<li>{{content_1}}</li>
+			<li>{{content_2}}</li>
+			<li>{{content_3}}</li>
+		</ul>
+	</script>
+	
+	
+	
+	<!--确认后，系统即可通知买家付款-->
+	<a href="javascript:;" ng-click="querendingdan()">确认后，系统即可通知买家付款</a><hr/>
+	<script  type="text/ng-template" id="overlay-confirm-order-tpl.html">
+		<div class="overlay_box">
+			<div class="modal-header">
+			    <p class="modal-title" ng-bind="title"></p>
+			</div>
+			<div class="modal-body">
+					<div class="overlay_ship">
+						<div class="ship_content">
+							<ul class="overlay_form">
+								<li class="overlay_form_item">
+									<span class="item_led_tip">订单总额</span>
+									<span class="item_op"><span>￥88.00（含运费￥5 .00）</span></span>
+								</li>
+								<li class="overlay_form_item">
+									<span class="item_led_tip">配送方式</span>
+									<span class="item_op"><span>快递</span>
+								</li>
+							</ul>
+							<div class="overlay_form_tip">
+								<p class="title">发货后系统会发以下消息通知买家收货：</p>
+								<div class="detail_text">
+									【提醒：发货】autotest02：您好，您在我店下的订单（订单编号：33880461）已经发货。配送方式：快递，物流公司：顺丰速运，发货单号：00000000。请在收到商品且确认无误后，及时确认收货并给予评价。欢迎下次光临！
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+			<div class="modal-footer">
+			    <canclebtn ng-click="cancel()">取消</canclebtn>
+			    <confirmbtn ng-click="confirm()">确认</confirmbtn>
+			</div>
+		</div>
+	</script>
+	
+	
+	<!--买家线下付款，请核实银行帐号-->
+	<a href="javascript:;" ng-click="xianxiafukuan()">买家线下付款，请核实银行帐号</a><hr/>
+	<script  type="text/ng-template" id="overlay-xian-xia-fu-kuan-tpl.html">
+		<div class="overlay_box">
+			<div class="modal-header">
+			    <p class="modal-title" ng-bind="title"></p>
+			</div>
+			<div class="modal-body">
+					<div class="overlay_ship">
+						<div class="ship_content">
+							<ul class="overlay_form">
+								<li class="overlay_form_item">
+									<span class="item_led_tip">汇款单号</span>                                                  
+									<span class="item_op"><span>2847281</span></span>
+								</li>
+								<li class="overlay_form_item">                     
+									<span class="item_led_tip">汇款日期</span>
+									<span class="item_op"><span>2016-04-18</span></span>
+								</li>
+								<li class="overlay_form_item  two_rows">                     
+									<p class="rows_item">
+										<span class="item_led_tip">卖家收款账号</span>      
+										<span class="item_op"><span>招商银行</span></span>
+									</p>
+									<p class="rows_item">
+										<span class="item_op"><span>6225 3389 4849 4394</span></span>
+									</p>
+								</li>
+								<li class="overlay_form_item">
+									<span class="item_led_tip">应收金额</span>
+									<span class="item_op"><span>￥1800.00（含运费￥10.00）</span></span>
+								</li>
+								<li class="overlay_form_item ps_tip">
+									风险提醒：请先核实银行账号已收款，再点"确认已收款"
+								</li>
+							</ul>
+						</div>
+					</div>
+			</div>
+			<div class="modal-footer">
+			    <canclebtn ng-click="cancel()">取消</canclebtn>
+			    <confirmbtn class="c_red" ng-click="confirm()">确认已收款</confirmbtn>
+			</div>
+		</div>
+	</script>
+	
+	<!--设置优惠-->
+	<a href="javascript:;" ng-click="shezhiyouhui()">设置优惠</a><hr/>
+	<script  type="text/ng-template" id="overlay-she-zhi-you-hui-tpl.html">
+		<div class="overlay_box">
+			<div class="modal-header">
+			    <p class="modal-title" ng-bind="title"></p>
+			</div>
+			<div class="modal-body">
+				<div class="overlay_discount">
+					<div class="discount_title">
+						商品总额￥1800.00(不含运费)
+					</div>
+					<div class="discount_op">
+						<span>优惠金额</span>
+						<input type="number" required />
+						<span class="icon_overlay clear_icon" clear-input></span>
+						<span>元</span>
+					</div>
+					<div class="discount_tip">
+						优惠后的商品总额不能少于1.00元
+					</div>
+				</div>
+				
+			</div>
+			<div class="modal-footer">
+			    <canclebtn ng-click="cancel()">取消</canclebtn>
+			    <confirmbtn ng-click="confirm()">确定</confirmbtn>
+			</div>
+		</div>
+	</script>
+	<!--确认收货-->
+	<a href="javascript:;" ng-click="querenshouhuo()">确认收货</a><hr/>
+	<script  type="text/ng-template" id="overlay-que-ren-shou-huo-tpl.html">
+		<div class="overlay_box">
+			<div class="modal-header">
+			    <p class="modal-title" ng-bind="title"></p>
+			</div>
+			<div class="modal-body">
+				<div class="overlay_discount receive">
+					<div class="discount_title">
+						输入支付密码并点击退货后，退款金额￥1.00将从您的资金账户退到买家账户。
+					</div>
+					<div class="discount_op">
+						<input type="number" placeholder="请输入支付密码" required />
+						<span class="icon_overlay clear_icon" clear-input></span>
+					</div>
+					<div class="discount_tip">
+						忘记密码
+					</div>
+				</div>
+				
+			</div>
+			<div class="modal-footer">
+			    <canclebtn ng-click="cancel()">取消</canclebtn>
+			    <confirmbtn class="c_red" ng-click="confirm()">退款</confirmbtn>
+			</div>
+		</div>
+	</script>
+	<!--编辑-->
+	<a href="javascript:;" ng-click="edit()">编辑弹窗</a><hr/>
+	<script  type="text/ng-template" id="overlay-bian-ji-tpl.html">
+		<div class="overlay_box">
+			<div class="modal-header">
+				<p class="modal-title" ng-bind="title"></p>
+			</div>
+			<div class="modal-body">
+				<div class="overlay_edit">
+					<p class="edit_title">请输入300个汉字以内的留言</p>
+					<textarea name="" rows="10" cols=""></textarea>
+				</div>
+				
+			</div>
+			<div class="modal-footer">
+				<canclebtn ng-click="cancel()">取消</canclebtn>
+				<confirmbtn class="red" ng-click="confirm()">提交</confirmbtn>
+			</div>
+		</div>
+	</script>
+	
+	
+	
+	
+	
+	
+	
+	<!--活动-->
+	<a href="javascript:;" ng-click="notice()">活动弹窗</a><hr/>
+	<script  type="text/ng-template" id="overlay-huo-dong-tpl.html">
+			<div class="overlay_notice">
+				<p class="notice_title">某某某名称包邮打折活动</p>
+				<p class="red">单笔订单满100元包邮，快递、挂号印刷品、普通 包裹。</p>
+				<div class="notice_text">
+					<p class="notice_title">活动时间</p>
+					<p class="gray">2016-04-01 15:43:06 至 2017-04-03 15:43:06</p>
+				</div>
+				<div class="notice_text">
+					<p class="notice_title">活动说明</p>
+					<p class="gray">某某某活动说明活动说明活动说明活动说明活动说明活动说明活动动说明活动说明活动说明活动说明活动</p>
+				</div>
+				<div class="notice_text">
+					<p class="notice_title">活动说明</p>
+					<p class="gray">某某某活动说明活动说明活动说明活动说明活动说明活动说明活动动说明活动说明活动说明活动说明活动</p>
+				</div>
+				<div class="notice_text">
+					<p class="notice_title">活动说明</p>
+					<p class="gray">某某某活动说明活动说明活动说明活动说明活动说明活动说明活动动说明活动说明活动说明活动说明活动</p>
+				</div>
+			</div>
+	</script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!--拍卖竞价弹窗-->
+	<hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/>
+	<a href="javascript:;" ng-click="bidding()">拍卖竞价弹窗</a><hr/>
+	<script  type="text/ng-template" id="overlay-bidding-tpl.html">
+		<div class="overlay_slide_up">
+			<div class="header clearfix">
+				<span class="f_left">关闭</span>
+				<a class="f_right">说明</a>
+				<div>
+					<span class="header_tab active">常规竞买</span>
+					<span class="header_tab">代理竞买</span>
+				</div>
+			</div>
+			<div class="tip_info">
+				<span class="tip_info_item">
+					<p>您的账户可用余额 ￥98.77</p>
+					<p>当前余额最高可出价 ￥705.50</p>
+				</span>
+				<span class="tip_info_item recharge">
+					<a href="#">去充值</a>
+				</span>
+			</div>
+			<div class="op_content">
+				<div class="op_bid">
+					<div class="f_left op_btn"></div>
+					<div class="f_right op_btn"></div>
+					<div class="op_text">
+						<span class="overlay_rotate_jt"></span>
+						<input type="number" required />
+						<span class="icon_overlay clear_icon" clear-input></span>
+					</div>
+				</div>
+				<div class="tip_bid">
+					最小加价幅度￥20
+				</div>
+				<div class="tip_btn">
+					提醒：出价即视为您已同意本站的<a href="#">《拍卖相关规则》</a>
+				</div>
+				<div class="btn">
+					出价
+				</div>
+			</div>
+		</div>
+	</script>
+	
+	
+	<!--拍卖竞价弹窗-->
+	<hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/>
+	<a href="javascript:;" ng-click="select2()">滚动窗口2</a><hr/>
+	<script  type="text/ng-template" id="overlay-select2.html">
+		<overlaycontent class="list_tip" scroll-mask saved="selected" data="items">
+			<contentmask class="top-mask" top-mask></contentmask>
+			<contentmask class="bottom-mask" bottom-mask></contentmask>
+			<ul>
+	            <li ng-repeat="item in items" select-item active="{{item.active}}">
+	            	<span class="icon_overlay select_icon" ng-show="item.active"></span>
+	            	<p>{{item.kd}}</p>
+	            	<p class="tip"><span class="tip_cut">{{item.kd}}</span><span class="read_more">更多</span></p>
+	            </li>
+	        </ul>
+		</overlaycontent>
+	</script>
+</div>
+
+<style>
+	.test_box{
+		width: 100%;
+		height: 50px;
+		display: -webkit-box;
+		background: #fff;
+		line-height: 50px;
+		padding: 0 15px;
+	}
+	.clear_input{
+		-webkit-box-flex: 1;
+		display: block;
+		height: 50px;
+		line-height: 50px;
+	}
+	.clear_icon{
+		width: 20px;
+		height: 50px;
+		background: #000000;
+		visibility: hidden;
+	}
+</style>
+<div class="test_box">
+	<div class="item_key">请输入</div>
+	<input class="clear_input" clear-input type="text" ng-model="testInput1" />
+	<div class="clear_icon"></div>
+</div>
+<div class="test_box">
+	<div class="item_key">请输入</div>
+	<input class="clear_input" clear-holder clear-input type="text" placeholder="123123213" ng-model="testInput2" />
+	<div class="clear_icon"></div>
+</div>

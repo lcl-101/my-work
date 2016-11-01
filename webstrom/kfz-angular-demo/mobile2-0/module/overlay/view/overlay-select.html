@@ -1,0 +1,29 @@
+<script  type="text/ng-template" id="overlay-select.html">
+    <overlaycontent class="list_3" scroll-mask linkage="on" change="changeSelect1" saved="selected1" data="items1">
+        <contentmask class="top-mask" top-mask></contentmask>
+        <contentmask class="bottom-mask" bottom-mask></contentmask>
+        <ul>
+            <li ng-repeat="item in items1" select-item active="{{item.active}}">
+                <span>{{item.name}}</span>
+            </li>
+        </ul>
+    </overlaycontent>
+    <overlaycontent class="list_3" scroll-mask linkage="on" change="changeSelect2" saved="selected2" data="items2">
+        <contentmask class="top-mask" top-mask></contentmask>
+        <contentmask class="bottom-mask" bottom-mask></contentmask>
+        <ul>
+            <li ng-repeat="item in items2" select-item active="{{item.active}}">
+                <span>{{item.name}}</span>
+            </li>
+        </ul>
+    </overlaycontent>
+    <overlaycontent class="list_3" scroll-mask  saved="selected3" data="items3">
+        <contentmask class="top-mask" top-mask></contentmask>
+        <contentmask class="bottom-mask" bottom-mask></contentmask>
+        <ul>
+            <li ng-repeat="item in items3" select-item active="{{item.active}}">
+                <span>{{item.name}}</span>
+            </li>
+        </ul>
+    </overlaycontent>
+</script>

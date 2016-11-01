@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../../src/bower_components/angular/angular.min.js"></script>
+</head>
+<body>
+    <div ng-controller="DemoController">
+        <form name="form">
+            Model value : <input type="text" size="3" ng-model="rating"><br>
+            Mix value : <input type="text" size="3" ng-model="mixRating"><br>
+            Max value : <input type="text" size="3" ng-model="maxRating"><br>
+            Form has been modified : {{form.$dirty}}
+            Form is valid: {{form.$valid}}
+            <hr>
+            <div min="minRating" max="maxRating" ng-model="rating" rn-stepper></div>
+        </form>
+    </div>
+    <script>
+        var app=angular.module('myApp',[]);
+        app.controller('DemoController',function ($scope) {
+            $scope.rating=42;
+            $scope.mixRating=40;
+            $scope.maxRating=50;
+        })
+    </script>
+
+
+    <!--<textarea id="txt1" onfocus="selText()">Hello world....</textarea>-->
+    <!--<input type="button" value="Select text" >-->
+
+    <!--<script type="text/javascript">-->
+        <!--function selText()-->
+        <!--{-->
+            <!--document.getElementById("txt1").select()-->
+        <!--}-->
+    <!--</script>-->
+</body>
+</html>

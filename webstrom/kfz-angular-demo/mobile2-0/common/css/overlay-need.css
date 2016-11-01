@@ -1,0 +1,475 @@
+/*
+ * 弹窗样式
+ * 
+ * 可摘取需要部分
+ * */
+
+
+
+/*标记*/
+.add_tag{
+	padding: 0 0.75rem 0.75rem 0.75rem;
+}
+
+.add_tag .add_tag_title{
+	text-align: left;
+	font-size: 0.65rem;
+	color: #333;
+	padding: 0.75rem 0;
+}
+
+.add_tag .add_tag_edit textarea {
+	width: 100%;
+	resize: none;
+	box-sizing: border-box;
+	border:1px solid #EEE;
+}
+
+.add_tag .add_tag_btn{
+	height: 1.6rem;
+}
+
+.add_tag .add_tag_btn div{
+	padding: 0.25rem 0.75rem;
+	border: 1px solid #DDD;
+	border-radius: 3px;
+	float: left;
+	margin-right: 0.5rem;
+	box-sizing: border-box;
+}
+
+.add_tag .add_tag_btn div:last-of-type{
+	margin: 0;
+}
+
+.add_tag .add_tag_btn div.active {
+	border-color: #d00000;
+}
+.read_tag{}
+.read_tag .read_tag_title {
+	font-size: 0.65rem;
+	color: #333;
+	line-height: 2.5rem;
+	position: relative;
+	border-bottom: 1px solid #eee;
+	padding: 0 0.75rem;
+}
+.read_tag .read_tag_title::before,.read_tag .read_tag_title::after{
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+.read_tag .read_tag_title span.icon_overlay{
+	position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0.75rem;
+}
+.read_tag .read_tag_title .tag_btn_group{
+	float: right;
+}
+.read_tag .read_tag_title .tag_btn_group .tag_btn{
+	padding: 0.35rem 0.75rem;
+	border: 1px solid #EEE;
+	border-radius: 3px;
+}
+.read_tag .read_tag_content{
+	padding: 0.75rem;
+	width: 100%;
+	height: 5rem;
+	overflow: auto;
+	background: #fff;
+	text-align: left;
+}
+
+
+/*内容区域表单*/
+.overlay_form .overlay_form_item{
+	line-height: 2.5rem;
+	font-size: 0.65rem;
+	border-bottom: 1px solid #EEE;
+}
+.overlay_form_item::before,.overlay_form_item::after{
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+.overlay_form .overlay_form_item:last-of-type{
+	border-bottom: none;
+}
+.overlay_form .overlay_form_item .item_led_tip{
+	color: #999;
+	float: left;
+}
+.overlay_form .overlay_form_item .item_op{
+	float: right;
+}
+.overlay_form .overlay_form_item input.text_right{
+	text-align: right;
+	width: 12.5rem;
+}
+.overlay_form .overlay_form_item .text_put{
+	text-align: left;
+	color: #999;
+}
+.overlay_form .overlay_form_item .text_put p{
+	line-height: 2rem;
+}
+.overlay_form .overlay_form_item .text_put textarea{
+	width: 100%;
+	background: #fbfbfb;
+}
+.overlay_form .overlay_form_item.two_rows{
+	padding: 0.5rem 0;
+}
+.overlay_form .overlay_form_item.two_rows .rows_item{
+	line-height: 1rem;
+}
+.rows_item::before,.rows_item::after{
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+.overlay_form .overlay_form_item.ps_tip{
+	font-size: 0.6rem;
+    text-align: left;
+    color: #D00000;
+}
+.overlay_form input::-ms-clear { display: none; }
+.overlay_form input:valid{padding:0 1rem;}
+.overlay_form input:valid + span.icon_overlay.clear_icon { display: inline-block; }
+
+/*内容区域表单提示*/
+.overlay_form_tip{
+	text-align: left;
+	margin-bottom: 0.75rem;
+}
+.overlay_form_tip .title{
+	color: #999;
+	padding-bottom: 0.75rem;
+}
+.overlay_form_tip .detail_text{
+	background: #f8f8f8;
+	padding: 0.4rem;
+	line-height: 1rem;
+}
+
+/*发货*/
+.overlay_ship{
+	background: #fff;
+	overflow-y: auto;
+}
+.overlay_ship .ship_info{
+	padding: 0.75rem;
+	text-align: left;
+	background: #ffffdc;
+    font-size: 0.65rem;
+    line-height: 0.8rem;
+}
+.overlay_ship .ship_content{
+	padding: 0 0.75rem;
+	max-height: 10rem;
+}
+
+/*操作提醒-等待卖家确认*/
+.overlay_text_list{
+	text-align: left;
+	padding: 0.75rem;
+	line-height: 1rem;
+}
+.overlay_text_list li{
+	padding-left: 1rem;
+	position: relative;
+}
+.overlay_text_list li:before{
+	content: '•';
+	display: block;
+	width: 0.5rem;
+	height: 1rem;
+	position: absolute;
+	left: 0.5rem;
+}
+
+/*设置优惠*/
+.overlay_discount{
+	padding: 0.75rem;
+	text-align: left;
+	background: #FFF;
+	line-height: 1rem;
+}
+
+.overlay_discount .discount_title{
+	padding-bottom: 0.5rem;
+}
+.overlay_discount .discount_op{
+	line-height: 1.5rem;
+	padding: 0.3rem 0;
+}
+.overlay_discount .discount_op input{
+	text-align: center;
+	border: 1px solid #EEE;
+	height: 1.5rem;
+	width: 6rem;
+}
+.overlay_discount .discount_op input::-ms-clear { display: none; }
+.overlay_discount .discount_op input:valid{padding:0 1rem;}
+.overlay_discount .discount_op input:valid + span.icon_overlay.clear_icon { display: inline-block; }
+
+.overlay_discount .discount_op span.icon_overlay.clear_icon{
+	margin: 0.3rem 0 0 -1.2rem;
+}
+.overlay_discount .discount_tip{
+	padding-top: 0.5rem;
+	color: #999;
+}
+
+
+.overlay_discount.receive{
+	text-align: center;
+}
+.overlay_discount.receive .discount_op input{
+	text-align: center;
+	border: 1px solid #EEE;
+	height: 1.5rem;
+	width: 10rem;
+}
+.overlay_discount.receive .discount_tip{
+	width: 10rem;
+	margin: 0 auto;
+	color: #175096;
+	padding: 0;
+	text-align: right;
+	font-size: 0.6rem;
+}
+
+/*编辑窗口*/
+.overlay_edit{
+	padding: 0 0.75rem 0.75rem 0.75rem;
+}
+.overlay_edit .edit_title{
+	line-height: 2rem;
+    text-align: left;
+    color: #999;
+}
+.overlay_edit textarea{
+	width: 100%;
+    border: 1px solid #EEE;
+}
+/*活动*/
+.overlay_notice{
+	padding: 0.75rem;
+	background: #fff;
+	line-height: 1rem;
+	font-size: 0.65rem;
+	text-align: left;
+	max-height: 12rem;
+	overflow-y: auto;
+}
+.overlay_notice .notice_text{
+	margin-top: 1rem;
+}
+
+
+/*滚动选择*/
+overlaySelectWin overlaycontent.list_tip li .tip_cut{
+	display: inline-block;
+	vertical-align: middle;
+}
+overlaySelectWin overlaycontent.list_tip li .read_more{
+	display: inline-block;
+	vertical-align: middle;
+	color: #1F1FA5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*拍卖竞价*/
+.overlay_slide_up{
+	position: fixed;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    background: #fff;
+    text-align: center;
+    animation: slideUp .25s, 0s 1 ;
+}
+.overlay_slide_up a{
+	color: #175096;
+}
+.overlay_slide_up .header{
+	padding: 0 0.75rem;
+	font-size: 0.65rem;
+	line-height: 2.5rem;
+	border-bottom: 1px solid #EEE;
+}
+.overlay_slide_up .header .header_tab{
+	display: inline-block;
+	width: 5rem;
+	color: #333;
+	font-size: 0.75rem;
+}
+.overlay_slide_up .header .header_tab.active{
+	color: #cb0000;
+	border-bottom: 1px solid #cb0000;
+}
+.overlay_slide_up .tip_info{
+	padding: 0.75rem;
+	font-size: 0.65rem;
+	text-align: left;
+}
+.overlay_slide_up .tip_info .tip_info_item{
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 1.5rem;
+	line-height: 1rem;
+}
+.overlay_slide_up .tip_info .tip_info_item.recharge{
+	line-height: 2rem;
+}
+.overlay_slide_up .op_content .op_bid{
+	padding: 0 0.75rem;
+	height: 2.5rem;
+}
+.overlay_slide_up .op_content .op_bid .op_btn{
+	width: 2.5rem;
+	height: 2.5rem;
+	background: #dddddd;
+	border-radius: 3px;
+	position: relative;
+}
+
+.overlay_slide_up .op_content .op_bid .op_btn:before{
+	content: '';
+	display: block;
+	width: 1.25rem;
+	height: 1px;
+	background: #666;
+	position: absolute;
+	margin: auto;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	
+}
+.overlay_slide_up .op_content .op_bid .op_btn:after{
+	content: '';
+	display: block;
+	width: 1px;
+	height: 1.25rem;
+	background: #666;
+	position: absolute;
+	margin: auto;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	
+}
+.overlay_slide_up .op_content .op_bid .op_btn:first-of-type::after{
+	content: '';
+	display: none;
+}
+.overlay_slide_up .op_content .op_bid .op_text{
+	width: 11.25rem;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	margin: 0 auto;
+	border: 1px solid #EEE;
+	text-align: left;
+	position: relative;
+}
+.overlay_slide_up .op_content .op_bid .op_text input{
+	width: 8.75rem;
+	text-align: center;
+	line-height: 2rem;
+	font-size: 1.2rem;
+}
+.overlay_slide_up .op_content .op_bid .op_text input::-ms-clear { display: none; }
+.overlay_slide_up .op_content .op_bid .op_text input:valid{padding:0 1rem;}
+.overlay_slide_up .op_content .op_bid .op_text input:valid + span.icon_overlay.clear_icon { display: inline-block; }
+.overlay_slide_up .op_content .op_bid .op_text .overlay_rotate_jt{
+	position: absolute;
+	margin:auto;
+	top: 8px;
+	bottom: 0;
+	right: 1.05rem;
+}
+.overlay_slide_up .op_content .tip_bid{
+	padding: 0 0.75rem;
+	font-size: 0.65rem;
+	text-align: left;
+	line-height: 1.5rem;
+}
+
+.overlay_slide_up .op_content .tip_btn{
+	padding: 0 0.75rem;
+	text-align: left;
+	font-size: 0.6rem;
+	line-height: 1.5rem;
+	color: #999;
+	margin-top: 2.5rem;
+}
+
+.overlay_slide_up .op_content .btn{
+	width: 100%;
+	line-height: 2.5rem;
+	font-size: 0.75rem;
+	color: #fff;
+	background: #cb0000;
+}
+
+.overlay_rotate_jt{
+	display: inline-block;
+    width: 0;
+    height: 0;
+    border-width: 4px;
+    border-style: solid dashed dashed;
+    overflow: hidden;
+    border-color: #999 transparent transparent;
+    transition: all 0.5s;
+    transform-origin: 50% 25%;
+}
+
+.overlay_flipy{    
+	border-color:#d00000 transparent transparent;
+	transform:rotate(180deg);    
+	-ms-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-webkit-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+} 
+
+

@@ -1,0 +1,442 @@
+ul,li{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+.icon_overlay{display: block; background:url("../../../images/icon_overlay.png") no-repeat 0 0; background-size:16rem;}
+.icon_overlay.error{display: inline-block;width: 1rem;height: 1rem;background-position: -0.1rem -0.1rem;margin-right: 0.2rem;vertical-align: middle;}
+.icon_overlay.biaoji_1 {width: 1rem;height: 1rem;background-position: -1.1rem -0.2rem;}
+.icon_overlay.biaoji_2 {width: 1rem;height: 1rem;background-position: -2.2rem -0.2rem;}
+.icon_overlay.biaoji_3 {width: 1rem;height: 1rem;background-position: -3.3rem -0.2rem;}
+.icon_overlay.biaoji_4 {width: 1rem;height: 1rem;background-position: -4.4rem -0.2rem;}
+.icon_overlay.biaoji_5 {width: 1rem;height: 1rem;background-position: -5.5rem -0.2rem;}
+.icon_overlay.jt_dowm{display: inline-block;width: 1rem;height: 1rem;background-position: 0rem -1.5rem;margin-right: 0.2rem;vertical-align: middle;}
+.icon_overlay.select_icon{width: 20px;height: 20px;background-position: -1.1rem -1.5rem; position: absolute;top: 115px;left: 0.75rem;}
+.icon_overlay.clear_icon{display: none; vertical-align: top; width: 1rem;height: 1rem; margin: 0.75rem 0 0 -1rem;background-position: -2.25rem -1.4rem;}
+
+
+
+overlay{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	z-index: 10000000;
+}
+overlaytitle{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+	word-break: break-all;
+	word-wrap: break-word;
+	overflow: hidden;
+	padding: 1.5rem 1rem;
+	line-height: 1rem;
+	font-size: 0.75rem;
+}
+btn{
+	position: relative;
+	display: block;
+	width: 100%;
+	border-top: 1px solid #EEE;
+}
+btn::before,btn::after{
+	clear: both;
+	content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+overlaycontent{
+	position: relative;
+	display: block;
+	font-size: 0.65rem;
+}
+overlaycontent .content{
+	padding: 1.5rem 0.75rem;
+	word-break:break-all;
+	word-wrap:break-word;
+}
+overlaycontent::before,overlaycontent::after{
+	clear: both;
+	content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+.canclebtn,.confirmbtn,.closebtn{
+	display: block;
+	box-sizing: border-box;
+	float: left;
+	width: 50%;
+	padding: 0.8rem 0;
+	font-size: 0.75rem;
+	-webkit-tap-highlight-color: rgba(0,0,0,0.2);
+}
+.confirmbtn{color: #D00000;}
+.canclebtn,.closebtn{
+	border-right: 1px solid #EEE;
+}
+overlayautotip{
+	position: fixed;
+  	top: 50%;
+  	left: 50%;  
+	min-width: 8rem;
+	line-height: 1rem;
+	padding: 1rem;
+	word-break: break-all;
+	word-wrap: break-word;
+	overflow: hidden;
+	background: rgba(0,0,0,0.6);
+	border-radius: 5px;
+	color: #fff;
+	font-size: 0.75rem;
+	text-align: center;
+	z-index: 1000050000000;
+	transform: translate3d(-50%,-50%,0);
+	-o-transform: translate3d(-50%,-50%,0); 		/* Opera */
+	-ms-transform: translate3d(-50%,-50%,0); 		/* IE 9 */
+	-moz-transform: translate3d(-50%,-50%,0); 		/* Firefox */
+	-webkit-transform: translate3d(-50%,-50%,0); 	/* Safari 和 Chrome */
+	
+}
+overlayautotip.overlay_error_tip{
+  	top: 0;
+  	left: 0;  
+	width: 100%;
+	max-width: none;
+	min-height: 2rem;
+	padding: 0.5rem;
+	border-radius: 0px;
+	color: #f08714;
+	font-size: 0.75rem;
+	background: rgba(0,0,0,0.8);
+	transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0); 		/* Opera */
+	-ms-transform: translate3d(0,0,0); 		/* IE 9 */
+	-moz-transform: translate3d(0,0,0); 		/* Firefox */
+	-webkit-transform: translate3d(0,0,0); 	/* Safari 和 Chrome */
+}
+overlayconfirmtip,overlaytip{
+	position: absolute;
+  	top: 50%;
+  	left: 15%;  
+	width: 70%;
+	transform: translateY(-50%);
+	-o-transform: translateY(-50%); 		/* Opera */
+	-ms-transform: translateY(-50%); 		/* IE 9 */
+	-moz-transform: translateY(-50%); 		/* Firefox */
+	-webkit-transform: translateY(-50%); 	/* Safari 和 Chrome */
+	background: #fff;
+	border-radius: 5px;
+	color: #333;
+	font-size: 0.75rem;
+	text-align: center;
+	z-index: 1000050;
+}
+overlaytip{
+	left: 5%;
+	width: 90%;
+	border-radius: 0px;
+}
+overlaytip overlaytitle,.modal-content overlaytitle{
+	border-bottom: 1px solid #EEE;
+}
+overlaytip overlaycontent,.modal-content overlaytitle{
+	padding: 0.8rem;
+}
+overlaytip .closebtn,.modal-content .closebtn{
+	width: 100%;
+	border: none;
+	border-top: 1px solid #EEE;
+	background: #f8f8f8;
+	font-size: 0.75rem;
+	color: #D00000;
+}
+
+.overlay_box{
+	position: absolute;
+  	top: 50%;
+  	left: 5%;  
+  	transform: translateY(-50%);
+	-o-transform: translateY(-50%); 		/* Opera */
+	-ms-transform: translateY(-50%); 		/* IE 9 */
+	-moz-transform: translateY(-50%); 		/* Firefox */
+	-webkit-transform: translateY(-50%); 	/* Safari 和 Chrome */
+	width: 90%;
+	background: #fff;
+	color: #333;
+	text-align: center;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    box-shadow: 0 3px 9px rgba(0,0,0,.5);
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000040;
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-backdrop.in {
+    
+}
+.modal-open{
+	overflow: hidden;
+	height: 100%;
+}
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000050;
+    display: none;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}
+.modal-dialog {
+    position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+.modal-content {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+  	top: 0;
+  	left: 0;  
+}
+.modal-header {
+	position: relative;
+    border-bottom: 1px solid #EEE;
+    padding: 0.8rem;
+    font-size: 0.75rem;
+}
+.modal-header::before,.modal-header::after{
+	clear: both;
+	content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+.modal-body {
+    position: relative;    
+    font-size: 0.65rem;
+}
+.modal-body .content{
+	padding: 1.5rem 0.75rem;
+}
+
+.modal-body::before,.modal-body::after{
+	clear: both;
+	content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+.modal-footer {
+	background: #f8f8f8;
+    border-top: 1px solid #EEE;
+    position: relative;
+    z-index: 10;
+}
+.modal-footer::before,.modal-footer::after{
+	clear: both;
+	content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+overlaySelectWin{
+	position: fixed;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    background: #fff;
+    text-align: center;
+    animation: slideUp .25s, 0s 1 ;
+}
+overlaySelectWin overlaytitle a.cancle_btn{
+	float: left;
+	color: #999;
+}
+overlaySelectWin overlaytitle a.submit_btn{
+	color: #D00000;
+	float: right;
+}
+overlaySelectWin overlaycontent{
+	position: relative;
+	height: 250px;
+	overflow: hidden;
+	padding: 0;
+}
+overlaySelectWin overlaycontent.list_2{
+	width: 50%;
+	float: left;
+}
+overlaySelectWin overlaycontent.list_3{
+	width: 33.333%;
+	float: left;
+}
+overlaySelectWin overlaycontent.list_4{
+	width: 25%;
+	float: left;
+}
+overlaySelectWin overlaycontent.list_5{
+	width: 20%;
+	float: left;
+}
+overlaySelectWin contentmask{
+	position: absolute;
+	left: 0px;
+	width: 100%;
+	height: 100px;
+	z-index: 1000055;
+}
+overlaySelectWin contentmask.top-mask{
+	top: 0px;
+	border-bottom: 1px solid #EEE;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%,from(rgba(255,255,255,1)), to(rgba(255,255,255,0.5)));
+}
+overlaySelectWin contentmask.bottom-mask{
+	bottom: 0px;
+	border-top: 1px solid #EEE;
+		background: -webkit-gradient(linear, 0% 0%, 0% 100%,from(rgba(255,255,255,0.5)), to(rgba(255,255,255,1)));
+}
+overlaySelectWin overlaycontent ul{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+}
+overlaySelectWin overlaycontent li{
+	font-size: 15px;
+	line-height: 50px;
+	position: relative;
+	height: 50px;
+	overflow: hidden;
+	text-overflow: clip;
+}
+overlaySelectWin overlaycontent li .text_center{
+	display: inline-block;
+    vertical-align: middle;
+    line-height: 25px;
+}
+overlaySelectWin overlaycontent.list_tip li{
+	line-height: 20px;
+	padding: 5px 0;
+}
+overlaySelectWin overlaycontent.list_tip li .tip{
+    font-size: 12px;
+    color: #999;
+}
+.errbox{
+	position: absolute;
+    width: 100%;
+    line-height: 25px;
+    bottom: 0px;
+    text-align: center;
+   	animation-fill-mode: forwards;
+   	z-index: 5;
+   	transform: translateY(105%);
+	-o-transform: translateY(105%); 		/* Opera */
+	-ms-transform: translateY(105%); 		/* IE 9 */
+	-moz-transform: translateY(105%); 		/* Firefox */
+	-webkit-transform: translateY(105%); 	/* Safari 和 Chrome */
+}
+.errbox .errcode{
+	display: inline-block;
+    width: 60%;
+    border-radius: 3px;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    padding: 10px;
+}
+.slide-in-up{
+	animation: slideUpHide 3s, 0s 1 ;
+}
+
+.c_red{
+	color: #d00000;
+}
+.c_gray3{
+	color: #333;
+}
+.c_gray6{
+	color: #666;
+}
+.c_gray9{
+	color: #999;
+}
+
+.blank_area{width: 100%;height:2rem;}
+@-webkit-keyframes slideUp{
+	from{
+		transform: translateY(100%);
+		-o-transform: translateY(100%); 		/* Opera */
+		-ms-transform: translateY(100%); 		/* IE 9 */
+		-moz-transform: translateY(100%); 		/* Firefox */
+		-webkit-transform: translateY(100%); 	/* Safari 和 Chrome */
+	}
+	to{
+		transform: translateY(0);
+		-o-transform: translateY(0); 		/* Opera */
+		-ms-transform: translateY(0); 		/* IE 9 */
+		-moz-transform: translateY(0); 		/* Firefox */
+		-webkit-transform: translateY(0); 	/* Safari 和 Chrome */
+	}
+}
+@-webkit-keyframes slideUpHide{
+	0%{
+		transform: translateY(105%);
+		-o-transform: translateY(105%); 		/* Opera */
+		-ms-transform: translateY(105%); 		/* IE 9 */
+		-moz-transform: translateY(105%); 		/* Firefox */
+		-webkit-transform: translateY(105%); 	/* Safari 和 Chrome */
+		opacity: 1;
+	}
+	20%{
+		transform: translateY(0);
+		-o-transform: translateY(0); 		/* Opera */
+		-ms-transform: translateY(0); 		/* IE 9 */
+		-moz-transform: translateY(0); 		/* Firefox */
+		-webkit-transform: translateY(0); 	/* Safari 和 Chrome */
+		opacity: 1;
+	}
+	80%{
+		transform: translateY(0);
+		-o-transform: translateY(0); 		/* Opera */
+		-ms-transform: translateY(0); 		/* IE 9 */
+		-moz-transform: translateY(0); 		/* Firefox */
+		-webkit-transform: translateY(0); 	/* Safari 和 Chrome */
+		opacity: 1;
+	}
+	100%{
+		transform: translateY(105%);
+		-o-transform: translateY(105%); 		/* Opera */
+		-ms-transform: translateY(105%); 		/* IE 9 */
+		-moz-transform: translateY(105%); 		/* Firefox */
+		-webkit-transform: translateY(105%); 	/* Safari 和 Chrome */
+		opacity: 0;
+	}
+}

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="../../src/bower_components/bower-angularjs/angular.min.js"></script>
+    <script src="../../src/bower_components/Sortable/Sortable.min.js"></script>
+    <script src="../../src/bower_components/Sortable/ng-sortable.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body ng-controller="TodoController" style="height: 1000px">
+    <div id="box">
+        <ul ng-sortable="{ group: 'todo', animation: 150 }" class="unstyled">
+            <li ng-repeat="todo in todos">
+                <div ng-bind="todo.done"></div>
+                <img ng-src="{{todo.text}}" src="" alt="">
+            </li>
+        </ul>
+        <div class="uploadimg">
+            <input type="file" multiple name="headPic" upload-file="" id="">
+        </div>
+    </div>
+</body>
+</html>

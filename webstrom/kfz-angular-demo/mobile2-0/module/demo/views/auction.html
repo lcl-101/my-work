@@ -1,0 +1,111 @@
+<style>
+    /*认证表单*/
+    .form_list{line-height: 55px;height: 55px; padding-right: 15px;border-bottom: 1px solid #EEE;position: relative;display: -webkit-box;font-size: 0px;}
+    .personal_form.verified{padding: 0 15px;margin-bottom: 10px;}
+    .form_list{padding:0;}
+    .form_list .type{padding-left: 10px;}
+    .form_list input{width: 245px;}
+    .form_list input:valid + span.iconfont.clear_icon { display: block;position: absolute;right: 0;top: 0;}
+    .icon-jinru{font-size: 15px;}
+    .form_list .title_text{width: 120px;}
+    .title{display: inline-block;vertical-align: middle;width: 120px;}
+    .form_list .dateLastTime{-webkit-box-flex: 1;}
+</style>
+<div class="kfz-layout">
+    <div kfz-header  url="/mobile2-0/common/header/header.html"  title="{{title}}">
+        <header class="kfz-header kfz-header-nologo ng-scope" style="position: static;">
+            <h3 ng-bind="title"></h3>
+        </header>
+    </div>
+    <section>
+        <div class="form_list clearfix" ng-click="dateChoose('license')">
+            <div class="title_text font_b2">开拍时间</div>
+            <div class="dateLastTime font_n2 c_gray_9" ><span class=" f_right iconfont icon-jinru"></span><span class="c_gray6 f_right" ng-bind="view.license"></span></div>
+        </div>
+
+        <div class="form_list clearfix" ng-click="timeChoose()">
+            <div class="title_text font_b2">年代</div>
+            <div class="dateLastTime font_n2 c_gray_9" ><span class=" f_right iconfont icon-dingdan"></span><span class="c_gray6 f_right" ng-bind="timeType"></span></div>
+        </div>
+
+        <div class="form_list clearfix" ng-click="yunfei()">
+            <div class="title_text font_b2">运费</div>
+            <div class="dateLastTime font_n2 c_gray_9" ><span class=" f_right iconfont icon-dingdan"></span><span class="c_gray6 f_right" ng-bind=""></span></div>
+        </div>
+    </section>
+</div>
+
+<!--时间overlay-->
+<script  type="text/ng-template" id="overlay-select-date.html">
+    <overlaycontent class="list_3" scroll-mask  change="changeYear" data="year">
+        <contentmask class="top-mask" top-mask></contentmask>
+        <contentmask class="bottom-mask" bottom-mask></contentmask>
+        <ul>
+            <li ng-repeat="item in year" select-item active="{{item.active}}">
+                <span>{{item.name}}</span>
+            </li>
+        </ul>
+    </overlaycontent>
+    <overlaycontent class="list_3" scroll-mask  change="changeMonth"  data="month">
+        <contentmask class="top-mask" top-mask></contentmask>
+        <contentmask class="bottom-mask" bottom-mask></contentmask>
+        <ul>
+            <li ng-repeat="item in month" select-item active="{{item.active}}">
+                <span>{{item.name}}</span>
+            </li>
+        </ul>
+    </overlaycontent>
+    <overlaycontent class="list_3" scroll-mask  change="changeDay" data="day">
+        <contentmask class="top-mask" top-mask></contentmask>
+        <contentmask class="bottom-mask" bottom-mask></contentmask>
+        <ul>
+            <li ng-repeat="item in day" select-item active="{{item.active}}">
+                <span>{{item.name}}</span>
+            </li>
+        </ul>
+    </overlaycontent>
+</script>
+
+<!-- 时间年份弹窗 -->
+<script  type="text/ng-template" id="overlay-select-year.html">
+    <overlaycontent class="list_tip" scroll-mask data="items" change="changeItem">
+        <contentmask class="top-mask" top-mask></contentmask>
+        <contentmask class="bottom-mask" bottom-mask></contentmask>
+        <span class="icon_overlay select_icon"></span>
+        <ul>
+            <li ng-repeat="item in items" select-item style="line-height: 40px;">
+                <span>{{item.title}}</span>
+            </li>
+        </ul>
+    </overlaycontent>
+</script>
+
+
+<script type="text/ng-template" id="overlay-reply-tpl.html">
+    <div class="overlay_box">
+        <div class="reply_tab">
+            <span class="tab_item font_b2" ng-class="{'active':!replyState}" ng-click="replyEdit()">撰写消息</span>
+            <span class="tab_item font_b2" ng-class="{'active':replyState}" ng-click="replyCommon()">常用消息</span>
+        </div>
+        <div class="modal-body">
+            <div class="reply_edit" ng-show="!replyState">
+                <textarea class="font_n2" name="" rows="10" cols="" ng-model="editNote"></textarea>
+            </div>
+            <div class="reply_common" ng-show="replyState">
+                <ul class="font_n2">
+                    <li ng-repeat="item in commonList" ng-click="selectCommon($index,item.content)">
+                        <div class="iconfont" ng-class="{true:'c_red icon-xuanzhong1',false:'c_gray9 icon-xuanzhong2'}[item.selectStates]"></div>
+                        <div class="text" ng-bind="item.title"></div>
+                    </li>
+                    <div class="no_common font_b1 c_gray9" ng-show="noCommon">
+                        暂无数据
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="javascript:;" class="canclebtn" ng-click="cancel()">取消</a>
+            <a href="javascript:;" class="confirmbtn c_red" class="c_red" ng-click="confirm()">发送</a>
+        </div>
+    </div>
+</script>
