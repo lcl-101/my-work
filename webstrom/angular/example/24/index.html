@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery-1.8.3.min.js"></script>
+</head>
+<style>
+    body,html,ul,li{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .box {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+    }
+    .btn {
+        width: 100px;
+        height: 50px;
+        font-size: 16px;
+        text-align: center;
+        line-height: 50px;
+        border: 1px solid #eee;
+    }
+    .content-box {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+    .content-box{
+        width: 200px;
+    }
+    .content-box .yiji li {
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        border-bottom: 1px solid #eee;
+        border-left: 1px solid #eee;
+        background: #fff;
+    }
+    .content-box div,.content-box p,.content-box span {
+        float: left;
+    }
+    .content-box span {
+        width: 20px;
+        text-align: center;
+    }
+    .content-box span {
+        float: right;
+    }
+    .lefts {
+        left: 80px!important;
+        opacity: 1;
+    }
+    .minleft{
+        left: 40px!important;
+        opacity: 1;
+    }
+
+    .erji {
+        width: 200px;
+        position: absolute;
+        top:0;
+        height: 100%;
+        opacity: 0;
+        transition: all 0.5s ease;
+        z-index: 2;
+    }
+    .erji li {
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        border-bottom: 1px solid #eee;
+        border-left: 1px solid #eee;
+        background: #fff;
+    }
+</style>
+<body>
+    <div class="box">
+        <div class="btn">btn</div>
+        <div class="content-box">
+            <!--一级菜单-->
+            <ul class="yiji">
+                <li> <div>一级类别</div>  <span> > </span></li>
+                <li> <div>一级类别哈哈哈哈</div>  <span> > </span></li>
+                <li> <div>一级类别</div>  <span> > </span></li>
+            </ul>
+            <!--二级菜单-->
+            <ul class="erji">
+                <li> <div>二级类别哈哈哈哈</div>  <span> > </span></li>
+                <li> <div>二级类别</div>  <span> > </span></li>
+                <li> <div>二级类别</div>  <span> > </span></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        $(function(){
+            //最大值
+            Array.max = function( array ){
+                return Math.max.apply( Math, array );
+            };
+
+            var wW=$(window).width();
+            var wH=$(window).height();
+            var dW=$('.content-box .yiji li div');
+
+            var data=[];
+            for(var i=0;i<dW.length;i++){
+                data.push(dW.eq(i).width());
+            }
+
+
+            var dWs=Array.max(data);
+
+            var sW=$('.content-box span').width();
+            $('.content-box').css({left:wW});
+
+            console.log(wW-dWs-sW-80);
+            $('.btn').on('click',function(){
+                if((wW-dWs-sW-80)>0){
+                    $('.content-box').css({width:wW-80});
+                    $('.content-box').addClass('lefts');
+                }else {
+                    $('.content-box').css({width:wW-40});
+                    $('.content-box').addClass('minleft');
+                }
+            })
+
+            $('.erji').css({left:wW});
+            $('.yiji li').on('click',function(){
+                var cW=$('.content-box').width();
+                var eW=$('.erji li div');
+                var datas=[];
+                for(var j=0;j<eW.length;j++){
+                    datas.push(eW.eq(j).width());
+                }
+                var eWs=Array.max(datas);
+                console.log(eWs);
+                console.log(datas);
+                console.log(cW-dWs-sW-eWs);
+                if((cW-dWs-sW-eWs)>0){
+                    $('.erji').css({width:cW-dWs,left:dWs,opacity:1})
+                }else {
+                    $('.erji').css({width:cW-40,left:40,opacity:1})
+                }
+            })
+
+
+        })
+    </script>
+</body>
+</html>
