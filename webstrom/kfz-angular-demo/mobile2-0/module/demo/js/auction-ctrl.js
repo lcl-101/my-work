@@ -98,6 +98,7 @@ define(["kfz-angular-demo/mobile2-0/app"],function (app) {
                 })
             };
 
+            $scope.$parent.commonList=[{content:'AA'},{content:'BB'}];
             $scope.yunfei = function (item) {
                 var modaConfig = {
                     item:item,

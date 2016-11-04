@@ -65,6 +65,26 @@ define(["angular-amd", "angular-ui-router","header",'overlay','overlay-controlle
 			controller: "demoAuctionController"
 		}));
 
+		//auction-header页
+		$stateProvider.state("auction-header", angularAMD.route({
+			url: "/auction-header",
+			templateUrl: "/kfz-angular-demo/mobile2-0/module/demo/views/auction-header.html",
+			controller: "demoAuctionHeaderController"
+		}));
+
+		//contact页
+		$stateProvider.state("contact", angularAMD.route({
+			url: "/contact",
+			templateUrl: "/kfz-angular-demo/mobile2-0/module/demo/views/contact.html",
+			controller: "demoContactController"
+		}));
+		//img页
+		$stateProvider.state("img", angularAMD.route({
+			url: "/img",
+			templateUrl: "/kfz-angular-demo/mobile2-0/module/demo/views/img.html",
+			controller: "demoImgController"
+		}));
+
 	}]);
 	
 	// 启动引擎

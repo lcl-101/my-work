@@ -8,16 +8,46 @@
     .form_list input:valid + span.iconfont.clear_icon { display: block;position: absolute;right: 0;top: 0;}
     .icon-jinru{font-size: 15px;}
     .form_list .title_text{width: 120px;}
-    .title{display: inline-block;vertical-align: middle;width: 120px;}
     .form_list .dateLastTime{-webkit-box-flex: 1;}
+    .auction-title {
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        font-size: 17px;
+    }
+    .comments {
+        width:80%;/*自动适应父布局宽度*/
+        margin: 0 auto;
+        font-size: 16px;
+        overflow-y:visible;
+        word-break:break-all;
+        /*在ie中解决断行问题(防止自动变为在一行显示，主要解决ie兼容问题，ie8中当设宽度为100%时，文本域类容超过一行时，
+        当我们双击文本内容就会自动变为一行显示，所以只能用ie的专有断行属性“word-break或word-wrap”控制其断行)*/
+    }
+
+
+    /*回复窗口*/
+    .reply_tab{font-size: 0;line-height: 50px;text-align: center;color: #333;border-bottom: 1px solid #EEE;}
+    .reply_tab .tab_item{display: inline-block;vertical-align: middle;padding: 0 15px;}
+    .reply_tab .tab_item:first-of-type{margin-right: 25px;}
+    .reply_tab .tab_item.active{border-bottom: 1px solid #D00000;color: #D00000;}
+    .reply_edit{padding: 15px;height: 150px;}
+    .reply_edit textarea{width: 100%;height: 100%;line-height: 20px;border: 1px solid #EEE;}
+    .reply_common{padding: 15px; height: 150px;}
+    .reply_common ul{width: 100%;height: 100%;line-height: 40px;border: 1px solid #EEE;overflow: auto;}
+    .reply_common ul li{border-bottom: 1px solid #EEE;text-align: left;padding: 0 15px;height: 40px;line-height: 40px;box-sizing: border-box;display: -webkit-box;}
+    .reply_common ul li:last-of-type{border-bottom: none;}
+    .reply_common ul li .iconfont{width: 25px;line-height: 43px;-webkit-text-stroke-width: 0.1px;vertical-align: middle;}
+    .reply_common ul li .iconfont.icon-xuanzhong2{padding-left:2px;font-size: 20px;}
+    .reply_common ul li .iconfont.icon-xuanzhong1{font-size: 25px;margin-left: -0.5px;width: 25.5px;}
+    .reply_common ul li .text{overflow: hidden;text-overflow: ellipsis;white-space:nowrap;-webkit-box-flex: 1;}
 </style>
 <div class="kfz-layout">
-    <div kfz-header  url="/mobile2-0/common/header/header.html"  title="{{title}}">
-        <header class="kfz-header kfz-header-nologo ng-scope" style="position: static;">
-            <h3 ng-bind="title"></h3>
-        </header>
-    </div>
+    <div kfz-header  url="/kfz-angular-demo/mobile2-0/common/header/header.html"  title="{{title}}"></div>
     <section>
+        <div class="auction-title">
+            <a href="#/auction-header" ui-sref="auction-header">修改</a>
+        </div>
         <div class="form_list clearfix" ng-click="dateChoose('license')">
             <div class="title_text font_b2">开拍时间</div>
             <div class="dateLastTime font_n2 c_gray_9" ><span class=" f_right iconfont icon-jinru"></span><span class="c_gray6 f_right" ng-bind="view.license"></span></div>
@@ -32,8 +62,20 @@
             <div class="title_text font_b2">运费</div>
             <div class="dateLastTime font_n2 c_gray_9" ><span class=" f_right iconfont icon-dingdan"></span><span class="c_gray6 f_right" ng-bind=""></span></div>
         </div>
+
     </section>
 </div>
+
+<FORM   METHOD=POST   ACTION= " ">
+    <!-- 主要控制高度的自己主动适应 -->
+
+
+    <!-- 下面两种方式都能够解决textarea行高自己主动适应类容的高度 -->
+    <textarea class="comments" name=s1     onpropertychange= "this.style.posHeight=this.scrollHeight "></textarea>
+
+
+
+</FORM>
 
 <!--时间overlay-->
 <script  type="text/ng-template" id="overlay-select-date.html">
@@ -83,6 +125,7 @@
 
 <script type="text/ng-template" id="overlay-reply-tpl.html">
     <div class="overlay_box">
+        <div class="title-reply">运费</div>
         <div class="reply_tab">
             <span class="tab_item font_b2" ng-class="{'active':!replyState}" ng-click="replyEdit()">撰写消息</span>
             <span class="tab_item font_b2" ng-class="{'active':replyState}" ng-click="replyCommon()">常用消息</span>

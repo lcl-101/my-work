@@ -1,0 +1,113 @@
+<style>
+    h1 {
+        width: 100%;
+        height: 50px;
+        border-bottom: 2px solid #eee;
+        text-align: center;
+        line-height: 50px;
+    }
+    h1 span {
+        width: 40px;
+        text-align: center;
+        float: left;
+    }
+    .auction-header {
+        position: relative;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    .auction-header-ul {
+        width: 100%;
+        float: left;
+        transition: all 0.5s ease;
+    }
+    .auction-header li{
+        width: 100%;
+        height: 44px;
+        box-sizing: border-box;
+        border:1px solid #eee;
+        font-size: 14px;
+        color: #333;
+        line-height: 44px;
+        cursor: pointer;
+    }
+    .auction-header li>div {
+        float: left;
+        margin-left: 10px;
+    }
+    .auction-header li>span {
+        width: 40px;
+        text-align: center;
+        float: right;
+    }
+    .auction-listTwo {
+        float: left;
+        /*margin-left: 100%;*/
+        transform: translateX(100%);
+        width: 100%;
+        transition: all 0.5s ease;
+        background: #f8f8f8;
+    }
+
+    .auction-listThree {
+        float: left;
+        /*margin-left: 100%;*/
+        transform: translateX(100%);
+        width: 100%;
+        transition: all 0.5s ease;
+        background: #f8f8f8;
+    }
+
+    .auction-listFour{
+        float: left;
+        /*margin-left: 100%;*/
+        transform: translateX(100%);
+        width: 100%;
+        transition: all 0.5s ease;
+        background: #f8f8f8;
+    }
+
+    .a_left {
+        /*margin-left: 0;*/
+        transform: translateX(0);
+    }
+    .a_right {
+        display: none;
+        /*margin-left: -100%;*/
+        transform: translateX(-100%);
+    }
+</style>
+<div class="kfz-layout">
+    <div kfz-header  url="/kfz-angular-demo/mobile2-0/common/header/header1.html"  title="{{title}}"></div>
+    <div class="auction-header" auction-header>
+        <!--一级菜单-->
+        <ul class="auction-header-ul" id="auction-header-ul" ng-class="{'a_right':isChooses}">
+            <li ng-repeat="item in items" ng-click="choose($event,$index,items)">
+                <div ng-bind="item.name"></div>
+                <span ng-if="item.children"> > </span>
+            </li>
+        </ul>
+        <!--二级菜单-->
+        <ul class="auction-listTwo" ng-class="{'a_left':isChoose,'a_right':isCheckeds}">
+            <li ng-repeat="i in twoItems" ng-click="chooseTwo($event,$index,twoItems)">
+                <div ng-bind="i.name"></div>
+                <span ng-if="i.children"> > </span>
+            </li>
+        </ul>
+        <!--三级菜单-->
+        <ul class="auction-listThree" ng-class="{'a_left':isChecked,'a_right':isFour}">
+            <li ng-repeat="i in threeItem" ng-click="chooseThree($event,$index,threeItem)">
+                <div ng-bind="i.name"></div>
+                <span ng-if="i.children"> > </span>
+            </li>
+        </ul>
+        <!--四级菜单-->
+        <ul class="auction-listFour" ng-class="{'a_left':isFour,'a_right':isFours}">
+            <li ng-repeat="i in fourItem">
+                <div ng-bind="i.name"></div>
+                <span ng-if="i.children"> > </span>
+            </li>
+        </ul>
+    </div>
+</div>

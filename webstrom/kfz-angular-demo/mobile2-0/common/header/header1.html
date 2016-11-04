@@ -1,0 +1,75 @@
+<header class="kfz-header kfz-header-nologo" ng-controller="aController">
+    <a class="back_icon"  href="javascript:;" ng-click="up()">
+        <i class="iconfont icon-fanhui"></i>
+    </a>
+    <h3 class="title">{{title}}</h3>
+    <a href="javascript:;" class="more_ico_box" ng-click="showHeaderDia()">
+        <i class="iconfont icon-gengduo"></i>
+        <span href="javascript:;" class="icon m_num" ng-show="messageNumShow">{{messageNum}}</span>
+    </a>
+    <!--展开-->
+    <section class="nav_header"  ng-show="showHeaderNav" >
+        <div class="nav_top">
+            <a class="group" target="_self" href="{{indexUrl}}"><span class="iconfont icon-shouye"> </span></a>
+            <a class="group" target="_self" href="{{searchIndexUrl}}"><span class="iconfont icon-sousuo"> </span></a>
+            <a class="group" href="javascript:;" ng-click="hideHeaderDia()"> <span class="iconfont icon-guanbi1"> </span></a>
+        </div>
+        <div class="nav_content">
+            <div class="nav_content_scroll">
+                <a class="item item_02" target="_self" href="{{messageUrl}}">
+                    <span class="iconfont icon-xiaoxi3"></span>
+                    <span class="text">我的消息</span>
+                    <span class="icon_header num" ng-show="messageNumShow">{{messageNum}}</span>
+                </a>
+                <a class="item item_cart" target="_self" href="{{cartUrl}}">
+                    <span class="iconfont icon-gouwuche1"></span>
+                    <span class="text">购物车</span>
+                    <span class="icon_header num"  ng-show="cartNumShow">{{cartNum}}</span>
+                </a>
+                <a class="item" target="_self" href="{{personUrl}}">
+                    <span class="iconfont icon-gerenzhongxin"></span>
+                    <span class="text">个人中心</span>
+                </a>
+                <a class="item item_maijia" target="_self" href="{{sellerUrl}}">
+                    <span class="icon_t icon-maijia"></span>
+                    <span class="text">卖家中心</span>
+                </a>
+
+                <div class="line_gray"></div>
+                <a class="item item_02 item_order" target="_self" href="{{orderUrl}}">
+                    <span class="text">我的订单</span>
+                </a>
+                <a class="item item_02 item_bid" target="_self" href="{{tradeUrl}}">
+                    <span class="text">我的拍卖交易</span>
+                </a>
+                <a class="item item_paimai" target="_self" href="{{bidUrl}}">
+                    <span class="text">我的竞拍</span>
+                </a>
+                <a class="item item_trace" target="_self" href="{{payUrl}}">
+                    <span class="text">资金账户</span>
+                </a>
+                <a class="item item_zu" target="_self" href="{{zujiUrl}}">
+                    <span class="text">我的足迹</span>
+                </a>
+                <div class="line_gray"></div>
+                <a class="item item_02 item_dian" target="_self" href="{{shopUrl}}">
+                    <span class="text">书店区</span>
+                </a>
+                <a class="item item_02 item_paimai" target="_self" href="{{pmUrl}}">
+                    <span class="text">在线拍卖</span>
+                </a>
+                <a class="item item_02 item_zixun" target="_self" href="{{zixunUrl}}">
+                    <span class="text">资讯</span>
+                </a>
+                <a class="item item_02 item_shequ" target="_self" href="{{shequUrl}}">
+                    <span class="text">社区</span>
+                </a>
+            </div>
+        </div>
+    </section>
+</header>
+<div class="height_90" ng-hide="showHeaderNav"></div>
+<div class="kfz-overlay"  ng-show="showHeaderNav" ng-click="hideOverlay()" style="display: block"></div>
+
+
+

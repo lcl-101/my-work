@@ -82,6 +82,16 @@
         border-left: 1px solid #eee;
         background: #fff;
     }
+
+    .comments {
+        width:80%;/*自动适应父布局宽度*/
+        margin: 0 auto;
+        font-size: 16px;
+        overflow-y:visible;
+        word-break:break-all;
+        /*在ie中解决断行问题(防止自动变为在一行显示，主要解决ie兼容问题，ie8中当设宽度为100%时，文本域类容超过一行时，
+        当我们双击文本内容就会自动变为一行显示，所以只能用ie的专有断行属性“word-break或word-wrap”控制其断行)*/
+    }
 </style>
 <body>
     <div class="box">
@@ -100,7 +110,9 @@
                 <li> <div>二级类别</div>  <span> > </span></li>
             </ul>
         </div>
+        <textarea class="comments" style="border:1px solid red" name="" id=""></textarea>
     </div>
+    
     <script>
         $(function(){
             //最大值
@@ -155,6 +167,39 @@
 
 
         })
+    </script>
+
+    <script>
+        (function($){
+            $.fn.autoTextarea = function(options) {
+                var defaults={
+                    maxHeight:null,
+                    minHeight:$(this).height()
+                };
+                var opts = $.extend({},defaults,options);
+                return $(this).each(function() {
+                    $(this).bind("paste cut keydown keyup focus blur",function(){
+                        var height,style=this.style;
+                        this.style.height = opts.minHeight + 'px';
+                        if (this.scrollHeight > opts.minHeight) {
+                            if (opts.maxHeight && this.scrollHeight > opts.maxHeight) {
+                                height = opts.maxHeight;
+                                style.overflowY = 'scroll';
+                            } else {
+                                height = this.scrollHeight;
+                                style.overflowY = 'hidden';
+                            }
+                            style.height = height + 'px';
+                        }
+                    });
+                });
+            };
+
+            $(".comments").autoTextarea({
+                maxHeight:400,
+                minHeight:22
+            });
+        })(jQuery);
     </script>
 </body>
 </html>

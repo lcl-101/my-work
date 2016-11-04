@@ -50,6 +50,7 @@ require.config({
         "demoAuctionController":"/kfz-angular-demo/mobile2-0/module/demo/js/auction-ctrl",
         "demoContactController":"/kfz-angular-demo/mobile2-0/module/demo/js/contact-ctrl",
         "demoImgController":"/kfz-angular-demo/mobile2-0/module/demo/js/img-ctrl",
+        "demoAuctionHeaderController":"/kfz-angular-demo/mobile2-0/module/demo/js/auction-header",
         "overlaySelectController":"/kfz-angular-demo/mobile2-0/module/overlay/js/overlay-select-ctrl"
     },
     //依赖关系声明

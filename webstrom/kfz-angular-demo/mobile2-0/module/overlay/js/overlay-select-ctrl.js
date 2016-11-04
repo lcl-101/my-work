@@ -337,7 +337,7 @@ overlayController.controller('overlayTimeTypeController', ['$scope', '$uibModalI
 }]);
 
 //回复框控制器
-overlayController.controller('overlayReplyController',function($scope,$modalInstance,overlay,items,msgList){
+overlayController.controller('overlayReplyController',function($scope,$modalInstance,overlay,items){
     //初始化
     $scope.init = function(){
         $scope.replyState = false;				//TAB切换	true常用消息		false撰写消息
@@ -381,16 +381,6 @@ overlayController.controller('overlayReplyController',function($scope,$modalInst
     }
     //操作-确认
     $scope.confirm = function(){
-        msgList.replyMsg({
-            receiver:$scope.item.sender,
-            receiverNickname:$scope.item.senderNickname,
-            msgContent:$scope.editNote,
-            replyedId:$scope.item.messageId,
-            token:''
-        },function(res){
-            overlay.overlayAutoTip('回复成功',1500);
-            $modalInstance.close('replySuc');
-        })
 
     }
 });
