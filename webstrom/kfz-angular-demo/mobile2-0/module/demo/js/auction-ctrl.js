@@ -14,7 +14,6 @@ define(["kfz-angular-demo/mobile2-0/app"],function (app) {
             helper,
             overlay
         ) {
-            console.log(overlay);
             $scope.title='添加拍品';
             document.title='添加拍品';
             $scope.view = {
@@ -65,6 +64,7 @@ define(["kfz-angular-demo/mobile2-0/app"],function (app) {
                 });
             };
             $scope.dateChoose = function(name) {
+                console.log($scope);
                 widget.overlaySelectDate(name);
             };
 
@@ -122,6 +122,20 @@ define(["kfz-angular-demo/mobile2-0/app"],function (app) {
                 },function () {
 
                 });
-            }
+            };
+            //获取url连接参数值
+            widget.GetQueryString=function(name) {
+                var after = window.location.hash.split("?")[1];
+                if(after) {
+                    var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+                    var r = after.match(reg);
+                    if(r != null) {
+                        return  decodeURIComponent(r[2]);
+                    } else {
+                        return null;
+                    }
+                }
+            };
+            $scope.selects=widget.GetQueryString("select");
     }])
 })

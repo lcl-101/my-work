@@ -43,8 +43,7 @@
     }
     .auction-listTwo {
         float: left;
-        /*margin-left: 100%;*/
-        transform: translateX(100%);
+        margin-left: 100%;
         width: 100%;
         transition: all 0.5s ease;
         background: #f8f8f8;
@@ -52,8 +51,7 @@
 
     .auction-listThree {
         float: left;
-        /*margin-left: 100%;*/
-        transform: translateX(100%);
+        margin-left: 100%;
         width: 100%;
         transition: all 0.5s ease;
         background: #f8f8f8;
@@ -61,21 +59,18 @@
 
     .auction-listFour{
         float: left;
-        /*margin-left: 100%;*/
-        transform: translateX(100%);
+        margin-left: 100%;
         width: 100%;
         transition: all 0.5s ease;
         background: #f8f8f8;
     }
 
     .a_left {
-        /*margin-left: 0;*/
-        transform: translateX(0);
+        margin-left: 0;
     }
     .a_right {
         display: none;
-        /*margin-left: -100%;*/
-        transform: translateX(-100%);
+        margin-left: -100%;
     }
 </style>
 <div class="kfz-layout">
@@ -96,15 +91,15 @@
             </li>
         </ul>
         <!--三级菜单-->
-        <ul class="auction-listThree" ng-class="{'a_left':isChecked,'a_right':isFour}">
+        <ul class="auction-listThree" ng-class="{'a_left':isChecked,'a_right':isFours}">
             <li ng-repeat="i in threeItem" ng-click="chooseThree($event,$index,threeItem)">
                 <div ng-bind="i.name"></div>
                 <span ng-if="i.children"> > </span>
             </li>
         </ul>
         <!--四级菜单-->
-        <ul class="auction-listFour" ng-class="{'a_left':isFour,'a_right':isFours}">
-            <li ng-repeat="i in fourItem">
+        <ul class="auction-listFour" ng-class="{'a_left':isFour}">
+            <li ng-repeat="i in fourItem" ng-click="chooseFour($event,$index,fourItem)">
                 <div ng-bind="i.name"></div>
                 <span ng-if="i.children"> > </span>
             </li>

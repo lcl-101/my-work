@@ -10,25 +10,27 @@ define(["kfz-angular-demo/mobile2-0/app"],function (app) {
         /*返回*/
         $scope.up = function(){
             if($scope.$parent.$parent.$parent.isFour){
-                $scope.$parent.$parent.$parent.isFour=false;
-                $scope.$parent.$parent.$parent.isFours=true;
-                // $timeout(function () {
-                //     $scope.$parent.$parent.$parent.isFours=false;
-                //     clearTimeout($timeout);
-                // },500)
+                $scope.$parent.$parent.$parent.isFour=false;    //isFour为false 当前菜单显示
+                $scope.$parent.$parent.$parent.fourItem='';     //当前菜单清空
+                $scope.$parent.$parent.$parent.isFours=false;   //isFours为false 上一级菜单显示
+                $scope.$parent.$parent.$parent.title=$scope.$parent.$parent.$parent.titles2;  //显示上一级菜单名
+                document.title=$scope.$parent.$parent.$parent.titles2;
+                $scope.$parent.$parent.$parent.scaleThree='';
             }else {
                 if($scope.$parent.$parent.$parent.isChecked){
                     $scope.$parent.$parent.$parent.isChecked=false;
-                    $timeout(function () {
-                        $scope.$parent.$parent.$parent.isCheckeds=false;
-                        clearTimeout($timeout);
-                    },500);
+                    $scope.$parent.$parent.$parent.threeItem='';
+                    $scope.$parent.$parent.$parent.isCheckeds=false;
+                    $scope.$parent.$parent.$parent.title=$scope.$parent.$parent.$parent.titles1;
+                    document.title=$scope.$parent.$parent.$parent.titles1;
+                    $scope.$parent.$parent.$parent.scaleTwo='';
                 }else if($scope.$parent.$parent.$parent.isChoose){
                     $scope.$parent.$parent.$parent.isChoose=false;
-                    $timeout(function () {
-                        $scope.$parent.$parent.$parent.isChooses=false;
-                        clearTimeout($timeout);
-                    },500);
+                    $scope.$parent.$parent.$parent.twoItems='';
+                    $scope.$parent.$parent.$parent.isChooses=false;
+                    $scope.$parent.$parent.$parent.title=$scope.$parent.$parent.$parent.titles;
+                    document.title=$scope.$parent.$parent.$parent.titles;
+                    $scope.$parent.$parent.$parent.scaleOne='';
                 }else {
                     window.history.go(-1);
                 }
@@ -38,42 +40,63 @@ define(["kfz-angular-demo/mobile2-0/app"],function (app) {
     app.directive('auctionHeader',function(){
         return {
             link : function (scope,elemt,attr) {
-                scope.items=scope.getCategoryList();
+                scope.items=scope.getCategoryList();        //获取一级菜单列表
                 // 一级菜单选择
                 scope.choose=function($event,$index,obj){
-                    scope.twoItems=obj[$index].children;
-                    if(obj[$index].children){
-                        scope.isChoose=true;
-                        scope.isChooses=true;
+                    scope.twoItems=obj[$index].children;    //twoItems 当前菜单下的子菜单
+                    scope.scaleOne=obj[$index].name;
+                    if(obj[$index].children){               //判断当前菜单下是否有子菜单
+                        scope.titles=scope.title;           //保存当前菜单的标题
+                        scope.title=obj[$index].name;
+                        document.title=obj[$index].name;
+                        scope.isChoose=true;                //isChoose为true时当前菜单消失
+                        scope.isChooses=true;               //isChooses为true时下一级菜单显示
                     }else {
                         scope.isChoose=false;
                         scope.isChooses=false;
-                        console.log(obj[$index]);
+                        console.log(scope.scaleOne);
+                        location.href='#/auction?select='+scope.scaleOne;
                     }
                 };
                 // 二级菜单选择
                 scope.chooseTwo=function($event,$index,obj){
                     scope.threeItem=obj[$index].children;
+                    scope.scaleTwo=obj[$index].name;
                     if(obj[$index].children){
                         scope.isChecked=true;
                         scope.isCheckeds=true;
+                        scope.titles1=scope.title;
+                        scope.title=obj[$index].name;
+                        document.title=obj[$index].name;
                     }else {
                         scope.isChecked=false;
                         scope.isCheckeds=false;
-                        console.log(obj[$index]);
+                        console.log(scope.scaleOne+'>'+scope.scaleTwo);
+                        location.href='#/auction?select='+scope.scaleOne+'>'+scope.scaleTwo;
                     }
                 };
                 // 三级菜单选择
                 scope.chooseThree=function($event,$index,obj){
                     scope.fourItem=obj[$index].children;
+                    scope.scaleThree=obj[$index].name;
                     if(obj[$index].children){
                         scope.isFour=true;
-                        scope.isFours=false;
+                        scope.isFours=true;
+                        scope.titles2=scope.title;
+                        scope.title=obj[$index].name;
+                        document.title=obj[$index].name;
                     }else {
                         scope.isFour=false;
                         scope.isFours=false;
-                        console.log(obj[$index]);
+                        console.log(scope.scaleOne+'>'+scope.scaleTwo+'>'+scope.scaleThree);
+                        location.href='#/auction?select='+scope.scaleOne+'>'+scope.scaleTwo+'>'+scope.scaleThree;
                     }
+                };
+                // 四级菜单选择
+                scope.chooseFour=function($event,$index,obj){
+                    console.log(obj);
+                    console.log(scope.scaleOne+'>'+scope.scaleTwo+'>'+scope.scaleThree+'>'+obj[$index].name);
+                    location.href='#/auction?select='+scope.scaleOne+'>'+scope.scaleTwo+'>'+scope.scaleThree+'>'+obj[$index].name;
                 }
             }
         }

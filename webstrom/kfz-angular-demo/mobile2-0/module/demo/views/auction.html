@@ -24,7 +24,17 @@
         /*在ie中解决断行问题(防止自动变为在一行显示，主要解决ie兼容问题，ie8中当设宽度为100%时，文本域类容超过一行时，
         当我们双击文本内容就会自动变为一行显示，所以只能用ie的专有断行属性“word-break或word-wrap”控制其断行)*/
     }
-
+    .auction-title a{
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    .auction-title a p {
+        float: left;
+    }
+    .auction-title a span {
+        float: right;
+    }
 
     /*回复窗口*/
     .reply_tab{font-size: 0;line-height: 50px;text-align: center;color: #333;border-bottom: 1px solid #EEE;}
@@ -46,7 +56,7 @@
     <div kfz-header  url="/kfz-angular-demo/mobile2-0/common/header/header.html"  title="{{title}}"></div>
     <section>
         <div class="auction-title">
-            <a href="#/auction-header" ui-sref="auction-header">修改</a>
+            <a href="#/auction-header" ui-sref="auction-header"><p ng-bind="selects"></p><span>修改</span></a>
         </div>
         <div class="form_list clearfix" ng-click="dateChoose('license')">
             <div class="title_text font_b2">开拍时间</div>
@@ -65,17 +75,6 @@
 
     </section>
 </div>
-
-<FORM   METHOD=POST   ACTION= " ">
-    <!-- 主要控制高度的自己主动适应 -->
-
-
-    <!-- 下面两种方式都能够解决textarea行高自己主动适应类容的高度 -->
-    <textarea class="comments" name=s1     onpropertychange= "this.style.posHeight=this.scrollHeight "></textarea>
-
-
-
-</FORM>
 
 <!--时间overlay-->
 <script  type="text/ng-template" id="overlay-select-date.html">
@@ -122,7 +121,7 @@
     </overlaycontent>
 </script>
 
-
+<!--运费-->
 <script type="text/ng-template" id="overlay-reply-tpl.html">
     <div class="overlay_box">
         <div class="title-reply">运费</div>
