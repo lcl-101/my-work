@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+   var box = Object.create({}, {
+       openLid: {
+           value: function () {
+               return "nothing";
+           }
+       },
+       openSecretCompartment: {
+           value: function () {
+               return "treasure"
+           },
+           enumerable:false
+       }
+   });
+    document.write(Object.getOwnPropertyNames(box).sort());
+
+    var a={};
+    console.log(Object.getPrototypeOf(a) === Object.prototype && Object.prototype === a.__proto__);
+    console.log(Object.getPrototypeOf(a));
+    console.log(Object.prototype);
+    console.log(a.__proto__);
+
+
+
+
+    var foo = {
+        foo: 'foo'
+    };
+    var bar = Object.create(foo,{
+        bar: {
+            enumerable: true,
+            value: 'bar'
+        }
+    });
+    for (var x in bar){
+        console.log(x);
+    }
+    var myProps = Object.getOwnPropertyNames(bar).map(function (i) {
+        return bar.hasOwnProperty(i) ? i : undefined;
+    });
+
+    console.log(myProps);
+
+
+
+    var bombPop = {
+        wrapping: 'plastic',
+        flavors: ['Cherry', 'Lime' ,'Blue Raspberry']
+    };
+    console.log(Object.isFrozen(bombPop));
+    delete bombPop.wrapping;
+    console.log(bombPop.wrapping);
+    Object.freeze(bombPop);
+    delete bombPop.flavors;
+    console.log(bombPop.flavors);
+    console.log(Object.isFrozen(bombPop));
+</script>
+</body>
+</html>
