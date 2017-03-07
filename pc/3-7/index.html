@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://neibures.kongfz.com/min/?b=css/base&f=base.css,kfz.css,kfz.view.css&v=res_deploy_2016092601">
+    <script src="jquery-1.8.3.min.js"></script>
+    <script src="http://neibures.kongfz.com/min/?b=js/base&f=kfz-0.8.0.min.js,kfz-0.8.0.lang.sc.js,kfz.view.js&v=2014101101"></script>
+    <style>
+        a.btn-weixin{display: block;float: right;width: 76px;height: 28px;line-height: 28px;background: #78a778;color: #fff;font-size: 16px;text-align: center;border: 1px solid #7dac7c;border-radius: 2px;}
+        #weixinBox .weixinBox {width: 478px;height: 428px;border:8px solid #6a6a6a;background: #fff;}
+        #weixinBox .weixinTop {width: 440px;height: 50px;overflow: hidden;border-bottom:1px solid #e5e5e5;margin: 0 auto;font-size: 14px;color: #333333;line-height:50px;}
+        #weixinBox .weixinInner {width: 440px;height: 136px;margin: 0 auto;overflow: hidden;}
+        #weixinBox .weixinInner h4 {font-size: 18px;color: #333333;margin: 18px 0 14px 0;}
+        #weixinBox .weixinInner ul {margin-left: 20px;}
+        #weixinBox .weixinInner ul li {font-size: 14px;color: #333333;margin-bottom: 10px;}
+        #weixinBox .weixinInner ul li input {margin-right: 12px;}
+        #weixinBox .weixinInner ul li span {display: inline-block;width: 152px;}
+        #weixinBox .weixinInner ul li span i {color: #d00000;}
+        #weixinBox .weixinBottom {width: 440px;margin: 0 auto;}
+        #weixinBox .weixinBottom h4 {font-size: 18px;color: #333333;margin: 0 0 14px 0;}
+        #weixinBox .weixinBottom-left {float: left;width: 50%;}
+        #weixinBox .weixinBottom-left .weixinBottom-left-inner {padding-left: 52px;}
+        #weixinBox .weixinBottom-left .weixinBottom-left-inner div{font-size: 14px;color: #333333;}
+        #weixinBox .weixinBottom-left .weixinBottom-left-inner div img {margin-left: 10px;}
+        #weixinBox .weixinBottom-left .weixinBottom-left-inner ul {font-size: 12px;color: #888888;margin-top: 74px;}
+        #weixinBox .weixinBottom-right {float: left;width: 50%;}
+        #weixinBox .weixinBottom-right div {width: 160px;height: 160px;background: #6a6a6a;}
+        #weixinBox .weixinBottom-right div img{width: 100%;}
+        #weixinBox .overWinBtnBox {width: 100%;height: 30px;text-align: center;margin-top: 30px;}
+        #weixinBox .overWinBtnBox a{display: inline-block;margin-left: 4px;margin-right: 4px;}
+        /** 弹窗关闭按钮 **/
+        #weixinBox .overWin .closeBtn a{width:20px;height:20px;background:url(http://hotfixwww.kongfz.cn/images/overwin_close_btn.png) no-repeat;}
+        #weixinBox .overWin .closeBtn a:hover{background:url(http://hotfixwww.kongfz.cn/images/overwin_close_btn.png) 0 -20px no-repeat;}
+        #weixinBox .overWin .closeBtn {
+            position: absolute;
+            z-index: 1000003;
+            right: 19px;
+            top: 22px;
+            width: 34px;
+            height: 35px;
+        }
+    </style>
+</head>
+<body>
+    <a href="javascript:;" class="btn-weixin">微信提醒</a>
+    <div id="weixinBox" class="overTip" style="display: none;">
+        <div class="weixinBox overWin">
+            <div class="closeBtn"><a title="关闭" href="javascript:;"></a></div>
+            <div class="weixinTop">设置微信提醒</div>
+            <div class="weixinInner">
+                <h4>第1步:选择时间</h4>
+                <ul>
+                    <li><input type="checkbox" name="checkbox"><span>结束前<i>20</i>分钟提醒</span>2月27日 20:40</li>
+                    <li><input type="checkbox" name="checkbox"><span>最后<i>5</i>分钟提醒</span>2月27日 20:40</li>
+                </ul>
+            </div>
+            <div class="weixinBottom clearfix">
+                <div class="weixinBottom-left">
+                    <h4>第2步:关注微信公众号</h4>
+                    <div class="weixinBottom-left-inner">
+                        <div>手机微信扫描二维码 <img src="weixin_right.png" alt=""></div>
+                        <ul>
+                            <li>不关注微信公众号，<br/>无法给您推送提醒哟</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="weixinBottom-right">
+                    <div>
+                        <img src="http://res.kongfz.com/image/view/top_app1.gif" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="overWinBtnBox">
+                <a class="subBtn" href="javascript:;">确定</a>
+                <a class="cancelBtn" href="javascript:;">取消</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="time">2017-01-28 14:59:31</div>
+</body>
+    <script>
+        var weixin = {
+            run:function(){
+                var that=this;
+                that.weixintixin();
+            },
+            weixintixin:function(){
+                var that = this;
+                $(".btn-weixin").on('click',function(){
+                    new KFZ.ui.PopWin({
+                        overWin: '#weixinBox',
+                        width: 494,
+                    });
+                });
+            },
+            data:{
+                /**
+                 * 兼容日期对象参数、时间戳参数
+                 * @param {Object|Number} date 日期对象参数或时间戳参数
+                 * @returns {Object} 返回对应的日期对象
+                 */
+                paramsDeBug: function(date){
+                    date = date == undefined ? new Date() : date;
+                    date = typeof date == 'number' ? new Date(date) : date;
+                    return date;
+                },
+                /**
+                 * 将日期格式化成指定格式的字符串
+                 * @param {Object|Number} date 要格式化的日期，不传时默认当前时间，也可以是一个时间戳
+                 * @param {String} fmt 目标字符串格式，支持的字符有：y、M、d、q、w、H、h、m、s、S、默认：yyyy-MM-dd HH:mm:ss
+                 * @returns {String} 返回格式化后的日期字符串
+                 */
+                formatDate: function(date, fmt){
+                    fmt = fmt || 'yyyy-MM-dd HH:mm:ss';
+                    date = this.paramsDeBug(date);
+                    var obj =
+                    {
+                        'y': date.getFullYear(), // 年份，注意必须用getFullYear
+                        'M': date.getMonth() + 1, // 月份，注意是从0-11
+                        'd': date.getDate(), // 日期
+                        'q': Math.floor((date.getMonth() + 3) / 3), // 季度
+                        'w': date.getDay(), // 星期，注意是0-6
+                        'H': date.getHours(), // 24小时制
+                        'h': date.getHours() % 12 == 0 ? 12 : date.getHours() % 12, // 12小时制
+                        'm': date.getMinutes(), // 分钟
+                        's': date.getSeconds(), // 秒
+                        'S': date.getMilliseconds() // 毫秒
+                    };
+                    var week = ['天', '一', '二', '三', '四', '五', '六'];
+                    for(var i in obj)
+                    {
+                        fmt = fmt.replace(new RegExp(i+'+', 'g'), function(m)
+                        {
+                            var val = obj[i] + '';
+                            if(i == 'w') return (m.length > 2 ? '星期' : '周') + week[val];
+                            for(var j = 0, len = val.length; j < m.length - len; j++) val = '0' + val;
+                            return m.length == 1 ? val : val.substring(val.length - m.length);
+                        });
+                    }
+                    return fmt;
+                },
+            }
+        };
+        weixin.run();
+
+        var time=$('.time').html().replace(/-/g,'/');
+        var time1=Date.parse(new Date(time));
+        time1=time1-1200000;
+        console.log(time1);
+        console.log(weixin.data.formatDate(time1,'M月d日 HH:mm:ss'));
+    </script>
+</html>
