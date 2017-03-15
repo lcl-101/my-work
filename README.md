@@ -1,5 +1,3 @@
-[logo](https://github.com/lcl-101/my-work)
-
 ![](https://github.com/lcl-101/my-work/blob/master/banner/banner.png)
 
 ## mylist
