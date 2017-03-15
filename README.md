@@ -1,5 +1,7 @@
 [logo](https://github.com/lcl-101/my-work)
-[logo]:https://github.com/lcl-101/my-work/blob/master/banner/banner.png "lichenglong"
+
+![](https://github.com/lcl-101/my-work/blob/master/banner/banner.png)
+
 ## mylist
   3-10 [温都金服首页] (https://www.wenjf.com/ "https://www.wenjf.com/") <br/>
   3-28 [旺财谷-万元起投专题pc] (https://www.wangcaigu.com/zhuanti/show_new/id-40.html "https://www.wangcaigu.com/zhuanti/show_new/id-40.html") <br/>
