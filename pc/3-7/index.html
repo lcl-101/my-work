@@ -91,8 +91,8 @@
                 $(".btn-weixin").on('click',function(){
                     new KFZ.ui.PopWin({
                         overWin: '#weixinBox',
-                        width: 494,
-                    });
+                        width: 494
+                    })
                 });
             },
             data:{
@@ -140,7 +140,7 @@
                         });
                     }
                     return fmt;
-                },
+                }
             }
         };
         weixin.run();
@@ -148,7 +148,7 @@
         var time=$('.time').html().replace(/-/g,'/');
         var time1=Date.parse(new Date(time));
         time1=time1-1200000;
-        console.log(time1);
-        console.log(weixin.data.formatDate(time1,'M月d日 HH:mm:ss'));
+        // console.log(time1);
+        // console.log(weixin.data.formatDate(time1,'M月d日 HH:mm:ss'));
     </script>
 </html>
