@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/validate-1.14.0.min.js"></script>
+</head>
+<body>
+    <div style="width: 500px;margin: 0 auto">
+        <form id="register5" action="js/login.json" method="get">
+            <div class="form-group">
+                <label>user name</label>
+                <input type="text" name="username" id="username" class="form-control" autocomplete="on" placeholder="Enter text">
+                <div class="tipinfo"></div>
+            </div>
+            <div class="form-group">
+                <label>password</label>
+                <input type="password" name="password" id="password" class="form-control" autocomplete="on" placeholder="Enter text">
+                <div class="tipinfo"></div>
+            </div>
+            <button type="submit" class="btn btn-default">Submit Button</button>
+        </form>
+    </div>
+    <script>
+        $(function(){
+            $('#register5').validate({
+                rules:{
+                    username:{
+                        required:true
+                    },
+                    password:{
+                        required:true,
+                        rangelength:[8,10]
+                    }
+                },
+                messages:{
+                    username:{
+                        required:'请输入一个用户名'
+                    },
+                    password:{
+                        required:'请设置一个密码',
+                        rangelength:'密码位数为8到10位'
+                    }
+                },
+                errorPlacement:function(error,element){
+                    console.log(error);
+                    console.log(element);
+                    error.appendTo(element.parent().find(".tipinfo"));
+                },
+                submitHandler: function(){
+                    $.ajax({
+                        url : 'js/login.json',
+                        type : 'get',
+                        dataType : 'json',
+                        success : function(res){
+                            console.log(res);
+                            location.href = 'login.html';
+                        },
+                        error : function(){
+                            alert('ajax error');
+                        }
+                    });
+                    return;
+                }
+            });
+            var fields = document.querySelectorAll('input[type="password"]');
+            for (var i = 0; i < fields.length; i++) {
+                fields[i].autocomplete="on";
+            }
+        })
+    </script>
+</body>
+</html>
