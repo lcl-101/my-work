@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    var bb='<a></a> <a></a>';
+    var reg = new RegExp(/<a[^>]*>/g);
+    alert(bb.match(reg).length)
+</script>
+</body>
+</html>
