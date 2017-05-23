@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>网上充值_充值_资金账户_孔夫子旧书网</title>
+    <link href="https://res.kongfz.com/min/?b=css/base&f=base.css,kfz.css,kfz.view.css&v=res_deploy_2016092601" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="pay.css"/>
+    <script type="text/javascript" src="https://neibupay.kongfz.com/ajax/getHeader/?bizType=nav"></script>
+</head>
+<body id="page_fill_online">
+<!-- 正文 start -->
+<div class="content clearfix">
+    <div class="recharge_tit clearfix">
+        <a href="/fill/online.html" class="now">网上充值</a><a href="/fill/postal.html">邮局汇款充值</a><a href="/fill/card.html">手机充值卡充值</a>
+    </div>
+    <div id="recharge_box" class="recharge_box clearfix"><div class="loading"></div></div>
+</div>
+<!-- 正文 end -->
+<!-- 页脚 start -->
+<div id="kfz_footer"></div>
+<!-- 页脚 end -->
+
+
+<!-- 模板 - 第一步 start -->
+<script id="tmpl_step_one" type="text/template">
+    <div class="bank_box m_t10">
+        <% var hasRecentUse = data.userRecentUseChannels && data.userRecentUseChannels.bank && data.userRecentUseChannels.bank.length; %>
+        <p><span class="font14"><strong id="sec_bank_tit"><%= hasRecentUse ? "" : "选择" %>网上银行</strong> （无手续费，只能使用借记卡。）</span> <a target="_blank" href="https://cshall.alipay.com/lab/cateQuestion.htm?cateId=237763&pcateId=237707">如何开通网上银行？</a></p>
+        <div id="bank_box" class="clearfix m_t15 bank_list">
+            <ul>
+                <% if(hasRecentUse){ %>
+                <% $.each(data.userRecentUseChannels.bank, function(i, item){ %>
+                <li data-code="<%= item.channelCode.toLowerCase() %>" data-name="<%= item.paychannelName %>"><label for="bank_<%= item.channelCode.toLowerCase() %>" class="<%= item.channelCode.toLowerCase() %>" title="<%= item.paychannelName %>"><input id="bank_<%= item.channelCode.toLowerCase() %>" name="fillChannel" type="radio" value="<%= item.channelCode.toLowerCase() %>"></label></li>
+                <% }); %>
+            </ul>
+            <div class="clear"></div>
+            <div><a id="btn_other_bank" href="javascript:;">选择其他银行</a></div>
+            <% }else{ %>
+            <% data.channels && data.channels.bank && data.channels.bank.length && $.each(data.channels.bank, function(i, item){ %>
+            <li data-code="<%= item.channelCode.toLowerCase() %>" data-name="<%= item.paychannelName %>"><label for="bank_<%= item.channelCode.toLowerCase() %>" class="<%= item.channelCode.toLowerCase() %>" title="<%= item.paychannelName %>"><input id="bank_<%= item.channelCode.toLowerCase() %>" name="fillChannel" type="radio" value="<%= item.channelCode.toLowerCase() %>"></label></li>
+            <% }); %>
+            </ul>
+            <% } %>
+        </div>
+        <p id="sec_bank_box" class="font14 green2 m_t10" style="display:none;">您已选择 <span id="sec_bank"></span> 。支付限额请参考 <a target="_blank" href="<%= KFZ.sites.adapter.help %>?act=detail&contentId=250">《各银行及支付宝支付限额总表》</a> 。</p>
+    </div>
+    <div class="bank_box m_t10">
+        <p class="font14"><strong>选择其他充值渠道</strong>(有手续费)</p>
+        <div class="clearfix m_t15 bank_list">
+            <ul id="alipay_box" class="f_left">
+                <% data.channels && data.channels.weixin && data.channels.weixin.length && $.each(data.channels.weixin, function(i, item){ %>
+                <li data-code="<%= item.channelCode.toLowerCase() %>" data-name="<%= item.paychannelName %>"><label for="weixin_<%= item.channelCode.toLowerCase() %>" class="<%= item.channelCode.toLowerCase() %>" title="<%= item.paychannelName %>"><input id="weixin_<%= item.channelCode.toLowerCase() %>" name="fillChannel" type="radio" value="<%= item.channelCode.toLowerCase() %>"></label></li>
+                <% }); %>
+                <% data.channels && data.channels.alipay && data.channels.alipay.length && $.each(data.channels.alipay, function(i, item){ %>
+                <li data-code="<%= item.channelCode.toLowerCase() %>" data-name="<%= item.paychannelName %>"><label for="alipay_<%= item.channelCode.toLowerCase() %>" class="<%= item.channelCode.toLowerCase() %>" title="<%= item.paychannelName %>"><input id="alipay_<%= item.channelCode.toLowerCase() %>" name="fillChannel" type="radio" value="<%= item.channelCode.toLowerCase() %>"></label></li>
+                <% }); %>
+            </ul>
+            <div class="red font14 f_left">（支付宝仍可进行"储蓄卡快捷支付"）</div>
+        </div>
+        <p id="sec_alipay_box" class="font14 green2 m_t10" style="display:none;">您已选择 <span id="sec_alipay"></span> 。支付限额请参考 <a target="_blank" href="<%= KFZ.sites.adapter.help %>?act=detail&contentId=250"> 《各银行及支付宝支付限额总表》</a> 。</p>
+        <p id="sec_weixin_box" class="font14 green2 m_t10" style="display:none;">您已选择 <span id="sec_weixin"></span> 。微信将收取您支付金额0.6%的手续费。</p>
+    </div>
+    <div class="m_t20"><a id="btn_step_next" href="javascript:;" class="btn_orange_110_35">下一步</a></div>
+    <div class="line m_t90"></div>
+    <div class="font14 m_t25  recharge_txt2">
+        <p>充值遇到问题</p>
+        <p>1. <a target="_blank" href="<%= KFZ.sites.adapter.help %>?act=detail&contentId=240">如何充值？</a></p>
+        <p>2. <a target="_blank" href="<%= KFZ.sites.adapter.help %>?act=detail&contentId=240#chuxuka">不方便办理网上银行业务怎么办？</a></p>
+        <p>3. <a target="_blank" href="<%= KFZ.sites.adapter.help %>?act=detail&contentId=588">充值款长时间未到帐怎么办？</a></p>
+        <p>4. <a target="_blank" href="<%= KFZ.sites.adapter.help %>?act=detail&contentId=538#fukuan">充值后如何使用孔网资金余额付款？</a></p>
+    </div>
+</script>
+<!-- 模板 - 第一步 end -->
+<!-- 模板 - 切换银行 start -->
+<script id="tmpl_switch_all_bank" type="text/template">
+    <ul>
+        <% data.channels && data.channels.bank && data.channels.bank.length && $.each(data.channels.bank, function(i, item){ %>
+        <li data-code="<%= item.channelCode.toLowerCase() %>" data-name="<%= item.paychannelName %>"><label class="<%= item.channelCode.toLowerCase() %>" title="<%= item.paychannelName %>"><input name="fillChannel" type="radio" value="<%= item.channelCode.toLowerCase() %>"></label></li>
+        <% }); %>
+    </ul>
+</script>
+<!-- 模板 - 切换银行 end -->
+<!-- 模板 - 第二步 start -->
+<script id="tmpl_step_two" type="text/template">
+    <% var isAlipay = item.isBank === "0",isWeixin = (item.isBank !=1 && item.channelCode == 'WXWEBQRPAY'); %>
+    <div class="m_tb30 clearfix">
+        <ul class="m_t15 tab_from">
+            <li class="li_left1">充值方式：</li>
+            <li class="li_right ">
+                <div class="bank_box_border check">
+                    <label class="<%= item.channelCode.toLowerCase() %>" title="<%= item.paychannelName %>"><input name="fillChannel" type="radio" value="<%= item.channelCode.toLowerCase() %>" checked></label>
+                </div>
+                <span class="f_left gray m_t5 m_l10"><%= (isAlipay || isWeixin ? "费率为" + (+item.fillTariff * 100 + "%") : "无手续费") %>。</span> <%if(isAlipay && !isWeixin){%><span class="f_left gray m_t5 ">支付限额请参考</span><a target="_blank" class="m_t5 f_left" href="<%= KFZ.sites.adapter.help %>?act=detail&contentId=250"> 《各银行及支付宝支付限额总表》</a> <span class="m_t5 f_left">。</span><%}%>
+            </li>
+        </ul>
+        <ul class="m_t15 tab_from">
+            <li class="li_left1">充值金额：</li>
+            <li class="li_right">
+                <div class="clearfix">
+                    <div><input id="payAmount" class="input_19030" type="text"> 元<span class="gray m_l10">金额格式：1234.56</span></div>
+                    <div class="check_tip check_tip_info">
+                        <i class="tip_info"></i>
+                        <i class="tip_err"></i>
+                        <i class="tip_suc"></i>
+                    </div>
+                </div>
+                <div id="pay_amount_tip" class="gray m_t5"></div>
+                <div class="m_t15"><a id="btn_fill_submit" href="javascript:;" class="btn_orange_130_35 inline m_r10">去<%= isAlipay ? (isWeixin?"微信":"支付宝") : "网上银行" %>充值</a> <a id="btn_reset_channel" href="javascript:;" class="m_l20 font14">重新选择充值渠道</a></div>
+                <form id="payForm" action="<%= KFZ.sites.adapter.pays %>Pay/Fundfill/pay" method="get" target="_blank" style="display:none;">
+                    <input type="hidden" name="paychannelSeqID" value="<%= item.paychannelSeqID %>">
+                    <input type="hidden" name="payAmount" value="">
+                </form>
+            </li>
+        </ul>
+    </div>
+    <div class="line m_t30"></div>
+    <div class="gray font14 m_t15 m_b30">
+        <p>温馨提示：</p>
+        <% if(!isAlipay){ %><p class="m_t5">网站银行直连接口是与支付宝合作的，故具体银行的页面上显示的商城名称为"支付宝公司"，请大家放心使用！</p><% } %>
+        <p class="m_t5">特别注意，凡是充值后没有进行实质交易的，根据支付宝及国家有关规定涉嫌套现，提现时网站将一律进行充值回退操作！</p>
+    </div>
+</script>
+<!-- 模板 - 第二步 end -->
+<!-- 模板 - 金额提示 start -->
+<script id="tmpl_pay_amount_tip" type="text/template">
+    您想要充值<span class="red"><%= KFZ.util.setPrice(payAmount) %>元</span>，<%= payAmount * fillTariff ? "其中手续费<span class='red'>" + KFZ.common.getCost((+ payAmount * fillTariff)/(1-fillTariff)) + "元</span>" : "没有手续费" %>，所以将支付<span class="red"><%= payAmount * fillTariff ?KFZ.common.getCost(payAmount / (1 - fillTariff),payAmount):KFZ.util.setPrice(payAmount)%>元</span>。
+</script>
+<!-- 模板 - 金额提示 end -->
+
+<script type="text/javascript" src="b.js"></script>
+<script type="text/javascript" src="pay.js"></script>
+<script type="text/javascript" src="online.js"></script>
+
+</body>
+</html>
