@@ -184,11 +184,12 @@ body {
     padding-top: 8px;
     height: 164px;
     overflow: hidden;
+    line-height: 0;
 }
 .classification_box .classification_list span {
     display: inline-block;
     font-size: 0;
-    margin-top: 10px;
+    margin-top: 14px;
     margin-left: 20px;
 }
 .classification_box .classification_list span a {
@@ -284,6 +285,7 @@ body {
     border-left: solid 1px #d9b29f;
 }
 .search_box .search_box_right ul {
+    width: 406px;
     margin-top: 8px;
     margin-left: 29px;
     height: 22px;
@@ -309,6 +311,11 @@ input::-moz-placeholder, textarea::-moz-placeholder {
 }
 input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     color:    #ccc;
+}
+@media screen and (min-width: 1200px) {
+    .search_box .search_box_right ul {
+        width: 610px;
+    }
 }
 /*search*/
 /*letters*/
@@ -347,6 +354,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .letters_box .letters_content .letters_content_con {
     display: block;
     text-align: justify;
+    text-justify:inter-ideograph;
     font-size: 1px;
 }
 .letters_box .letters_content .letters_content_con .height242 {
@@ -362,11 +370,11 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .letters_box .letters_content .letters_content_con span .letters_content_img {
     width: 138px;
     height: 138px;
+    line-height: 138px;
     margin: 0 auto;
     border: solid 1px #e5e5e5;
     background: #fff;
     overflow: hidden;
-    line-height: 0px;
     margin-top: 40px;
 }
 .letters_box .letters_content .letters_content_con span .letters_content_img img {
@@ -446,6 +454,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .rareBook_box .rareBook_content {
     text-align: justify;
+    text-justify:inter-ideograph;
 }
 .rareBook_box .rareBook_content span {
     display: inline-block;
@@ -453,11 +462,120 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     width: 390px;
     height: 200px;
     margin-bottom: 21px;
-    border:1px solid #f7f6f5;
+    border:1px solid #F0EEEB;
+    overflow: hidden;
+}
+.rareBook_box .rareBook_content span .rareBook_content_list {
+    margin: 2px;
+    height: 194px;
+    border: 1px solid #DAD4CC;
+    overflow: hidden;
+}
+.rareBook_box .rareBook_content span .rareBook_content_list .rareBook_content_con {
+    width: 350px;
+    margin:  0 auto;
+    margin-top: 35px;
+    height: 125px;
+    overflow: hidden;
+}
+.rareBook_box .rareBook_content span .rareBook_content_list .rareBook_content_con .pull-left {
+    width: 160px;
+}
+.rareBook_box .rareBook_content span .rareBook_content_list .rareBook_content_con .pull-left img {
+    width: 100%;
+}
+.rareBook_box .rareBook_content span .rareBook_content_list .rareBook_content_con .rareBook_content_right {
+    width: 180px;
+    max-height: 96px;
+    font-size: 14px;
+    color: #333333;
+    line-height: 24px;
+    overflow: hidden;
+}
+.rareBook_box .rareBook_content span .rareBook_content_list .rareBook_content_con .rareBook_content_money {
+    font-size: 12px;
+    margin-top: 10px;
+}
+.rareBook_box .rareBook_content span .rareBook_content_list .rareBook_content_con .rareBook_content_money i {
+    font-style: normal;
+    color: #666666;
+}
+.rareBook_box .rareBook_content span .rareBook_content_list .rareBook_content_con .rareBook_content_money em {
+    font-style: normal;
+    font-size: 16px!important;
+    color: #bf7f5f;
+    margin-left: 25px;
 }
 @media screen and (min-width: 1200px) {
     .rareBook_box .rareBook_content span {
         width: 485px;
     }
+    .rareBook_box .rareBook_content span .rareBook_content_list .rareBook_content_con {
+        width: 440px;
+    }
+    .rareBook_box .rareBook_content span .rareBook_content_list .rareBook_content_con .rareBook_content_right {
+        width: 270px;
+    }
 }
 /*rareBook*/
+/*recommend*/
+.recommend_box {
+    margin-top: 20px;
+    overflow: hidden;
+}
+.recommend_box .recommend_title {
+    font-size: 18px;
+    color: #666666;
+    border-bottom: solid 1px #b5aa9a;
+    padding-bottom: 15px;
+    margin-bottom: 27px;
+}
+.recommend_box .recommend_content {
+    text-align: justify;
+    text-justify:inter-ideograph;
+    line-height: 0;
+}
+.recommend_box .recommend_content .rareBook_content_list {
+    display: inline-block;
+    width: 132px;
+    margin-bottom: 40px;
+}
+.recommend_box .recommend_content .rareBook_content_list .rareBook_img_box {
+    width: 130px;
+    height: 130px;
+    line-height: 130px;
+    border: solid 1px #e5e5e5;
+}
+.recommend_box .recommend_content .rareBook_content_list .rareBook_img_box img {
+    display: inline-block;
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+}
+.recommend_box .recommend_content .rareBook_content_list .rareBook_content_title {
+    height: 40px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #333333;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.recommend_box .recommend_content .rareBook_content_list .rareBook_content_author {
+    font-size: 12px;
+    color: #999999;
+    line-height: 24px;
+}
+.recommend_box .recommend_content .rareBook_content_list .rareBook_content_money {
+    line-height: 26px;
+    font-size: 16px;
+    color: #bf7f5f;
+}
+@media screen and (min-width: 1200px) {
+    .recommend_box .recommend_content .rareBook_content_list {
+        margin-right: 20px;
+    }
+    .recommend_box .recommend_content {
+        width: 1010px;
+    }
+}
+/*recommend*/
