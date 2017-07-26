@@ -20,6 +20,7 @@ body {
     background: #8c222c;
 }
 .nav_top_box .nav_top_left {
+    position: relative;
     float: left;
 }
 .nav_top_box .nav_top_left a {
@@ -28,6 +29,56 @@ body {
     margin-right: 15px;
     height: 26px;
     color: #fff;
+}
+.nav_top_box .nav_top_left .nav_top_classify {
+    position: absolute;
+    left: 0;
+    top: 26px;
+    width: 942px;
+    height: 576px;
+    background-color: #ffffff;
+    border: solid 1px #e5e5e5;
+}
+.nav_top_box .nav_top_left .nav_top_classify .nav_top_classify_content {
+    width: 794px;
+    margin-left: 50px;
+}
+.nav_top_box .nav_top_left .nav_top_classify .nav_top_classify_content .nav_top_classify_title li {
+    width: 138px;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    text-align: left;
+    color: #333333;
+    margin-right: 50px;
+    border-bottom: solid 1px #cccccc;
+}
+.nav_top_box .nav_top_left .nav_top_classify .nav_top_classify_content .nav_top_classify_title li.last {
+    width: 415px!important;
+    margin-right: 0!important;
+}
+.nav_top_box .nav_top_left .nav_top_classify .nav_top_classify_content .nav_top_classify_class {
+    width: 794px;
+}
+.nav_top_box .nav_top_left .nav_top_classify .nav_top_classify_content .nav_top_classify_class li {
+    width: 138px;
+    float: left;
+    margin-right: 50px;
+    font-size: 12px;
+}
+.nav_top_box .nav_top_left .nav_top_classify .nav_top_classify_content .nav_top_classify_class li p {
+    display: block;
+    color: #666;
+    padding: 0;
+}
+.nav_top_box .nav_top_left .nav_top_classify .nav_top_classify_content .nav_top_classify_class li p i {
+    font-style: normal;
+    color: #999;
+}
+.nav_top_box .nav_top_left .nav_top_classify .nav_top_classify_content .nav_top_classify_class li.last {
+    width: 415px!important;
+    margin-right: 0!important;
 }
 .nav_top_box .nav_top_left span {
     float: left;
@@ -505,6 +556,13 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     font-size: 16px!important;
     color: #bf7f5f;
     margin-left: 25px;
+}
+.rareBook_box .rareBook_content_more {
+    text-align: right;
+    font-size: 14px;
+    color: #365899;
+    margin-bottom: 20px;
+    margin-top: -30px;
 }
 @media screen and (min-width: 1200px) {
     .rareBook_box .rareBook_content span {
