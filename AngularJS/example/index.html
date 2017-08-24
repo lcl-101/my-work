@@ -19,9 +19,9 @@
         <!-- ng-repeat 指令能从作用的$scopes身上取到数据，帮我们完成渲染-->
         <!-- 他会在每次数据变动的时候帮我们重新渲染 -->
         <tr ng-repeat="v in students">
-            <td> </td>
-            <td> </td>
-            <td> </td>
+            <td ng-bind="v.id"> </td>
+            <td ng-bind="v.name"> </td>
+            <td ng-bind="v.sex"> </td>
         </tr>
         <tr>
             <td ng-click="addStudent()">+</td>
@@ -29,20 +29,19 @@
         </tbody>
     </table>
 </body>
-<link rel="stylesheet" href="js/angular.min.js">
 <script>
     // 把我们的应用作用单独的一个模块 和系统中的其他模块解耦
     var reminder = angular.module('reminder',[]);
 
     // 在我们的模块上创建一个控制器  来控制本模块中某个局部的可见数据
     reminder.controller('mainControler',['$scope',function($scope){
-        $socpe.students = [
+        $scope.students = [
             {id:1001,name:'A',sex:'nan'},
             {id:1002,name:'B',sex:'nv'},
             {id:1003,name:'C',sex:'nan'}
         ];
         $scope.addStudent = function(){
-            this.stuents.push({id:Math.random(),name:'new man', sex:'nan'});
+            $scope.students.push({id:111,name:'new man', sex:'nan'});
         }
     }]);
 </script>

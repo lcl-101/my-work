@@ -1,0 +1,24 @@
+{
+  "name": "webpack-sample-project",
+  "version": "1.0.0",
+  "description": "Sample webpack project",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack",
+    "server": "webpack-dev-server --open"
+  },
+  "author": "zhang",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^2.7.1"
+  },
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  }
+}
