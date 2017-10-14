@@ -1,13 +1,38 @@
-var gulp = require('gulp');
-var minifycss = require('gulp-minify-css'),
-    concat = require('gulp-concat'),
+var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
-    rename = require('gulp-rename'),
-    del = require('del');
+    jshint = require('gulp-jshint'),
+    concat = require('gulp-concat'),
+    livereload = require('gulp-livereload'),
+    browserSync = require('browser-sync');
 
-gulp.task('default', function() {
-    return gulp.src('src/css/*.css')      //压缩的文件
-        .pipe(minifycss())   //执行压缩
-        .pipe(rename({ extname: '.min.css' }))
-        .pipe(gulp.dest('minified/css'));   //输出文件夹
+gulp.task('minfy',function(){
+    gulp.src('js/*.js')
+        .pipe(jshint())
+        .pipe(jshint.reporter('default'))
+        .pipe(uglify())
+        .pipe(concat('index.js'))
+        .pipe(gulp.dest('build'))
+        .pipe(livereload());
 });
+
+gulp.task('browser-sync',function(){
+    var files = [
+        'templates/*.tmpl.html'
+    ];
+    browserSync.init(files,{
+        server: {
+            baseDir: './templates/'
+        }
+    })
+});
+
+gulp.task('build',function(){
+    gulp.src('templates/*.tmpl.html')
+        .pipe(gulp.dest('html'))
+});
+
+gulp.task('watch', function () {
+    gulp.watch('templates/*.tmpl.html',['build']);
+});
+
+gulp.task('default',['minfy']);
