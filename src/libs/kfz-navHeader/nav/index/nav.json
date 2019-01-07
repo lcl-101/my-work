@@ -1,0 +1,32 @@
+{
+    "widget": "nav",
+    "name": "index",
+    "type": "widget",
+    "description": "孔网各首页头部",
+    "version": "1.0.0",
+    "author": "chenhui",
+    "contributors": [
+        {
+            "name": "",
+            "email": ""
+        }
+    ],
+    "dependencies": {
+        "widgetDeps": [],
+        "tplDeps": [],
+        "libDeps": [
+            "kfz-base-css",
+            "kfz-jquery",
+            "kfz-doT",
+            "kfz-login",
+            "kfz-tools"
+        ],
+        "jsDeps": [
+            "nav.js"
+        ],
+        "cssDeps": [
+            "nav.less"
+        ],
+        "staticDeps": []
+    }
+}

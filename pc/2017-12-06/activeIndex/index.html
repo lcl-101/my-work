@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+    <!--banner-->
+    <div class="banner-box clearfix">
+        <img src="images/banner.png" alt="">
+    </div>
+    <!--welfare-->
+    <div class="welfare">
+        <div class="welfare-box">
+            <ul id="welfare-con"></ul>
+        </div>
+    </div>
+
+    <!--seven-->
+    <div class="seven-box">
+        <div class="seven-top-box clearfix">
+            <img src="images/seventop.png" alt="">
+        </div>
+        <div class="seven-top-title">
+            <img src="images/stitle.png" alt="">
+        </div>
+        <div class="seven-con">
+            <div class="clearfix con" id="seven-con"></div>
+        </div>
+        <div class="more">
+            <span><img src="images/more.png" alt=""></span>
+            <a target="_blank" href="">更多精品七折包邮图书</a>
+            <span><img src="images/more.png" alt=""></span>
+        </div>
+        <div class="footer clearfix">
+            <img src="images/sevenfooter.png" alt="">
+        </div>
+    </div>
+
+    <!--five-->
+    <div class="five-box">
+        <div class="five-top-title">
+            <img src="images/fiveTitle.png" alt="">
+        </div>
+        <div class="five-con">
+            <div class="clearfix con" id="five-con"></div>
+        </div>
+        <div class="more">
+            <span><img src="images/fivemore.png" alt=""></span>
+            <a target="_blank" href="">更多五折满99包邮图书</a>
+            <span><img src="images/fivemore.png" alt=""></span>
+        </div>
+        <div class="go-top clearfix">
+            <div class="f_right goTop"><img src="images/top.png" alt=""><span class="c_red">回顶部</span></div>
+        </div>
+        <div class="seven-top-box clearfix">
+            <img src="images/seventop.png" alt="">
+        </div>
+    </div>
+
+    <!--footer-->
+    <div class="footer-box">
+        <div class="footer-con">
+            <img src="images/footer.png" alt="">
+        </div>
+    </div>
+
+    <!--templete-->
+    <!--welfare-->
+    <script id="welfare-box-dot" type="text/x-dot-template">
+        {{ for(var i in it) { }}
+        {{? i%2 ==0 }}
+        <li class="redbd">
+            <a target="_blank" href="{{= it[i].href}}">
+                <div class="f_left imgbox gray">
+                    <img src="images/welfare/img{{= i}}.jpg" alt="">
+                </div>
+                <div class="f_left redbg">
+                    <div class="title">{{= it[i].dai}}</div>
+                    <div class="con clearfix">
+                        <div class="f_left con_left">
+                            <p>{{= it[i].one}}</p>
+                            <p>{{= it[i].two}}</p>
+                        </div>
+                        <div class="f_left con_middle">
+                            <span>+</span>
+                        </div>
+                        <div class="f_left con_right">
+                            <p>{{= it[i].three}}</p>
+                            <p>{{= it[i].four}}</p>
+                        </div>
+                    </div>
+                    <div class="footer clearfix">
+                        <div class="money">{{= it[i].price}}元<span class="c_red">省</span><i>{{= it[i].lprice}}元</i></div>
+                        <span class="btn c_red">立即购买</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        {{??}}
+        <li class="graybd">
+            <a target="_blank"  href="{{= it[i].href}}">
+                <div class="f_left graybg">
+                    <div class="title">{{= it[i].dai}}</div>
+                    <div class="con clearfix">
+                        <div class="f_left con_left">
+                            <p>{{= it[i].one}}</p>
+                            <p>{{= it[i].two}}</p>
+                        </div>
+                        <div class="f_left con_middle">
+                            <span>+</span>
+                        </div>
+                        <div class="f_left con_right">
+                            <p>{{= it[i].three}}</p>
+                            <p>{{= it[i].four}}</p>
+                        </div>
+                    </div>
+                    <div class="footer clearfix">
+                        <div class="money">{{= it[i].price}}元<span class="c_red">省</span><i>{{= it[i].lprice}}元</i></div>
+                        <span class="btn c_red">立即购买</span>
+                    </div>
+                </div>
+                <div class="f_left imgbox gray">
+                    <img src="images/welfare/img{{= i}}.jpg" alt="">
+                </div>
+            </a>
+        </li>
+        {{?}}
+        {{ } }}
+    </script>
+    <!--seven-->
+    <script id="seven-box-dot" type="text/x-dot-template">
+        {{ for(var i in it) { }}
+        {{? i%2 ==0 }}
+        <span class="list redbd redbg">
+            <a target="_blank" href="{{= it[i].href}}">
+                <div class="img-box clearfix">
+                    <img src="images/seven/img0.jpg" alt="">
+                </div>
+                <div class="seven-inner">
+                    <div class="title">{{= it[i].name}}</div>
+                    <div class="tag">
+                        {{? it[i].one }}<p>{{= it[i].one}}</p>{{?}}
+                        {{? it[i].two }}<p>{{= it[i].two}}</p>{{?}}
+                    </div>
+                    <div class="price">
+                        <span class="c_c9">原价{{= it[i].price}}</span>
+                        <span class="c_f">现价{{= it[i].price2}}</span>
+                    </div>
+                    <div class="btn c_red">立即购买</div>
+                </div>
+            </a>
+        </span>
+        {{??}}
+        <span class="list bg_9 bd_9">
+            <a target="_blank" href="{{= it[i].href}}">
+                <div class="img-box clearfix">
+                    <img src="images/seven/img{{= i}}.jpg" alt="">
+                </div>
+                <div class="seven-inner">
+                    <div class="title">{{= it[i].name}}</div>
+                    <div class="tag">
+                        {{? it[i].one }}<p>{{= it[i].one}}</p>{{?}}
+                        {{? it[i].two }}<p>{{= it[i].two}}</p>{{?}}
+                    </div>
+                    <div class="price">
+                        <span class="c_6">原价{{= it[i].price}}</span>
+                        <span class="c_f">现价{{= it[i].price2}}</span>
+                    </div>
+                    <div class="btn c_red">立即购买</div>
+                </div>
+            </a>
+        </span>
+        {{?}}
+        {{ } }}
+        <span class="list" style="height: 0"></span>
+        <span class="list" style="height: 0"></span>
+        <span class="list" style="height: 0"></span>
+        <span class="list" style="height: 0"></span>
+    </script>
+    <!--five-->
+    <script id="five-box-dot" type="text/x-dot-template">
+        {{ for(var i in it) { }}
+        {{? i%2 ==0 }}
+        <span class="list redbd redbg">
+            <a target="_blank" href="{{= it[i].href}}">
+                <div class="img-box clearfix">
+                    <img src="images/five/img0.jpg" alt="">
+                </div>
+                <div class="seven-inner">
+                    <div class="title">{{= it[i].name}}</div>
+                    <div class="tag">
+                        {{? it[i].ce }}<p>{{= it[i].ce}}</p>{{?}}
+                    </div>
+                    <div class="price">
+                        <span class="c_c9">原价{{= it[i].price}}</span>
+                        <span class="c_f">现价{{= it[i].price2}}</span>
+                    </div>
+                    <div class="btn c_red">立即购买</div>
+                </div>
+            </a>
+        </span>
+        {{??}}
+        <span class="list bg_9 bd_9">
+            <a target="_blank" href="{{= it[i].href}}">
+                <div class="img-box clearfix">
+                    <img src="images/five/img{{= i}}.jpg" alt="">
+                </div>
+                <div class="seven-inner">
+                    <div class="title">{{= it[i].name}}</div>
+                    <div class="tag">
+                        {{? it[i].ce }}<p>{{= it[i].ce}}</p>{{?}}
+                    </div>
+                    <div class="price">
+                        <span class="c_6">原价{{= it[i].price}}</span>
+                        <span class="c_f">现价{{= it[i].price2}}</span>
+                    </div>
+                    <div class="btn c_red">立即购买</div>
+                </div>
+            </a>
+        </span>
+        {{?}}
+        {{ } }}
+        <span class="list" style="height: 0"></span>
+        <span class="list" style="height: 0"></span>
+        <span class="list" style="height: 0"></span>
+        <span class="list" style="height: 0"></span>
+    </script>
+    <script src="js/data.js"></script>
+    <script src="js/dot.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

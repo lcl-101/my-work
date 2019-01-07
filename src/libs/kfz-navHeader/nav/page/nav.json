@@ -1,0 +1,32 @@
+{
+    "widget": "nav",
+    "name": "page",
+    "type": "widget",
+    "description": "其它页面头部",
+    "version": "1.0.0",
+    "author": "chenhui",
+    "contributors": [
+        {
+            "name": "",
+            "email": ""
+        }
+    ],
+    "dependencies": {
+        "widgetDeps": [],
+        "tplDeps": [],
+        "libDeps": [
+            "kfz-base-css",
+            "kfz-jquery",
+            "kfz-doT",
+            "kfz-login",
+            "kfz-tools"
+        ],
+        "jsDeps": [
+            "nav.js"
+        ],
+        "cssDeps": [
+            "nav.less"
+        ],
+        "staticDeps": []
+    }
+}

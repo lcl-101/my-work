@@ -1,0 +1,174 @@
+.category-box {
+    width: 100%;
+    margin: 0 auto 30px;
+    background-color: #f8f9fb;
+    font-size: 12px;
+    border-top: 1px solid #e9edf4;
+    .category-main{
+        width: 1000px;
+        margin: 0 auto;
+        position: relative;
+        .name {
+            position: relative;
+            z-index: 200;
+            height: 30px;
+            font-size: 12px;
+            .crumb{
+                .seller_title{
+                    float: left;
+                    color: #365899;
+                    border: solid 1px #e9edf4;
+                    border-top: none;
+                    position: relative;
+                    z-index:10;
+                    height: 30px;
+                    line-height: 30px;
+                    background-color: #fff;
+                    width: 103px;
+                    display: block;
+                    .seller_title_wrap{
+                        padding-left: 10px;
+                        .icon-maijiazhongxin{
+                            vertical-align: top;
+                        }
+                    }
+                    .up_arrow{
+                        font-size: 0;
+                        line-height: 0;
+                        float: right;
+                        border: solid transparent 4px;
+                        border-bottom-color: #365899;
+                        margin-top: 10px;
+                        margin-right: 10px;
+                        margin-left: 5px;
+                    }
+                    .down_arrow{
+                        font-size: 0;
+                        line-height: 0;
+                        float: right;
+                        border: solid transparent 4px;
+                        border-top-color: #365899;
+                        margin-top: 14px;
+                        margin-right: 10px;
+                        margin-left: 5px;
+                    }
+                }
+                .seller_title.active{
+                    border: solid 1px #e9edf4;
+                    border-top: none;
+                    border-bottom: none;
+                    background-color: #fff;
+                    color: #365899;
+                    .seller_title_wrap{
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+        .category-list-box{
+            width: 1000px;
+            margin: 0 auto;
+            .category-list {
+                display:none;
+                padding: 17px 0 23px;
+                background-color: #fff;
+                box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.05);
+                border: solid 1px #e9edf4;
+                overflow: hidden;
+                position: absolute;
+                z-index: 100;
+                .item {
+                    float: left;
+                    padding-left: 14px;
+                    line-height: 20px;
+                    border-right: 1px solid #e9edf4;
+                    height: 220px;
+                    .title {
+                        height: 20px;
+                        margin-top: -3px;
+                        margin-bottom: 10px;
+                        font-size: 14px;
+                        color: #333;
+                    }
+                    .link-list {
+                        .link-item {
+                            height: 26px;
+                            line-height: 26px;
+                            font-size: 12px;
+                            a {
+                                display: inline-block;
+                                padding: 0px;
+                                height: 26px;
+                                color: #777;
+                                &:hover {
+                                    color: #365899;
+                                }
+                                &.active {
+                                    color: #fff;
+                                    background-color: #8c222c;
+                                }
+                            }
+                        }
+                    }
+                    &.dingdan {
+                        padding-left: 16px;
+                        .title{
+                            padding-right: 14px;
+                        }
+                    }
+                    &.shangpin {
+                        .link-list {
+                            padding-right: 0px;
+                            .link-column {
+                                float: left;
+                                padding-right: 14px;
+                            }
+                        }
+                    }
+                    &.xinxi {
+                        .link-list {
+                            padding-right: 0px;
+                            .link-column {
+                                float: left;
+                                padding-right: 14px;
+                            }
+                        }
+                    }
+                    &.cuxiao {
+                        padding-left: 14px;
+                        .link-list .title{
+                            padding-right:14px;
+                            margin-top: 23px;
+                        }
+                        .link-list .link-list{
+                            border-right:none;
+                        }
+                    }
+                    &.paimai {
+                        padding-left: 14px;
+                        .link-list {
+                            padding-right: 0px;
+                            .link-column {
+                                float: left;
+                                padding-right: 14px;
+                            }
+                        }
+                    }
+                    &.xinyu {
+                        border-right: none;
+                        .title{
+                            padding-right: 16px;
+                        }
+                        .link-list {
+                            padding-right: 0px;
+                            .link-column {
+                                float: left;
+                                padding-right: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

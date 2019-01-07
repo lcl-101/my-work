@@ -1,0 +1,31 @@
+{
+    "widget": "nav",
+    "name": "menu",
+    "type": "widget",
+    "description": "孔网导航菜单",
+    "version": "1.0.0",
+    "author": "sunchao@kongfz.com",
+    "contributors": [
+        {
+            "name": "",
+            "email": ""
+        }
+    ],
+    "dependencies": {
+        "widgetDeps": [],
+        "tplDeps": [],
+        "libDeps": [
+            "kfz-base-css",
+            "kfz-jquery",
+            "kfz-doT",
+            "kfz-tools"
+        ],
+        "jsDeps": [
+            "menu.js"
+        ],
+        "cssDeps": [
+            "menu.less"
+        ],
+        "staticDeps": []
+    }
+}

@@ -1,0 +1,237 @@
+<div class="category-box">
+	<div class="category-main">
+		<div class="name">
+			<div class="crumb clearfix">
+				<a class="seller_title">
+					<div class="seller_title_wrap">
+						<i class="iconfont icon-maijiazhongxin1"></i><span> 卖家中心</span><i class="icon_arrow down_arrow"></i>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="category-list-box">
+			<div class="category-list clearfix" id="menuBox">
+			</div>
+		</div>
+	</div>
+</div>
+<script  id="menuTpl" type="text/x-dot-template">
+	{{? (it.sellerType.shopkeeper||it.sellerType.bookstaller) }}
+	<div class="item dingdan">
+		<div class="title">店铺订单管理</div>
+		<div class="link-list">
+			<div class="link-item">
+				<a href="{{=it.kfz.site.shop}}seller/order/order_list.html">订单管理</a>
+			</div>
+			<div class="link-item">
+				<a href="{{=it.kfz.site.shop}}seller/order/order_merger.html">合并订单</a>
+			</div>
+			<div class="link-item">
+				<a href="{{=it.kfz.site.shop}}seller/info/shop_order_statistics.html">订单数据统计</a>
+			</div>
+		</div>
+	</div>
+	<div class="item shangpin">
+		<div class="title">店铺商品管理</div>
+		<div class="link-list clearfix">
+			<div class="link-column">
+				<div class="link-item">
+					<a href="{{=it.kfz.site.seller}}pc/upbook/index#/" target="_blank">添加商品</a>
+				</div>
+				<div class="link-item">
+					<a href="{{=it.kfz.site.item}}book/new" target="_blank">添加新图书条目</a>
+				</div>
+				<div class="link-item">
+					<a href="{{=it.kfz.site.seller}}shop/drafts_box.html">草稿箱</a>
+				</div>
+				<div class="link-item">
+					<a href="{{=it.kfz.site.seller}}shop/batch_up.html">批量上传商品</a>
+				</div>
+				<div class="link-item">
+					<a href="{{=it.kfz.site.seller}}shop/isbn_up.html">ISBN批量上传</a>
+				</div>
+				<div class="link-item">
+					<a href="{{=it.kfz.site.seller}}shop/batch_modify.html">批量更新库存价格</a>
+				</div>
+				<div class="link-item">
+					<a href="{{=it.kfz.site.seller}}shop/item.html#unsold">管理未售商品</a>
+				</div>
+				<div class="link-item">
+					<a href="{{=it.kfz.site.seller}}shop/item.html#sold">管理已售商品</a>
+				</div>
+			</div>
+			<div class="link-column">
+				<div class="link-item">
+					<a href="{{=it.kfz.site.seller}}shop/recommend.html">管理推荐商品</a>
+				</div>
+				<div class="link-item">
+					<a href="{{=it.kfz.site.seller}}shop/category.html">管理本店商品分类</a>
+				</div>
+				<div class="link-item">
+					<a href="{{=it.kfz.site.seller}}Pc/selleradmin/special">管理本店专题</a>
+				</div>
+				<div class="link-item">
+					<a href="{{=it.kfz.site.seller}}shop/item.html#recycle">商品回收站</a>
+				</div>
+				<div class="link-item">
+					<a href="{{=it.kfz.site.seller}}shop/batch_del.html">批量删除商品</a>
+				</div>
+				<div class="link-item">
+					<a href="{{=it.kfz.site.seller}}shop/batch_haltsale.html">批量下架商品</a>
+				</div>
+				<div class="link-item">
+					<a href="{{=it.kfz.site.seller}}shop/batch_quality.html">批量调整商品品相</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="item xinxi">
+		<div class="title">店铺信息管理</div>
+		<div class="link-list clearfix">
+			<div class="link-column">
+				<div class="link-item">
+					<a target="_blank" href="{{=it.kfz.site.shop}}{{=it.shopId}}">浏览我的店铺</a>
+				</div>
+				{{? (it.sellerType.shopkeeper) }}
+				<div class="link-item">
+					<a target="_blank" href="{{=it.kfz.site.seller}}Pc/selleradmin/decorate">管理店铺首页</a>
+				</div>
+				{{?}}
+				{{? (it.sellerType.bookstaller) }}
+				<div class="link-item">
+					<a href="{{=it.kfz.site.seller}}shop/stall_notice.html">设置书摊公告</a>
+				</div>
+				{{?}}
+				<div class="link-item">
+					<a href="{{=it.kfz.site.shop}}seller/info/shop_info.html">店铺基本信息</a>
+				</div>
+				<div class="link-item">
+					<a href="{{=it.kfz.site.shop}}seller/info/shop_note.html">备忘便笺</a>
+				</div>
+				<div class="link-item">
+					<a href="{{=it.kfz.site.shop}}seller/info/shop_blacklist.html">管理黑名单</a>
+				</div>
+			</div>
+			<div class="link-column">
+				{{? (it.sellerType.shopkeeper) }}
+				<div class="link-item">
+					<a href="{{=it.kfz.site.shop}}seller/info/shop_service_fee_list.html">技术服务费</a>
+				</div>
+				{{?}}
+				{{? (it.sellerType.bookstaller) }}
+				<div class="link-item">
+					<a href="{{=it.kfz.site.shop}}seller/apply/shop.html">升级到书店</a>
+				</div>
+				{{?}}
+				<div class="link-item">
+					<a href="{{=it.kfz.site.shop}}seller/info/shop_visit_statistics.html">访问统计</a>
+				</div>
+				<div class="link-item">
+					<a  href="{{=it.kfz.site.shop}}seller/info/holiday.html">店主休假</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="item cuxiao">
+		<div class="title">店铺促销管理</div>
+		<div class="link-list clearfix">
+			<div class="link-column">
+				<div class="link-item">
+					<a href="{{=it.kfz.site.shop}}seller/delivery/freePostage_list.html">满包邮</a>
+				</div>
+			</div>
+			<div class="title">店铺配送与收款设置</div>
+			<div class="link-list clearfix">
+				<div class="link-column">
+					<div class="link-item">
+						<a href="{{=it.kfz.site.shop}}seller/delivery/delivery_template.html">物流管理</a>
+					</div>
+					<div class="link-item">
+						<a href="{{=it.kfz.site.shop}}seller/delivery/gathering_way.html">管理收款方式</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	{{??}}
+	<div class="item dingdan">
+		<div class="title">店铺管理</div>
+		<div class="link-list">
+			<div class="link-item">
+				<a href="{{=it.kfz.site.shop}}seller/apply/index.html">申请开店</a>
+			</div>
+		</div>
+	</div>
+	{{?}}
+	<div class="item paimai">
+		<div class="title">拍卖管理</div>
+		<div class="link-list clearfix">
+			{{? (it.sellerType.auctioneer) }}
+			<div class="link-column">
+				<div class="link-item">
+					<a target="_blank" href="{{=it.kfz.site.pm}}seller/trade_list.html">管理拍卖交易</a>
+				</div>
+				<div class="link-item">
+					<a target="_blank" href="{{=it.kfz.site.pm}}seller/product.html#add">添加拍品</a>
+				</div>
+				<div class="link-item">
+					<a target="_blank" href="{{=it.kfz.site.pm}}seller/product_list.html">管理全部拍品</a>
+				</div>
+				<div class="link-item">
+					<a target="_blank" href="{{=it.kfz.site.pm}}seller/guest_book.html">买家留言</a>
+				</div>
+				<div class="link-item">
+					<a target="_blank" href="{{=it.kfz.site.pm}}seller/auction_blacklist.html">拍卖黑名单</a>
+				</div>
+				<div class="link-item">
+					<a target="_blank" href="{{=it.kfz.site.pm}}seller/auctioneer_info.html">拍卖会员资料</a>
+				</div>
+			</div>
+			<div class="link-column">
+				<div class="link-item">
+					<a target="_blank" href="{{=it.kfz.site.pm}}seller/gathering_way.html">拍卖收款方式管理</a>
+				</div>
+				<div class="link-item">
+					<a target="_blank" href="{{=it.kfz.site.pm}}seller/preview_list.html">管理我的预展</a>
+				</div>
+				<div class="link-item">
+					<a target="_blank" href="{{=it.kfz.site.pm}}seller/preview.html#add">添加预展</a>
+				</div>
+				<div class="link-item">
+					<a target="_blank" href="{{=it.kfz.site.pm}}seller/special_list.html">管理拍卖专场</a>
+				</div>
+				<div class="link-item">
+					<a target="_blank" href="{{=it.kfz.site.pm}}seller/special_apply.html">申请拍卖专场</a>
+				</div>
+			</div>
+			{{??}}
+			<div class="link-column">
+				<div class="link-item">
+					<a target="_blank" href="{{=it.kfz.site.pm}}index/apply/">申请拍卖会员</a>
+				</div>
+			</div>
+			{{?}}
+		</div>
+	</div>
+	<div class="item xinyu">
+		<div class="title">信誉档案</div>
+		<div class="link-list clearfix">
+			<div class="link-column">
+				<div class="link-item">
+					<a href="{{=it.kfz.site.xinyu}}seller/">我的信誉</a>
+				</div>
+				<div class="link-item">
+					<a href="{{=it.kfz.site.tousu}}web/view/complaint/complaint.html#bookStore">店铺投诉</a>
+				</div>
+				{{? (it.sellerType.auctioneer) }}
+				<div class="link-item">
+					<a href="{{=it.kfz.site.tousu}}web/view/complaint/complaint.html#bid">拍卖投诉</a>
+				</div>
+				{{?}}
+				<div class="link-item">
+					<a href="{{=it.kfz.site.user}}info/illegal_info.html">违规信息</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>

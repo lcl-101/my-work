@@ -1,0 +1,23 @@
+{
+  "name": "kfz-navHeader",
+  "type": "widget",
+  "catalog": "./nav/",
+  "description": "孔网公共头部",
+  "version": "0.0.1",
+  "author": "chenhui@kongfz.com",
+  "contributors": [
+    {
+      "name": "",
+      "email": ""
+    }
+  ],
+  "dependencies": {
+    "widgetDeps": [],
+    "libDeps": [],
+    "jsDeps": [],
+    "cssDeps": [],
+    "staticDeps": [
+      "./static/kfz-navHeader/**"
+    ]
+  }
+}

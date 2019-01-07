@@ -1,0 +1,21 @@
+{
+  "name": "lcl",
+  "homepage": "https://github.com/lcl-101/my-work",
+  "authors": [
+    "lichenglong <554675188@qq.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/libs",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "kfz-navHeader": "git@gitlab.kongfz.com:widget/kfz-navHeader.git#1.4.5"
+  }
+}

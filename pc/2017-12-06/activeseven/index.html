@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+    <!--banner-->
+    <div class="banner-box clearfix">
+        <img src="images/banner.png" alt="">
+        <div class="banner-inner clearfix">
+            <div class="f_left title">
+                <img src="images/btitle.png" alt="">
+            </div>
+            <div class="f_right index">
+                <a href="" target="_blank"><img src="images/left.png" alt="">回首页</a>
+            </div>
+        </div>
+    </div>
+
+    <!--seven-->
+    <div class="seven-box">
+        <div class="seven-con">
+            <div class="clearfix con" id="seven-con"></div>
+        </div>
+    </div>
+
+    <div class="go-top clearfix">
+        <div class="f_right goTop"><img src="images/top.png" alt=""><span class="c_red">回顶部</span></div>
+    </div>
+
+    <!--footer-->
+    <div class="footer-box">
+        <div class="seven-top-box clearfix">
+            <img src="images/seventop.png" alt="">
+        </div>
+        <div class="footer-con">
+            <img src="images/footer.png" alt="">
+        </div>
+    </div>
+    <!--seven-->
+    <script id="seven-box-dot" type="text/x-dot-template">
+        {{ for(var i in it) { }}
+        {{? i%2 ==0 }}
+        <span class="list redbd redbg">
+            <a target="_blank" href="{{= it[i].href}}">
+                <div class="img-box clearfix">
+                    <img src="images/seven/img0.jpg" alt="">
+                </div>
+                <div class="seven-inner">
+                    <div class="title">{{= it[i].name}}</div>
+                    <div class="tag">
+                        {{? it[i].one }}<p>{{= it[i].one}}</p>{{?}}
+                        {{? it[i].two }}<p>{{= it[i].two}}</p>{{?}}
+                    </div>
+                    <div class="price">
+                        <span class="c_c9">原价{{= it[i].price}}</span>
+                        <span class="c_f">现价{{= it[i].price2}}</span>
+                    </div>
+                    <div class="btn c_red">立即购买</div>
+                </div>
+            </a>
+        </span>
+        {{??}}
+        <span class="list bg_9 bd_9">
+            <a target="_blank" href="{{= it[i].href}}">
+                <div class="img-box clearfix">
+                    <img src="images/seven/img{{= i}}.jpg" alt="">
+                </div>
+                <div class="seven-inner">
+                    <div class="title">{{= it[i].name}}</div>
+                    <div class="tag">
+                        {{? it[i].one }}<p>{{= it[i].one}}</p>{{?}}
+                        {{? it[i].two }}<p>{{= it[i].two}}</p>{{?}}
+                    </div>
+                    <div class="price">
+                        <span class="c_6">原价{{= it[i].price}}</span>
+                        <span class="c_f">现价{{= it[i].price2}}</span>
+                    </div>
+                    <div class="btn c_red">立即购买</div>
+                </div>
+            </a>
+        </span>
+        {{?}}
+        {{ } }}
+        <span class="list" style="height: 0"></span>
+        <span class="list" style="height: 0"></span>
+        <span class="list" style="height: 0"></span>
+        <span class="list" style="height: 0"></span>
+    </script>
+
+    <script src="js/data.js"></script>
+    <script src="js/dot.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

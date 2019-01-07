@@ -1,0 +1,699 @@
+.nav-header-box{
+    height: 36px;
+    background-color: #8c222c;
+    .header-wrap{
+        position: relative;
+        width: 1000px;
+        height: 100%;
+        margin: 0 auto;
+        .slogan-box{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            padding-left: 6px;
+            height: 36px;
+            line-height: 36px;
+            font-size: 12px;
+            color: #e2c8ca;
+            .text{
+                margin-right: 4px;
+            }
+        }
+        .user-info-box{
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            height: 36px;
+            font-size: 0px;
+            .item-info{
+                float: left;
+                position: relative;
+                height: 36px;
+                .info-link{
+                    display: block;
+                    padding: 0 8px;
+                    line-height: 36px;
+                    .iconfont{
+                        position: relative;
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 16px;
+                        height: 16px;
+                        line-height: 16px;
+                        font-size: 12px;
+                        color: #fff;
+                        .ico-circle{
+                            position: absolute;
+                            top: 0px;
+                            right: 0px;
+                            width: 5px;
+                            height: 5px;
+                            border-radius: 50%;
+                            border: 1px solid #8c222c;
+                            background-color: #fff;
+                        }
+                        &.icon-xiaoxi{
+                            font-size: 12px;
+                        }
+                        &.icon-gouwuche1{
+                            margin-top: -2px;
+                        }
+                    }
+                    .info-text{
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-top: 2px;
+                        height: 14px;
+                        line-height: 12px;
+                        font-size: 12px;
+                        color: #e2c8ca;
+                        cursor: pointer;
+
+                    }
+                    &:hover{
+                        background-color: #7b111b;
+                        .info-text{
+                            color: #fff;
+                            border-bottom: 1px solid #fff;
+                        }
+                    }
+                }
+                .info-normal{
+                    display: block;
+                    height: 36px;
+                    padding: 0 8px;
+                    line-height: 36px;
+                    .info-text{
+                        font-size: 12px;
+                        color: #e2c8ca;
+                        cursor: default;
+                    }
+                    &:hover{
+                        background-color: #7b111b;
+                        .info-text{
+                            color: #fff;
+                        }
+                    }
+                }
+                .info-win{
+                    display: none;
+                    position: absolute;
+                    top: 36px;
+                    left: 0;
+                    z-index: 1000;
+                    width: auto;
+                    height: auto;
+                    border: 1px solid #ccc;
+                    background-color: #fff;
+                    .personal-center,.seller-center,.no-seller-center{
+                        padding-top: 10px;
+                        white-space: nowrap;
+                        .info-domain{
+                            margin-bottom: 9px;
+                            .title{
+                                width: 50px;
+                                margin: 0 auto 4px;
+                                line-height: 20px;
+                                font-size: 12px;
+                                color: #999;
+                                border-bottom: 1px solid #e5e5e5;
+                                .icon-paimai{
+                                    color: #bbb;
+                                    font-size: 12px;
+                                }
+                                .icon-dianpu{
+                                    color: #bbb;
+                                    font-size: 12px;
+                                }
+                            }
+                            .item{
+                                display: block;
+                                width: 82px;
+                                height: 24px;
+                                padding: 0 16px;
+                                line-height: 24px;
+                                font-size: 12px;
+                                color: #333;
+                                &:hover{
+                                    color: #8c222c;
+                                    background-color: #f7f8f3;
+                                }
+                            }
+                        }
+                    }
+                    .no-seller-center{
+                        .info-domain{
+                            .title{
+                                width: 70px;
+                            }
+                            .item{
+                                width: 102px;
+                            }
+                        }
+                    }
+                    .help-center{
+                      width: 155px;
+                      padding: 15px 0px;
+                      .other_info_inner {
+                        width: 125px;
+                        margin: 0 auto;
+                        .help_btn {
+                          display: block;
+                          width: 125px;
+                          height: 32px;
+                          line-height: 32px;
+                          border-radius: 2px;
+                          background-color: #f8f7f3;
+                          border: solid 1px #e5e5e5;
+                          text-align: center;
+                          color: #333333;
+                          font-size: 12px;
+                          margin: 0 auto;
+                          .ico {
+                            font-size: 12px;
+                            color: #a5806d;
+                          }
+                          &:hover {
+                            color: #9A7765;
+                            border: solid 1px #a5806d;
+                          }
+                        }
+                        .help_qq {
+                          display: inline-block;
+                          color: #333333;
+                          height: 26px;
+                          line-height: 26px;
+                          font-size: 12px;
+                          .ico {
+                            font-size: 12px;
+                            color: #333333;
+                          }
+                          &:hover {
+                            color: #9A7765;
+                            .iconfont {
+                              color: #a5806d;
+                            }
+                          }
+                        }
+                        .tip {
+                          display: block;
+                          font-size: 12px;
+                          color: #9c9c9c;
+                          margin-top: 14px;
+                          text-align: left;
+                        }
+                        .text {
+                          font-size: 12px;
+                          line-height: 16px;
+                          color: #666;
+                          text-align: left;
+                          margin-bottom: 20px;
+                          .item {
+                            width: 100%;
+                            margin-bottom: 16px;
+                            margin-top: 17px;
+                            &.last {
+                              margin-bottom: 0px;
+                            }
+                            .phone {
+                              font-size: 14px;
+                            }
+                            .label {
+                              color: #999;
+                            }
+                          }
+                        }
+                      }
+                    }
+                    .mobile-code{
+                        width: 378px;
+                        height: 214px;
+                        padding: 10px 26px;
+                        .weinxin-box,.app-box{
+                            float: left;
+                            width: 150px;
+                            .text{
+                                height: 20px;
+                                margin-bottom: 6px;
+                                line-height: 20px;
+                                text-align: center;
+                                font-size: 12px;
+                                font-weight: bold;
+                                color: #999;
+                            }
+                            .code{
+                                width: 150px;
+                                height: 150px;
+                                line-height: 150px;
+                                text-align: center;
+                                background-color: #000;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                                .code-link{
+                                    display: block;
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                        .app-box{
+                            float: right;
+                            .tip{
+                                height: 20px;
+                                line-height: 20px;
+                                text-align: center;
+                                font-size: 12px;
+                                color: #999;
+                            }
+                        }
+                    }
+                    .login-box{
+                        width: 162px;
+                        padding: 20px 16px 14px;
+                        background-color: #fff;
+                        .login-btn{
+                            width: 130px;
+                            height: 30px;
+                            margin-bottom: 15px;
+                            line-height: 30px;
+                            text-align: center;
+                            font-size: 12px;
+                            border-radius: 3px;
+                            border: 1px solid #8c222c;
+                            color: #fff;
+                            background-color: #8c222c;
+                            cursor: pointer;
+                            &:hover{
+                              background-color: #7b111b;
+                            }
+                        }
+                        .register-btn{
+                            width: 130px;
+                            height: 30px;
+                            margin-bottom: 16px;
+                            line-height: 30px;
+                            text-align: center;
+                            font-size: 12px;
+                            border-radius: 3px;
+                            border: 1px solid #d4c4b8;
+                            color: #8c222c;
+                            background-color: #f8f7f3;
+                            cursor: pointer;
+                            &:hover{
+                              border: 1px solid #8c222c;
+                            }
+                        }
+                        .other-login{
+                            padding: 0px 1px;
+                            .title{
+                                height: 20px;
+                                margin-bottom: 2px;
+                                line-height: 20px;
+                                font-size: 12px;
+                                color: #999;
+                            }
+                            .login-list{
+                                .login-weixin,.login-qq,.login-weibo{
+                                    float: left;
+                                    width: 30px;
+                                    margin-right: 19px;
+                                    cursor: pointer;
+                                    .icon-box{
+                                        width: 30px;
+                                        height: 30px;
+                                        line-height: 30px;
+                                        text-align: center;
+                                        border-radius: 3px;
+                                        overflow: hidden;
+                                        .iconfont{
+                                            display: inline-block;
+                                            vertical-align: middle;
+                                            width: 30px;
+                                            height: 30px;
+                                            font-size: 30px;
+                                            &.icon-weixin{
+                                                color: #77a877;
+                                            }
+                                            &.icon-qq{
+                                                color: #0f8ec7;
+                                            }
+                                            &.icon-weibo{
+                                                color: #ba5c65;
+                                            }
+                                        }
+                                    }
+                                    .text{
+                                        height: 24px;
+                                        line-height: 24px;
+                                        text-align: center;
+                                        font-size: 12px;
+                                        color: #666;
+                                    }
+                                }
+                                .login-weibo{
+                                    margin-right: 0px;
+                                }
+                            }
+                        }
+                    }
+                    .account-box{
+                        width: 166px;
+                        padding: 15px 16px;
+                        .pic-box{
+                            float: left;
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            text-align: center;
+                            line-height: 30px;
+                            .pic-img{
+                                display: none;
+                                display: inline-block;
+                                max-width: 100%;
+                                max-height: 100%;
+                            }
+                            .icon-yonghutouxiang{
+                                display: inline-block;
+                                vertical-align: middle;
+                                margin-top: -4px;
+                                font-size: 30px;
+                                color: #ccc;
+                            }
+                        }
+                        .btn-group{
+                            float: left;
+                            width: 104px;
+                            height: 30px;
+                            line-height: 30px;
+                            text-align: right;
+                            font-size: 12px;
+                            .btn{
+                                color: #333;
+                                cursor: pointer;
+                                &:hover{
+                                    color: #8c222c;
+                                }
+                            }
+                            .btn-split{
+                                margin: 0 3px;
+                                color: #e5e5e5;
+                            }
+                        }
+                    }
+                    .area-box{
+                        width: 260px;
+                        padding: 10px 0px 6px 14px;
+                        background-color: #fff;
+                        .item{
+                            float: left;
+                            width: 49px;
+                            height: 20px;
+                            margin-bottom: 6px;
+                            .text{
+                                display: inline-block;
+                                height: 20px;
+                                padding: 0 5px;
+                                line-height: 20px;
+                                font-size: 12px;
+                                color: #666;
+                                cursor: pointer;
+                                &:hover{
+                                    color: #8c222c;
+                                    background-color: #f3f0e9;
+                                }
+                            }
+                            &.active{
+                                .text{
+                                    color: #fff;
+                                    background-color: #8c222c;
+                                }
+                            }
+                        }
+                    }
+                    .load-box{
+                        width: 280px;
+                        height: 100px;
+                        line-height: 100px;
+                        text-align: center;
+                        img{
+                            display: inline-block;
+                            width: 60px;
+                            height: 60px;
+                        }
+                    }
+                    .no-login-cart-none-box{
+                        width: 212px;
+                        padding: 10px 16px;
+                        background-color: #fff;
+                        .tip{
+                            line-height: 20px;
+                            font-size: 12px;
+                            color: #666;
+                            word-break: break-all;
+                            .text{
+                                display: inline-block;
+                                vertical-align: middle;
+                            }
+                        }
+                        .login-btn{
+                            display: block;
+                            width: 70px;
+                            height: 26px;
+                            margin-top: 10px;
+                            margin-bottom: 5px;
+                            line-height: 26px;
+                            text-align: center;
+                            font-size: 12px;
+                            color: #fff;
+                            border-radius: 3px;
+                            background-color: #8c222c;
+                            cursor: pointer;
+                            &:hover{
+                              background-color: #7b111b;
+                            }
+                        }
+                    }
+                    .cart-none-box{
+                        width: 272px;
+                        padding: 10px 16px;
+                        .icon-gouwuche11{
+                            display: block;
+                            width: 30px;
+                            height: 30px;
+                            margin: 4px auto 10px;
+                            font-size: 30px;
+                            color: #ccc;
+                        }
+                        .tip{
+                            line-height: 20px;
+                            font-size: 12px;
+                            color: #666;
+                        }
+                    }
+                    .cart-list-box{
+                        width: 334px;
+                        padding-top: 10px;
+                        background-color: #fff;
+                        .title{
+                            height: 20px;
+                            padding: 0px 16px;
+                            margin-bottom: 3px;
+                            line-height: 20px;
+                            font-size: 12px;
+                            color: #bbb;
+                        }
+                        .item{
+                            padding: 7px 16px;
+                            cursor: pointer;
+                            .img-box{
+                                float: left;
+                                display: block;
+                                width: 50px;
+                                height: 50px;
+                                margin-right: 6px;
+                                line-height: 48px;
+                                text-align: center;
+                                font-size: 0px;
+                                border: 1px solid #e5e5e5;
+                                overflow: hidden;
+                                img{
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    max-width: 100%;
+                                    max-height: 100%;
+                                }
+                            }
+                            .name{
+                                float: left;
+                                display: -webkit-box;
+                                width: 144px;
+                                height: 40px;
+                                margin: 5px 0px;
+                                line-height: 20px;
+                                font-size: 12px;
+                                color: #333;
+                                word-break: break-all;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                -webkit-line-clamp: 2;
+                                -webkit-box-orient: vertical;
+                            }
+                            .info{
+                                float: left;
+                                width: 100px;
+                                height: 50px;
+                                padding-left: 6px;
+                                text-align: right;
+                                .price{
+                                    height: 25px;
+                                    line-height: 25px;
+                                    font-size: 14px;
+                                    color: #bf7f5f;
+                                }
+                                .del-box{
+                                    height: 25px;
+                                    line-height: 25px;
+                                    font-size: 12px;
+                                    .del-btn{
+                                        color: #8999a9;
+                                        cursor: pointer;
+                                        &:hover{
+                                            color: #8c222c;
+                                        }
+                                    }
+                                }
+                            }
+                            &:hover{
+                                background-color: #f8f7f3;
+                                .name{
+                                  color: #8c222c;
+                                }
+                            }
+                        }
+                        .revoke-btn{
+                            display: none;
+                            width: 302px;
+                            height: 36px;
+                            margin: 0 auto;
+                            line-height: 36px;
+                            text-align: center;
+                            font-size: 12px;
+                            color: #8999a9;
+                            background-color: #eee;
+                            cursor: pointer;
+                            &:hover{
+                                color: #8c222c;
+                            }
+                        }
+                        .btn-box{
+                            padding: 10px 0px;
+                            margin: 7px 16px 0px;
+                            border-top: 1px solid #e5e5e5;
+                            .tip{
+                                float: left;
+                                height: 26px;
+                                line-height: 26px;
+                                font-size: 12px;
+                                color: #999;
+                            }
+                            .btn{
+                                float: right;
+                                width: 100px;
+                                height: 26px;
+                                line-height: 26px;
+                                text-align: center;
+                                font-size: 12px;
+                                color: #fff;
+                                border-radius: 3px;
+                                background-color: #8c222c;
+                                cursor: pointer;
+                                &:hover{
+                                  background-color: #7b111b;
+                                }
+                            }
+                        }
+                    }
+                }
+                .line-right-test{
+                    //display: block;
+                    //width: 4px;
+                    position: absolute;
+                    top: 0px;
+                    width: 1px;
+                    height: 36px;
+                    line-height: 36px;
+                    font-size: 12px;
+                    color: #e2c8ca;
+                    right: 1px;
+                }
+                &.message-win{
+                    .msg-normal{
+                        .un-read-style{
+                            display: none;
+                        }
+                    }
+                    .msg-un-read{
+                        .normal-style{
+                            display: none;
+                        }
+                    }
+                }
+                &.login-win{
+                    .info-normal{
+                        padding: 0 15px;
+                    }
+                    .line-left,.line-right{
+                        position: absolute;
+                        top: 0px;
+                        width: 1px;
+                        height: 36px;
+                        line-height: 36px;
+                        font-size: 12px;
+                        color: #e2c8ca;
+                    }
+                    .line-left{
+                        left: 9px;
+                    }
+                    .line-right{
+                        right: 9px;
+                    }
+                    .info-win{
+                        left: auto;
+                        right: 0px;
+                    }
+                }
+                &.mobile-win{
+                    .info-win{
+                        left: -164px;
+                    }
+                }
+                &.area-win{
+                    .info-win{
+                        left: auto;
+                        right: 0px;
+                    }
+                }
+                &.info-focus-active{
+                    .info-link{
+                        background-color: #7b111b;
+                    }
+                    .info-normal{
+                        background-color: #7b111b;
+                    }
+                    .info-win{
+                        display: block;
+                    }
+                    .line-left,.line-right{
+                        display: none;
+                    }
+                }
+            }
+        }
+        @media screen and (min-width: 1200px){
+            width: 1200px;
+        }
+    }
+}
