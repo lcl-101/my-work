@@ -1,0 +1,2325 @@
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td {
+    margin: 0;
+    padding: 0
+}
+
+body,html,input {
+    font-size: 12px;
+    line-height: 150%;
+    font-family: tahoma,arial,sans-serif,"宋体";
+    color: #333
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal
+}
+
+img {
+    border: 0;
+    vertical-align: middle
+}
+
+input,textarea {
+    outline: none;
+    font-family: Arial,Helvetica,sans-serif
+}
+
+pre {
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word
+}
+
+input,label,img,th {
+    vertical-align: middle
+}
+
+address,cite,dfn,em,var {
+    font-style: normal
+}
+
+ul,ol,li {
+    list-style: none
+}
+
+p {
+    word-wrap: break-word
+}
+
+a {
+    text-decoration: none;
+    color: #049
+}
+
+a:hover {
+    color: #f60;
+    text-decoration: none
+}
+
+.fb,strong {
+    font-weight: bold
+}
+
+.white, .white a,a.white {
+    color: #fff
+}
+
+.blue, .blue a,a.blue {
+    color: #049
+}
+
+.red, .red a,a.red {
+    color: #f00
+}
+
+.red1, .red1 a,a.red1 {
+    color: #c00
+}
+
+.orange, .orange a,a.orange {
+    color: #f60
+}
+
+.gray, .gray a,a.gray {
+    color: #999
+}
+
+.light_gray, .light_gray a,a.light_gray {
+    color: #ccc
+}
+
+.gray6, .gray6 a,a.gray6 {
+    color: #666
+}
+
+.gray3, .gray3 a,a.gray3 {
+    color: #333
+}
+
+.green, .green a,a.green {
+    color: #79ae00
+}
+
+a.inline,.inline {
+    display: inline-block!important;
+    *display: inline!important;
+    *zoom:1!important}
+
+.font14 {
+    font-size: 14px
+}
+
+.font16 {
+    font-size: 16px
+}
+
+.font18 {
+    font-size: 18px
+}
+
+.font20 {
+    font-size: 20px
+}
+
+.font24 {
+    font-size: 24px
+}
+
+.clearfix,.content {
+    *zoom:1}
+
+.clearfix:before,.clearfix:after,.content:after {
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+.clearfix:after {
+    clear: both
+}
+
+.clear {
+    clear: both
+}
+
+.f_left {
+    float: left;
+    *display: inline
+}
+
+.f_right {
+    float: right;
+    *display: inline
+}
+
+.m_t5 {
+    margin-top: 5px
+}
+
+.m_t8 {
+    margin-top: 8px
+}
+
+.m_t10 {
+    margin-top: 10px
+}
+
+.m_t13 {
+    margin-top: 13px
+}
+
+.m_t15 {
+    margin-top: 15px
+}
+
+.m_t18 {
+    margin-top: 18px
+}
+
+.m_t20 {
+    margin-top: 20px
+}
+
+.m_t22 {
+    margin-top: 22px
+}
+
+.m_t25 {
+    margin-top: 25px
+}
+
+.m_t27 {
+    margin-top: 27px
+}
+
+.m_t30 {
+    margin-top: 30px
+}
+
+.m_t40 {
+    margin-top: 48px
+}
+
+.m_t55 {
+    margin-top: 55px
+}
+
+.m_r5 {
+    margin-right: 5px
+}
+
+.m_r10 {
+    margin-right: 10px
+}
+
+.m_r20 {
+    margin-right: 20px!important
+}
+
+.m_r25 {
+    margin-right: 25px
+}
+
+.m_b5 {
+    margin-bottom: 5px
+}
+
+.m_b10 {
+    margin-bottom: 10px
+}
+
+.m_b15 {
+    margin-bottom: 15px
+}
+
+.m_b30 {
+    margin-bottom: 30px
+}
+
+.m_b60 {
+    margin-bottom: 60px
+}
+
+.p_r10 {
+    padding-right: 10px
+}
+
+.m_l5 {
+    margin-left: 5px
+}
+
+.m_l10 {
+    margin-left: 10px
+}
+
+.p_l10 {
+    padding-left: 10px
+}
+
+.p_b30 {
+    padding-bottom: 30px
+}
+
+.pd10 {
+    padding: 10px
+}
+
+.hidden {
+    display: none
+}
+
+.line {
+    border-top: 1px solid #dcdcdc
+}
+
+.line_xu {
+    border-top: 1px dotted #dcdcdc;
+    margin: 10px
+}
+
+.line_xu1 {
+    border-top: 1px dotted #dcdcdc
+}
+
+.line_th {
+    text-decoration: line-through
+}
+
+.border {
+    border: 1px solid #dcdcdc;
+    padding: 10px;
+    overflow: hidden;
+    zoom:1}
+
+.border_ec {
+    border: 1px solid #ececec;
+    padding: 10px;
+    overflow: hidden;
+    zoom:1}
+
+.border_nop {
+    border: 1px solid #dcdcdc;
+    overflow: hidden;
+    zoom:1}
+
+.txt_left {
+    text-align: left
+}
+
+.txt_right {
+    text-align: right
+}
+
+.txt_center {
+    text-align: center
+}
+
+.bg_color {
+    background: #fafafa
+}
+
+.head,.nav,.content,.foot,.wrap {
+    width: 980px;
+    margin: 0 auto
+}
+
+.sgbox_g {
+    letter-spacing: -0.31em;
+    *letter-spacing: normal;
+    word-spacing: -0.43em
+}
+
+.sgbox1,.sgbox2 {
+    display: inline-block;
+    zoom:1;*display: inline;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top
+}
+
+.grid_2,.grid_3,.grid_4,.grid_5,.grid_6,.grid_7,.grid_8,.grid_9,.grid_10,.grid_11,.grid_12,.grid_13,.grid_14,.grid_15,.grid_16,.grid_17,.grid_18,.grid_19,.grid_20,.grid_21,.grid_22,.grid_23,.grid_24,.grid_25,.grid_26,.grid_27,.grid_28,.grid_29,.grid_30,.grid_31,.grid_32,.grid_33 {
+    float: left;
+    _display: inline
+}
+
+.grid_1 {
+    width: 20px
+}
+
+.grid_2 {
+    width: 50px
+}
+
+.grid_3 {
+    width: 80px
+}
+
+.grid_4 {
+    width: 110px
+}
+
+.grid_5 {
+    width: 140px
+}
+
+.grid_6 {
+    width: 170px
+}
+
+.grid_7 {
+    width: 200px
+}
+
+.grid_8 {
+    width: 230px
+}
+
+.grid_9 {
+    width: 260px
+}
+
+.grid_10 {
+    width: 290px
+}
+
+.grid_11 {
+    width: 320px
+}
+
+.grid_12 {
+    width: 350px
+}
+
+.grid_13 {
+    width: 380px
+}
+
+.grid_14 {
+    width: 410px
+}
+
+.grid_15 {
+    width: 440px
+}
+
+.grid_16 {
+    width: 470px
+}
+
+.grid_17 {
+    width: 500px
+}
+
+.grid_18 {
+    width: 530px
+}
+
+.grid_19 {
+    width: 560px
+}
+
+.grid_20 {
+    width: 590px
+}
+
+.grid_21 {
+    width: 620px
+}
+
+.grid_22 {
+    width: 650px
+}
+
+.grid_23 {
+    width: 680px
+}
+
+.grid_24 {
+    width: 710px
+}
+
+.grid_25 {
+    width: 740px
+}
+
+.grid_26 {
+    width: 770px
+}
+
+.grid_27 {
+    width: 800px
+}
+
+.grid_28 {
+    width: 830px
+}
+
+.grid_29 {
+    width: 860px
+}
+
+.grid_30 {
+    width: 890px
+}
+
+.grid_31 {
+    width: 920px
+}
+
+.grid_32 {
+    width: 950px
+}
+
+.grid_33 {
+    width: 980px
+}
+
+.text_foc {
+    border: 1px solid #99ccff!important
+}
+
+.text_err {
+    border: 1px solid #cc0000!important;
+    background: #ffefef!important
+}
+
+.show {
+    display: block
+}
+
+.show_line {
+    display: inline
+}
+
+.hide {
+    display: none
+}
+
+.loading {
+    height: 30px;
+    padding: 20px 0;
+    background: url(/image/loading.gif) center center no-repeat
+}
+
+i,em {
+    font-style: normal
+}
+
+.no_record {
+    height: 30px;
+    padding: 20px 0
+}
+
+.tiplay {
+    position: fixed;
+    _position: absolute;
+    top: 0;
+    _top: expression(documentElement.scrollTop);
+    left: 0;
+    z-index: 1000005;
+    background: none;
+    word-wrap: break-word;
+    word-break: break-all;
+    float: left;
+    overflow: hidden;
+    display: none
+}
+
+.tipBox {
+    height: 39px;
+    margin: 0 auto;
+    float: left;
+    overflow: hidden
+}
+
+.tiplay_info {
+    padding-left: 31px;
+    font-size: 14px;
+    margin: 0 10px;
+    line-height: 35px;
+    background: url(/image/kfz/bg_tip2.gif) no-repeat;
+    float: left;
+    *display: inline;
+    cursor: default
+}
+
+.tiplay .tip_suc {
+    background: url(/image/kfz/tip_bg.png) no-repeat 0 0;
+    height: 39px
+}
+
+.tiplay .tip_err {
+    background: url(/image/kfz/tip_bg.png) no-repeat 0 -44px;
+    height: 39px
+}
+
+.tiplay .tip_suc .tiplay_info {
+    background-position: 0 2px;
+    color: #333
+}
+
+.tiplay .tip_err .tiplay_info {
+    background-position: 0 -28px;
+    color: #fff
+}
+
+.overTip,.overWin h3 {
+    padding: 0;
+    margin: 0;
+    overflow: visible
+}
+
+.overWin {
+    position: relative;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    background: #fff;
+    border: 5px solid #6a6a6a;
+    z-index: 1000002;
+    overflow: visible
+}
+
+.overWin .closeBtn {
+    position: absolute;
+    z-index: 1000003;
+    right: -16px;
+    top: -18px;
+    width: 34px;
+    height: 35px
+}
+
+.overWin .closeBtn a {
+    display: block;
+    width: 34px;
+    height: 35px;
+    background: url(/image/kfz/close.png) 0 0 no-repeat
+}
+
+.overWin .closeBtn a:hover {
+    background: url(/image/kfz/close_1.png) 0 0 no-repeat
+}
+
+.overWin h3 {
+    height: 35px;
+    border-bottom: 1px solid #e5e5e5;
+    line-height: 35px;
+    font-size: 14px;
+    font-weight: bold;
+    overflow: hidden;
+    cursor: move
+}
+
+.overWin .overWinCon {
+    position: relative;
+    padding: 10px 0 20px;
+    background: #fff
+}
+
+.overWin .overWinText {
+    padding-bottom: 10px;
+    min-height: 60px;
+    height: auto!important;
+    _height: 60px;
+    word-break: break-all
+}
+
+.overWin .overWinBtn {
+    overflow: hidden;
+    *zoom:1}
+
+.overWin .overWinBtn .one {
+    padding-left: 150px
+}
+
+.overWin .overWinBtn a {
+    margin: 0 10px;
+    float: left;
+    *display: inline
+}
+
+.overWin .confirmCon {
+    line-height: 50px;
+    text-align: center;
+    font-size: 14px
+}
+
+.overWin .overWinBtnBox {
+    width: 160px;
+    _width: 170px;
+    margin: 0 auto
+}
+
+.overWin .true_ico {
+    float: left;
+    background: url(/image/kfz/common_bg.gif) no-repeat -108px -317px;
+    width: 34px;
+    height: 34px;
+    margin-right: 10px
+}
+
+.overWin .erro_ico {
+    float: left;
+    background: url(/image/kfz/common_bg.gif) no-repeat -108px -203px;
+    width: 34px;
+    height: 34px;
+    margin-right: 10px
+}
+
+.overWin a.subBtn {
+    display: block;
+    background: url(/image/kfz/common_bg.gif) 0 -642px no-repeat;
+    width: 60px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    text-shadow: 1px -1px 1px #ea4e04
+}
+
+.overWin a:hover.subBtn {
+    background-position: -60px -642px;
+    text-decoration: none
+}
+
+.overWin a.cancelBtn {
+    display: block;
+    background: url(/image/kfz/common_bg.gif) 0 -617px no-repeat;
+    width: 60px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #999;
+    font-size: 14px
+}
+
+.overWin a:hover.cancelBtn {
+    background-position: -60px -617px;
+    text-decoration: none
+}
+
+.overWin a.disabled,.overWin a.disabled:hover {
+    display: block;
+    background: #a2a2a2 url(/image/kfz/waiting.gif) center center no-repeat;
+    line-height: 25px;
+    border-radius: 3px;
+    text-indent: -99999px;
+    color: #fff;
+    cursor: default
+}
+
+.win_text {
+    display: block;
+    overflow: hidden;
+    padding: 0 16px 0 0;
+    font-size: 14px;
+    line-height: 28px;
+    zoom:1}
+
+.win_text .tit {
+    font-size: 20px;
+    font-family: "微软雅黑","黑体"
+}
+
+.kfz_select_box {
+    position: relative;
+    width: 130px;
+    background: #fff
+}
+
+.kfz_select_box .selectTit,.kfz_select_box .selectTit:hover {
+    display: block;
+    height: 20px;
+    padding: 0 20px 0 5px;
+    border: 1px solid #ccc;
+    line-height: 20px;
+    color: #333;
+    font-weight: normal;
+    cursor: default;
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow: hidden
+}
+
+.kfz_select_box .selectTit.blankup,.kfz_select_box .selectTit.blankdown,.kfz_select_box .selectTit.blankup:hover,.kfz_select_box .selectTit.blankdown:hover {
+    padding-right: 5px
+}
+
+.kfz_select_box .down {
+    background: #fff url(/image/kfz/btns.gif) right 2px no-repeat
+}
+
+.kfz_select_box .up {
+    background: #fff url(/image/kfz/btns.gif) right -18px no-repeat
+}
+
+.kfz_select_box .selectCon {
+    position: absolute;
+    left: 0;
+    top: 22px;
+    width: 128px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-top: none;
+    overflow: auto;
+    overflow-x: hidden;
+    display: none;
+    z-index: 890
+}
+
+.kfz_select_box .selectCon .selectItem {
+    width: 100%;
+    height: 21px;
+    overflow: hidden
+}
+
+.kfz_select_box .selectCon .selectItem a {
+    display: block;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    color: #333;
+    padding-left: 5px
+}
+
+.kfz_select_box .selectCon .selectItem a:hover,.kfz_select_box .selectCon li.curr a {
+    background: #f6f6f6 url(/image/kfz/user_ico.gif) no-repeat right -97px;
+    text-decoration: none
+}
+
+.kfz_pager_box:after {
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+.kfz_pager_box {
+    margin-top: 10px;
+    *zoom:1}
+
+.pager_info_box {
+    width: 160px;
+    font-size: 14px;
+    float: left;
+    *display: inline
+}
+
+.pager_info_box i, .pager_info_box em {
+    font-style: normal
+}
+
+.pager_info_box b {
+    font-weight: normal
+}
+
+.pager_num_box {
+    float: right;
+    *display: inline
+}
+
+.pager_num_box a, .pager_num_box span {
+    display: block;
+    float: left;
+    border: 1px solid #cdcdcd;
+    padding: 0 7px;
+    margin: 0 3px;
+    color: #333;
+    line-height: 18px
+}
+
+.pager_num_box span {
+    padding: 0;
+    border: none;
+    vertical-align: top
+}
+
+.pager_num_box a:hover {
+    border: 1px solid #999
+}
+
+.pager_num_box a.now,.pager_num_box a.now:hover {
+    background: #06c;
+    color: #fff
+}
+
+.pager_input_box input {
+    border: 1px solid #dcdcdc;
+    border-top: 2px solid #999;
+    width: 30px;
+    margin: 0 5px;
+    height: 17px;
+    line-height: 17px
+}
+
+.pager_num_box a.pager_turn_btn {
+    color: #333;
+    background: url(/image/kfz/common_bg.gif) no-repeat 0 -500px;
+    width: 45px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    padding: 0;
+    border: none
+}
+
+.pager_num_box a.pager_turn_btn:hover {
+    color: #333;
+    background-position: 0 -522px;
+    border: none
+}
+
+*html .pager_num_box a.pager_turn_btn:visited {
+    border: none
+}
+
+.kfz_pager_box a.no_page, .kfz_pager_box a.no_page:hover {
+    color: #999;
+    text-decoration: none;
+    cursor: text;
+    border: 1px solid #cdcdcd
+}
+
+.assBox {
+    background: #FFF;
+    border-color: #06C;
+    border-style: solid;
+    border-width: 0 2px 2px;
+    display: none;
+    left: -2px;
+    position: absolute;
+    top: 31px;
+    width: 100%
+}
+
+#header_book_box #ass_wrap_box {
+    position: absolute;
+    left: 0;
+    top: 25px;
+    width: 100%;
+    border: none
+}
+
+#header_book_box .assBox {
+    position: static;
+    width: auto;
+    border-width: 0 1px 1px;
+    border-color: #999
+}
+
+.assBox a {
+    color: #333;
+    display: block;
+    font-size: 14px;
+    padding: 2px 10px 2px 32px
+}
+
+.assBox a.curr {
+    background: #EBEBEB
+}
+
+html,body {
+    background: #fff
+}
+
+#kfz_topbar.top_bg {
+    background: url(/image/view/line_array.gif) repeat-x 0 -193px;
+    height: 33px;
+    line-height: 33px;
+    position: relative;
+    z-index: 999
+}
+
+#kfz_topbar #no_login a,#kfz_topbar #has_login a {
+    color: #049
+}
+
+#kfz_topbar #no_login a:hover,#kfz_topbar #has_login a:hover {
+    color: #f60
+}
+
+#kfz_topbar .nav {
+    position: relative;
+    width: 980px;
+    margin: 0 auto;
+    background: url(/image/view/line_array.gif) repeat-x 0 -193px;
+    height: 33px;
+    line-height: 33px
+}
+
+#kfz_topbar .nav a {
+    color: #333
+}
+
+#kfz_topbar a#showMsgNumSpan {
+    display: block;
+    white-space: nowrap;
+    word-break: keep-all;
+    cursor: pointer;
+    text-align: center
+}
+
+#kfz_topbar a#showMsgNumSpan span {
+    line-height: 34px;
+    cursor: pointer
+}
+
+#kfz_topbar a#showMsgNumSpan:hover span {
+    text-decoration: underline
+}
+
+#kfz_topbar .top_nav_right {
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+#kfz_topbar .top_nav_right li {
+    text-align: center;
+    position: relative;
+    _width: 70px;
+    z-index: 999;
+    float: left;
+    *display: inline
+}
+
+#kfz_topbar .top_nav_right li.b_line {
+    background: url(/image/view/line_array.gif) no-repeat right -228px
+}
+
+#kfz_topbar .top_nav_right li a.ico_bg {
+    display: block;
+    padding: 0 10px;
+    height: 34px;
+    line-height: 34px;
+    _padding: 0;
+    _text-align: center
+}
+
+#kfz_topbar .top_nav_right li a.red {
+    color: #c00
+}
+
+#kfz_topbar .top_nav_right li a:hover {
+    color: #f60;
+    text-decoration: underline
+}
+
+#kfz_topbar .top_nav_right li.xx_wd {
+    _width: 90px
+}
+
+#kfz_topbar .top_nav_right li a.ico_bg2 {
+    display: block;
+    padding: 0 20px 0 10px;
+    height: 34px;
+    line-height: 34px;
+    position: relative;
+    z-index: 999;
+    width: 52px
+}
+
+#kfz_topbar .top_nav_right li a.ico_bg2 span.down,#kfz_topbar .top_nav_right li a.ico_bg4 span.down,#kfz_topbar .top_nav_right li a.ico_bg6 span.down {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    width: 9px;
+    height: 5px;
+    line-height: 0;
+    font-size: 0;
+    background: url(/image/view/topbar.gif) no-repeat 0 -3px;
+    overflow: hidden
+}
+
+#kfz_topbar .top_nav_right li.now a.ico_bg2 span.down,#kfz_topbar .top_nav_right li.now a.ico_bg3 span.down,#kfz_topbar .top_nav_right li.now a.ico_bg4 span.down,#kfz_topbar .top_nav_right li.now a.ico_bg6 span.down {
+    background-position: 0 -11px;
+    top: 9px
+}
+
+#kfz_topbar .top_nav_right li a.ico_bg3 {
+    display: block;
+    height: 34px;
+    line-height: 34px;
+    position: relative;
+    z-index: 999;
+    _width: 102px;
+    padding: 0 10px;
+    _padding: 0 5px
+}
+
+#kfz_topbar .top_nav_right li a.ico_bg4 {
+    display: block;
+    height: 34px;
+    line-height: 34px;
+    position: relative;
+    z-index: 999;
+    width: 102px;
+    padding-left: 6px
+}
+
+#kfz_topbar .top_nav_right li a.ico_bg6 {
+    display: block;
+    height: 34px;
+    line-height: 34px;
+    position: relative;
+    z-index: 999
+}
+
+#kfz_topbar .top_nav_right li a .ico_cart {
+    display: block;
+    padding: 0 15px 0 20px;
+    background: url(/image/view/topbar.gif) no-repeat 0 -20px;
+    _background-position: 5px -20px
+}
+
+#kfz_topbar .top_nav_right li a.ico_bg .ico_cart {
+    padding-right: 0
+}
+
+#kfz_topbar .top_nav_right li.now a span.ico_cart {
+    background-position: 0 -26px;
+    _background-position: 5px -26px
+}
+
+#kfz_topbar .top_nav_right li a.ico_bg3 span.down {
+    display: block;
+    position: absolute;
+    right: 8px;
+    top: 14px;
+    width: 9px;
+    height: 5px;
+    line-height: 0;
+    font-size: 0;
+    background: url(/image/view/topbar.gif) no-repeat 0 -3px;
+    overflow: hidden
+}
+
+#kfz_topbar .top_nav_right li.now a.ico_bg2 {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    margin-top: 5px;
+    line-height: 22px;
+    height: 26px;
+    width: 50px;
+    color: #f60
+}
+
+#kfz_topbar .top_nav_right li.now a.ico_bg3 {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    margin-top: 5px;
+    line-height: 22px;
+    height: 26px;
+    color: #f60;
+    padding: 0 9px;
+    _padding: 0 4px
+}
+
+#kfz_topbar .top_nav_right li a.ico_bg4 {
+    width: 43px;
+    padding: 0 17px 0 5px
+}
+
+#kfz_topbar .top_nav_right li.now a.ico_bg4 {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    margin-top: 5px;
+    line-height: 22px;
+    height: 26px;
+    width: 41px;
+    color: #f60
+}
+
+#kfz_topbar .top_nav_right li a.ico_bg6 {
+    width: 60px;
+    padding: 0 17px 0 20px;
+    background: url(/image/view/ico_mobile.png) 10px 8px no-repeat
+}
+
+#kfz_topbar .top_nav_right li.now a.ico_bg6 {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    margin-top: 5px;
+    line-height: 22px;
+    height: 26px;
+    width: 58px;
+    color: #f60;
+    background: #fff url(/image/view/ico_mobile.png) 9px -33px no-repeat
+}
+
+#kfz_topbar .top_nav_right li a:hover.ico_bg,#kfz_topbar .top_nav_right li a:hover.ico_bg2,#kfz_topbar .top_nav_right li a:hover.ico_bg3,#kfz_topbar .top_nav_right li a:hover.ico_bg3 span,#kfz_topbar .top_nav_right li a:hover.ico_bg4 {
+    text-decoration: underline
+}
+
+#kfz_topbar .top_nav_right li .tc_box,#kfz_topbar .top_nav_right li .tc_box2,#kfz_topbar .top_nav_right li .tc_box3,#kfz_topbar .top_nav_right li .tc_box4 {
+    position: absolute;
+    top: 31px;
+    left: 0;
+    background: #fff;
+    z-index: 998;
+    border: 1px solid #ccc;
+    width: 93px;
+    padding: 5px 10px;
+    text-align: left;
+    line-height: 20px
+}
+
+#kfz_topbar .top_nav_right li div.last_menu_box {
+    left: auto;
+    right: 0
+}
+
+#kfz_topbar .top_nav_right li .tc_box2 {
+    width: 340px;
+    line-height: 24px;
+    padding: 10px
+}
+
+#kfz_topbar .cart_box {
+    border-bottom: 1px dotted #dcdcdc;
+    padding: 5px 0
+}
+
+#kfz_topbar .top_nav_right li a.topbar_cart_product {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    overflow: hidden
+}
+
+#kfz_topbar .top_nav_right li a.topbar_cart_product img {
+    display: block;
+    width: 40px;
+    height: 40px
+}
+
+#kfz_topbar .top_nav_right li .tc_box2 .cart_wd {
+    width: 190px;
+    overflow: hidden;
+    color: #999
+}
+
+#kfz_topbar .top_nav_right li .tc_box2 .f_right2 {
+    float: right;
+    text-align: right;
+    color: #f60;
+    width: 80px;
+    overflow: hidden
+}
+
+#kfz_topbar .top_nav_right li .tc_box2 .f_right2 a {
+    color: #06c
+}
+
+#kfz_topbar .top_nav_right li .tc_box3 {
+    width: 152px
+}
+
+#kfz_topbar .top_nav_right li .tc_box3 h3 {
+    font-size: 12px;
+    line-height: 24px;
+    border-bottom: 1px dotted #dcdcdc;
+    margin-bottom: 3px
+}
+
+#kfz_topbar .top_nav_right li .tc_box3 .list a {
+    display: inline-block;
+    *display: inline;
+    zoom:1;width: 60px
+}
+
+#kfz_topbar .top_nav_right li .tc_box3 .list a.more_str {
+    width: 120px
+}
+
+#kfz_topbar .top_nav_right li .tc_box3 .serve_box a {
+    color: #666
+}
+
+#kfz_topbar .top_nav_right li .tc_box3 .serve_box a:hover {
+    color: #f60
+}
+
+#kfz_topbar .top_nav_right li .tc_box3 .ly_ico {
+    position: relative;
+    padding-left: 22px;
+    line-height: 24px
+}
+
+#kfz_topbar .top_nav_right li .tc_box3 .ly_ico span {
+    display: block;
+    position: absolute;
+    width: 17px;
+    height: 14px;
+    background: url(/image/view/topbar.gif) no-repeat 0 -74px;
+    z-index: 666;
+    top: 5px;
+    left: 0;
+    *top: 0;
+    _left: -20px
+}
+
+#kfz_topbar .top_nav_right li .tc_box3 .ly_ico span.bg2 {
+    background-position: 0 -56px
+}
+
+#kfz_topbar .top_nav_right li .tc_box4 {
+    width: 212px;
+    *width: 218px
+}
+
+#kfz_topbar .top_nav_right li .tc_box4 .list {
+    padding: 10px 5px
+}
+
+#kfz_topbar .top_nav_right li .tc_box4 .mobile_ico {
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: url(/image/view/ico_mobile.png) no-repeat
+}
+
+#kfz_topbar .top_nav_right li .tc_box4 .mobile_ico_kfz {
+    background-position: 0 -162px
+}
+
+#kfz_topbar .top_nav_right li .tc_box4 .mobile_ico_shufang {
+    background-position: 0 -248px
+}
+
+#kfz_topbar .top_nav_right li .tc_box4 .mobile_soft_name {
+    font-size: 14px;
+    font-weight: bold
+}
+
+#kfz_topbar .top_nav_right li .tc_box4 .line {
+    display: block;
+    height: 0;
+    line-height: 0;
+    border: none;
+    border-bottom: 1px solid #ccc
+}
+
+#kfz_topbar .top_nav_right li .tc_box4 .mobile_ico_ios {
+    display: block;
+    width: 100px;
+    height: 23px;
+    background: url(/image/view/ico_mobile.png) 0 -70px no-repeat
+}
+
+#kfz_topbar .top_nav_right li .tc_box4 .mobile_ico_ios:hover {
+    background-position: 0 -116px
+}
+
+#kfz_topbar .top_nav_right li .tc_box4 .mobile_ico_android {
+    display: block;
+    width: 100px;
+    height: 23px;
+    background: url(/image/view/ico_mobile.png) 0 -93px no-repeat
+}
+
+#kfz_topbar .top_nav_right li .tc_box4 .mobile_ico_android:hover {
+    background-position: 0 -139px
+}
+
+#kfz_topbar .top_nav_right li a.btn_cart {
+    display: block;
+    background: url(/image/view/topbar.gif) no-repeat 0 -116px;
+    width: 110px;
+    height: 25px;
+    line-height: 25px;
+    color: #fff;
+    text-align: center
+}
+
+#kfz_topbar .top_nav_right li a:hover.btn_cart {
+    background-position: 0 -91px;
+    color: #fff;
+    text-decoration: none
+}
+
+#kfz_topbar .nav a.btn_get_brt_cart_retry {
+    color: #05a
+}
+
+#kfz_topbar #topbar_cart_item .ico_cart span.red1 {
+    display: none
+}
+
+#kfz_topbar .top_nav_right b.ico_phone {
+    display: block;
+    float: left;
+    margin-top: 9px;
+    margin-top: 7px\0;
+    background: url(/image/view/ico_phone.gif) no-repeat 0 0;
+    width: 11px;
+    height: 18px
+}
+
+#kfz_topbar .top_nav_right li.now a.ico_bg2.phone_wd b.ico_phone {
+    margin-top: 3px;
+    margin-top: 1px\0
+}
+
+#kfz_topbar .top_nav_right .erweima_box {
+    display: block;
+    border-bottom: 1px dotted #cbcbcb;
+    font-size: 14px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    line-height: 24px
+}
+
+#kfz_topbar .top_nav_right .erweima_box.last {
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    cursor: pointer
+}
+
+#kfz_topbar .top_nav_right .erweima_box .m_r13 {
+    margin-right: 13px
+}
+
+#kfz_topbar .top_nav_right .erweima_box .text_box {
+    display: block;
+    overflow: hidden;
+    zoom:1}
+
+#kfz_topbar .top_nav_right a.erweima_box:hover {
+    color: #333;
+    text-decoration: none
+}
+
+#kfz_topbar .top_nav_right li a.ico_bg2.phone_wd {
+    width: 68px;
+    color: #c00;
+    padding-left: 11px;
+    padding-right: 11px
+}
+
+#kfz_topbar .top_nav_right li.now a.ico_bg2.phone_wd {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 68px
+}
+
+#kfz_topbar .top_nav_right li .tc_box.phone_wd {
+    width: 290px;
+    padding: 15px 15px;
+    right: 0;
+    left: auto
+}
+
+#kfz_topbar .half_part {
+    float: left;
+    width: 50%;
+    *width: 51px
+}
+
+#kfz_topbar .top_nav_right li .tc_box.phone_wd li {
+    float: left;
+    width: 120px;
+    text-align: center;
+    margin-right: 23px;
+    color: #333;
+    line-height: 18px
+}
+
+#kfz_topbar .top_nav_right li .tc_box.phone_wd li.last {
+    margin-right: 0
+}
+
+#kfz_topbar .top_nav_right li .tc_box.phone_wd li.line_gray {
+    border-right: 1px solid #ececec;
+    width: 1px;
+    height: 111px;
+    margin-top: 30px
+}
+
+#kfz_header .logo {
+    padding: 20px 0 24px 0
+}
+
+#kfz_header .logo img {
+    width: 175px;
+    height: 64px
+}
+
+#kfz_header.head .input_bg {
+    background: url(/image/view/header.gif) no-repeat -111px 3px;
+    position: relative;
+    width: 390px;
+    height: 31px;
+    padding-left: 32px;
+    border-left: 2px solid #005bb6;
+    border-bottom: 2px solid #0056ab;
+    border-top: 2px solid #0066cb;
+    border-radius: 0 0 0 2px
+}
+
+#kfz_header.head .header_buyer_search .input_bg {
+    width: 300px
+}
+
+#kfz_header.head .input_bg input {
+    background: none;
+    height: 31px;
+    _height: 29px;
+    line-height: 31px;
+    _line-height: 29px;
+    width: 388px;
+    font-size: 14px;
+    border: 0;
+    outline: 0
+}
+
+#kfz_header.head .header_buyer_search .input_bg input {
+    width: 300px
+}
+
+#kfz_header.head .input_bg input.default {
+    color: #999
+}
+
+#kfz_header.head .input_bg2 {
+    position: relative;
+    z-index: 10
+}
+
+#kfz_header.head .input_bg2 a.sel {
+    display: block;
+    background: #e8e8e8 url(/image/view/header.gif) no-repeat 0 -106px;
+    width: 62px;
+    height: 31px;
+    border-top: 2px solid #0066cb;
+    border-bottom: 2px solid #0056ab;
+    line-height: 31px;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #333;
+    text-decoration: none
+}
+
+#kfz_header.head .input_bg2 a:hover.sel {
+    background-position: 0 -142px
+}
+
+#kfz_header.head .input_bg2 .choose_box {
+    display: none;
+    position: absolute;
+    z-index: 11;
+    top: 35px;
+    left: 0;
+    background: #fafafa;
+    width: 71px;
+    border: 1px solid #ccc;
+    border-top: none;
+    color: #333;
+    line-height: 22px;
+    font-size: 14px;
+    padding: 3px 0
+}
+
+#kfz_header.head .input_bg2 .choose_box a {
+    color: #333;
+    padding-left: 10px;
+    display: block;
+    height: 24px;
+    line-height: 24px;
+    outline: 0
+}
+
+#kfz_header.head .input_bg2 .choose_box a:hover {
+    background-color: #F6F6F6
+}
+
+#kfz_header.head .input_bg3 a {
+    display: block;
+    background: #005dba url(/image/view/header.gif) no-repeat 0 -29px;
+    border-radius: 0 2px 2px 0;
+    width: 98px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 0.3em;
+    text-decoration: none;
+    font-family: "微软雅黑"
+}
+
+#kfz_header.head .input_bg3 a:hover {
+    background-position: 0 -66px;
+    text-decoration: none;
+    _color: #fff
+}
+
+#kfz_header .enter_search {
+    margin-left: 20px;
+    position: relative;
+    top: -2px
+}
+
+#kfz_header .enter_search a,#kfz_header .enter_search a:hover {
+    font-size: 12px;
+    text-decoration: none
+}
+
+#kfz_header .area_tit a {
+    font-size: 14px;
+    color: #666;
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    outline: 0;
+    _display: inline;
+    _zoom: 1
+}
+
+#kfz_header .area_tit a.now {
+    background: url(/image/view/header.gif) no-repeat;
+    height: 27px;
+    line-height: 27px;
+    color: #fff
+}
+
+#kfz_header *html .area_tit a:hover {
+    color: #666
+}
+
+#kfz_header *html .area_tit a:hover.now {
+    color: #fff
+}
+
+#kfz_header .p_tb {
+    padding: 10px 0
+}
+
+#kfz_header .user_titbg {
+    line-height: 65px;
+    font-weight: 500;
+    font-size: 24px;
+    font-family: "微软雅黑";
+    background: url(/image/view/line_array.gif) no-repeat 0 10px;
+    padding-left: 10px
+}
+
+#kfz_header .user_titbg h2 {
+    font-size: 24px
+}
+
+#kfz_header .p_tb {
+    padding: 10px 0
+}
+
+#kfz_header .red2 {
+    color: #c00
+}
+
+#kfz_header {
+    position: relative;
+    z-index: 100
+}
+
+#kfz_header #search_input_tip {
+    position: absolute;
+    left: 34px;
+    top: 6px;
+    font-size: 14px;
+    cursor: text
+}
+
+#kfz_header a#search_input_tip:hover {
+    color: #999
+}
+
+#kfz_header #header_book_box #search_input_tip {
+    top: 0;
+    left: 32px;
+    color: #ccc
+}
+
+#kfz_header .logo2 {
+    padding-top: 30px
+}
+
+#kfz_header .nav_right_box {
+    float: right;
+    width: 780px;
+    position: relative
+}
+
+#kfz_header .nav_right_box .nav_box {
+    width: 500px;
+    margin-top: 8px
+}
+
+#kfz_header .nav_right_box .nav_box li {
+    float: left;
+    margin-right: 3px
+}
+
+#kfz_header .nav_right_box .nav_box li a {
+    display: block;
+    background: #fff;
+    width: 90px;
+    font-family: "微软雅黑";
+    height: 29px;
+    line-height: 29px;
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+    margin-top: 1px;
+    border: 1px solid #069;
+    border-bottom: none;
+    border-radius: 3px 3px 0 0
+}
+
+#kfz_header .nav_right_box .nav_box li.now a,#kfz_header .nav_right_box .nav_box li a:hover {
+    margin-top: 0;
+    background: #069;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    position: relative;
+    top: 0px
+}
+
+:root .nav_right_box .nav_box li.now a {
+    line-height: 31px\9
+}
+
+#kfz_header .nav_under_box {
+    background: #069;
+    height: 32px;
+    line-height: 32px;
+    zoom:1}
+
+#kfz_header .nav_under_box li {
+    float: left;
+    background: url(/image/view/nav_line.gif) no-repeat right center
+}
+
+#kfz_header .nav_under_box li a {
+    display: block;
+    color: #fff;
+    padding: 0 14px
+}
+
+#kfz_header .nav_under_box li.now {
+    padding-right: 1px
+}
+
+#kfz_header .nav_under_box li.now a {
+    background: #0072e3
+}
+
+#kfz_header .search_box_bg {
+    background: url(/image/view/nav_bg2.gif) no-repeat 0 -75px;
+    height: 73px;
+    padding: 17px 0 0 100px
+}
+
+#kfz_header .search_box_bg .left {
+    float: left
+}
+
+#kfz_header .search_box_bg .left li {
+    float: left;
+    margin-right: 10px;
+    line-height: 24px
+}
+
+#kfz_header .search_box_bg .left li.search_bg1 {
+    position: relative;
+    background: url(/image/view/nav_bg2.gif) no-repeat -101px 0;
+    padding-left: 30px
+}
+
+#kfz_header .search_box_bg .left li .seach_input1 {
+    color: #333;
+    width: 295px;
+    height: 25px;
+    height: 29px\0;
+    line-height: 25px;
+    font-size: 14px;
+    background: none;
+    border: none
+}
+
+#kfz_header .search_box_bg .left .search_btn {
+    width: 70px;
+    height: 24px
+}
+
+#kfz_header .search_box_bg .left select {
+    height: 24px;
+    font-size: 14px
+}
+
+#kfz_header .search_box_bg .right {
+    float: left;
+    margin-left: 70px;
+    *margin-left: 20px;
+    padding-top: 5px
+}
+
+#kfz_header .search_box_bg .right a {
+    margin-left: 15px
+}
+
+#kfz_header .assBox {
+    background: #FFF;
+    border-color: #06C;
+    border-style: solid;
+    border-width: 0 2px 2px;
+    display: none;
+    left: -2px;
+    position: absolute;
+    top: 31px;
+    width: 100%;
+    _padding-right: 32px
+}
+
+#header_book_box #ass_wrap_box {
+    position: absolute;
+    left: 0;
+    top: 24px;
+    width: 325px;
+    border: none
+}
+
+#header_book_box .assBox {
+    position: static;
+    width: auto;
+    border-width: 0 1px 1px;
+    border-color: #999
+}
+
+#kfz_header .assBox a {
+    color: #333;
+    display: block;
+    font-size: 14px;
+    padding: 2px 10px 2px 32px
+}
+
+#kfz_header .assBox a.curr {
+    background: #EBEBEB
+}
+
+#kfz_header .border_nop2 {
+    border: 1px solid #dcdcdc;
+    zoom:1}
+
+#kfz_header .search_box_bg a.shop_search_btn {
+    width: 66px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    display: inline-block;
+    *display: inline;
+    *zoom:1;color: #fff;
+    font-size: 14px;
+    background: #069;
+    border: 1px solid #6b6b6b
+}
+
+#kfz_header .search_box_bg a.shop_search_btn:hover {
+    background: #035c88;
+    color: #fff
+}
+
+#kfz_header.pm .head {
+    position: relative;
+    z-index: 31
+}
+
+#kfz_header.pm #header_book_box {
+    position: relative;
+    z-index: 30
+}
+
+#kfz_header.pm .search_box_bg {
+    padding-left: 30px;
+    height: 54px
+}
+
+#kfz_header.pm .search_box_bg .search_btn {
+    font-weight: bold
+}
+
+#kfz_header.pm .search_box_bg .right {
+    margin-left: 50px;
+    *margin-left: 0px;
+    padding-top: 3px
+}
+
+#kfz_header.pm .nav_under_box li {
+    position: relative
+}
+
+#kfz_header.pm .nav_under_box li a {
+    padding: 0 16px
+}
+
+#kfz_header.pm .nav_under_box li span {
+    background: url("/image/hot_03.gif") no-repeat scroll;
+    height: 7px;
+    left: 65px;
+    position: absolute;
+    top: 6px;
+    width: 21px
+}
+
+#kfz_header.pm .search_box_bg .right a {
+    color: #06c
+}
+
+#kfz_header.pm .search_box_bg .right a:hover {
+    color: #f60
+}
+
+#kfz_header.pm .search_box_bg a.pm_search_btn {
+    width: 66px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    display: inline-block;
+    *display: inline;
+    *zoom:1;color: #fff;
+    font-size: 14px;
+    background: #069;
+    border: 1px solid #6b6b6b
+}
+
+#kfz_header.pm .search_box_bg a.pm_search_btn:hover {
+    background: #035c88;
+    color: #fff
+}
+
+#kfz_footer .foot_list li {
+    float: left;
+    width: 218px;
+    _width: 213px;
+    margin-left: 25px;
+    border-right: 1px solid #dcdcdc;
+    height: 145px;
+    line-height: 24px;
+    color: #666
+}
+
+#kfz_footer .foot_list li.nobor {
+    border: none
+}
+
+#kfz_footer .foot_list h3 {
+    position: relative;
+    padding-left: 42px;
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: bold
+}
+
+#kfz_footer .foot_list h3 span.ico_bg5 {
+    position: absolute;
+    top: 0;
+    left: 13px;
+    *top: -3px;
+    _left: -40px;
+    width: 27px;
+    height: 20px;
+    background: url(../images/view/footer.gif) no-repeat -90px -56px
+}
+
+#kfz_footer .foot_list h3 span.ico_bg1 {
+    position: absolute;
+    top: 0;
+    left: 17px;
+    *top: -4px;
+    _left: -26px;
+    width: 18px;
+    height: 20px;
+    background: url(../images/view/foot.gif) no-repeat 0 2px
+}
+
+#kfz_footer .foot_list h3 span.ico_bg2 {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    *top: -4px;
+    _left: -30px;
+    width: 20px;
+    height: 22px;
+    background: url(../images/view/foot.gif) no-repeat 0 -21px
+}
+
+#kfz_footer .foot_list h3 span.ico_bg3 {
+    position: absolute;
+    top: 4px;
+    left: 14px;
+    *top: -1px;
+    _left: -28px;
+    width: 28px;
+    height: 22px;
+    background: url(../images/view/foot.gif) no-repeat 0 -46px
+}
+
+#kfz_footer .foot_list h3 span.ico_bg4 {
+    position: absolute;
+    top: 4px;
+    left: 15px;
+    *top: 0;
+    _left: -30px;
+    width: 22px;
+    height: 22px;
+    background: url(../images/view/foot.gif) no-repeat 0 -67px
+}
+
+#kfz_footer .foot_list li p {
+    display: block;
+    background: url(/image/view/footer.gif) no-repeat -136px -381px;
+    padding-left: 10px;
+    margin-left: 25px
+}
+
+#kfz_footer .foot_list li p a {
+    color: #666
+}
+
+#kfz_footer .foot_list li p a:hover {
+    color: #f60;
+    text-decoration: underline
+}
+
+#kfz_footer .foot_bg {
+    height: 30px;
+    line-height: 30px;
+    background: #f9fbfc;
+    text-align: center
+}
+
+#kfz_footer .foot_bg_row {
+    width: 980px;
+    margin: 0 auto;
+    background: #f9fbfc
+}
+
+#kfz_footer .foot_bg a {
+    margin: 0 13px;
+    color: #333
+}
+
+#kfz_footer .foot_box {
+    width: 450px;
+    margin: 15px auto
+}
+
+#kfz_footer .foot_box li {
+    float: left;
+    margin-right: 20px;
+    line-height: 16px
+}
+
+#kfz_footer .foot_box li a {
+    display: block;
+    float: left;
+    margin-left: 10px;
+    color: #999
+}
+
+#kfz_footer .foot_box li span {
+    display: block;
+    float: left;
+    background: url(/image/view/footer.gif) no-repeat
+}
+
+#kfz_footer .foot_box li span.ico1 {
+    width: 33px;
+    height: 40px;
+    background-position: 0 -2px
+}
+
+#kfz_footer .foot_box li span.ico2 {
+    width: 42px;
+    height: 41px;
+    background-position: -43px -1px
+}
+
+#kfz_footer .foot_box li span.ico3 {
+    width: 35px;
+    height: 36px;
+    background-position: -92px -2px
+}
+
+#kfz_footer_v2 .foot_list li {
+    float: left;
+    width: 218px;
+    _width: 213px;
+    margin-left: 25px;
+    border-right: 1px solid #dcdcdc;
+    height: 145px;
+    line-height: 24px;
+    color: #666
+}
+
+#kfz_footer_v2 .foot_list li.nobor {
+    border: none
+}
+
+#kfz_footer_v2 .foot_list h3 {
+    position: relative;
+    padding-left: 42px;
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: bold
+}
+
+#kfz_footer_v2 .foot_list h3 span.ico_bg1 {
+    position: absolute;
+    top: 0;
+    left: 17px;
+    *top: -4px;
+    _left: -26px;
+    width: 18px;
+    height: 20px;
+    background: url(/image/view/foot.gif) no-repeat 0 2px
+}
+
+#kfz_footer_v2 .foot_list h3 span.ico_bg2 {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    *top: -4px;
+    _left: -30px;
+    width: 20px;
+    height: 22px;
+    background: url(/image/view/foot.gif) no-repeat 0 -21px
+}
+
+#kfz_footer_v2 .foot_list h3 span.ico_bg3 {
+    position: absolute;
+    top: 4px;
+    left: 14px;
+    *top: -1px;
+    _left: -28px;
+    width: 28px;
+    height: 22px;
+    background: url(/image/view/foot.gif) no-repeat 0 -46px
+}
+
+#kfz_footer_v2 .foot_list h3 span.ico_bg4 {
+    position: absolute;
+    top: 4px;
+    left: 15px;
+    *top: 0;
+    _left: -30px;
+    width: 22px;
+    height: 22px;
+    background: url(/image/view/foot.gif) no-repeat 0 -67px
+}
+
+#kfz_footer_v2 .foot_list h3 span.ico_bg5 {
+    position: absolute;
+    top: 0;
+    left: 13px;
+    *top: -3px;
+    _left: -40px;
+    width: 27px;
+    height: 20px;
+    background: url(/image/view/footer.gif) no-repeat -90px -56px
+}
+
+#kfz_footer_v2 .foot_list li p {
+    display: block;
+    background: url(/image/view/footer.gif) no-repeat -136px -381px;
+    padding-left: 18px;
+    margin-left: 25px
+}
+
+#kfz_footer_v2 .foot_list li p a {
+    color: #666
+}
+
+#kfz_footer_v2 .foot_list li p a:hover {
+    color: #f60;
+    text-decoration: underline
+}
+
+#kfz_footer_v2 .foot_bg {
+    height: 30px;
+    line-height: 30px;
+    background: #f9fbfc;
+    text-align: center;
+    color: #999
+}
+
+#kfz_footer_v2 .foot_bg_row {
+    width: 980px;
+    margin: 0 auto;
+    background: #f9fbfc
+}
+
+#kfz_footer_v2 .foot_bg a {
+    margin: 0 8px;
+    color: #666
+}
+
+#kfz_footer_v2 .foot_box {
+    width: 450px;
+    margin: 15px auto
+}
+
+#kfz_footer_v2 .foot_box li {
+    float: left;
+    margin-right: 20px;
+    line-height: 16px
+}
+
+#kfz_footer_v2 .foot_box li a {
+    display: block;
+    float: left;
+    margin-left: 10px;
+    color: #999
+}
+
+#kfz_footer_v2 .foot_box li span {
+    display: block;
+    float: left;
+    background: url(/image/view/footer.gif) no-repeat
+}
+
+#kfz_footer_v2 .foot_box li span.ico1 {
+    width: 33px;
+    height: 40px;
+    background-position: 0 -2px
+}
+
+#kfz_footer_v2 .foot_box li span.ico2 {
+    width: 42px;
+    height: 41px;
+    background-position: -43px -1px
+}
+
+#kfz_footer_v2 .foot_box li span.ico3 {
+    width: 35px;
+    height: 36px;
+    background-position: -92px -2px
+}
+
+#kfz_header_app_box.top_app_box {
+    position: relative
+}
+
+#kfz_header_app_box.top_app_box a.top_app_tit {
+    display: block;
+    background: url(/image/view/top_app.gif) no-repeat 0 -48px;
+    width: 80px;
+    height: 49px;
+    padding: 8px 12px 0 12px
+}
+
+#kfz_header_app_box.top_app_box a.top_app_tit span {
+    display: block;
+    height: 40px;
+    background: url(/image/view/top_app.gif) no-repeat right 0;
+    padding-right: 30px;
+    color: #333;
+    cursor: pointer
+}
+
+#kfz_header_app_box.top_app_box a.top_app_tit:hover,#kfz_header_app_box.top_app_box a.top_app_tit.now {
+    background: url(/image/view/top_app.gif) no-repeat 0 -107px;
+    position: relative;
+    z-index: 34
+}
+
+#kfz_header_app_box.top_app_box .top_app_text {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 55px;
+    border: 1px solid #ececec;
+    background: #fafafa;
+    z-index: 33;
+    padding: 13px 0 13px 23px;
+    width: 310px
+}
+
+#kfz_header_app_box.top_app_box .top_app_text li {
+    float: left;
+    width: 120px;
+    text-align: center;
+    margin-right: 23px;
+    color: #333
+}
+
+#kfz_header_app_box.top_app_box .top_app_text li.last {
+    margin-right: 0
+}
+
+#kfz_header_app_box.top_app_box .top_app_text li.line_gray {
+    border-right: 1px solid #ececec;
+    width: 1px;
+    height: 111px;
+    margin-top: 30px
+}
+
+#kfz_header_app_box.top_app_box.mt15 {
+    top: 15px;
+    *top: 12px
+}
+
+#kfz_header_app_box.top_app_box.mt8 {
+    top: 8px
+}
+
+#kfz_header_app_box_seller.seller_top_app_box {
+    position: relative;
+    border: 1px solid #e6e6e6;
+    padding: 5px;
+    margin-right: 16px;
+    top: 12px;
+    display: none
+}
+
+#kfz_header_app_box_seller.seller_top_app_box a.app_close {
+    display: block;
+    position: absolute;
+    right: -16px;
+    top: -1px;
+    width: 16px;
+    height: 16px;
+    background: url(/image/view/app_close.gif) no-repeat 0 0
+}
+
+#kfz_header_app_box_seller.seller_top_app_box a.app_close:hover {
+    background-position: -20px 0
+}
+
+.now_top_app_box {
+    position: absolute;
+    right: 0;
+    top: 6px
+}

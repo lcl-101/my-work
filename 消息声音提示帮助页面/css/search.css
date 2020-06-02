@@ -1,0 +1,314 @@
+/*header start*/
+body, html {
+  -webkit-font-smoothing: antialiased;
+}
+#kfz_header .logo{
+  margin: 41px 0 0!important;
+}
+#kfz_header{
+  position: relative;
+  z-index: 100;
+  border-bottom: 1px solid #dcdcdc;
+  margin-bottom: 20px;
+}
+#kfz_header.head .input_bg3 a {
+  display: block;
+  background: #8c222c;
+  border-radius: 0 2px 2px 0;
+  width: 98px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 0.3em;
+  text-decoration: none;
+  font-family: "微软雅黑";
+}
+
+#kfz_header.head .input_bg3 a:hover {
+  background: #7B111B;
+}
+
+#kfz_header.head .input_bg {
+  position: relative;
+  width: 390px;
+  height: 36px;
+  background: none;
+  padding-left: 10px;
+  border-left: 2px solid #8c222c;
+  border-bottom: 2px solid #8c222c;
+  border-top: 2px solid #8c222c;
+  border-radius: 0 0 0 2px;
+}
+
+#kfz_header.head .header_buyer_search .input_bg {
+  width: 413px;
+}
+
+#kfz_header.head .header_buyer_search .input_bg input {
+  width: 413px;
+}
+
+#kfz_header.head .input_bg input {
+  background: none;
+  height: 36px;
+  _height: 29px;
+  line-height: 36px;
+  _line-height: 29px;
+  width: 388px;
+  font-size: 14px;
+  border: 0;
+  outline: 0;
+}
+
+#kfz_header .assBox {
+  overflow: hidden;
+  background: #FFF;
+  border-color: #ccc;
+  border-style: solid;
+  border-width: 1px;
+  display: none;
+  left: -2px;
+  position: absolute;
+  top: 36px;
+  z-index: 100;
+  width: 496px;
+}
+
+#kfz_header .assBox a {
+  color: #333;
+  display: block;
+  font-size: 14px;
+  line-height: 30px;
+  height: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 2px 10px 2px 10px;
+}
+
+#ass_box a.curr {
+  color: #333 !important;
+}
+#kfz_header .assBox .title {
+  width: 100%;
+  height: 30px;
+  padding: 0 10px;
+  line-height: 30px;
+  font-size: 12px;
+  color: #9c9c9c;
+}
+#kfz_header .assBox p {
+  width: 100%;
+  height: 30px;
+  padding: 0 10px;
+  line-height: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  color: #365899;
+  font-size: 14px;
+}
+#kfz_header .assBox p.active {
+  background-color: #eee;
+}
+#kfz_header .assBox p:hover {
+  background-color: #eee;
+}
+#kfz_header .assBox .clear-btn {
+  margin-right: 20px;
+  float: right;
+  font-size: 12px;
+  color: #666;
+}
+
+#kfz_header #search_input_tip {
+  position: absolute;
+  left: 10px;
+  top: 9px!important;
+  font-size: 12px;
+  cursor: text;
+}
+
+#kfz_header.head .input_bg2 a.sel {
+  box-sizing: border-box;
+  display: block;
+  background: none;
+  width: 74px;
+  height: 36px;
+  border-top: none;
+  border-bottom: none;
+  line-height: 36px;
+  padding-left: 20px;
+  font-size: 12px;
+  color: #333;
+  text-decoration: none;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+}
+#kfz_header.head .input_bg2 a.sel.pl-13 {
+  padding-left: 13px;
+}
+#kfz_header.head .input_bg2 a.sel .text{
+  padding-right: 2px;
+}
+#kfz_header.head .input_bg2 a.sel .icon {
+  position: relative;
+  top: -1px;
+  width:9px;
+  color: #999;
+}
+
+#kfz_header.head .input_bg2 a.sel .i-up {
+  display: none;
+}
+
+#kfz_header.head .input_bg2:hover a.sel {
+  background: #fff;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+}
+
+#kfz_header.head .input_bg2:hover a.sel .i-up {
+  display: inline-block;
+}
+
+#kfz_header.head .input_bg2:hover a.sel .i-down {
+  display: none;
+}
+
+#kfz_header.head .input_bg2 a.sel:hover {
+  background: #f5f5f5;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+}
+
+#kfz_header.head .input_bg2 {
+  position: relative;
+  z-index: 10;
+  border-bottom: 2px solid #8c222c;
+  border-top: 2px solid #8c222c;
+}
+
+#kfz_header.head .input_bg2:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  width: 1px;
+  height: 16px;
+  background-color: #ccc;
+}
+
+#kfz_header.head .input_bg2:hover:before{
+  content: '';
+  display: none;
+}
+
+#kfz_header #search_input_tip {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 12px;
+  cursor: text;
+}
+
+#kfz_header .area_tit p {
+  position: relative;
+  top: 2px;
+  font-size: 12px;
+  color: #666;
+  display: inline-block;
+  width: 45px;
+  height: 27px;
+  line-height: 27px;
+  text-align: left;
+  background: none;
+  outline: 0;
+  cursor: pointer;
+  _display: inline;
+  _zoom: 1;
+}
+
+#kfz_header .area_tit p .icon {
+  display: none;
+  position: absolute;
+  bottom: 2px;
+  left: 8px;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-bottom: 5px solid #8c222c;
+  transition: left .5s;
+}
+
+#kfz_header .area_tit p.now {
+  color: #8c222c;
+}
+
+#kfz_header .area_tit p.now .icon {
+  display: block;
+}
+
+#kfz_header.head .input_bg2 .choose_box {
+  display: none;
+  position: absolute;
+  z-index: 11;
+  top: 36px;
+  left: 0;
+  background: #fff;
+  width: 72px;
+  border: 1px solid #e5e5e5;
+  border-top: none;
+  color: #333;
+  line-height: 22px;
+  font-size: 14px;
+  padding: 3px 0;
+}
+
+#kfz_header.head .input_bg2 .choose_box:hover {
+  background: #fafafa;
+}
+
+#kfz_header.head .input_bg2 .choose_box p {
+  color: #333;
+  text-indent: 20px;
+  display: block;
+  height: 24px;
+  line-height: 24px;
+  font-size: 12px;
+  cursor: pointer;
+  outline: 0;
+}
+
+#kfz_header.head .input_bg3 a {
+  display: block;
+  background: #8c222c;
+  border-radius: 0;
+  width: 98px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 0;
+  text-decoration: none;
+  font-family: "微软雅黑";
+}
+#kfz_header #search_box{
+  margin: 10px 10px 25px !important;
+  float: right;
+}
+#kfz_header #search_box .enter_search div {
+  width: 25px;
+  padding-top: 6px !important;
+  line-height: 140%;
+}
+.line{
+  display: none;
+}
+
+/*header end*/
